@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>合作的进化 · 思维模型 Wiki</title><meta name="description" content="一次性博弈出背叛，重复博弈出合作">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/evolution-of-cooperation/">
+<meta property="og:title" content="合作的进化 · 思维模型 Wiki"><meta property="og:description" content="一次性博弈出背叛，重复博弈出合作">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/evolution-of-cooperation/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-biology">
+<p class="crumb"><a href="../../index.html">首页</a> / 生物</p>
+<h1>合作的进化 <small>The Evolution of Cooperation</small></h1>
+<p class="tagline"><strong>一次性博弈出背叛，重复博弈出合作</strong></p>
+<p class="experts"><strong>罗伯特·阿克塞尔罗德</strong>（政治科学家，1980 年在密歇根大学主持两轮计算机策略竞赛，1984 年出版《合作的进化》） · <strong>W. D. 汉密尔顿</strong>（进化生物学家，亲缘选择提出者，与阿克塞尔罗德合写 1981 年 Science 论文，把结论推广到生物演化） · <strong>阿纳托尔·拉波波特</strong>（心理学家，两轮竞赛都提交了「一报还一报」策略，两夺冠军）</p>
+
+<section><h2>场景钩子 · 最短的程序赢下了两届竞赛</h2><p>1980 年春，密歇根大学政治学家罗伯特·阿克塞尔罗德向全世界的博弈论学者发出邀请，提交囚徒困境策略，放到计算机里两两对垒。14 个程序参赛，有假装合作再突然背叛的老练选手，也有用统计模型预测对手的复杂选手。冠军却是心理学家阿纳托尔·拉波波特提交的最短程序：一报还一报，规则只有几行，第一步合作，之后照抄对方上一步。阿克塞尔罗德不服气，次年办了第二轮，收到 62 个参赛者，不少是专门为打败一报还一报设计的。冠军还是它。他把赢家特质总结成四个词：善良、可激怒、宽容、清晰。随后他把结果交给进化生物学家汉密尔顿，两人 1981 年在 Science 发文，把结论从计算机竞赛推广到了生物演化。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">一报还一报只有一轮记忆，照抄你上一步。四个赢家特质：善良，可激怒，宽容，清晰。</p></section>
+<section><h2>数据证据 · 1980 年第一轮竞赛：平均每局得分 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">两端是理论值：双方全程合作每局可得 600 分，全程互相背叛只有 200 分。一报还一报实测 504.5 分，逼近合作上限；随机策略 276 分，夹在中间。最短的程序拿走了最高分。<br><span class="src">来源：Axelrod《The Evolution of Cooperation》1984 年版附录 A；计分规则为 T=5, R=3, P=1, S=0，每局 200 步</span></p></section>
+<section><h2>交互演示 · 背叛赢第一回合，合作赢总数</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">背叛者靠第一回合的诱惑得分领先，但从第三回合起被一报还一报反超，差距越拉越大。把诱惑 T 调高，反超点会推迟，但只要回合数够多，合作总能赢。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先判断有没有下一次</b><span>一次性交易天然滋生背叛，长期关系才是合作的土壤。投入善意之前，先看未来的影子够不够长。</span></li><li><b>主动拉长未来的影子</b><span>把大生意拆成小批次，缩短结算周期，保持高频接触，让对方相信还会再见很多次。</span></li><li><b>先合作，并把规则亮出来</b><span>不首先背叛，同时把你的报复规则公开、说清楚，让对方知道你善良但不好惹。</span></li><li><b>立刻报复，但只报复一次</b><span>对方背叛就在下一回合还击，不翻旧账，对方回头就恢复合作。宽容能防止互相报复的死循环。</span></li><li><b>定期检查自己的策略</b><span>问自己是否变得太善良总被占便宜，或太记仇陷入互咬，以及环境是否已经悄悄变成一次性博弈。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>有噪声的环境，误判和传错话难免发生</td><td>立即报复能维持合作</td><td>两个一报还一报程序只要互相误读一次，就会陷入互相报复的死循环。带噪声的仿真里，更宽容的「两报还一报」得分更高。</td></tr><tr><td>和陌生人的一次性交易</td><td>先合作总是对的</td><td>没有下一次就没有未来的影子。景区宰客、匿名网骗里背叛才是理性选择，需要口碑和平台机制把它变回重复博弈。</td></tr><tr><td>对方铁了心永远背叛</td><td>报复能教会它做人</td><td>教不会的人只会把你拖进低收益。正确做法是识别后远离，而不是持续花钱上课。</td></tr><tr><td>人数巨大且彼此匿名的大群体</td><td>合作会自己长出来</td><td>没有识别和记住个体的能力，报复就打不到该打的人。大群体需要制度和记录，合作不会自发涌现。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../nash-equilibrium/">纳什均衡</a><span>单轮囚徒困境的唯一均衡是互相背叛，重复博弈是走出困境的路</span></li><li><span class="redlink" title="待写">reciprocity</span><span>一报还一报的人类社会版本：你怎么对我，我就怎么对你</span></li><li><span class="redlink" title="待写">emergence</span><span>合作不是谁设计的，它从自私个体的重复博弈中自发涌现</span></li><li><a href="../incentives/">激励</a><span>改变收益表比讲道理有用，抬高背叛的代价，合作才稳得住</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Axelrod R., The Evolution of Cooperation, Basic Books, 1984 <span class="lv lv-secondary">可靠二手</span></li><li>Axelrod R. &amp; Hamilton W. D., The Evolution of Cooperation in Biological Systems, Science, 1981 <span class="lv lv-verified">一手核实</span></li><li>Trivers R., The Evolution of Reciprocal Altruism, Quarterly Review of Biology, 1971 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "evolution-of-cooperation", "domain": "biology", "mermaid": "stateDiagram-v2\n  [*] --> 合作\n  合作 --> 合作: 对手上一步合作\n  合作 --> 报复: 对手上一步背叛\n  报复 --> 合作: 对手回到合作，原谅\n  报复 --> 报复: 对手继续背叛，继续还击", "echarts": {"tooltip": {"trigger": "axis"}, "xAxis": {"type": "category", "data": ["全程合作上限", "一报还一报", "随机策略", "全程背叛下限"]}, "yAxis": {"type": "value", "name": "每局平均得分"}, "series": [{"name": "每局平均得分", "type": "bar", "data": [600, 504.5, 276, 200]}]}, "demo": {"title": "背叛赢第一回合，合作赢总数", "takeaway": "背叛者靠第一回合的诱惑得分领先，但从第三回合起被一报还一报反超，差距越拉越大。把诱惑 T 调高，反超点会推迟，但只要回合数够多，合作总能赢。", "params": [{"id": "t", "label": "背叛诱惑 T", "min": 1, "max": 9, "step": 0.5, "default": 5}, {"id": "p", "label": "互相背叛得分 P", "min": 0, "max": 2.5, "step": 0.1, "default": 1}], "x": {"label": "重复回合数", "from": 1, "to": 30, "step": 1}, "series": [{"name": "一报还一报累计", "expr": "3 * x"}, {"name": "永远背叛累计", "expr": "t + (x - 1) * p"}, {"name": "随机策略累计", "expr": "(t + p + 3) / 4 * x"}]}, "related": [{"slug": "nash-equilibrium", "title": "纳什均衡", "exists": true}, {"slug": "reciprocity", "title": "reciprocity", "exists": false}, {"slug": "emergence", "title": "emergence", "exists": false}, {"slug": "incentives", "title": "激励", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

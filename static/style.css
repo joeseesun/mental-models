@@ -35,6 +35,18 @@ a { color: inherit; }
 .header-inner nav { display: flex; gap: 18px; font-size: 15px; color: var(--muted); }
 .header-inner nav a { text-decoration: none; }
 .theme-toggle { background: none; border: 1px solid var(--line); color: var(--text); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; }
+.chrome-btn { background: none; border: 1px solid var(--line); color: var(--text); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; font-size: 15px; line-height: 1; }
+.chrome-btn:hover, .theme-toggle:hover { background: var(--card-hover); }
+.modal { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 16px; }
+.modal[hidden] { display: none; }
+.modal-box { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px 20px; max-width: 320px; width: 100%; text-align: center; position: relative; }
+.modal-box h3 { margin: 0 0 14px; }
+.modal-box .qr { width: 220px; max-width: 100%; height: auto; border-radius: 8px; }
+.modal-note { margin: 10px 0 4px; color: var(--muted); font-size: 14px; }
+.modal-links { margin: 4px 0 0; font-size: 14px; }
+.modal-close { position: absolute; top: 8px; right: 10px; background: none; border: none; color: var(--muted); font-size: 15px; cursor: pointer; padding: 4px; }
+.footer-links { display: flex; gap: 16px; margin-top: 8px; font-size: 13.5px; }
+.footer-links a { color: var(--muted); }
 h1, h2, h3 { font-family: Georgia, "Songti SC", "Noto Serif SC", serif; line-height: 1.35; }
 h1 small { display: block; font: 400 15px/1.6 sans-serif; color: var(--muted); margin-top: 4px; }
 .hero { padding: 40px 0 8px; } .hero h1 { font-size: 34px; margin: 0 0 8px; } .hero p { color: var(--muted); margin: 0; }

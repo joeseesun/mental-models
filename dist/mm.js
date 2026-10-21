@@ -19,6 +19,23 @@
     location.reload();
   };
 
+  // 打赏/关注弹窗：按钮打开，✕、Esc、点击遮罩关闭
+  document.querySelectorAll('[data-modal-open]').forEach(function (b) {
+    b.onclick = function () {
+      var m = document.getElementById(b.getAttribute('data-modal-open'));
+      if (m) { m.hidden = false; var c = m.querySelector('[data-close]'); if (c) c.focus(); }
+    };
+  });
+  document.querySelectorAll('.modal').forEach(function (m) {
+    var close = function () { m.hidden = true; };
+    m.addEventListener('click', function (ev) { if (ev.target === m) close(); });
+    var c = m.querySelector('[data-close]');
+    if (c) c.onclick = close;
+  });
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Escape') document.querySelectorAll('.modal:not([hidden])').forEach(function (m) { m.hidden = true; });
+  });
+
   function baseOption(extra) {
     var o = {
       color: DOMS.map(dc),

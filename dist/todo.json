@@ -1,4 +1,17 @@
 {
+ "reciprocity": [
+  "evolution-of-cooperation"
+ ],
+ "emergence": [
+  "evolution-of-cooperation"
+ ],
+ "feedback-loops": [
+  "evolutionary-arms-race",
+  "social-proof"
+ ],
+ "costly-signaling": [
+  "evolutionary-arms-race"
+ ],
  "inversion": [
   "first-principles",
   "red-queen-effect",
@@ -7,13 +20,34 @@
  "occams-razor": [
   "first-principles"
  ],
- "evolutionary-arms-race": [
-  "red-queen-effect"
+ "goodharts-law": [
+  "incentives"
  ],
- "nash-equilibrium": [
-  "red-queen-effect"
+ "principal-agent": [
+  "incentives",
+  "symbiosis"
+ ],
+ "skin-in-the-game": [
+  "incentives"
+ ],
+ "second-order-thinking": [
+  "nash-equilibrium"
+ ],
+ "adaptation": [
+  "natural-selection"
+ ],
+ "survivorship-bias": [
+  "natural-selection",
+  "social-proof"
+ ],
+ "creative-destruction": [
+  "natural-selection"
  ],
  "groupthink": [
-  "six-thinking-hats"
+  "six-thinking-hats",
+  "social-proof"
+ ],
+ "authority-bias": [
+  "social-proof"
  ]
 }

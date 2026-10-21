@@ -1,0 +1,207 @@
+{
+  "slug": "evolutionary-arms-race",
+  "title": "进化军备竞赛",
+  "en": "Evolutionary Arms Race",
+  "domain": "biology",
+  "experts": [
+    {
+      "name": "理查德·道金斯",
+      "role": "与克雷布斯在 1979 年把军备竞赛正式引入演化生物学，提出命换晚餐原则"
+    },
+    {
+      "name": "保罗·埃尔利希",
+      "role": "1964 年与雷文提出协同进化，用蝴蝶与植物的竞赛解释物种多样性爆发"
+    },
+    {
+      "name": "利·范瓦伦",
+      "role": "1973 年提出红皇后假说，用海洋化石数据证明物种灭绝风险不随时间下降"
+    }
+  ],
+  "tagline": "你跑得更快，只因对手也在跑",
+  "hook": {
+    "title": "毒死两万五千只小鼠的蝾螈，和照吃不误的蛇",
+    "story": "北美西海岸有一种粗皮渍螈，皮肤里含河豚毒素，一只蝾螈身上的毒足以毒死两万五千只小鼠，按理说没有捕食者敢碰它。但束带蛇照吃不误。从上世纪六十年代末起，布罗迪父子研究了这种对局几十年，发现吃过蝾螈的地区的蛇普遍进化出抗毒性，竞赛最激烈的种群里，蛇能扛住的剂量是普通蛇的几十倍。更耐人寻味的是，蛇抗性越高的地方，蝾螈的毒性也越强，两边谁也没赢，只是不断加码。这场竞赛已经跑了几千万年，至今没有终点。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"猎物种群出现随机变异，少数个体更难被捕食\"] --> B[\"防御型个体存活更多，防御基因扩散\"]\n  B --> C[\"捕食者捕猎成功率下降，生存压力上升\"]\n  C --> D[\"捕食者中出现更擅长破防的变异\"]\n  D --> E[\"攻击型捕食者吃得更多，基因随之扩散\"]\n  E --> F[\"猎物中防御弱的个体被大量吃掉\"]\n  F --> A\n  B --> G[\"双方军备水平整体抬升，没有赢家只有升级\"]\n  E --> G",
+    "caption": "循环没有出口。每转一圈，双方的军备水平都被抬高一层，回到起点时问题已经升级了。"
+  },
+  "evidence": {
+    "title": "青霉素与金黄色葡萄球菌，二十年分出胜负",
+    "takeaway": "1943 年青霉素大规模投产，二十年内医院里的金葡菌八成耐药。人类每造一种新武器，细菌就升级一次防御。",
+    "level": "secondary",
+    "source": "医学史综述整理的近似历史值，如 Chambers 与 DeLeo 2009 年《Waves of resistance》；青霉素 1943 年起大规模使用",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "医院金葡菌青霉素耐药比例"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "1940",
+          "1945",
+          "1950",
+          "1955",
+          "1960",
+          "1965",
+          "1970"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "耐药比例（%）"
+      },
+      "series": [
+        {
+          "name": "医院金葡菌青霉素耐药比例",
+          "type": "line",
+          "data": [
+            0,
+            10,
+            40,
+            60,
+            75,
+            80,
+            85
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "拖动选择压力，看军备如何被逼着升级",
+    "takeaway": "没有选择压力就没有升级；压力越大双方爬得越陡，生死不对称决定谁暂时领先，但长期谁也停不下来。",
+    "params": [
+      {
+        "id": "pressure",
+        "label": "选择压力（0.2 到 2）",
+        "min": 0.2,
+        "max": 2,
+        "step": 0.1,
+        "default": 1
+      },
+      {
+        "id": "lag",
+        "label": "生死不对称（0 到 0.8）",
+        "min": 0,
+        "max": 0.8,
+        "step": 0.05,
+        "default": 0.3
+      }
+    ],
+    "x": {
+      "label": "进化代数",
+      "from": 0,
+      "to": 200,
+      "step": 5
+    },
+    "series": [
+      {
+        "name": "猎物防御水平",
+        "expr": "10 + 80 * (1 - exp(-0.05 * pressure * x))"
+      },
+      {
+        "name": "捕食者攻击水平",
+        "expr": "10 + 80 * (1 - exp(-0.05 * pressure * (1 - lag) * x))"
+      },
+      {
+        "name": "猎物领先幅度",
+        "expr": "80 * (exp(-0.05 * pressure * (1 - lag) * x) - exp(-0.05 * pressure * x))"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "画出你的对局，确认是双向升级",
+      "detail": "写下对手最近一次出招和你最近一次接招，再倒过来写一遍。只有双方都在变，才叫竞赛。"
+    },
+    {
+      "step": "判断竞赛类型和节奏",
+      "detail": "捕食者对猎物慢，宿主对病原快，同类竞争最直接。类型决定你有多少反应时间。"
+    },
+    {
+      "step": "用命换晚餐原则称一称赌注",
+      "detail": "道金斯提醒，兔子输了丢命，狐狸输了只丢一顿饭。输不起的一方升级动力更强，也更容易先到极限。"
+    },
+    {
+      "step": "把目标从赢改成不掉队",
+      "detail": "红皇后式目标。流感疫苗每年换毒株，不是要消灭病毒，是保持相对位置。"
+    },
+    {
+      "step": "定期评估要不要退出竞赛",
+      "detail": "竞赛是消耗战。能换赛道、抬高对方升级成本或转向合作时，退出比跟进划算。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "把所有竞争都当成军备竞赛",
+      "model_says": "对手升级，我必须跟进",
+      "reality": "多数商业竞争是消耗战而非竞赛，跟进可能只是帮双方烧钱，退出或合作往往更优。"
+    },
+    {
+      "situation": "对手是会学习的人类，不是随机变异",
+      "model_says": "升级会沿老路一代代累积",
+      "reality": "人会换打法换赛道，升级路径会跳跃，线性加码可能押错方向。"
+    },
+    {
+      "situation": "忽略升级的代价",
+      "model_says": "只要压力在就能一直升",
+      "reality": "抗药性常拖慢细菌生长，孔雀尾巴拖慢飞行，军备有成本，预算不足时竞赛会停在中途。"
+    },
+    {
+      "situation": "用在一次性博弈或短期项目",
+      "model_says": "一次交锋就能看出竞赛",
+      "reality": "军备竞赛是多代累积现象，单次胜负说明不了升级趋势。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "red-queen-effect",
+      "relation": "同一现象的另一个名字：军备竞赛解释为什么升级，红皇后解释为什么跑了还在原地"
+    },
+    {
+      "slug": "natural-selection",
+      "relation": "军备竞赛的发动机，随机变异加选择压力才有升级"
+    },
+    {
+      "slug": "feedback-loops",
+      "relation": "军备竞赛的系统结构是一个正反馈回路"
+    },
+    {
+      "slug": "costly-signaling",
+      "relation": "升级到极端就变成高成本信号，孔雀尾巴是性选择军备的产物"
+    },
+    {
+      "slug": "symbiosis",
+      "relation": "竞赛打久了可能停战转共生，线粒体就是一场古老军备的和平协议"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dawkins 与 Krebs，Arms Races between and within Species，英国皇家学会会刊 B，1979",
+      "level": "secondary"
+    },
+    {
+      "title": "Ehrlich 与 Raven，Butterflies and Plants: A Study in Coevolution，Evolution，1964",
+      "level": "secondary"
+    },
+    {
+      "title": "Van Valen，A New Evolutionary Law，Evolutionary Theory，1973",
+      "level": "secondary"
+    },
+    {
+      "title": "Brodie 父子关于渍螈与束带蛇毒素抗性的系列研究，1968 年起",
+      "level": "secondary"
+    },
+    {
+      "title": "Chambers 与 DeLeo，Waves of resistance，Nature Reviews Microbiology，2009",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

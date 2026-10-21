@@ -14,27 +14,54 @@ from mm import DIST, DOMAINS, ROOT, load_all, validate
 
 STATIC = ROOT / 'static'
 LEVEL_LABEL = {'verified': '一手核实', 'secondary': '可靠二手', 'draft': '草稿示意'}
+SITE = 'https://mm.qiaomu.ai'
+UMAMI_ID = '07f649b7-1176-4d0b-9a02-63d40e21d193'
 CDN = ('<script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script>'
        '<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>')
 
 e = html.escape
 
+MODALS = """<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="{up}qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="{up}qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>"""
 
-def page(title, body, desc='', depth=0, extra=''):
+
+def page(title, body, desc='', depth=0, extra='', path=''):
     up = '../' * depth
+    url = f'{SITE}/{path}' if path else SITE + '/'
     return f"""<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">
-<link rel="stylesheet" href="{up}style.css">{CDN}</head>
+<link rel="canonical" href="{url}">
+<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}">
+<meta property="og:type" content="website"><meta property="og:url" content="{url}">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="{up}style.css">{CDN}
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="{UMAMI_ID}" data-domains="mm.qiaomu.ai"></script></head>
 <body data-root="{up}">
 <header class="site-header"><div class="wrap header-inner">
 <a class="brand" href="{up}index.html">思维模型 Wiki</a>
 <nav><a href="{up}index.html#all">全部模型</a><a href="{up}index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
 <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
 </div></header>
 {body}
-<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+{MODALS.format(up=up)}
 <script src="{up}mm.js"></script>{extra}
 </body></html>"""
 
@@ -81,7 +108,7 @@ def model_page(d, all_models):
 <section class="sources"><h2>出处</h2><ul>{src}</ul></section>
 </main>
 <script type="application/json" id="mm-data">{payload}</script>"""
-    return page(f'{d["title"]} · 思维模型 Wiki', body, d['tagline'], depth=2)
+    return page(f'{d["title"]} · 思维模型 Wiki', body, d['tagline'], depth=2, path=f'm/{s}/')
 
 
 def index_page(models, ghosts):
@@ -104,7 +131,6 @@ def index_page(models, ghosts):
 <section id="todo"><h2>待写清单</h2><ul class="todo">{todo}</ul></section>
 </main>"""
     return page('思维模型 Wiki', body, '用图讲清全球专家的思维框架')
-
 
 def main():
     models = load_all()
@@ -144,6 +170,16 @@ def main():
     (DIST / 'search.json').write_text(json.dumps(
         [{'slug': s, 'title': d['title'], 'en': d['en'], 'tagline': d['tagline'],
           'experts': [x['name'] for x in d['experts']]} for s, d in models.items()], ensure_ascii=False), 'utf-8')
+    today = __import__('datetime').date.today().isoformat()
+    (DIST / 'sitemap.xml').write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'<url><loc>{SITE}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>\n'
+        + ''.join(f'<url><loc>{SITE}/m/{s}/</loc><lastmod>{today}</lastmod></url>\n' for s in models)
+        + '</urlset>\n', 'utf-8')
+    (DIST / 'robots.txt').write_text(
+        'User-agent: *\nAllow: /\n'
+        f'Sitemap: {SITE}/sitemap.xml\n', 'utf-8')
     (DIST / 'index.html').write_text(index_page(models, ghosts), 'utf-8')
     print(f'构建完成：{len(models)} 个条目，{len(ghosts)} 个待写 -> {DIST}')
 

@@ -2,11 +2,18 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>六顶思考帽 · 思维模型 Wiki</title><meta name="description" content="一次只戴一顶帽，全员朝同一个方向想">
-<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script></head>
+<link rel="canonical" href="https://mm.qiaomu.ai/m/six-thinking-hats/">
+<meta property="og:title" content="六顶思考帽 · 思维模型 Wiki"><meta property="og:description" content="一次只戴一顶帽，全员朝同一个方向想">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/six-thinking-hats/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
 <body data-root="../../">
 <header class="site-header"><div class="wrap header-inner">
 <a class="brand" href="../../index.html">思维模型 Wiki</a>
 <nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
 <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
 </div></header>
 <main class="wrap article dom-psychology">
@@ -28,6 +35,21 @@
 <section class="sources"><h2>出处</h2><ul><li>爱德华·德博诺《六顶思考帽》（1985） <span class="lv lv-secondary">可靠二手</span></li><li>德博诺公开演讲中引用的 ABB、IBM、Statoil 案例（企业自报数据） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
 </main>
 <script type="application/json" id="mm-data">{"slug": "six-thinking-hats", "domain": "psychology", "mermaid": "flowchart LR\n  A[\"蓝帽开场：定目标与顺序\"] --> B[\"白帽：只摆事实和数据\"]\n  B --> C[\"绿帽：只出新想法\"]\n  C --> D[\"黄帽：只说价值与好处\"]\n  D --> E[\"黑帽：只挑风险与漏洞\"]\n  E --> F[\"红帽：三十秒说直觉\"]\n  F --> G[\"蓝帽收尾：结论与下一步\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["改造前", "改造后"]}, "xAxis": {"type": "category", "data": ["ABB 项目讨论", "IBM 会议时长"]}, "yAxis": {"type": "value", "name": "相对值（改造前=100）"}, "series": [{"name": "改造前", "type": "bar", "data": [100, 100]}, {"name": "改造后", "type": "bar", "data": [6.7, 25]}]}, "demo": {"title": "黑帽占比与同步纪律，如何改变会议产出", "takeaway": "黑帽时间越多，风险清单越长，可用观点越少；全员同帽能明显提速。", "params": [{"id": "black", "label": "黑帽时间占比", "min": 0.1, "max": 0.8, "step": 0.05, "default": 0.5}, {"id": "sync", "label": "全员同帽程度", "min": 0, "max": 1, "step": 0.05, "default": 0.8}], "x": {"label": "会议时长（分钟）", "from": 10, "to": 120, "step": 5}, "series": [{"name": "可用观点数", "expr": "18 * (1 - black) * (1 - exp(-0.05 * x * (0.4 + sync)))"}, {"name": "识别的风险数", "expr": "18 * black * (1 - exp(-0.05 * x * (0.4 + sync)))"}, {"name": "散乱讨论基线", "expr": "9 * (1 - exp(-0.02 * x))"}]}, "related": [{"slug": "first-principles", "title": "第一性原理", "exists": true}, {"slug": "inversion", "title": "inversion", "exists": false}, {"slug": "groupthink", "title": "groupthink", "exists": false}]}</script>
-<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
 <script src="../../mm.js"></script>
 </body></html>

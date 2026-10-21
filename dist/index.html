@@ -2,20 +2,42 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>思维模型 Wiki</title><meta name="description" content="用图讲清全球专家的思维框架">
-<link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script></head>
+<link rel="canonical" href="https://mm.qiaomu.ai/">
+<meta property="og:title" content="思维模型 Wiki"><meta property="og:description" content="用图讲清全球专家的思维框架">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
 <body data-root="">
 <header class="site-header"><div class="wrap header-inner">
 <a class="brand" href="index.html">思维模型 Wiki</a>
 <nav><a href="index.html#all">全部模型</a><a href="index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
 <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
 </div></header>
 <main class="wrap">
 <section class="hero"><h1>专家思维的可视化解剖台</h1>
 <p>每个模型讲清四件事：从哪来、怎么运转、什么时候用、什么时候失效。虚线节点是被引用但还没写的模型。</p></section>
 <div id="home-graph" class="figure home-graph"></div>
-<section id="all"><div class="chips"><button class="chip on" data-f="all">全部</button><button class="chip dom-physics" data-f="physics"><span class="dot"></span>物理</button><button class="chip dom-biology" data-f="biology"><span class="dot"></span>生物</button><button class="chip dom-economics" data-f="economics"><span class="dot"></span>经济</button><button class="chip dom-psychology" data-f="psychology"><span class="dot"></span>心理</button><button class="chip dom-systems" data-f="systems"><span class="dot"></span>系统</button><button class="chip dom-strategy" data-f="strategy"><span class="dot"></span>战略</button></div><div class="grid"><a class="card dom-physics" data-domain="physics" href="m/first-principles/"><span class="dot"></span><span class="dom">物理</span><h3>第一性原理</h3><p>拆到不能再拆，再重新搭</p><span class="who">亚里士多德、埃隆·马斯克</span></a><a class="card dom-biology" data-domain="biology" href="m/red-queen-effect/"><span class="dot"></span><span class="dom">生物</span><h3>红皇后效应</h3><p>拼命奔跑，只为留在原地</p><span class="who">利·范瓦伦、柯蒂斯·利夫利、比尔·汉密尔顿、刘易斯·卡罗尔</span></a><a class="card dom-psychology" data-domain="psychology" href="m/six-thinking-hats/"><span class="dot"></span><span class="dom">心理</span><h3>六顶思考帽</h3><p>一次只戴一顶帽，全员朝同一个方向想</p><span class="who">爱德华·德博诺、迈克尔·休伊特格里森</span></a></div></section>
-<section id="todo"><h2>待写清单</h2><ul class="todo"><li><span class="redlink">inversion</span> 被 第一性原理、红皇后效应、六顶思考帽 引用</li><li><span class="redlink">occams-razor</span> 被 第一性原理 引用</li><li><span class="redlink">evolutionary-arms-race</span> 被 红皇后效应 引用</li><li><span class="redlink">nash-equilibrium</span> 被 红皇后效应 引用</li><li><span class="redlink">groupthink</span> 被 六顶思考帽 引用</li></ul></section>
+<section id="all"><div class="chips"><button class="chip on" data-f="all">全部</button><button class="chip dom-physics" data-f="physics"><span class="dot"></span>物理</button><button class="chip dom-biology" data-f="biology"><span class="dot"></span>生物</button><button class="chip dom-economics" data-f="economics"><span class="dot"></span>经济</button><button class="chip dom-psychology" data-f="psychology"><span class="dot"></span>心理</button><button class="chip dom-systems" data-f="systems"><span class="dot"></span>系统</button><button class="chip dom-strategy" data-f="strategy"><span class="dot"></span>战略</button></div><div class="grid"><a class="card dom-biology" data-domain="biology" href="m/evolution-of-cooperation/"><span class="dot"></span><span class="dom">生物</span><h3>合作的进化</h3><p>一次性博弈出背叛，重复博弈出合作</p><span class="who">罗伯特·阿克塞尔罗德、W. D. 汉密尔顿、阿纳托尔·拉波波特</span></a><a class="card dom-biology" data-domain="biology" href="m/evolutionary-arms-race/"><span class="dot"></span><span class="dom">生物</span><h3>进化军备竞赛</h3><p>你跑得更快，只因对手也在跑</p><span class="who">理查德·道金斯、保罗·埃尔利希、利·范瓦伦</span></a><a class="card dom-physics" data-domain="physics" href="m/first-principles/"><span class="dot"></span><span class="dom">物理</span><h3>第一性原理</h3><p>拆到不能再拆，再重新搭</p><span class="who">亚里士多德、埃隆·马斯克</span></a><a class="card dom-economics" data-domain="economics" href="m/incentives/"><span class="dot"></span><span class="dom">经济</span><h3>激励</h3><p>给我看激励，我给你看结果</p><span class="who">亚当·斯密、查理·芒格</span></a><a class="card dom-economics" data-domain="economics" href="m/nash-equilibrium/"><span class="dot"></span><span class="dom">经济</span><h3>纳什均衡</h3><p>谁先变招谁吃亏，但结果未必最好</p><span class="who">约翰·纳什、冯·诺依曼、托马斯·谢林</span></a><a class="card dom-biology" data-domain="biology" href="m/natural-selection/"><span class="dot"></span><span class="dom">生物</span><h3>自然选择</h3><p>变异随机，选择不随机</p><span class="who">达尔文、华莱士、彼得与罗斯玛丽·格兰特</span></a><a class="card dom-biology" data-domain="biology" href="m/red-queen-effect/"><span class="dot"></span><span class="dom">生物</span><h3>红皇后效应</h3><p>拼命奔跑，只为留在原地</p><span class="who">利·范瓦伦、柯蒂斯·利夫利、比尔·汉密尔顿、刘易斯·卡罗尔</span></a><a class="card dom-psychology" data-domain="psychology" href="m/six-thinking-hats/"><span class="dot"></span><span class="dom">心理</span><h3>六顶思考帽</h3><p>一次只戴一顶帽，全员朝同一个方向想</p><span class="who">爱德华·德博诺、迈克尔·休伊特格里森</span></a><a class="card dom-psychology" data-domain="psychology" href="m/social-proof/"><span class="dot"></span><span class="dom">心理</span><h3>社会认同</h3><p>拿不准时，看别人怎么做</p><span class="who">所罗门·阿施、罗伯特·西奥迪尼、比布·拉塔内</span></a><a class="card dom-biology" data-domain="biology" href="m/symbiosis/"><span class="dot"></span><span class="dom">生物</span><h3>共生</h3><p>代价落在谁头上，关系就叫什么</p><span class="who">西蒙·施文德纳、德巴里、林恩·马古利斯</span></a></div></section>
+<section id="todo"><h2>待写清单</h2><ul class="todo"><li><span class="redlink">reciprocity</span> 被 合作的进化 引用</li><li><span class="redlink">emergence</span> 被 合作的进化 引用</li><li><span class="redlink">feedback-loops</span> 被 进化军备竞赛、社会认同 引用</li><li><span class="redlink">costly-signaling</span> 被 进化军备竞赛 引用</li><li><span class="redlink">inversion</span> 被 第一性原理、红皇后效应、六顶思考帽 引用</li><li><span class="redlink">occams-razor</span> 被 第一性原理 引用</li><li><span class="redlink">goodharts-law</span> 被 激励 引用</li><li><span class="redlink">principal-agent</span> 被 激励、共生 引用</li><li><span class="redlink">skin-in-the-game</span> 被 激励 引用</li><li><span class="redlink">second-order-thinking</span> 被 纳什均衡 引用</li><li><span class="redlink">adaptation</span> 被 自然选择 引用</li><li><span class="redlink">survivorship-bias</span> 被 自然选择、社会认同 引用</li><li><span class="redlink">creative-destruction</span> 被 自然选择 引用</li><li><span class="redlink">groupthink</span> 被 六顶思考帽、社会认同 引用</li><li><span class="redlink">authority-bias</span> 被 社会认同 引用</li></ul></section>
 </main>
-<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
 <script src="mm.js"></script>
 </body></html>

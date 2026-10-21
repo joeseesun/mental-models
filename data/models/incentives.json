@@ -1,0 +1,202 @@
+{
+  "slug": "incentives",
+  "title": "激励",
+  "en": "Incentives",
+  "domain": "economics",
+  "experts": [
+    {
+      "name": "亚当·斯密",
+      "role": "1776 年在《国富论》中指出，晚餐来自面包师的自利而非善意，自利是可依赖的社会动力"
+    },
+    {
+      "name": "查理·芒格",
+      "role": "伯克希尔·哈撒韦副董事长，反复告诫：给我看激励，我给你看结果"
+    }
+  ],
+  "tagline": "给我看激励，我给你看结果",
+  "hook": {
+    "title": "罚款之后，迟到的家长翻了一倍",
+    "story": "1990 年代末，经济学家格尼齐和鲁斯蒂奇尼在以色列海法的十家幼儿园做实验。家长接孩子迟到是老大难，园方决定罚款：每迟到一次罚 10 谢克尔，约合 3 美元。结果迟到次数不降反升，罚款组从每周约 7 次涨到约 20 次，翻了一倍还多。更麻烦的是，几个月后取消罚款，迟到也没降回去。原因在于罚款改写了迟到的性质：之前是道德问题，迟到要愧疚；之后是价格问题，付钱买迟到，心安理得。园方想用惩罚抑制迟到，实际却给迟到标了个低价。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"制度规则：奖励什么，惩罚什么\"] --> B[\"人们读出的真实信号\"]\n  B --> C[\"按对自己最有利的方式行动\"]\n  C --> D[\"实际结果\"]\n  D --> E{结果符合设计初衷吗}\n  E -->|是| F[\"保留制度\"]\n  E -->|否| G[\"钻空子，激励被博弈\"]\n  G --> H[\"重新设计激励\"]\n  H --> A",
+    "caption": "制度设计的第一问不是想要什么结果，而是规则实际在奖励什么。人会顺着激励走，而不是顺着口号走。"
+  },
+  "evidence": {
+    "title": "海法幼儿园：罚款前后每周迟到次数",
+    "takeaway": "第 5 周引入罚款，迟到不降反升；取消罚款后也没回到基线。罚款把道德问题变成了价格问题。",
+    "level": "secondary",
+    "source": "Gneezy 与 Rustichini, A Fine is a Price, Journal of Legal Studies, 2000；数值为从论文图中读取的近似值",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "罚款组",
+          "对照组"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "基线期",
+          "罚款第4周",
+          "罚款第8周",
+          "罚款第12周",
+          "罚款第16周",
+          "取消罚款后"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "每周迟到次数"
+      },
+      "series": [
+        {
+          "name": "罚款组",
+          "type": "line",
+          "data": [
+            7,
+            8,
+            12,
+            16,
+            19,
+            18
+          ]
+        },
+        {
+          "name": "对照组",
+          "type": "line",
+          "data": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "考核上线后，表面指标与真实产出的分化",
+    "takeaway": "指标越好操纵，重奖越会把努力从真实产出吸走。指标在涨，不等于事在成。",
+    "params": [
+      {
+        "id": "r",
+        "label": "奖励强度",
+        "min": 0,
+        "max": 1.5,
+        "step": 0.1,
+        "default": 1
+      },
+      {
+        "id": "g",
+        "label": "指标可操纵程度",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.6
+      }
+    ],
+    "x": {
+      "label": "月",
+      "from": 1,
+      "to": 36,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "表面指标",
+        "expr": "100 * (1 + r * g * (1 - exp(-0.1 * x)))"
+      },
+      {
+        "name": "真实产出",
+        "expr": "max(0, 100 * (1 - r * g * (1 - exp(-0.1 * x))))"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "写下你想让对方做的一件事",
+      "detail": "一句话说清，比如让客服真正解决用户问题，而不是让客服多接电话。"
+    },
+    {
+      "step": "列出现有规则实际在奖励什么",
+      "detail": "看薪酬、考核、晋升和惩罚，问一句：按现在的规则，最理性的人会怎么做？"
+    },
+    {
+      "step": "对比两者，找出偏差",
+      "detail": "偏差处就是钻空子的高发区。考核通话量，就别奇怪客服急着挂电话。"
+    },
+    {
+      "step": "重新设计，奖励你要的结果",
+      "detail": "尽量让奖励与最终结果挂钩。结果测不了时，用抽查、声誉和长期合同补位。"
+    },
+    {
+      "step": "上线后盯住空子，定期修订",
+      "detail": "人会持续寻找新漏洞。激励设计是迭代工程，不是一次性工程。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "事情本身有内在乐趣，比如创作、科研、游戏",
+      "model_says": "外部奖励越大，做得越好",
+      "reality": "德西 1971 年的实验里，因画画拿报酬的学生在奖励取消后画得更少，外部奖励挤出了内在动机。"
+    },
+    {
+      "situation": "真实结果难测量，只能考核代理指标",
+      "model_says": "考核什么就能得到什么",
+      "reality": "指标一旦成为奖励对象就会被操纵。苏联计划按吨位考核钉子时工厂造巨型钉，按数量考核时又造碎钉，指标取代了目标。"
+    },
+    {
+      "situation": "对方不在乎钱，或把惩罚当成挑衅",
+      "model_says": "加大惩罚必然压得住",
+      "reality": "海法幼儿园的罚款把迟到变成可以购买的服务，次数翻倍，惩罚被读成了价格。"
+    },
+    {
+      "situation": "需要团队协作与互相补位",
+      "model_says": "个人激励越精准越有效",
+      "reality": "强个人排名诱发藏私和抢功。微软的员工强制分级被广泛批评为内耗之源，2013 年被废除。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "nash-equilibrium",
+      "relation": "均衡就是各方在给定激励下的稳定选择，改激励才能改均衡"
+    },
+    {
+      "slug": "goodharts-law",
+      "relation": "指标一旦挂上奖励就会被操纵，两者常配对出现"
+    },
+    {
+      "slug": "principal-agent",
+      "relation": "委托代理问题的根源是双方激励不一致"
+    },
+    {
+      "slug": "skin-in-the-game",
+      "relation": "风险共担是把激励绑回决策者身上的制度设计"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adam Smith, The Wealth of Nations, 1776，屠夫与面包师一章",
+      "level": "verified"
+    },
+    {
+      "title": "Gneezy & Rustichini, A Fine is a Price, Journal of Legal Studies 29(1), 2000",
+      "level": "verified"
+    },
+    {
+      "title": "Charlie Munger, The Psychology of Human Misjudgment, 1995 哈佛演讲",
+      "level": "secondary"
+    },
+    {
+      "title": "Deci, Effects of Externally Mediated Rewards on Intrinsic Motivation, JPSP, 1971",
+      "level": "verified"
+    }
+  ],
+  "status": "reference"
+}

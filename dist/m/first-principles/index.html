@@ -2,11 +2,18 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>第一性原理 · 思维模型 Wiki</title><meta name="description" content="拆到不能再拆，再重新搭">
-<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script></head>
+<link rel="canonical" href="https://mm.qiaomu.ai/m/first-principles/">
+<meta property="og:title" content="第一性原理 · 思维模型 Wiki"><meta property="og:description" content="拆到不能再拆，再重新搭">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/first-principles/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
 <body data-root="../../">
 <header class="site-header"><div class="wrap header-inner">
 <a class="brand" href="../../index.html">思维模型 Wiki</a>
 <nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
 <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
 </div></header>
 <main class="wrap article dom-physics">
@@ -28,6 +35,21 @@
 <section class="sources"><h2>出处</h2><ul><li>亚里士多德《形而上学》第一卷 <span class="lv lv-secondary">可靠二手</span></li><li>Elon Musk on First Principles, Kevin Rose 访谈（2012） <span class="lv lv-secondary">可靠二手</span></li><li>BloombergNEF Battery Price Survey <span class="lv lv-secondary">可靠二手</span></li></ul></section>
 </main>
 <script type="application/json" id="mm-data">{"slug": "first-principles", "domain": "physics", "mermaid": "flowchart LR\n  A[现有做法或行业共识] --> B[列出所有假设]\n  B --> C{每条假设<br/>是物理事实吗}\n  C -->|是| D[保留为基本事实]\n  C -->|否，只是惯例| E[丢弃或挑战]\n  D --> F[从基本事实重新推导方案]\n  E --> F\n  F --> G[与现状对比，找到差距]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["电池包均价", "原材料估算价"]}, "xAxis": {"type": "category", "data": ["2010", "2012", "2014", "2016", "2018", "2020", "2022"]}, "yAxis": {"type": "value", "name": "美元/千瓦时"}, "series": [{"name": "电池包均价", "type": "line", "data": [1100, 800, 650, 290, 180, 137, 151]}, {"name": "原材料估算价", "type": "line", "data": [80, 80, 80, 80, 80, 80, 80]}]}, "demo": {"title": "类比推理与第一性原理，谁的成本曲线更低", "takeaway": "类比推理只能在原有曲线上微调，第一性原理能换一条曲线，但前期要多花力气。", "params": [{"id": "learn", "label": "拆解投入（0 到 1）", "min": 0, "max": 1, "step": 0.05, "default": 0.5}, {"id": "gap", "label": "惯例溢价比例", "min": 0.1, "max": 0.9, "step": 0.05, "default": 0.6}], "x": {"label": "迭代轮数", "from": 1, "to": 20, "step": 1}, "series": [{"name": "类比推理", "expr": "100 * pow(0.97, x)"}, {"name": "第一性原理", "expr": "100 * (1 - gap * learn * (1 - exp(-0.25 * x)))"}]}, "related": [{"slug": "inversion", "title": "inversion", "exists": false}, {"slug": "occams-razor", "title": "occams-razor", "exists": false}, {"slug": "six-thinking-hats", "title": "六顶思考帽", "exists": true}]}</script>
-<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
 <script src="../../mm.js"></script>
 </body></html>
