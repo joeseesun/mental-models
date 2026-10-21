@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>汉隆剃刀 · 思维模型 Wiki</title><meta name="description" content="能用愚蠢解释的，就别归因于恶意">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/hanlons-razor/">
+<meta property="og:title" content="汉隆剃刀 · 思维模型 Wiki"><meta property="og:description" content="能用愚蠢解释的，就别归因于恶意">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/hanlons-razor/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>汉隆剃刀 <small>Hanlon&#x27;s Razor</small></h1>
+<p class="tagline"><strong>能用愚蠢解释的，就别归因于恶意</strong></p>
+<p class="experts"><strong>汉隆</strong>（提出者，1980 年向《墨菲定律第二册》投稿了这句话的普通人） · <strong>歌德</strong>（1774 年在《少年维特之烦恼》里写下几乎相同的判断，早了两百年） · <strong>埃里克·雷蒙</strong>（《新黑客词典》编者，用格雷定律提醒这条剃刀的反例）</p>
+
+<section><h2>场景钩子 · 彼得罗夫把五枚导弹当成了故障</h2><p>1983 年 9 月 26 日凌晨，莫斯科郊外的地下指挥中心，值班军官斯坦尼斯拉夫·彼得罗夫面前的屏幕突然报警：美国发射了导弹。先是 1 枚，几分钟后变成 5 枚。按流程，他该把它当成真袭击上报，苏联的核反击可能就此启动。彼得罗夫盯着数据想了想：如果美国真要偷袭，不会只发 5 枚，而是几百枚齐射；地面雷达也没有任何动静。他判断这不是恶意，是故障，向上级报告了系统误报。事后查明，卫星把云层反射的阳光当成了导弹尾焰，软件还有一个 bug。一句先怀疑故障、再怀疑恶意的判断，挡住了一场可能爆发的核战争。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">刀口在第一个分叉：拿不出证据，就先选疏忽。之后靠澄清和重复出现的模式来修正，而不是靠感觉。海因莱因 1941 年的小说《帝国的逻辑》里写过几乎一样的话，常被误认为原始出处。</p></section>
+<section><h2>数据证据 · 邮件语气实验：你以为传达到了，其实没有 <span class="lv lv-verified">一手核实</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">发信人自以为语气传达到了近八成，接收者实际只猜对刚过一半，和瞎猜差不多。语音好一些，但发信人同样高估。大量被感知的敌意，只是传递失败的噪音，不是恶意。<br><span class="src">来源：Kruger, Epley, Parker, Ng（2005），Egocentrism over e-mail，Journal of Personality and Social Psychology 第 89 卷第 6 期</span></p></section>
+<section><h2>交互演示 · 感知到的恶意 vs 真实恶意</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">误读率两成时，三十次互动里你几乎必然把某次无心之失当成恶意，而真实恶意远没有这么多。这是示意模型，参数是估计值。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先写下对方的行为，只写事实</b><span>例如：同事没有抄送我这份邮件。不写他针对我，只写发生了什么。</span></li><li><b>列出至少三种非恶意的解释</b><span>疏忽、信息不全、流程问题、单纯忘了。凑不满三种，再考虑恶意。</span></li><li><b>检查恶意解释需要满足的条件</b><span>对方能从中得到什么？成本和收益说得通吗？没有说得通的收益，恶意假设基本不成立。</span></li><li><b>用一次低成本的直接澄清验证</b><span>一句话问清楚，比在心里推演十轮便宜得多，多数误会当场就散了。</span></li><li><b>只对重复出现的模式升级</b><span>一次是事故，两次是巧合，三次同样的伤害才值得按恶意设防。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>对方反复从你的损失中稳定获利</td><td>大概是无心之失，别多想</td><td>重复的模式本身就是证据，持续占便宜的人往往清楚自己在做什么。</td></tr><tr><td>对方是相关领域的专家</td><td>先假设愚蠢</td><td>专家在自己的领域犯这种错的概率很低，此时愚蠢解释反而更不简洁。</td></tr><tr><td>高代价的对抗场景，比如谈判或安全防御</td><td>默认对方无心</td><td>把恶意误判成无能的代价可能无限大，彼得罗夫的幸运不可复制，该按最坏情况设防。</td></tr><tr><td>复杂系统里的高明无能</td><td>无能和恶意容易区分</td><td>格雷定律说，足够高明的无能和恶意无法区分，剃刀会把你剃伤。</td></tr><tr><td>被冒犯的一方长期处于弱势</td><td>别把事情往恶意想</td><td>这句话可能被强者拿来堵弱者的嘴，让对方连正当的愤怒都不敢表达。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../occams-razor/">奥卡姆剃刀</a><span>同一家族的剃刀：解释人的行为时，选需要假设最少的那个</span></li><li><a href="../fundamental-attribution/">基本归因错误</a><span>反面补充：我们天然高估品性、低估情境，汉隆剃刀是对它的纠偏</span></li><li><a href="../confirmation-bias/">确认偏误</a><span>一旦认定恶意，你会只收集支持恶意的证据，剃刀帮你先松开这个扣</span></li><li><a href="../black-swan/">黑天鹅</a><span>高代价误判的领域要反过来：先防最坏情况，再谈善意默认</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Arthur Bloch，Murphy&#x27;s Law Book Two（1980），汉隆投稿原文 <span class="lv lv-secondary">可靠二手</span></li><li>歌德《少年维特之烦恼》（1774）第一编 <span class="lv lv-secondary">可靠二手</span></li><li>Kruger, Epley, Parker, Ng（2005），Egocentrism over e-mail，JPSP 89(6) <span class="lv lv-verified">一手核实</span></li><li>海因莱因小说《帝国的逻辑》（1941）中的近似表述 <span class="lv lv-secondary">可靠二手</span></li><li>彼得罗夫 1983 年 Oko 系统误报事件，见 2014 年纪录片《拯救世界的人》及公开访谈 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "hanlons-razor", "domain": "strategy", "mermaid": "flowchart TD\n  A[对方做了让你受损的事] --> B{有证据表明是故意的吗}\n  B -->|有，动机和收益都说得通| C[按恶意处理，设防或止损]\n  B -->|没有| D[先按疏忽或无知处理]\n  D --> E[直接澄清，说明造成的影响]\n  E --> F{对方回应}\n  F -->|解释合理并改正| G[无心之失，翻篇]\n  F -->|同样的伤害反复出现| H[升级为恶意假设，重新评估关系]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["发信人自估准确率", "接收者实际准确率", "瞎猜基线"]}, "xAxis": {"type": "category", "data": ["邮件传递语气", "语音传递语气"]}, "yAxis": {"type": "value", "name": "正确识别比例（%）"}, "series": [{"name": "发信人自估准确率", "type": "bar", "data": [78, 78]}, {"name": "接收者实际准确率", "type": "bar", "data": [56, 73]}, {"name": "瞎猜基线", "type": "bar", "data": [50, 50]}]}, "demo": {"title": "感知到的恶意 vs 真实恶意", "takeaway": "误读率两成时，三十次互动里你几乎必然把某次无心之失当成恶意，而真实恶意远没有这么多。这是示意模型，参数是估计值。", "params": [{"id": "malice", "label": "每次互动真实恶意概率", "min": 0, "max": 0.2, "step": 0.01, "default": 0.01}, {"id": "misread", "label": "每次互动语气被误读概率", "min": 0, "max": 0.5, "step": 0.02, "default": 0.2}], "x": {"label": "互动次数", "from": 1, "to": 30, "step": 1}, "series": [{"name": "至少一次被感知为恶意", "expr": "1 - pow(1 - malice - misread * (1 - malice), x)"}, {"name": "至少一次真实恶意", "expr": "1 - pow(1 - malice, x)"}]}, "related": [{"slug": "occams-razor", "title": "奥卡姆剃刀", "exists": true}, {"slug": "fundamental-attribution", "title": "基本归因错误", "exists": true}, {"slug": "confirmation-bias", "title": "确认偏误", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

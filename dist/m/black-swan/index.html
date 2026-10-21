@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>黑天鹅 · 思维模型 Wiki</title><meta name="description" content="极不可能，影响巨大，事后必被解释">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/black-swan/">
+<meta property="og:title" content="黑天鹅 · 思维模型 Wiki"><meta property="og:description" content="极不可能，影响巨大，事后必被解释">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/black-swan/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>黑天鹅 <small>Black Swan</small></h1>
+<p class="tagline"><strong>极不可能，影响巨大，事后必被解释</strong></p>
+<p class="experts"><strong>纳西姆·尼古拉斯·塔勒布</strong>（提出者，衍生品交易员出身，2007 年出版《黑天鹅》，后来又写出《反脆弱》） · <strong>卡尔·波普尔</strong>（思想源头，塔勒布自认受其证伪主义影响，用黑天鹅回应休谟的归纳问题）</p>
+
+<section><h2>场景钩子 · 25 个标准差，连着来好几天</h2><p>2007 年 8 月，高盛旗下一只约 30 亿美元的股票基金几天内亏损约三成。CFO 维尼尔对媒体解释说，我们连续多日看到了 25 个标准差的事件。按正态分布，这种事在宇宙年龄那么长的时间里也不该出现一次，却在同一周反复发生。问题不在运气，而在模型。十年前的 1987 年 10 月 19 日，道琼斯指数单日下跌 22.6%，当时的风险模型同样认为不可能。那时塔勒布在做期权交易，靠押注极端波动在那天实现了财务自由。他在 2007 年出版《黑天鹅》，把结论讲透：历史不是缓慢爬坡，而是被少数几天决定，而事前没人知道是哪几天。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">这个词来自经验本身：1697 年欧洲人在澳大利亚第一次见到黑天鹅，此前所有白天鹅的观察都作废了。事件无法预测，但暴露程度完全由你决定。</p></section>
+<section><h2>数据证据 · 道指历史上最惨的几天，和模型认为的百年一遇 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">正态模型认为百年一遇约 4.5% 的单日跌幅，历史上至少出现过六次远超它的日子，最狠的一天跌了 24.39%。<br><span class="src">来源：维基百科道琼斯指数单日最大涨跌列表；参照线为示意计算，按日波动率约 1.1% 的正态假设，百年一遇约 4.5%；塔勒布《黑天鹅》(2007)</span></p></section>
+<section><h2>交互演示 · 三种暴露形状，同一场冲击</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">平静时卖尾部保险最赚，冲击一放大，排名完全颠倒。黑天鹅思维不预测冲击，只选择自己的暴露形状。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>把决策分成两类：能算概率的和不能算的</b><span>骰子、抽样质检属于前者，股市、职业选择、技术变革属于后者。对后者别迷信历史数据算出的概率。</span></li><li><b>问自己：冲击放大十倍会怎样</b><span>不预测事件本身，只做压力测试。如果答案是被淘汰出局，先处理这个，收益放后面。</span></li><li><b>砍掉可能致命的敞口</b><span>优先检查杠杆、单一客户、单一收入来源和刚性支出。概率再低，一次就够。</span></li><li><b>拿小部分资源买凸性</b><span>上限开放、下限封顶的赌注，比如小额试错、期权、可迁移的技能。亏得起，赚起来没有天花板。</span></li><li><b>复盘时把故事打回原形</b><span>事后解释越顺滑，越要问一句：当时有任何人真的预见到吗。别把幸存当成远见。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>规律稳定的领域，比如工程和物理</td><td>一切估计都不可信，要为极端留无限余地</td><td>桥梁载荷、化学反应有硬边界，过度设防只是浪费钱和时间。</td></tr><tr><td>把所有没料到的事都叫黑天鹅</td><td>不可预测，所以不用分析</td><td>很多意外只是没做功课。把无知包装成黑天鹅，会让人放弃本该做的准备。</td></tr><tr><td>长期持有尾部对冲</td><td>买凸性永远划算</td><td>期权费会持续侵蚀收益。2010 年代的平稳牛市里，持续做空波动率的基金连年赚钱，买保险的一方可能熬不到那一天。</td></tr><tr><td>日常运营和竞争激烈的行业</td><td>冗余越多越安全</td><td>冗余有成本。航空公司留太多空座、公司囤太多现金，可能先被效率更高的对手拖垮。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../antifragile/">反脆弱</a><span>黑天鹅的正面解法：设计成能从冲击中受益</span></li><li><a href="../barbell-strategy/">杠铃策略</a><span>极端保守加极端激进，是管理暴露的具体工具</span></li><li><a href="../margin-of-safety/">安全边际</a><span>对已知误差留缓冲，对未知冲击留冗余</span></li><li><a href="../survivorship-bias/">幸存者偏差</a><span>沉默的证据让历史看起来比实际更可预测</span></li><li><a href="../expected-value/">期望值思维</a><span>肥尾分布里，期望值会被极端值主导甚至失效</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>塔勒布《黑天鹅：如何应对不可预知的未来》(2007) <span class="lv lv-secondary">可靠二手</span></li><li>塔勒布《随机漫步的傻瓜》(2001) <span class="lv lv-secondary">可靠二手</span></li><li>Financial Times 对高盛 CFO 维尼尔的报道（2007 年 8 月） <span class="lv lv-secondary">可靠二手</span></li><li>维基百科：道琼斯工业平均指数单日最大涨跌列表 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "black-swan", "domain": "strategy", "mermaid": "flowchart TD\n  A[事件发生] --> B{影响是否巨大}\n  B -->|否| C[普通波动，常规管理]\n  B -->|是| D{事前能否预测}\n  D -->|能| E[已知风险，用概率工具管理]\n  D -->|不能| F[黑天鹅，承认不可预测]\n  F --> G{暴露是否可能致命}\n  G -->|是| H[先砍敞口，再谈收益]\n  G -->|否| I[留冗余和选择权，小赌注博大机会]\n  H --> J[事后复盘]\n  I --> J\n  J --> K{被讲成了理所当然的故事吗}\n  K -->|是| L[警惕叙事谬误，别把幸存当能力]\n  K -->|否| M[保留不确定性，继续留余地]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["实际单日跌幅", "正态模型的百年一遇"]}, "xAxis": {"type": "category", "data": ["1914年7月30日", "1987年10月19日", "2020年3月16日", "1929年10月28日", "1929年10月29日", "2008年10月15日"]}, "yAxis": {"type": "value", "name": "单日跌幅（%）"}, "series": [{"name": "实际单日跌幅", "type": "bar", "data": [-24.39, -22.61, -12.93, -12.82, -11.73, -7.87]}, {"name": "正态模型的百年一遇", "type": "line", "data": [-4.5, -4.5, -4.5, -4.5, -4.5, -4.5]}]}, "demo": {"title": "三种暴露形状，同一场冲击", "takeaway": "平静时卖尾部保险最赚，冲击一放大，排名完全颠倒。黑天鹅思维不预测冲击，只选择自己的暴露形状。", "params": [{"id": "premium", "label": "卖保险的收益加成（%）", "min": 0, "max": 8, "step": 0.5, "default": 3}, {"id": "cost", "label": "买凸性的固定成本（%）", "min": 0, "max": 8, "step": 0.5, "default": 2}], "x": {"label": "冲击幅度（%）", "from": 0, "to": 50, "step": 1}, "series": [{"name": "满仓线性暴露", "expr": "100 - x"}, {"name": "卖尾部保险，脆弱", "expr": "100 + premium - 1.5 * x - 0.02 * pow(x, 2)"}, {"name": "买凸性，反脆弱", "expr": "100 - cost - 0.2 * x + 0.06 * pow(x, 2)"}]}, "related": [{"slug": "antifragile", "title": "反脆弱", "exists": true}, {"slug": "barbell-strategy", "title": "杠铃策略", "exists": true}, {"slug": "margin-of-safety", "title": "安全边际", "exists": true}, {"slug": "survivorship-bias", "title": "幸存者偏差", "exists": true}, {"slug": "expected-value", "title": "期望值思维", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

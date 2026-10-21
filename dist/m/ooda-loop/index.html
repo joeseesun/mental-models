@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OODA循环 · 思维模型 Wiki</title><meta name="description" content="速度不是跑得快，是循环转得快">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/ooda-loop/">
+<meta property="og:title" content="OODA循环 · 思维模型 Wiki"><meta property="og:description" content="速度不是跑得快，是循环转得快">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/ooda-loop/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>OODA循环 <small>OODA Loop</small></h1>
+<p class="tagline"><strong>速度不是跑得快，是循环转得快</strong></p>
+<p class="experts"><strong>约翰·博伊德</strong>（美国空军上校，1927 年生，朝鲜战争飞行员出身，提出 OODA 循环与能量机动理论） · <strong>诺曼·施瓦茨科普夫</strong>（1991 年海湾战争多国部队司令，左勾拳大迂回被视为压制对方循环的实战样本）</p>
+
+<section><h2>场景钩子 · 米格-15 更强，输的却是它</h2><p>1950 年到 1953 年的朝鲜战争，苏联的米格-15 和美国的 F-86 佩刀在米格走廊反复交手。单看纸面，米格-15 爬升更快，升限更高，37 毫米机炮火力更猛。可美军战后统计宣称打出约十比一的交换比。战后在内利斯空军基地任教官的约翰·博伊德复盘交手记录时注意到两个细节：F-86 的气泡座舱盖视野更好，液压助力操纵让舵面响应更快。佩刀飞行员能更快从一个机动切进下一个机动，米格飞行员看到的总是几秒前的对手，瞄准的也是几秒前的位置。博伊德后来把这团直觉整理成观察、判断、决策、行动四个环节，结论是：谁先转完一圈，谁就钻进了对方的循环内部，让对手永远在应付已经过时的局面。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">四环互相渗透，不是流水线。判断是核心：心智模型错了，转得越快错得越远。</p></section>
+<section><h2>数据证据 · 朝鲜战争空战：米格-15 的纸面优势与实际战果 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">即便按苏方档案的口径修正，米格一方仍然吃亏。博伊德认为差距不在单件性能，而在循环速度。<br><span class="src">来源：美国空军战后统计（宣称击落米格-15 约 792 架，F-86 空战损失约 78 架）；苏联解体后公开的第 64 歼击航空军档案（承认约 335 架米格-15 战斗损失，不含中方部队与事故损失）</span></p></section>
+<section><h2>交互演示 · 循环快一拍，对方的滞后累积多少</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">每转一圈，快的一方就多赚一个周期的时间差。十几个回合后，慢的一方在对着几秒前的你出手。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先观察，别急着解读</b><span>把环境里的原始信号收进来，尤其是与预期相反的信号。博伊德强调观察要主动、要向外。</span></li><li><b>在判断环节检查自己的心智模型</b><span>问一句：我是在看事实，还是在用旧模型给事实整形？判断是四环里最容易出错的一环。</span></li><li><b>决策只求够用，立刻行动</b><span>博伊德推崇不完美但及时的方案。行动本身就是对判断的一次测试。</span></li><li><b>行动结果马上喂回观察</b><span>局面已经被你的行动改变了，重新观察，别停在上一轮的解释里。</span></li><li><b>主动给对手的循环制造噪音</b><span>佯动、变节奏、出其不意，让对方收到的信息支离破碎，判断失真，动作自然过时。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>环境稳定，对手也构不成威胁</td><td>循环必须一直加速</td><td>过度求快会耗尽团队，稳定局面里慢思考的决策质量更高。</td></tr><tr><td>判断环节的心智模型本身错了</td><td>转得快就能自我修正</td><td>博伊德自己说判断是核心。模型错了，转得越快错得越远，速度只是放大器。</td></tr><tr><td>不可逆的高代价决策，比如并购或宣战</td><td>快就是一切</td><td>有些决策没有下一轮。速度优势只适用于错了还能再来一次的场合。</td></tr><tr><td>把四步当成流水线来考核</td><td>按顺序走完就算完成循环</td><td>博伊德画的是互相渗透的环。机械执行会退化成填表流程，反而更慢。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../feedback-loops/">反馈回路</a><span>OODA 本身就是一个不断闭合的反馈回路，断在哪一环就输在哪一环</span></li><li><a href="../entropy/">熵</a><span>博伊德 1976 年的《毁灭与创造》用熵论证：不注入新观察，任何组织都会滑向混乱</span></li><li><a href="../map-territory/">地图不是疆域</a><span>判断环节用的是心智地图，地图过期，观察再准也会误读</span></li><li><a href="../bayes-updating/">贝叶斯更新</a><span>每次行动的结果都是新证据，用它更新判断，而不是确认旧判断</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>John Boyd, A Discourse on Winning and Losing（1996 汇编） <span class="lv lv-verified">一手核实</span></li><li>John Boyd, Destruction and Creation（1976） <span class="lv lv-verified">一手核实</span></li><li>美国海军陆战队 FMFM-1 Warfighting（1989） <span class="lv lv-verified">一手核实</span></li><li>Robert Coram, Boyd: The Fighter Pilot Who Changed the Art of War（2002） <span class="lv lv-secondary">可靠二手</span></li><li>美国空军朝鲜战争战后统计与苏联第 64 歼击航空军档案 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "ooda-loop", "domain": "strategy", "mermaid": "flowchart LR\n  A[\"观察：收集环境新信息\"] --> B[\"判断：用旧模型解读\"]\n  B --> C[\"决策：选定够用的方案\"]\n  C --> D[\"行动：执行并改变局面\"]\n  D --> A\n  B -.->|\"模型与现实对不上时，重构模型\"| B\n  D --> E[\"新局面让对手的观察失真\"]\n  E --> F[\"对手在旧判断上行动，步步落后\"]", "echarts": {"tooltip": {"trigger": "axis"}, "xAxis": {"type": "category", "data": ["美方宣称击落米格-15", "美方 F-86 空战损失", "苏方档案米格-15 战斗损失"]}, "yAxis": {"type": "value", "name": "架"}, "series": [{"name": "架数", "type": "bar", "data": [792, 78, 335]}]}, "demo": {"title": "循环快一拍，对方的滞后累积多少", "takeaway": "每转一圈，快的一方就多赚一个周期的时间差。十几个回合后，慢的一方在对着几秒前的你出手。", "params": [{"id": "myLoop", "label": "我方一圈用时（秒）", "min": 0.5, "max": 3, "step": 0.1, "default": 1}, {"id": "oppLoop", "label": "对方一圈用时（秒）", "min": 1, "max": 4, "step": 0.1, "default": 2}], "x": {"label": "交手回合", "from": 1, "to": 20, "step": 1}, "series": [{"name": "对方信息滞后（秒）", "expr": "max(0, (oppLoop - myLoop) * x)"}, {"name": "我方信息滞后（秒）", "expr": "max(0, (myLoop - oppLoop) * x)"}]}, "related": [{"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "entropy", "title": "熵", "exists": true}, {"slug": "map-territory", "title": "地图不是疆域", "exists": true}, {"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

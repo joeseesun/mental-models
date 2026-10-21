@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>约束理论 · 思维模型 Wiki</title><meta name="description" content="整条链的速度，等于最慢的那一环">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/theory-of-constraints/">
+<meta property="og:title" content="约束理论 · 思维模型 Wiki"><meta property="og:description" content="整条链的速度，等于最慢的那一环">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/theory-of-constraints/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>约束理论 <small>Theory of Constraints</small></h1>
+<p class="tagline"><strong>整条链的速度，等于最慢的那一环</strong></p>
+<p class="experts"><strong>艾利·高德拉特</strong>（提出者，以色列物理学家出身的企管顾问，1984 年用小说《目标》讲透瓶颈，2011 年去世） · <strong>艾利·施拉根海姆</strong>（传播者，高德拉特学派的核心合作者，把方法推广到项目管理与供应链）</p>
+
+<section><h2>场景钩子 · 童子军队伍的速度，就是赫比的速度</h2><p>1984 年，物理学家出身的管理顾问高德拉特出版了小说《目标》。主角罗哥是一家濒临关闭的工厂的厂长，某天带儿子参加童子军远足，发现队伍越拉越长，掉队的总是走得最慢的男孩赫比。他先是让赫比领队，再把赫比背包里的重物分给其他人背，全队速度立刻提了上来。罗哥由此悟到：队伍的速度不是由最强的人决定，而是由赫比决定。回到工厂，他找出产能最小的那道工序，让它永不停机，再让其他工序迁就它的节奏，工厂在三个月限期之内起死回生。这本书后来卖出数百万册，2011 年被《时代》杂志列入 25 本最具影响力的商业管理书籍。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">五个步骤是一个循环，不是一次性项目。瓶颈移走之后，最大的敌人是惯性，人们还在按旧地图优化。</p></section>
+<section><h2>数据证据 · 100 多个工厂实施案例的平均改善幅度 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">聚焦瓶颈之后，交付周期平均缩短 69%，库存下降 54%，有效产出提升 68%。钱花在约束上才见效。<br><span class="src">来源：Victoria Mabin 与 Steven Balderstone《The World of Theory of Constraints》（2000），汇总 100 多个实施案例的平均结果</span></p></section>
+<section><h2>交互演示 · 同样的预算，投在瓶颈还是投在别处</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">预算投在瓶颈，产出从 8 爬到下一个瓶颈就停；投在非瓶颈，产出永远纹丝不动。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>画出从订单到交付的全流程，标出每个环节的产能</b><span>用真实数字，比如每小时处理多少件，别凭感觉排。</span></li><li><b>找出产能最小的环节，它就是约束</b><span>在制品堆积最多的地方通常就是瓶颈，跟着库存走就能找到它。</span></li><li><b>先榨干瓶颈，一分钱不花</b><span>瓶颈午休不停机，质检挪到瓶颈之前，坏件不占用瓶颈一分钟。</span></li><li><b>让其他环节迁就瓶颈</b><span>非瓶颈满负荷只会堆库存，排产以瓶颈节奏为准，这就是鼓缓冲绳。</span></li><li><b>有钱后再提升瓶颈产能，然后回到第一步</b><span>瓶颈移走后别用旧地图，惯性是第五步最大的敌人。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>瓶颈在需求端，订单本身不足</td><td>先找内部瓶颈，扩它的产能</td><td>此时约束是市场，扩产能只会堆库存、增亏损，该做的是先找客户。</td></tr><tr><td>多产品混线生产，产品组合经常变</td><td>系统存在一个固定瓶颈</td><td>瓶颈随产品组合漂移，今天扩这台，明天卡那台，静态分析很快过期。</td></tr><tr><td>瓶颈是人的注意力或关键决策，不是机器</td><td>用每小时产能衡量瓶颈</td><td>知识工作的瓶颈难以量化，硬套机器产能会量错地方，甚至逼错优先级。</td></tr><tr><td>考核体系按设备利用率打分</td><td>非瓶颈环节应该闲下来</td><td>让机器闲着的人会被扣绩效，不改指标，迁就瓶颈就落不了地。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../leverage-points/">杠杆点</a><span>瓶颈就是系统里杠杆最高的点，撬动它事半功倍</span></li><li><a href="../slack/">冗余</a><span>缓冲的本质是冗余，用非瓶颈的闲来保护瓶颈的忙</span></li><li><a href="../goodharts-law/">古德哈特定律</a><span>一旦把利用率当考核，非瓶颈会假装忙碌，瓶颈反而被淹没</span></li><li><a href="../second-order-thinking/">第二层思维</a><span>提升瓶颈前先想第二层：移走它之后，下一个约束在哪</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>艾利·高德拉特《目标》（The Goal，1984） <span class="lv lv-secondary">可靠二手</span></li><li>Eliyahu Goldratt《约束理论》（Theory of Constraints，1990） <span class="lv lv-secondary">可靠二手</span></li><li>Victoria Mabin 与 Steven Balderstone《The World of Theory of Constraints》（2000） <span class="lv lv-secondary">可靠二手</span></li><li>《时代》周刊 2011 年评选的 25 本最具影响力管理书籍榜单 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "theory-of-constraints", "domain": "systems", "mermaid": "flowchart TD\n  A[\"第一步 识别：找出产能最小的环节\"] --> B[\"第二步 榨干：瓶颈停一小时，全系统就少一小时产出\"]\n  B --> C[\"第三步 迁就：非瓶颈按瓶颈的节奏生产\"]\n  C --> D[\"第四步 提升：投资扩大瓶颈产能\"]\n  D --> E{\"瓶颈移到别处了吗\"}\n  E -->|是| F[\"第五步 重复，警惕惯性\"]\n  E -->|否| D\n  F --> A", "echarts": {"tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}}, "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": true}, "xAxis": {"type": "category", "data": ["有效产出提升", "交付周期缩短", "库存下降"]}, "yAxis": {"type": "value", "name": "平均改善幅度（%）"}, "series": [{"name": "平均改善幅度", "type": "bar", "data": [68, 69, 54], "barWidth": "45%"}]}, "demo": {"title": "同样的预算，投在瓶颈还是投在别处", "takeaway": "预算投在瓶颈，产出从 8 爬到下一个瓶颈就停；投在非瓶颈，产出永远纹丝不动。", "params": [{"id": "rate", "label": "每元预算换来的产能", "min": 0.05, "max": 0.3, "step": 0.01, "default": 0.1}, {"id": "nextCap", "label": "其他环节中最紧的产能", "min": 8, "max": 16, "step": 0.5, "default": 10}], "x": {"label": "改善预算", "from": 0, "to": 100, "step": 5}, "series": [{"name": "投在瓶颈工位", "expr": "Math.min(8 + rate * x, nextCap)"}, {"name": "投在非瓶颈工位", "expr": "Math.min(12 + rate * x, 15, 8, nextCap)"}]}, "related": [{"slug": "leverage-points", "title": "杠杆点", "exists": true}, {"slug": "slack", "title": "冗余", "exists": true}, {"slug": "goodharts-law", "title": "古德哈特定律", "exists": true}, {"slug": "second-order-thinking", "title": "第二层思维", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

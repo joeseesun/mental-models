@@ -1,0 +1,184 @@
+{
+  "slug": "survivorship-bias",
+  "title": "幸存者偏差",
+  "en": "Survivorship Bias",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "亚伯拉罕·瓦尔德",
+      "role": "数理统计学家，1943 年在哥伦比亚统计研究组写下弹孔与装甲备忘录"
+    },
+    {
+      "name": "纳西姆·塔勒布",
+      "role": "在《随机漫步的傻瓜》里用沉默证据把这一偏差带向大众"
+    },
+    {
+      "name": "乔丹·艾伦伯格",
+      "role": "威斯康星大学教授，2014 年用弹孔密度数据把这个故事讲透"
+    }
+  ],
+  "tagline": "弹孔该补在没有弹孔的地方",
+  "hook": {
+    "title": "弹孔最密的地方，反而不该加装甲",
+    "story": "1943 年，哥伦比亚大学统计研究组接到美国军方委托。返航轰炸机的弹孔集中在机翼和机身，引擎部位很少中弹，军方因此打算给弹孔最密的地方加装装甲。统计学家亚伯拉罕·瓦尔德给出相反答案：装甲应该装在没有弹孔的引擎和驾驶舱。理由是，军方数到的只是飞回来的飞机，引擎中弹的飞机大多坠毁了，根本没有机会进入统计。同组的艾伦·沃利斯后来回忆，瓦尔德的分析改变了整个加装甲方案。这份 1943 年的机密备忘录在几十年后解密，成为统计学最有名的案例之一。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"完整样本：所有出发的飞机\"] --> B{筛选过程}\n  B -->|幸存| C[\"可见样本：弹孔数据齐全\"]\n  B -->|被击落| D[\"沉默证据：没有数据\"]\n  C --> E[只分析幸存者的特征]\n  E --> F[\"错误结论：弹孔多的部位最危险\"]\n  D --> F\n  F --> G[追问消失者，补上缺失数据]\n  G --> H[\"正确结论：装甲装在没有弹孔的引擎\"]",
+    "caption": "沉默证据没有数据，却决定结论对错。修正的起点是追问，消失的去哪了。"
+  },
+  "evidence": {
+    "title": "返航轰炸机的弹孔分布，每平方英尺弹孔数",
+    "takeaway": "返航飞机引擎中弹最少，不是引擎安全，而是引擎中弹的飞机没能回来。",
+    "level": "secondary",
+    "source": "Wald 1943 年备忘录中的弹孔密度数据，转引自 Jordan Ellenberg《How Not to Be Wrong》(2014)",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "引擎",
+          "油路系统",
+          "机身",
+          "其余部位"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "弹孔数/平方英尺"
+      },
+      "series": [
+        {
+          "name": "返航飞机弹孔密度",
+          "type": "bar",
+          "data": [
+            1.11,
+            1.55,
+            1.73,
+            1.8
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "只统计幸存基金，收益会被高估多少",
+    "takeaway": "清盘率越高、持有越久，幸存者样本的平均收益离全体越远，榜单越好看越要警惕。",
+    "params": [
+      {
+        "id": "death",
+        "label": "每年清盘比例",
+        "min": 0,
+        "max": 0.2,
+        "step": 0.01,
+        "default": 0.08
+      },
+      {
+        "id": "gap",
+        "label": "幸存者最终溢价（百分点）",
+        "min": 0,
+        "max": 8,
+        "step": 0.5,
+        "default": 4
+      }
+    ],
+    "x": {
+      "label": "持有年数",
+      "from": 1,
+      "to": 20,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "全体基金平均年收益",
+        "expr": "8"
+      },
+      {
+        "name": "幸存基金平均年收益",
+        "expr": "8 + gap * (1 - pow(1 - death, x))"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "先定义完整样本",
+      "detail": "问一句：出发的飞机、发行的基金、创业的公司，一共有多少。"
+    },
+    {
+      "step": "数一数消失了多少",
+      "detail": "清盘、倒闭、坠毁的名单往往不在眼前，找不到数据也要承认它们存在。"
+    },
+    {
+      "step": "把幸存者和消失者并排比较",
+      "detail": "只有两边都有记录，某个特征的差异才可信。"
+    },
+    {
+      "step": "对每个结论做反向检验",
+      "detail": "弹孔多说明该加固，反过来想，也可能是没弹孔的部位更致命。"
+    },
+    {
+      "step": "少读成功学，多看全样本统计",
+      "detail": "采访一百位富豪的共同习惯，不如查全部创业者的五年存活率。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "消失者完全没有记录，比如古代战败者或史前物种",
+      "model_says": "必须补齐沉默证据再下结论",
+      "reality": "有时只能靠化石、残骸等间接线索推断，结论要标注不确定性，硬补数据反而制造假象。"
+    },
+    {
+      "situation": "幸存与淘汰由纯运气决定，没有筛选机制",
+      "model_says": "样本有偏，需要修正",
+      "reality": "没有筛选就没有偏差，此时幸存者样本和全体一样好，过度修正会引入新错误。"
+    },
+    {
+      "situation": "研究目标就是幸存者本身，比如调查康复患者的生活质量",
+      "model_says": "样本有偏，结论不可用",
+      "reality": "只要不把结论外推到全体患者，研究幸存者完全合法，偏差是对象而不是错误。"
+    },
+    {
+      "situation": "把它当万能反驳话术",
+      "model_says": "任何成功案例都能用幸存者偏差打发",
+      "reality": "有些规律在失败者身上同样成立，先查数据再反驳，别把偏差当免检金牌。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "regression-to-mean",
+      "relation": "常被混为一谈：极端表现回落是均值回归，只看留下来的才是幸存者偏差"
+    },
+    {
+      "slug": "confirmation-bias",
+      "relation": "一个让数据替你筛掉反例，一个让你主动无视反例"
+    },
+    {
+      "slug": "social-proof",
+      "relation": "成功者被大量曝光，社会认同随之放大，模仿冲动加倍"
+    },
+    {
+      "slug": "inversion",
+      "relation": "瓦尔德的答案就是反过来想：不看弹孔在哪，看弹孔不在哪"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Abraham Wald, A Method of Estimating Plane Vulnerability Based on Damage of Survivors, 1943，1984 年由 Mangel 与 Samaniego 整理重刊于 Operations Research",
+      "level": "verified"
+    },
+    {
+      "title": "Jordan Ellenberg, How Not to Be Wrong: The Power of Mathematical Thinking, 2014",
+      "level": "secondary"
+    },
+    {
+      "title": "Nassim Taleb, Fooled by Randomness, 2001",
+      "level": "secondary"
+    },
+    {
+      "title": "SPIVA 年度记分卡，标普公司主动基金与指数对比报告",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>奥卡姆剃刀 · 思维模型 Wiki</title><meta name="description" content="如无必要，勿增实体">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/occams-razor/">
+<meta property="og:title" content="奥卡姆剃刀 · 思维模型 Wiki"><meta property="og:description" content="如无必要，勿增实体">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/occams-razor/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>奥卡姆剃刀 <small>Occam&#x27;s Razor</small></h1>
+<p class="tagline"><strong>如无必要，勿增实体</strong></p>
+<p class="experts"><strong>奥卡姆的威廉</strong>（约1287至1347，英格兰方济各会修士，简洁性原则因他得名，那句拉丁文格言其实是后人替他总结的） · <strong>艾萨克·牛顿</strong>（1687年在《自然哲学的数学原理》写下推理法则一：除真实且足以解释现象者外，不多设原因） · <strong>赤池弘次</strong>（1974年提出AIC准则，把勿增实体变成一个可以计算的统计公式）</p>
+
+<section><h2>场景钩子 · 加一颗行星，一次成功一次落空</h2><p>1846年9月，勒维耶发现天王星轨道有偏差，他假设外面还有一颗没人见过的行星，算出位置，柏林天文台的伽勒当晚就在预言位置附近找到了海王星。1859年，类似的偏差又出现了：水星近日点每百年比牛顿理论多转43角秒。勒维耶照方抓药，提出水星轨道内侧藏着一颗火神星。天文学家找了几十年，有人声称目击，有人忙着命名，始终没有实锤。1915年11月，爱因斯坦用广义相对论算出恰好43角秒的附加进动，不需要任何新行星。同样是往宇宙里加一个实体，一次名垂青史，一次空手而归，区别在于有没有观测兜底。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">剃刀不判断对错，它只在解释力打平时帮你下注，先比解释力，再数假设。</p></section>
+<section><h2>数据证据 · 多项式阶数越高，训练误差越低，预测越差 <span class="lv lv-draft">草稿示意</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">训练误差随复杂度单调下降，测试误差先降后升，最低点就是剃刀该下刀的地方。<br><span class="src">来源：偏差方差权衡的经典教学曲线，示意数据，参考 Hastie 等人《统计学习基础》第7章</span></p></section>
+<section><h2>交互演示 · 拖动噪声和样本量，看剃刀的刀口怎么移动</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">噪声越大、数据越少，最优模型越简单；数据充足时过度挥刀，反而吃亏。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>把候选解释全部列出来</b><span>先不筛选，每个假设写清楚它依赖哪些前提和实体。</span></li><li><b>先比解释力，再谈简单</b><span>能覆盖全部事实的才留下，解释力差一截的直接淘汰，剃刀不参与这一步。</span></li><li><b>解释力打平时，数假设</b><span>新增的、观测不到的、专门为这个现象定制的，每一条都记下来。</span></li><li><b>选假设最少的，并写下推翻条件</b><span>比如火神星只要被拍到一次，结论立刻作废。</span></li><li><b>新证据出现就重跑一遍</b><span>剃刀给的是当前最优赌注，不是终审判决。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>异常真的来自未知实体，比如1846年的海王星</td><td>先别假设新行星，找更简单的解释</td><td>勒维耶加了一颗行星，当晚就被望远镜证实。剃刀是启发式，赌错要认。</td></tr><tr><td>两个解释的解释力有明显差距</td><td>为了简单，牺牲一点解释力也值</td><td>剃刀只在解释力相当时生效。爱因斯坦提醒过，凡事力求简单，但不能更简单。</td></tr><tr><td>拿简单当武器攻击异见</td><td>你的理论更复杂，所以更可能错</td><td>简单不是证据。量子力学比经典物理复杂，但它是对的。复杂度不是真伪判据。</td></tr><tr><td>生态、经济这类多因系统</td><td>一个原因就够了</td><td>单因解释常常砍掉真实存在的机制，简单在这里容易滑向错误。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../first-principles/">第一性原理</a><span>剃刀砍掉多余假设，第一性原理重建必要假设，一减一加</span></li><li><a href="../hanlons-razor/">汉隆剃刀</a><span>同一族的另一把剃刀，砍的是恶意归因</span></li><li><a href="../bayes-updating/">贝叶斯更新</a><span>贝叶斯把对简单的偏好写进先验，再用证据持续修正</span></li><li><a href="../map-territory/">地图不是疆域</a><span>最简单的模型也是地图，别把地图当成疆域本身</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>托马斯·利文森《猎取火神星》(2015)，海王星与火神星始末 <span class="lv lv-secondary">可靠二手</span></li><li>牛顿《自然哲学的数学原理》推理法则一（1687） <span class="lv lv-secondary">可靠二手</span></li><li>赤池弘次, A New Look at the Statistical Model Identification, IEEE Transactions on Automatic Control, 1974 <span class="lv lv-verified">一手核实</span></li><li>Hastie, Tibshirani, Friedman《统计学习基础》第7章，偏差方差权衡 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "occams-razor", "domain": "strategy", "mermaid": "flowchart TD\n  A[观察到一个现象] --> B[列出所有能解释它的假设]\n  B --> C[逐个检验每个假设的解释力]\n  C --> D{有假设解释力明显更强吗}\n  D -->|有| E[选解释力最强的那个]\n  D -->|没有| F{解释力是否相当}\n  F -->|相当| G[选假设最少的那一个]\n  F -->|都不够| H[承认不知道，继续收集证据]\n  G --> I[新证据出现时随时重算]\n  E --> I\n  H --> B", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["训练误差", "测试误差"]}, "xAxis": {"type": "category", "name": "模型复杂度（参数个数）", "data": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]}, "yAxis": {"type": "value", "name": "误差"}, "series": [{"name": "训练误差", "type": "line", "data": [0.72, 0.48, 0.33, 0.24, 0.18, 0.14, 0.11, 0.09, 0.075, 0.065, 0.058, 0.053, 0.051, 0.05, 0.05]}, {"name": "测试误差", "type": "line", "data": [0.75, 0.52, 0.39, 0.32, 0.29, 0.28, 0.29, 0.31, 0.34, 0.38, 0.43, 0.49, 0.56, 0.64, 0.73]}]}, "demo": {"title": "拖动噪声和样本量，看剃刀的刀口怎么移动", "takeaway": "噪声越大、数据越少，最优模型越简单；数据充足时过度挥刀，反而吃亏。", "params": [{"id": "noise", "label": "数据噪声", "min": 0.2, "max": 2, "step": 0.1, "default": 1}, {"id": "n", "label": "样本量", "min": 20, "max": 500, "step": 10, "default": 100}], "x": {"label": "模型复杂度（参数个数）", "from": 1, "to": 15, "step": 1}, "series": [{"name": "训练误差", "expr": "0.9 * exp(-0.4 * x) + 0.05 * noise * noise"}, {"name": "测试误差", "expr": "0.9 * exp(-0.4 * x) + 0.05 * noise * noise + 0.8 * noise * noise * x / n"}]}, "related": [{"slug": "first-principles", "title": "第一性原理", "exists": true}, {"slug": "hanlons-razor", "title": "汉隆剃刀", "exists": true}, {"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}, {"slug": "map-territory", "title": "地图不是疆域", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

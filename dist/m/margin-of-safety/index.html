@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>安全边际 · 思维模型 Wiki</title><meta name="description" content="为无知和运气，留出缓冲">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/margin-of-safety/">
+<meta property="og:title" content="安全边际 · 思维模型 Wiki"><meta property="og:description" content="为无知和运气，留出缓冲">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/margin-of-safety/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-economics">
+<p class="crumb"><a href="../../index.html">首页</a> / 经济</p>
+<h1>安全边际 <small>Margin of Safety</small></h1>
+<p class="tagline"><strong>为无知和运气，留出缓冲</strong></p>
+<p class="experts"><strong>本杰明·格雷厄姆</strong>（提出者，在《聪明的投资者》第 20 章把它定为价值投资的核心） · <strong>沃伦·巴菲特</strong>（最著名的继承者，称之为投资中最重要的三个词） · <strong>赛斯·卡拉曼</strong>（1991 年出版《安全边际》，把概念扩展成一套完整的风险纪律）</p>
+
+<section><h2>场景钩子 · 亏掉七成之后，格雷厄姆定下一条铁律</h2><p>1929 年 10 月美股崩盘，35 岁的本杰明·格雷厄姆管理着一家合伙账户，净值一路缩水，到 1932 年底累计亏损约七成。他后来复盘，问题不在看错公司，而在买价太高，判断一出错就没有退路。1934 年他与多德出版《证券分析》，1949 年又在《聪明的投资者》第 20 章把教训写成铁律：只有当价格显著低于估算的内在价值时才出手，中间那段差距就是安全边际。巴菲特后来说，投资最重要的三个词，就是安全边际。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">缓冲不是预测更准，而是承认自己会错。造桥承重按预期荷载的数倍设计，买资产同理。</p></section>
+<section><h2>数据证据 · 净流动资产折价策略：1 美元的累计增长 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">1970 到 1983 年，按低于清算价值三分之二的价格买入，年化约 29%，同期市场约 11%。<br><span class="src">来源：Henry Oppenheimer, Ben Graham&#x27;s Net Current Asset Values: A Performance Update, Financial Analysts Journal, 1986</span></p></section>
+<section><h2>交互演示 · 估值出错时，安全边际怎么救你</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">留了 30% 边际后，真实价值比你估的低三成以内都不亏。错得越离谱，缓冲越值钱。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>用保守口径估算内在价值</b><span>现金流、清算价值或重置成本，取偏低的那条路，宁可低估不要高估。</span></li><li><b>定一个折扣门槛，写下来</b><span>桥梁承重按荷载的数倍设计，估值同理。例如价格不超过估值的七成，资产波动越大门槛越厚。</span></li><li><b>没到门槛就不动，等价格来找你</b><span>差 5% 不算便宜。等待期资金的机会成本要算进去。</span></li><li><b>买入后盯住缓冲还在不在</b><span>基本面恶化会吃掉边际。缓冲变薄就重新估值，而不是安慰自己已经够便宜。</span></li><li><b>记录估值与真实结果的差距</b><span>定期复盘自己错多少。误差大，就把门槛再调厚一点。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>价值本身在快速衰减的资产，比如技术被淘汰的产能</td><td>买得便宜就有缓冲</td><td>内在价值自己也在缩水，买入时有边际，一年后就没了。</td></tr><tr><td>便宜来自价值陷阱，比如长期衰退的行业</td><td>折价大就是机会</td><td>低价格可能只是反映了长期下滑，边际是幻觉。</td></tr><tr><td>用杠杆放大安全边际内的收益</td><td>缓冲够厚，加点杠杆没事</td><td>杠杆会击穿缓冲，格雷厄姆 1929 年正是被保证金拖垮的。</td></tr><tr><td>市场长期高估，价格始终不跌到门槛</td><td>继续等</td><td>可能一等十年，错过本身也是成本，边际策略跑输指数很常见。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../opportunity-cost/">机会成本</a><span>等待价格跌到门槛的年头里，资金的机会成本必须计入</span></li><li><a href="../expected-value/">期望值思维</a><span>期望值算平均结果，安全边际管最坏情况，两者配合用</span></li><li><a href="../black-swan/">黑天鹅</a><span>黑天鹅来了，缓冲的厚度决定你能不能活到反弹</span></li><li><a href="../circle-of-competence/">能力圈</a><span>估值必须在能力圈内做，出了圈你算不出边际有多厚</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Benjamin Graham, The Intelligent Investor, 1949，第 20 章 <span class="lv lv-secondary">可靠二手</span></li><li>Benjamin Graham, David Dodd, Security Analysis, 1934 <span class="lv lv-secondary">可靠二手</span></li><li>Henry Oppenheimer, Ben Graham&#x27;s Net Current Asset Values: A Performance Update, Financial Analysts Journal, 1986 <span class="lv lv-secondary">可靠二手</span></li><li>巴菲特 1984 年演讲《格雷厄姆与多德村的超级投资者们》 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "margin-of-safety", "domain": "economics", "mermaid": "flowchart TD\n  A[估算内在价值] --> B[查询当前市场价格]\n  B --> C{价格比价值低多少}\n  C -->|低过门槛| D[买入，留足缓冲]\n  C -->|没到门槛| E[继续等待]\n  D --> F{之后判断出错或运气变坏}\n  F -->|缓冲吸收误差| G[小亏或保本，还有机会]\n  F -->|缓冲被击穿| H[重伤出局]\n  E --> C", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["格雷厄姆净流动资产折价策略", "市场指数"]}, "xAxis": {"type": "category", "name": "持有年数", "data": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]}, "yAxis": {"type": "value", "name": "1 美元变成"}, "series": [{"name": "格雷厄姆净流动资产折价策略", "type": "line", "data": [1, 1.29, 1.67, 2.17, 2.8, 3.63, 4.69, 6.07, 7.86, 10.17, 13.16, 17.03, 22.04, 28.52]}, {"name": "市场指数", "type": "line", "data": [1, 1.12, 1.24, 1.39, 1.55, 1.72, 1.92, 2.14, 2.39, 2.66, 2.97, 3.31, 3.69, 4.12]}]}, "demo": {"title": "估值出错时，安全边际怎么救你", "takeaway": "留了 30% 边际后，真实价值比你估的低三成以内都不亏。错得越离谱，缓冲越值钱。", "params": [{"id": "margin", "label": "安全边际比例", "min": 0, "max": 0.6, "step": 0.05, "default": 0.3}], "x": {"label": "真实价值相对你估值的比例", "from": 0.4, "to": 1.4, "step": 0.05}, "series": [{"name": "不留边际的收益率", "expr": "x - 1"}, {"name": "留了边际的收益率", "expr": "x / (1 - margin) - 1"}]}, "related": [{"slug": "opportunity-cost", "title": "机会成本", "exists": true}, {"slug": "expected-value", "title": "期望值思维", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "circle-of-competence", "title": "能力圈", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

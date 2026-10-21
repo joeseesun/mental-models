@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>级联失效 · 思维模型 Wiki</title><meta name="description" content="一个部件倒下，整个系统陪葬">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/cascading-failure/">
+<meta property="og:title" content="级联失效 · 思维模型 Wiki"><meta property="og:description" content="一个部件倒下，整个系统陪葬">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/cascading-failure/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>级联失效 <small>Cascading Failure</small></h1>
+<p class="tagline"><strong>一个部件倒下，整个系统陪葬</strong></p>
+<p class="experts"><strong>伊恩·多布森</strong>（电力系统学者，用 OPA 仿真模型证明大停电的规模近似服从幂律分布） · <strong>本杰明·卡雷拉斯</strong>（物理学家，与多布森合作提出电网自组织临界模型，把停电当成相变来研究） · <strong>纳西姆·塔勒布</strong>（在《黑天鹅》和《反脆弱》中警告，互联程度越高，系统性崩溃越猛）</p>
+
+<section><h2>场景钩子 · 一根树枝放倒了五千万人的电网</h2><p>2003年8月14日下午，俄亥俄州FirstEnergy公司的一条345千伏高压线碰到未修剪的树枝，跳闸了。按设计，这只是一次局部事故。但该公司控制室的警报系统在下午2点54分失效，调度员对随后的一切毫无察觉。负荷涌向相邻线路，下午3点02分起，第二条、第三条线路接连过载跳闸。下午4点05分，萨米斯至斯塔线跳闸成为引爆点，故障在几分钟内席卷美国东北部和加拿大安大略省，约5000万人陷入黑暗，265座电厂的508台机组停机，损失负荷6180万千瓦，美国方面经济损失估计在40亿到100亿美元之间。事后调查发现，没有任何一个部件被同时击穿，被击穿的是部件之间的连接和余量。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">级联失效的核心是一个自我加速的回路：每一次跳闸都把负荷推给邻居，余量越薄，回路转得越快，直到把整个网络拖下水。</p></section>
+<section><h2>数据证据 · 大停电波及人口：互联电网的崩塌半径 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">起因常常只是几条线路，波及人口却动辄五千万以上，互联把局部故障放大成了系统性灾难。<br><span class="src">来源：美加电网停运调查组最终报告（2004）；各国公开报道汇总，数字为约数</span></p></section>
+<section><h2>交互演示 · 余量与耦合，决定小扰动会不会引爆全局</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">把余量调大、把耦合调弱，引爆点都会向右移动。防级联就是在做这两件事。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>画出依赖图，标出单点</b><span>列出系统里谁依赖谁，找出失效后会拖垮别人的关键节点和关键链路。</span></li><li><b>给关键链路留出余量</b><span>算清正常负载与极限负载之间的差距，余量低于警戒线就主动减载或扩容。</span></li><li><b>预设解列点，练习可控牺牲</b><span>提前设计好断开位置，出事时宁可放弃一部分也要保住整体，例如电网的自动解列装置。</span></li><li><b>监测接近临界的信号</b><span>线路负载率、排队长度、库存水位，这些指标逼近阈值时就是系统最危险的时刻。</span></li><li><b>把每次小故障当成演习</b><span>小故障没有演变成大事故往往只是运气。复盘它为什么会传下去，而不是庆祝没出事。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>系统之间本来就没有多少依赖</td><td>任何小故障都可能滚成灾难</td><td>没有传导路径就没有级联，到处设防只会浪费资源。</td></tr><tr><td>为了防级联把系统彻底拆散</td><td>连接越少越安全</td><td>适度互联本身就是互为备份，过度解列会让局部小故障直接变成断供。</td></tr><tr><td>想预测下一次崩溃的具体时间和导火索</td><td>找到那条线就能避免</td><td>级联失效给出的是结构脆弱性和概率，不是时间表，导火索每次都不一样。</td></tr><tr><td>用结构问题解释组织里的一切连锁反应</td><td>都是系统设计的错</td><td>有时就是个人失误甚至恶意行为，过度系统化会掩盖该负的责任。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../feedback-loops/">反馈回路</a><span>级联的本质是越传越快的正反馈回路</span></li><li><a href="../phase-transition/">相变</a><span>级联是系统从正常运转到整体崩溃的突然相变</span></li><li><a href="../slack/">冗余</a><span>余量是挡住级联的第一道防线</span></li><li><a href="../resilience/">韧性</a><span>级联失效的反面是吸收扰动并快速恢复</span></li><li><a href="../black-swan/">黑天鹅</a><span>互联放大了黑天鹅的破坏半径</span></li><li><a href="../network-effects/">网络效应</a><span>同一个网络结构，正向是网络效应，反向是级联失效</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>美加电网停运调查组《2003年8月14日大停电最终报告》，2004年4月 <span class="lv lv-verified">一手核实</span></li><li>Dobson、Carreras、Newman 等关于大停电幂律分布与 OPA 模型的系列论文，2001至2007 <span class="lv lv-secondary">可靠二手</span></li><li>Nassim Taleb《黑天鹅》2007，《反脆弱》2012 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "cascading-failure", "domain": "systems", "mermaid": "flowchart TD\n  A[一条线路过载跳闸] --> B[负荷涌向相邻线路]\n  B --> C{相邻线路余量够吗}\n  C -->|够| D[扰动被吸收，系统恢复稳定]\n  C -->|不够| E[相邻线路接连跳闸]\n  E --> B\n  E --> F[发电厂脱网，电网解列]\n  F --> G[大面积停电]\n  D --> H[调度员补足余量，回到安全区]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["波及人口"]}, "xAxis": {"type": "category", "data": ["印度 2012", "爪哇岛 2005", "巴西 1999", "意大利 2003", "美加 2003"]}, "yAxis": {"type": "value", "name": "波及人口（百万）"}, "series": [{"name": "波及人口", "type": "bar", "data": [620, 100, 97, 56, 50]}]}, "demo": {"title": "余量与耦合，决定小扰动会不会引爆全局", "takeaway": "把余量调大、把耦合调弱，引爆点都会向右移动。防级联就是在做这两件事。", "params": [{"id": "margin", "label": "系统余量（比例）", "min": 0.05, "max": 0.4, "step": 0.01, "default": 0.15}, {"id": "coupling", "label": "邻线负荷转移比例", "min": 0, "max": 0.6, "step": 0.02, "default": 0.25}], "x": {"label": "初始扰动规模（%）", "from": 0, "to": 100, "step": 1}, "series": [{"name": "互联网络失效比例", "expr": "100 / (1 + exp(-0.15 * (x - 100 * margin / (coupling + 0.05))))"}, {"name": "解列后网络失效比例", "expr": "100 / (1 + exp(-0.15 * (x - 100 * margin / (coupling * 0.3 + 0.05))))"}]}, "related": [{"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "phase-transition", "title": "相变", "exists": true}, {"slug": "slack", "title": "冗余", "exists": true}, {"slug": "resilience", "title": "韧性", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "network-effects", "title": "网络效应", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

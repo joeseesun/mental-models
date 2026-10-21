@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>风险共担 · 思维模型 Wiki</title><meta name="description" content="自己下注的人，话才可信">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/skin-in-the-game/">
+<meta property="og:title" content="风险共担 · 思维模型 Wiki"><meta property="og:description" content="自己下注的人，话才可信">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/skin-in-the-game/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>风险共担 <small>Skin in the Game</small></h1>
+<p class="tagline"><strong>自己下注的人，话才可信</strong></p>
+<p class="experts"><strong>塔勒布</strong>（提出者与集大成者，做了约二十年期权交易员，2018 年出版《风险共担》） · <strong>汉谟拉比</strong>（公元前 18 世纪巴比伦国王，用成文法把建造者的命运和建筑绑在一起）</p>
+
+<section><h2>场景钩子 · 房子塌了压死屋主，建筑师偿命</h2><p>公元前 1750 年前后，巴比伦国王汉谟拉比颁布法典。第 229 条写得很直白：建筑师盖的房子如果塌了，压死屋主，建筑师要被处死。第 230 条接着说，压死屋主的儿子，建筑师的儿子也要偿命。以今天的眼光看过于残酷，但它抓住了一个要害：盖房子的人必须和住在里面的人承担同样的风险。塔勒布在 2018 年的《风险共担》里把它视为最早的对称性制度之一。他还常讲另一个传说，罗马工程师拆掉脚手架时要站到桥拱下面，桥塌人亡，桥稳回家。近四千年过去，这条逻辑没有变：不下场的人，判断靠不住。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">核心是中间那个判断：决策者是否和结果绑在一起。不对称会沿着箭头一路放大，变成系统风险。</p></section>
+<section><h2>数据证据 · 华尔街奖金池：危机年份照发不误 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">2007 年奖金池冲到 332 亿美元，2008 年行业巨亏仍发放 184 亿美元，亏损却由股东和纳税人承担。<br><span class="src">来源：纽约州审计长办公室（Thomas DiNapoli）历年华尔街奖金统计，2009 年 1 月发布</span></p></section>
+<section><h2>交互演示 · 自己承担多少亏损，决定敢押多大注</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">假设押注成功赚 20%，失败亏 25%。亏损一分不担时，即使期望为负，决策者照样重仓；亏损比例升到 1，两条线重合。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>听建议前，先查对方下没下注</b><span>看持仓，看职位，看他自己是否使用这个产品。没有利益捆绑的意见，只当参考。</span></li><li><b>决策前，写下谁赢谁输</b><span>把每个方案的收益归属和亏损归属列成两栏，检查是否落在同一批人身上。</span></li><li><b>给自己设计对称性</b><span>承诺时押上看得见的东西：低薪高股权，失败不拿钱，公开记录自己的预测。</span></li><li><b>识别没有共担的信号</b><span>只给方向不给承诺，预测从不留档，错了换个头衔继续。遇到就降低信任权重。</span></li><li><b>用退出成本检验承诺</b><span>问一句：这事黄了他会损失什么。损失越具体越大，承诺越可信。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>法官、审计、药审等必须中立的岗位</td><td>没有利益相关的人不可信</td><td>这些角色恰恰要求没有利害关系才公正，强行共担反而制造腐败。</td></tr><tr><td>后果是极端致命的系统风险，如核电与航空</td><td>让决策者承担同等后果即可</td><td>个人生命无法与公共风险对等，真正需要的是冗余、流程与多重校验。</td></tr><tr><td>决策者极其富有，名义上下注了</td><td>有损失就算共担</td><td>对身家百亿的人，一百万的亏损毫无约束力，名义共担可能形同虚设。</td></tr><tr><td>用它一刀切否定所有专家</td><td>没下注的都别听</td><td>流行病学家与气候学家不赌钱，但证据链可以核查，共担不是可信度的唯一来源。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../principal-agent/">委托代理</a><span>委托代理问题的解药：让代理人也押上自己的利益</span></li><li><a href="../incentives/">激励</a><span>风险共担是一种对称的激励设计，收益与亏损指向同一个人</span></li><li><a href="../black-swan/">黑天鹅</a><span>塔勒布的姊妹概念：尾部风险里藏着最危险的不对称</span></li><li><a href="../antifragile/">反脆弱</a><span>同一作者的进阶：让系统从波动中受益，先要理清谁承担波动</span></li><li><a href="../expected-value/">期望值思维</a><span>不承担亏损的人算期望值，会把风险无限放大</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Nassim Taleb, Skin in the Game: Hidden Asymmetries in Daily Life（2018） <span class="lv lv-secondary">可靠二手</span></li><li>《汉谟拉比法典》第 229 至 233 条 <span class="lv lv-verified">一手核实</span></li><li>纽约州审计长办公室华尔街奖金报告（2009 年 1 月） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "skin-in-the-game", "domain": "strategy", "mermaid": "flowchart TD\n  A[有人提出建议或做出决策] --> B{他自己承担后果吗}\n  B -->|承担，输赢都算自己的| C[对称性成立]\n  B -->|不承担，赢了归己亏了归人| D[不对称]\n  C --> E[判断谨慎，建议可信]\n  D --> F[风险转嫁给他人]\n  F --> G[冒险行为被奖励]\n  G --> H[系统风险不断累积，直到崩塌]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["纽约证券业年终奖金池"]}, "xAxis": {"type": "category", "data": ["2004", "2005", "2006", "2007", "2008", "2009"]}, "yAxis": {"type": "value", "name": "十亿美元"}, "series": [{"name": "纽约证券业年终奖金池", "type": "bar", "data": [18.6, 25.7, 23.9, 33.2, 18.4, 20.3]}]}, "demo": {"title": "自己承担多少亏损，决定敢押多大注", "takeaway": "假设押注成功赚 20%，失败亏 25%。亏损一分不担时，即使期望为负，决策者照样重仓；亏损比例升到 1，两条线重合。", "params": [{"id": "p", "label": "成功概率", "min": 0.2, "max": 0.8, "step": 0.05, "default": 0.5}], "x": {"label": "自己承担的亏损比例", "from": 0, "to": 1, "step": 0.02}, "series": [{"name": "决策者选择的风险", "expr": "Math.max(0, (p * 0.2 - x * 0.25 * (1 - p)) / 0.02)"}, {"name": "系统最优风险", "expr": "Math.max(0, (p * 0.2 - 0.25 * (1 - p)) / 0.02)"}]}, "related": [{"slug": "principal-agent", "title": "委托代理", "exists": true}, {"slug": "incentives", "title": "激励", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "antifragile", "title": "反脆弱", "exists": true}, {"slug": "expected-value", "title": "期望值思维", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

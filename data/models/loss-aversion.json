@@ -1,0 +1,194 @@
+{
+  "slug": "loss-aversion",
+  "title": "损失厌恶",
+  "en": "Loss Aversion",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "丹尼尔·卡尼曼",
+      "role": "普林斯顿心理学家，2002 年诺贝尔经济学奖得主，与特沃斯基提出前景理论"
+    },
+    {
+      "name": "阿莫斯·特沃斯基",
+      "role": "斯坦福心理学家，前景理论共同提出者，1992 年测得损失厌恶系数中位数约 2.25"
+    },
+    {
+      "name": "理查德·塞勒",
+      "role": "芝加哥大学经济学家，用马克杯实验揭示禀赋效应，2017 年诺贝尔经济学奖得主"
+    }
+  ],
+  "tagline": "亏 1 元的痛，约是赚 1 元乐的两倍",
+  "hook": {
+    "title": "一只 6 美元的杯子，两组人给出两个价",
+    "story": "1990 年，卡尼曼、克奇和塞勒在康奈尔大学做马克杯实验。学校书店里这只杯子标价 6 美元。他们把学生随机分成两组，一组每人先拿到一只杯子，另一组两手空空。结果先拿到杯子的人，中位数要价 7.12 美元才肯卖；空手的人，中位数只肯出 2.87 美元买。同一只杯子，同一群人，估值差了约 2.5 倍。差别只在于，杯子到手的那一刻，放弃它就从赚钱变成了亏钱，而亏 1 美元的痛，大约是赚 1 美元的乐的两倍多。这个实验成了损失厌恶最常被引用的证据。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"出现一个选择或报价\"] --> B[\"大脑先找参照点\"]\n  B --> C{\"相对参照点是赚还是亏\"}\n  C -->|亏| D[\"损失通道：痛感放大约 2 倍\"]\n  C -->|赚| E[\"收益通道：快乐且边际递减\"]\n  D --> F[\"怕兑现亏损，死扛或冒险翻本\"]\n  E --> G[\"急于落袋为安，过早卖出\"]\n  F --> H[\"选择偏离期望值最优\"]\n  G --> H",
+    "caption": "先定参照点，再分通道。同一个金额，走损失通道的痛感可以比收益通道重一倍以上。"
+  },
+  "evidence": {
+    "title": "投资者更愿意卖出盈利股还是亏损股",
+    "takeaway": "Odean 统计约 1 万个券商账户，发现卖出盈利股的比例是 14.8%，卖出亏损股的只有 9.8%，赢家被处理的速度约为输家的 1.5 倍。更扎心的是，被卖掉的赢家在随后一年反而比留下的输家多涨约 3.4%。死扛不是策略，是痛感在替人做决定。",
+    "level": "secondary",
+    "source": "Terrance Odean (1998), Are Investors Reluctant to Realize Their Losses?, Journal of Finance，1987 至 1993 年约 1 万个折扣券商账户的交易记录",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "已实现比例"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "卖出盈利股的比例",
+          "卖出亏损股的比例"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "百分比（%）"
+      },
+      "series": [
+        {
+          "name": "已实现比例",
+          "type": "bar",
+          "data": [
+            14.8,
+            9.8
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "拖动 λ 和 α，看痛感如何压过快感",
+    "takeaway": "λ 越大，亏损一侧陷得越深；α 越小，盈利一侧越早变平。按默认值 λ 等于 2.25，要赚约 225 元的快感，才抵得上亏 100 元的痛。",
+    "params": [
+      {
+        "id": "lam",
+        "label": "损失厌恶系数 λ",
+        "min": 1,
+        "max": 4,
+        "step": 0.05,
+        "default": 2.25
+      },
+      {
+        "id": "alpha",
+        "label": "敏感度递减 α",
+        "min": 0.5,
+        "max": 1,
+        "step": 0.01,
+        "default": 0.88
+      }
+    ],
+    "x": {
+      "label": "结果（元），负数为损失",
+      "from": -100,
+      "to": 100,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "主观价值（当前 λ）",
+        "expr": "pow(max(x, 0), alpha) - lam * pow(max(-x, 0), alpha)"
+      },
+      {
+        "name": "无损失厌恶参照（λ 等于 1）",
+        "expr": "pow(max(x, 0), alpha) - pow(max(-x, 0), alpha)"
+      },
+      {
+        "name": "客观损益",
+        "expr": "x"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "先写下这个决策的参照点",
+      "detail": "问自己把哪里当作零：买入价、现状，还是别人的结果。参照点一动，同一笔钱会从赚变成亏。"
+    },
+    {
+      "step": "把结果按赚亏分开感受一遍",
+      "detail": "分别想象得到和失去的情景，给两边情绪强度各打一个分。多数人会发现亏的那边明显更重。"
+    },
+    {
+      "step": "给损失乘 2 再做心理核算",
+      "detail": "粗算时把亏损按两倍计痛，再与收益相加。净值为负的选择，多半是损失厌恶在拉着你走。"
+    },
+    {
+      "step": "重大决策用期望值复核",
+      "detail": "把金额乘以概率重新算一遍，与直觉答案对照。差距大时，先怀疑框架效应，再怀疑计算。"
+    },
+    {
+      "step": "定期检查手里的亏损仓位和烂项目",
+      "detail": "问一句：如果今天空仓或刚接手，我还会买它吗。答案是否，就说明是痛感而不是判断在让你死扛。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "小额、可重复的赌局或日常消费",
+      "model_says": "人们会为避免小损失支付大溢价",
+      "reality": "小额场景下人们常反过来追逐风险，比如同时买保险和买彩票，系数并不稳定。"
+    },
+    {
+      "situation": "专业交易员等受训人群",
+      "model_says": "痛感恒为收益的两倍多",
+      "reality": "训练和重复暴露会把系数压向 1，久经市场的人接近风险中性，不能一刀切。"
+    },
+    {
+      "situation": "把所有死扛亏损都归因于损失厌恶",
+      "model_says": "不卖就是怕痛",
+      "reality": "也可能是税负、流动性、信念或真实的信息优势，Odean 的数据只刻画平均行为，不解释个体。"
+    },
+    {
+      "situation": "想靠讲道理帮人止损",
+      "model_says": "知道偏差就能避开",
+      "reality": "卡尼曼承认研究了一辈子仍会中招，知道偏差存在不等于能消除，需要机制而不是意志力。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "anchoring",
+      "relation": "参照点与锚同源：锚定决定把哪一点当作零，零一动赚亏互换"
+    },
+    {
+      "slug": "expected-value",
+      "relation": "对照工具：损失厌恶让人系统性偏离期望值最优，重要决策要用它复核"
+    },
+    {
+      "slug": "opportunity-cost",
+      "relation": "放弃的收益常被体验成损失，导致机会成本被系统性低估"
+    },
+    {
+      "slug": "commitment-consistency",
+      "relation": "拥有后的粘性还来自一致性：放弃了就和过去的自己矛盾",
+      "title": "承诺一致性"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kahneman & Tversky (1979), Prospect Theory: An Analysis of Decision under Risk, Econometrica",
+      "level": "secondary"
+    },
+    {
+      "title": "Tversky & Kahneman (1992), Advances in Prospect Theory, Journal of Risk and Uncertainty",
+      "level": "secondary"
+    },
+    {
+      "title": "Kahneman, Knetsch & Thaler (1990), Experimental Tests of the Endowment Effect and the Coase Theorem, Journal of Political Economy",
+      "level": "secondary"
+    },
+    {
+      "title": "Terrance Odean (1998), Are Investors Reluctant to Realize Their Losses?, Journal of Finance",
+      "level": "secondary"
+    },
+    {
+      "title": "McNeil, Pauker, Sox & Tversky (1982), 治疗方案框架效应研究, New England Journal of Medicine",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

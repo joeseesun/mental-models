@@ -125,7 +125,7 @@ def index_page(models, ghosts):
         for g, refs in ghosts.items()) or '<li>暂无待写条目</li>'
     body = f"""<main class="wrap">
 <section class="hero"><h1>专家思维的可视化解剖台</h1>
-<p>每个模型讲清四件事：从哪来、怎么运转、什么时候用、什么时候失效。虚线节点是被引用但还没写的模型。</p></section>
+<p>每个模型讲清四件事：从哪来、怎么运转、什么时候用、什么时候失效。全站 {len(models)} 个模型，{len(ghosts)} 个待写；图谱里的颜色代表领域。</p></section>
 <div id="home-graph" class="figure home-graph"></div>
 <section id="all"><div class="chips">{chips}</div><div class="grid">{cards}</div></section>
 <section id="todo"><h2>待写清单</h2><ul class="todo">{todo}</ul></section>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>网络效应 · 思维模型 Wiki</title><meta name="description" content="用户越多越值钱，多到赢家通吃">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/network-effects/">
+<meta property="og:title" content="网络效应 · 思维模型 Wiki"><meta property="og:description" content="用户越多越值钱，多到赢家通吃">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/network-effects/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-economics">
+<p class="crumb"><a href="../../index.html">首页</a> / 经济</p>
+<h1>网络效应 <small>Network Effects</small></h1>
+<p class="tagline"><strong>用户越多越值钱，多到赢家通吃</strong></p>
+<p class="experts"><strong>罗伯特·梅特卡夫</strong>（以太网发明人，1973 年写出第一份以太网备忘录，1980 年前后提出网络价值与用户数平方成正比） · <strong>杰弗里·帕克</strong>（平台经济学者，2005 年与范奥斯泰恩提出双边网络效应，2016 年合著《平台革命》） · <strong>卡尔·夏皮罗与哈尔·范里安</strong>（《信息规则》作者，1998 年把网络效应与锁定效应写进主流经济学）</p>
+
+<section><h2>场景钩子 · 全球第一的 eBay，为什么在中国输给免费</h2><p>2003 年，eBay 花 1.5 亿美元买下易趣，当时它在中国 C2C 市场占约八成份额，向卖家收登录费和成交费。同年 5 月，马云上线淘宝，宣布免费三年。卖家很现实，在淘宝免费开店，在易趣保留付费摊位，两边同时挂货。买家发现淘宝的货越来越多，就往淘宝跑；卖家发现买家都去了淘宝，又把重心挪过去。供给和需求互相拉动，正反馈转了起来。2006 年第三方调研显示，淘宝份额约七成，eBay 掉到三成以下，年底 eBay 把中国业务并入合资公司，实质退出。它在全球的网络帮不上忙，因为买卖匹配发生在本地，网络效应锁不住跨国的规模优势。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">两条正反馈：同边效应让老用户直接受益，跨边效应让供给和需求互相拉动。规模跨过临界点，赢家通吃的格局就开始成形。</p></section>
+<section><h2>数据证据 · Facebook 月活与年收入，2007 到 2013 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">七年间月活涨约 21 倍，收入涨约 51 倍，收入增速明显快于用户增速，方向符合平方律。<br><span class="src">来源：Facebook 2012 年 S-1 招股书及历年年报；梅特卡夫 2013 年在 IEEE Computer 上用 Facebook 收入检验平方律</span></p></section>
+<section><h2>交互演示 · 冷启动：人均净值什么时候转正</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">平方律下人均净值随规模直线上升，跨过 c 除以 k 就转正；对数律下涨得慢，可能一直到不了临界点。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先确认用户之间真的互相需要</b><span>问一句：A 用这个产品，会不会让 B 的体验变好？答案是否定的话，别硬套网络效应。</span></li><li><b>分清同边效应和跨边效应</b><span>微信好友是同边，淘宝的买家卖家是跨边。两类效应的增长逻辑和补贴对象都不一样。</span></li><li><b>找出稀缺的一边，集中补贴</b><span>先算哪边更难聚集，用免费、补贴或独家供给把它拉进来。淘宝免卖家费，滴滴早期同时补贴司机和乘客。</span></li><li><b>算出临界规模，把它当决策线</b><span>估出人均净值转正需要的用户数，资源集中投到跨线为止；明显跨不过就止损，别用补贴无限续命。</span></li><li><b>跨线后把优势固化成护城河</b><span>沉淀关系链、数据和切换成本，同时盯住对手的多归属打法，别让护城河漏水。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>用户可以同时在几个平台活动</td><td>先发规模就是护城河</td><td>司机装三个打车 App，商家上三个电商平台，多归属把网络效应摊薄，规模领先不等于锁定。</td></tr><tr><td>网络超过某个规模后开始拥挤</td><td>用户越多价值越高</td><td>拥堵和内容稀释会变成负效应，微信群人一多就沉默，社区产品变大后老用户反而流失。</td></tr><tr><td>把补贴带来的增长当成网络效应</td><td>用户涨得快，说明飞轮在转</td><td>没有真实连接的用户没有留存，补贴一停就散，共享单车大战的很多订单就是这么消失的。</td></tr><tr><td>监管强制互联互通或数据可携带</td><td>赢家通吃不可避免</td><td>互操作性会拆掉围墙，运营商和银行网络几十年来都没能赢家通吃。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../critical-mass/">临界质量</a><span>临界规模是网络效应的门槛，跨线前后是两个世界</span></li><li><a href="../feedback-loops/">反馈回路</a><span>网络效应本质是正反馈回路，用户增长自己给自己加速</span></li><li><a href="../moat/">护城河</a><span>跨过临界点后，网络效应是最深的护城河之一</span></li><li><a href="../flywheel/">飞轮效应</a><span>平台飞轮就是跨边网络效应的商业化说法</span></li><li><a href="../path-dependence/">路径依赖</a><span>早期微小的领先会被正反馈放大成难以逆转的锁定</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Metcalfe, Metcalfe&#x27;s Law after 40 Years of Ethernet, IEEE Computer, 2013 <span class="lv lv-secondary">可靠二手</span></li><li>Parker, Van Alstyne, Choudary, 平台革命（Platform Revolution）, 2016 <span class="lv lv-secondary">可靠二手</span></li><li>Shapiro, Varian, 信息规则（Information Rules）, 1998 <span class="lv lv-secondary">可靠二手</span></li><li>Odlyzko, Tilly, A Refutation of Metcalfe&#x27;s Law and a Better Estimate for the Value of Networks, 2005 <span class="lv lv-secondary">可靠二手</span></li><li>Facebook 2012 年 S-1 招股书与历年年报 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "network-effects", "domain": "economics", "mermaid": "flowchart TD\n  A[\"新用户加入\"] --> B[\"连接数按平方增长\"]\n  B --> C[\"老用户可匹配的人更多\"]\n  C --> D[\"产品对每个人的价值上升\"]\n  D --> E[\"留存与口碑变好\"]\n  E --> A\n  D --> F[\"供给端被吸引进来\"]\n  F --> G[\"供给更丰富更便宜\"]\n  G --> D\n  D --> H[\"跨过临界规模\"]\n  H --> I[\"后来者冷启动极难\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["月活用户（百万）", "年收入（百万美元）"]}, "xAxis": {"type": "category", "data": ["2007", "2008", "2009", "2010", "2011", "2012", "2013"]}, "yAxis": [{"type": "value", "name": "月活（百万）"}, {"type": "value", "name": "收入（百万美元）"}], "series": [{"name": "月活用户（百万）", "type": "bar", "data": [58, 145, 360, 608, 845, 1056, 1228]}, {"name": "年收入（百万美元）", "type": "line", "yAxisIndex": 1, "data": [153, 272, 777, 1974, 3711, 5089, 7872]}]}, "demo": {"title": "冷启动：人均净值什么时候转正", "takeaway": "平方律下人均净值随规模直线上升，跨过 c 除以 k 就转正；对数律下涨得慢，可能一直到不了临界点。", "params": [{"id": "k", "label": "每条连接的价值", "min": 0.02, "max": 0.5, "step": 0.02, "default": 0.1}, {"id": "c", "label": "每人的加入成本", "min": 0, "max": 30, "step": 1, "default": 10}], "x": {"label": "用户数", "from": 1, "to": 400, "step": 1}, "series": [{"name": "平方律下的人均净值", "expr": "k * x - c"}, {"name": "对数律下的人均净值", "expr": "k * Math.log(x + 1) - c"}]}, "related": [{"slug": "critical-mass", "title": "临界质量", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "moat", "title": "护城河", "exists": true}, {"slug": "flywheel", "title": "飞轮效应", "exists": true}, {"slug": "path-dependence", "title": "路径依赖", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

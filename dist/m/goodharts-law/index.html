@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>古德哈特定律 · 思维模型 Wiki</title><meta name="description" content="指标一旦成为目标，就不再是好指标">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/goodharts-law/">
+<meta property="og:title" content="古德哈特定律 · 思维模型 Wiki"><meta property="og:description" content="指标一旦成为目标，就不再是好指标">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/goodharts-law/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>古德哈特定律 <small>Goodhart&#x27;s Law</small></h1>
+<p class="tagline"><strong>指标一旦成为目标，就不再是好指标</strong></p>
+<p class="experts"><strong>查尔斯·古德哈特</strong>（英国经济学家，长期担任英格兰银行顾问，1975 年在货币政策论文里提出这条规律） · <strong>玛丽莲·斯特雷森</strong>（英国人类学家，1997 年写下流传最广的版本：指标一旦成为目标，就不再是好指标）</p>
+
+<section><h2>场景钩子 · 一条老鼠尾巴，值一分钱</h2><p>1902 年，法属河内鼠患成灾，殖民当局想了个直接的办法：上交一条老鼠尾巴，赏一分钱。起初立竿见影，死鼠堆积如山。很快有人发现，养鼠比捕鼠更划算，城里开始出现被剪掉尾巴又放生的活鼠。1902 年 6 月，官员在城郊查获一处养着数百只老鼠的鼠场，养鼠人正等着收尾巴换赏金。赏金计划随即废止，而河内的老鼠并没有变少。当局想奖励的是灭鼠，实际奖励的只是老鼠尾巴。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">循环在右下角闭合：指标失真后只能再换指标，而新指标又会被新一轮博弈吃掉。</p></section>
+<section><h2>数据证据 · 河内灭鼠赏金：尾巴数与真实灭鼠数脱钩 <span class="lv lv-draft">草稿示意</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">赏金压力下，尾巴数一路上涨，真实灭鼠数先升后跌。指标和目标在压力下分道扬镳。<br><span class="src">来源：事实框架来自 Michael Vann《Of Rats, Rice, and Race: The Great Hanoi Rat Massacre》（2003）；图中数值为示意数据，非原始统计。</span></p></section>
+<section><h2>交互演示 · 考核压力下，指标和真实目标怎么分家</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">压力越大、空子越多，指标涨得越快，真实目标反而涨得越慢，两条线的缺口就是被博弈吃掉的部分。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>写下指标原本要代表什么</b><span>比如留存率代表产品真的有用，出勤率代表员工真的投入。先写真实目标，再写指标。</span></li><li><b>站到被考核者的位置找最快路径</b><span>问自己：如果我只在乎这个数字，最省力的提分办法是什么？找到的就是未来会发生的博弈。</span></li><li><b>给指标配一条难以造假的护栏</b><span>用一两个对照指标卡住作弊空间，比如销量旁边看退货率和复购率。</span></li><li><b>定期抽查和换位验证</b><span>随机抽样、第三方核对、突击检查，让造假的成本高于收益，而不是指望自觉。</span></li><li><b>发现脱钩就降级或换指标</b><span>指标失真后别恋战，把它降为参考，重新找和真实目标贴得更近的度量。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>指标本身难以造假，比如物理测量和审计数据</td><td>压力之下必然失真</td><td>足够硬的指标在压力下仍然可靠，不必全盘怀疑。</td></tr><tr><td>被当成拒绝一切量化的借口</td><td>考核什么就失去什么，干脆别考核</td><td>没有指标的组织会失去反馈，粗糙的指标通常好过没有指标。</td></tr><tr><td>新指标刚上线的头几个月</td><td>指标很快就会被玩坏</td><td>博弈需要学习和传播，新指标初期往往相当准，失效是渐进的。</td></tr><tr><td>压力适中且造假会被重罚的环境</td><td>有目标就有博弈</td><td>博弈也要算账，成本高于收益时会被抑制，定律不是宿命。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../incentives/">激励</a><span>指标就是激励，激励指向哪里，行为就涌向哪里</span></li><li><a href="../principal-agent/">委托代理</a><span>委托人盯指标，代理人玩游戏，是委托代理的经典冲突</span></li><li><a href="../second-order-thinking/">第二层思维</a><span>设指标前先想一层：被考核者会怎么回应这个数字</span></li><li><a href="../feedback-loops/">反馈回路</a><span>博弈行为经反馈回路自我强化，指标失真会越滚越大</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>C. A. E. Goodhart, Problems of Monetary Management: The UK Experience (1975) <span class="lv lv-secondary">可靠二手</span></li><li>Marilyn Strathern, &#x27;Improving ratings&#x27;: audit in the British University system, European Review (1997) <span class="lv lv-secondary">可靠二手</span></li><li>Michael Vann, Of Rats, Rice, and Race: The Great Hanoi Rat Massacre, French Colonial History (2003) <span class="lv lv-secondary">可靠二手</span></li><li>Jerry Z. Muller, The Tyranny of Metrics (2018) <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "goodharts-law", "domain": "systems", "mermaid": "flowchart TD\n  A[\"选定指标 M\"] --> B[\"M 与真实目标相关\"]\n  B --> C[\"把 M 定为考核目标\"]\n  C --> D[\"被考核者优化 M\"]\n  D --> E{\"优化走哪条路\"}\n  E -->|\"真实改进\"| F[\"目标变好，M 仍有效\"]\n  E -->|\"数字游戏\"| G[\"M 上升，目标没变好\"]\n  G --> H[\"M 与目标脱钩\"]\n  H --> I[\"M 失去信息价值\"]\n  I --> C", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["上交尾巴数", "真实灭鼠数"]}, "xAxis": {"type": "category", "data": ["第1月", "第2月", "第3月", "第4月", "第5月", "第6月", "第7月", "第8月", "第9月", "第10月", "第11月", "第12月"]}, "yAxis": {"type": "value", "name": "数量（示意）"}, "series": [{"name": "上交尾巴数", "type": "line", "data": [3000, 9000, 16000, 24000, 30000, 34000, 36000, 35000, 33000, 30000, 26000, 20000]}, {"name": "真实灭鼠数", "type": "line", "data": [3000, 8500, 14000, 18000, 19000, 17000, 14000, 11000, 8000, 6000, 4500, 3000]}]}, "demo": {"title": "考核压力下，指标和真实目标怎么分家", "takeaway": "压力越大、空子越多，指标涨得越快，真实目标反而涨得越慢，两条线的缺口就是被博弈吃掉的部分。", "params": [{"id": "pressure", "label": "考核压力", "min": 0, "max": 1, "step": 0.05, "default": 0.7}, {"id": "loophole", "label": "可钻空子空间", "min": 0, "max": 1, "step": 0.05, "default": 0.6}], "x": {"label": "时间（季度）", "from": 1, "to": 24, "step": 1}, "series": [{"name": "考核指标", "expr": "100 + 3 * (1 - pressure * loophole) * x + 6 * pressure * loophole * x"}, {"name": "真实目标", "expr": "100 + 3 * (1 - pressure * loophole) * x"}, {"name": "博弈水分", "expr": "6 * pressure * loophole * x"}]}, "related": [{"slug": "incentives", "title": "激励", "exists": true}, {"slug": "principal-agent", "title": "委托代理", "exists": true}, {"slug": "second-order-thinking", "title": "第二层思维", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

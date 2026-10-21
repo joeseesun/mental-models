@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>均值回归 · 思维模型 Wiki</title><meta name="description" content="极端之后是平均，别把回归当效果">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/regression-to-mean/">
+<meta property="og:title" content="均值回归 · 思维模型 Wiki"><meta property="og:description" content="极端之后是平均，别把回归当效果">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/regression-to-mean/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-psychology">
+<p class="crumb"><a href="../../index.html">首页</a> / 心理</p>
+<h1>均值回归 <small>Regression to the Mean</small></h1>
+<p class="tagline"><strong>极端之后是平均，别把回归当效果</strong></p>
+<p class="experts"><strong>弗朗西斯·高尔顿</strong>（发现者，1886 年用 928 名子女的身高数据提出“回归向平庸”） · <strong>丹尼尔·卡尼曼</strong>（普及者，用以色列空军教官案例解释奖惩错觉，《思考，快与慢》第 17 章）</p>
+
+<section><h2>场景钩子 · 骂人的教官比夸人的更管用？</h2><p>卡尼曼在给以色列空军的飞行教官讲课时说，行为心理学研究表明奖励比惩罚更能塑造行为。一名资深教官当场反驳：学员做出一次特别漂亮的飞行动作时，他当面夸奖，下一次动作往往变差；学员动作特别糟糕时他大声训斥，下一次往往就变好。所以骂比夸管用。卡尼曼当场意识到，教官看到的是回归：一次极端的好或坏，本来就大概率跟着一次更普通的发挥，跟夸还是骂没有关系。但这个错觉太顺手了，它让惩罚显得有效，让表扬显得多余。多年后他把这个故事写进《思考，快与慢》第 17 章，作为“归因压倒统计”的经典案例。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">运气不重复，能力才重复。极端表现里掺的运气越多，下一轮落回平均的幅度就越大。</p></section>
+<section><h2>数据证据 · 高尔顿的身高数据：子代偏离比父代小 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">高个父母的孩子平均仍偏高，但更接近人群平均，矮个家庭同理。子女的身高偏离约为父母偏离的三分之二。<br><span class="src">来源：Francis Galton, Regression towards Mediocrity in Hereditary Stature (1886)，928 名成年子女观测，回归系数 2/3；图中为该系数的示意换算</span></p></section>
+<section><h2>交互演示 · 选出表现最极端的人，然后看下一轮</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">运气占比越高，被选中者下一轮跌得越狠。教练以为是惩罚见效，其实只是回归。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先确认你手里的是不是极端组</b><span>只要样本是按表现挑出来的前几名或后几名，回归就已经在路上了。</span></li><li><b>估一估这个指标里运气占多少</b><span>单次表现、小样本、高淘汰率的场景，运气占比高，回归幅度大。</span></li><li><b>预测下一轮时向平均收缩</b><span>别把极端值线性外推，用“真实水平加运气”的框架估算回落幅度。</span></li><li><b>归因前先设对照组</b><span>想证明奖惩或干预有效，必须比较处理组与未处理组的平均变化，只看被处理者会自动看到“好转”。</span></li><li><b>警惕把回归写成规律的研究</b><span>1933 年塞克里斯特出版《平庸的胜利》，用大量数据论证企业利润趋向平庸，被统计学家霍特林指出那只是回归，不是经济规律。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>真实水平确实变了，比如伤愈复出或技能提升</td><td>好转只是回归平均，不必归因</td><td>回归和真实变化会叠加，单看平均数无法区分，没有对照组就会漏掉真改进。</td></tr><tr><td>极端表现主要靠稳定实力，运气占比很低</td><td>下一轮会大幅回落</td><td>回归幅度很小，此时预测回落反而错得离谱。</td></tr><tr><td>用群体规律预测具体个人</td><td>每个人都会向平均回归</td><td>回归只对群体期望成立，个体完全可能更极端，用它劝人“别得意”没有统计依据。</td></tr><tr><td>度量有天花板或地板，比如考试满分</td><td>高低两端对称回归</td><td>天花板会截断分布，让高分端被压平，回归看起来不对称。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../bayes-updating/">贝叶斯更新</a><span>回归是它的统计版本：看到极端数据后，对真实水平的估计应向均值收缩</span></li><li><a href="../survivorship-bias/">幸存者偏差</a><span>登上封面或榜单的人是被选中的极端样本，随后的下滑常被误读成魔咒</span></li><li><a href="../feedback-loops/">反馈回路</a><span>回归不是负反馈回路，它不需要任何机制，是纯统计现象，别混为一谈</span></li><li><a href="../incentives/">激励</a><span>奖惩显得有效，一部分正是回归制造的错觉，评估激励要看对照组</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Francis Galton, Regression towards Mediocrity in Hereditary Stature (1886) <span class="lv lv-secondary">可靠二手</span></li><li>Daniel Kahneman, Thinking, Fast and Slow, 第 17 章（2011） <span class="lv lv-secondary">可靠二手</span></li><li>Kahneman &amp; Tversky, On the Psychology of Prediction (1973) <span class="lv lv-secondary">可靠二手</span></li><li>Harold Hotelling 对 Secrist《平庸的胜利》的书评（1933） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "regression-to-mean", "domain": "psychology", "mermaid": "flowchart TD\n  A[\"真实水平：稳定的能力\"] --> B[\"本轮表现\"]\n  C[\"运气：每轮独立波动\"] --> B\n  B --> D{\"表现是否极端\"}\n  D -->|\"极端，好或坏\"| E[\"被人注意并归因\"]\n  D -->|\"普通\"| F[\"无人注意\"]\n  E --> G[\"下一轮表现\"]\n  C --> G\n  G --> H[\"更接近个人平均水平\"]\n  H --> I[\"误判：奖惩见效了\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["子代偏离均值", "若完全遗传"]}, "xAxis": {"type": "value", "name": "父代偏离均值（英寸）", "min": -6, "max": 6}, "yAxis": {"type": "value", "name": "子代偏离均值（英寸）"}, "series": [{"name": "子代偏离均值", "type": "line", "data": [[-6, -4], [-4, -2.67], [-2, -1.33], [0, 0], [2, 1.33], [4, 2.67], [6, 4]]}, {"name": "若完全遗传", "type": "line", "data": [[-6, -6], [-4, -4], [-2, -2], [0, 0], [2, 2], [4, 4], [6, 6]]}]}, "demo": {"title": "选出表现最极端的人，然后看下一轮", "takeaway": "运气占比越高，被选中者下一轮跌得越狠。教练以为是惩罚见效，其实只是回归。", "params": [{"id": "luck", "label": "运气占比", "min": 0, "max": 0.9, "step": 0.05, "default": 0.5}, {"id": "threshold", "label": "入选表现（标准差倍数）", "min": 0.5, "max": 3, "step": 0.25, "default": 2}], "x": {"label": "后续轮数", "from": 1, "to": 10, "step": 1}, "series": [{"name": "被选中者的表现", "expr": "threshold * (1 - luck) + threshold * luck * pow(0.6, x - 1)"}, {"name": "其真实水平", "expr": "threshold * (1 - luck)"}, {"name": "群体平均", "expr": "0"}]}, "related": [{"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}, {"slug": "survivorship-bias", "title": "幸存者偏差", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "incentives", "title": "激励", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

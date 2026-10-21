@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>入侵物种 · 思维模型 Wiki</title><meta name="description" content="没有天敌，扩张就没有刹车">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/invasive-species/">
+<meta property="og:title" content="入侵物种 · 思维模型 Wiki"><meta property="og:description" content="没有天敌，扩张就没有刹车">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/invasive-species/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-biology">
+<p class="crumb"><a href="../../index.html">首页</a> / 生物</p>
+<h1>入侵物种 <small>Invasive Species</small></h1>
+<p class="tagline"><strong>没有天敌，扩张就没有刹车</strong></p>
+<p class="experts"><strong>查尔斯·埃尔顿</strong>（提出者，1958年出版《动植物入侵生态学》，把入侵写成生态学的核心问题） · <strong>丹尼尔·辛贝洛夫</strong>（入侵生物学奠基人之一，推动把入侵变成可检验、可管理的科学）</p>
+
+<section><h2>场景钩子 · 24只兔子如何吃掉一个大陆</h2><p>1859年，英国移民托马斯·奥斯汀在澳大利亚维多利亚州的自家庄园放养了24只欧洲兔，只为了打猎解闷。这片大陆上没有狐狸、狼和大型猛禽能压制兔子，草地却一望无际。兔子以每年上百公里的速度向外扩散，到1869年，种群估计已过千万。1901年起，西澳动工修建总长三千多公里的防兔栅栏，仍然没能拦住。到1950年，兔子数量估计达到6亿只，草原被啃秃，本土有袋类因缺食大批死亡，水土随之流失。一个打猎爱好，变成了一场持续百年的生态灾难。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">分岔点在第二个节点：环境里有没有能压制它的天敌和对手，决定了外来者是消失还是爆发。</p></section>
+<section><h2>数据证据 · 甘蔗蟾蜍在澳大利亚的扩散速度：越走越快 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">没有天敌的种群不但变大，还在变快。前沿个体的扩散速度几十年里翻了5倍。<br><span class="src">来源：Phillips, Brown, Webb 与 Shine 关于甘蔗蟾蜍扩散加速的研究，Nature 439 卷（2006），起点约10公里每年，2000年代前沿约55公里每年，中间年份按扩散前沿记录推算</span></p></section>
+<section><h2>交互演示 · 天敌压力如何改写入侵曲线</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">敌人压力哪怕只有两成，入侵曲线就从失控指数变成平缓S线。本土物种的存活率差距，就是真空的代价。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>画出目标环境的天敌清单</b><span>进入新市场或新领域前，列出谁会压制你：在位竞争者、监管、渠道锁定、用户习惯。</span></li><li><b>寻找敌人真空</b><span>监管空白、被忽视的低端人群、没人认真做的渠道，都是真空。真空越大，扩张越快。</span></li><li><b>先抢规模，再谈优化</b><span>入侵者的剧本是先占据资源再改进产品。越过临界规模后，在位者的反制成本会剧增。</span></li><li><b>预演本土的反击</b><span>本土物种会进化，在位者会降价、游说监管、发起收购。提前为每条反击准备对策。</span></li><li><b>算清清除成本再决定进入</b><span>种群一旦过临界点，退出同样昂贵。进入之前就要定好止损线。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>绝大多数外来物种其实定殖失败</td><td>没有天敌就会爆发</td><td>还需要气候匹配、繁殖力和运气。所谓十数定律，外来者约一成能定殖，其中再约一成成灾，多数新来者悄悄死掉。</td></tr><tr><td>把商业对手简单当成本土物种</td><td>真空里可以无限扩张</td><td>市场不是零和生态。在位者可能模仿、收购或与你共存，扩张太快反而招来监管。</td></tr><tr><td>把天敌真空当成永久状态</td><td>增长会一直持续</td><td>环境总会进化出反制。澳洲兔子在1950年遇上粘液瘤病毒，数量从约6亿跌回约1亿。监管之于企业，就是迟到的天敌。</td></tr><tr><td>用入侵者剧本经营长期品牌</td><td>抢占一切资源</td><td>生态里被贴上入侵者标签的物种会被系统清除。商业上掠夺式扩张会摧毁信任与声誉。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../red-queen-effect/">红皇后效应</a><span>本土物种会进化反制，真空只是暂时的</span></li><li><a href="../critical-mass/">临界质量</a><span>越过临界规模后，清除成本急剧上升</span></li><li><a href="../limits-to-growth/">增长极限</a><span>指数增长终会撞上环境容量</span></li><li><a href="../ecological-niche/">生态位</a><span>入侵者占据的正是真空的生态位</span></li><li><a href="../disruptive-innovation/">颠覆式创新</a><span>商业世界的入侵者剧本：从低端真空切入</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Charles Elton, The Ecology of Invasions by Animals and Plants (1958) <span class="lv lv-secondary">可靠二手</span></li><li>Phillips, Brown, Webb &amp; Shine, Nature 439 (2006)，甘蔗蟾蜍扩散加速研究 <span class="lv lv-secondary">可靠二手</span></li><li>澳大利亚 CSIRO 与 Rabbit-Free Australia 的兔子入侵历史记录 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "invasive-species", "domain": "biology", "mermaid": "flowchart TD\n  A[外来者进入新环境] --> B{环境里有没有<br/>天敌和对手}\n  B -->|压制很强| C[定殖失败<br/>悄悄消失]\n  B -->|压制很弱| D[进入敌人真空]\n  D --> E[资源独占<br/>种群指数增长]\n  E --> F[越过临界规模<br/>清除成本剧增]\n  F --> G[本土物种被挤压]\n  G --> H[系统被改写<br/>形成新的稳态]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["前沿扩散速度"]}, "xAxis": {"type": "category", "data": ["1940", "1960", "1980", "2000"]}, "yAxis": {"type": "value", "name": "公里/年"}, "series": [{"name": "前沿扩散速度", "type": "line", "data": [10, 15, 27, 55]}]}, "demo": {"title": "天敌压力如何改写入侵曲线", "takeaway": "敌人压力哪怕只有两成，入侵曲线就从失控指数变成平缓S线。本土物种的存活率差距，就是真空的代价。", "params": [{"id": "enemy", "label": "天敌与对手压力", "min": 0, "max": 0.9, "step": 0.05, "default": 0.1}, {"id": "r", "label": "内禀增长率", "min": 0.1, "max": 0.5, "step": 0.05, "default": 0.3}], "x": {"label": "时间（年）", "from": 0, "to": 30, "step": 1}, "series": [{"name": "入侵者规模（初始为1）", "expr": "100 * (1 - enemy) / (1 + (100 * (1 - enemy) - 1) * exp(-r * x))"}, {"name": "本土物种存活率", "expr": "100 * exp(-0.5 * r * (1 - enemy) * x)"}]}, "related": [{"slug": "red-queen-effect", "title": "红皇后效应", "exists": true}, {"slug": "critical-mass", "title": "临界质量", "exists": true}, {"slug": "limits-to-growth", "title": "增长极限", "exists": true}, {"slug": "ecological-niche", "title": "生态位", "exists": true}, {"slug": "disruptive-innovation", "title": "颠覆式创新", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

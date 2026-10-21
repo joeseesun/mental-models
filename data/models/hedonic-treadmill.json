@@ -1,0 +1,200 @@
+{
+  "slug": "hedonic-treadmill",
+  "title": "享乐适应",
+  "en": "Hedonic Treadmill",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "菲利普·布里克曼",
+      "role": "1971年与坎贝尔提出享乐跑步机，1978年主持彩票中奖者与截瘫者对比研究"
+    },
+    {
+      "name": "唐纳德·坎贝尔",
+      "role": "适应水平理论大家，主张人只对变化敏感，幸福是相对的"
+    },
+    {
+      "name": "理查德·卢卡斯",
+      "role": "2004年起用长期追踪数据修正理论，发现失业等事件适应不完全"
+    },
+    {
+      "name": "丹尼尔·卡尼曼",
+      "role": "2010年与迪顿发现情绪幸福感在约7.5万美元收入处走平"
+    }
+  ],
+  "tagline": "跑得再快，幸福还在原地",
+  "hook": {
+    "title": "22个彩票大奖得主，为什么没有更幸福",
+    "story": "1978年，西北大学的心理学家布里克曼和同事找来22位伊利诺伊州彩票大奖得主，奖金从五万到一百万美元不等，又找了22位普通邻居做对照，外加29位因事故截瘫的受害者。请三组人给当下的幸福感打分，满分5分。结果：大奖得主4.00分，普通人3.82分，截瘫者3.96分，三组几乎重合。中奖者至少在中奖一个月后才接受访问，狂喜已经退潮，而且他们从听笑话、和朋友聊天这类日常小事里得到的快乐，显著少于对照组。剧痛也没有想象中持久。布里克曼和坎贝尔在1971年给这类现象起了名字，享乐跑步机：人在上面拼命跑，幸福感却停在原地。"
+  },
+  "principle": {
+    "mermaid": "flowchart LR\n  A[\"幸福基线（设定点）\"] --> B{生活事件}\n  B -->|好事| C[\"快乐飙升：中奖 加薪 新车\"]\n  B -->|坏事| D[\"痛苦加深：事故 失业 分手\"]\n  C --> E[\"刺激变成日常，快乐回落\"]\n  D --> F[\"处境变成日常，痛苦缓解\"]\n  E --> A\n  F --> A\n  A -.-> G[\"例外：失业等事件回不到原点\"]",
+    "caption": "跑步机指的是中间那圈循环：事件把幸福感推离基线，适应又把它拉回来。虚线同样重要，不是所有事都能回到原点。"
+  },
+  "evidence": {
+    "title": "三类人的幸福感评分：1978年经典研究",
+    "takeaway": "大奖得主没有比邻居更幸福，截瘫者也只低了零点几分。狂喜和剧痛都会退潮，评分重新靠拢。文中还报告，中奖者从日常小事中获得的快乐显著低于对照组。",
+    "level": "secondary",
+    "source": "Brickman, Coates & Janoff-Bulman, Lottery Winners and Accident Victims: Is Happiness Relative?, Journal of Personality and Social Psychology, 1978, 36卷8期",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "当下幸福感评分"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "彩票大奖得主",
+          "普通对照组",
+          "事故截瘫者"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "幸福感评分（0到5）",
+        "max": 5
+      },
+      "series": [
+        {
+          "name": "当下幸福感评分",
+          "type": "bar",
+          "data": [
+            4.0,
+            3.82,
+            3.96
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "好事坏事，多久回到基线",
+    "takeaway": "两条曲线都会滑回3.8附近。幸福感没有永久档位，能调的只有回落的斜率：把适应速度调小，快乐才留得住。",
+    "params": [
+      {
+        "id": "impact",
+        "label": "事件冲击幅度",
+        "min": 0.2,
+        "max": 2,
+        "step": 0.1,
+        "default": 1.2
+      },
+      {
+        "id": "decay",
+        "label": "适应速度（每月）",
+        "min": 0.05,
+        "max": 0.5,
+        "step": 0.01,
+        "default": 0.15
+      }
+    ],
+    "x": {
+      "label": "事件后的月数",
+      "from": 0,
+      "to": 36,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "幸福基线",
+        "expr": "3.8"
+      },
+      {
+        "name": "好事之后",
+        "expr": "3.8 + impact * exp(-decay * x)"
+      },
+      {
+        "name": "坏事之后",
+        "expr": "3.8 - impact * exp(-decay * x)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "先测出自己的基线",
+      "detail": "连续两周每天给心情打一个0到10的分，取平均值。这个数字比任何一次情绪波动都更能代表你。"
+    },
+    {
+      "step": "大额消费前做三个月想象测试",
+      "detail": "问自己：这件东西变成日常之后，我每天还会多看它几眼吗？多数答案是不会，这笔钱就该省下来。"
+    },
+    {
+      "step": "把一次性大件换成经常发生的小事",
+      "detail": "同样的预算，一次豪华旅行不如每年几次短途加每周一顿好饭。适应最先吃掉的，就是频率低的大刺激。"
+    },
+    {
+      "step": "主动拉开间隔，打断适应",
+      "detail": "喜欢的东西别天天用。间歇享用、换花样、和朋友一起，都能把适应速度调慢。"
+    },
+    {
+      "step": "低谷时用同一条曲线给自己预期",
+      "detail": "分手、受伤、搞砸项目，痛苦大概率会在几个月内退潮。但别拿这套话安慰失业的人，失业是例外。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "失业、长期噪音、慢性疼痛、长期照护",
+      "model_says": "人会适应一切，迟早回到基线",
+      "reality": "卢卡斯等人2004年的追踪显示，失业者的生活满意度多年停在低位，适应不完全。对这类处境说你会习惯的，是残忍的错误。"
+    },
+    {
+      "situation": "把它当成躺平的理由",
+      "model_says": "反正都会适应，努力追求没用",
+      "reality": "适应最快的是物质享受，而关系、自主、意义感适应得慢得多。用跑步机否定一切追求，等于把享乐当成了幸福的全部。"
+    },
+    {
+      "situation": "直接推论钱买不来快乐",
+      "model_says": "收入超过某个水平，幸福感就不再上升",
+      "reality": "卡尼曼与迪顿2010年发现情绪幸福感在约7.5万美元处走平，但生活评价持续上升。基林斯沃思2021年的数据甚至显示多数人的情绪幸福感也随收入继续上升，2023年两人合作论文承认结论比口号复杂。"
+    },
+    {
+      "situation": "假设每个人的设定点固定不变",
+      "model_says": "基线是天生的，改不了",
+      "reality": "迪纳、卢卡斯和斯科隆2006年修订指出，设定点会移动，约一成人在重大变故后幸福感长期改变。个体差异比理论初版说的大。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "adaptation",
+      "relation": "生物学同款机制：感官和身体都在适应刺激，心理只是延续"
+    },
+    {
+      "slug": "homeostasis",
+      "relation": "设定点调节的原型，幸福感就像被调回去的体温"
+    },
+    {
+      "slug": "regression-to-mean",
+      "relation": "情绪极端值都会回落，统计规律和心理规律在这里重合"
+    },
+    {
+      "slug": "diminishing-returns",
+      "relation": "收入买快乐的边际递减，是跑步机在宏观上的样子"
+    },
+    {
+      "slug": "maslow-hierarchy",
+      "relation": "低层满足被适应后，快乐转向更高需求，一条逃出跑步机的路径"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brickman & Campbell, Hedonic Relativism and Planning the Good Society, 1971",
+      "level": "secondary"
+    },
+    {
+      "title": "Brickman, Coates & Janoff-Bulman, Lottery Winners and Accident Victims, JPSP 1978",
+      "level": "secondary"
+    },
+    {
+      "title": "Diener, Lucas & Scollon, Beyond the Hedonic Treadmill, 2006",
+      "level": "secondary"
+    },
+    {
+      "title": "Kahneman & Deaton, High income improves evaluation of life but not emotional well-being, PNAS 2010",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

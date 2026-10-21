@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>反馈回路 · 思维模型 Wiki</title><meta name="description" content="增强回路滚雪球，调节回路找稳定">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/feedback-loops/">
+<meta property="og:title" content="反馈回路 · 思维模型 Wiki"><meta property="og:description" content="增强回路滚雪球，调节回路找稳定">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/feedback-loops/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>反馈回路 <small>Feedback Loops</small></h1>
+<p class="tagline"><strong>增强回路滚雪球，调节回路找稳定</strong></p>
+<p class="experts"><strong>诺伯特·维纳</strong>（1948 年出版《控制论》，把反馈从机器术语变成横跨工程与生物的通用概念） · <strong>德内拉·梅多斯</strong>（《增长的极限》主笔，把回路分析带进公共政策，留下著名的杠杆点排序）</p>
+
+<section><h2>场景钩子 · 被骂了五十年的模型，被数据追上了</h2><p>1972 年 3 月，麻省理工学院的德内拉·梅多斯团队出版了《增长的极限》。他们用 World3 模型给地球做体检：人口和工业资本互相喂养，是越滚越快的增强回路；土地、矿产和污染承载力是踩刹车的调节回路，而且刹车带着几十年的延迟。模拟显示，只要增长照旧，系统会在 21 世纪中叶冲过极限后掉头下坠。这本书随后被骂了半个世纪，经济学家嫌它不懂市场。2008 年起，澳大利亚科学家格雷厄姆·特纳把此后三十多年的真实数据逐条对照，发现世界基本走在基准情景的轨道上。梅多斯想说的从来不是某个末日日期，而是一件更冷的事：滚雪球的回路不会因为愿望停下，能改变结局的只有回路结构本身。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">同一个存量，被增强回路推着滚雪球，被调节回路拉着回目标。哪种回路占上风，系统就长成哪种样子。</p></section>
+<section><h2>数据证据 · 世界人口：增强回路在跑，调节回路在追 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">存量曲线一路爬升靠增强回路；年增长率在 1968 年前后见顶回落，说明生育率下降的调节回路开始接管方向。<br><span class="src">来源：联合国《世界人口展望》历年估计，十年节点为近似取值；增长率峰值约 2.1% 出现在 1968 年前后</span></p></section>
+<section><h2>交互演示 · 给指数增长装上刹车</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">拖大增长率，纯增强回路会冲出图表；调高上限只改变 S 曲线停在哪。没有调节回路，增长不会自己刹车。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先画存量，不是事件</b><span>问什么在积累或消耗：用户数、现金、信任、债务、疲劳。事件是波动的表面，存量才是回路转动的轮子。</span></li><li><b>列出改变存量的流入和流出</b><span>每条至少写三个来源或出口，比如新客、召回、流失。写不全就先别下结论。</span></li><li><b>检查每条流是否依赖存量本身</b><span>依赖自己就是回路。越多越生多是增强回路，围着某个目标纠偏的是调节回路。</span></li><li><b>在图上标出延迟</b><span>动作到见效隔多久。调节回路里延迟越长，越容易过冲和振荡，比如产能建设动辄两三年。</span></li><li><b>改结果先改回路，而不是更用力</b><span>按梅多斯的排序：改流量不如改回路规则，改规则不如改目标。先问当前哪个回路在主导。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>一次性、没有积累效应的决策</td><td>背后一定有回路在推动</td><td>抛硬币没有记忆，硬套回路会把噪声读成结构。</td></tr><tr><td>回路边界画得太小</td><td>系统内部逻辑能解释一切</td><td>主导回路常在边界外，比如监管、竞争对手、气候。画小了会得出自信的错误结论。</td></tr><tr><td>多个强弱相近的回路叠加</td><td>识别回路就能预测走势</td><td>回路互相拉扯时行为近乎随机，只能判断方向和机制，算不出拐点日期。</td></tr><tr><td>把结构当免责借口</td><td>是结构的问题，不是人的问题</td><td>结构由人的规则和激励维持着，推给结构常常变成拒绝担责。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../stocks-flows/">存量与流量</a><span>回路藏在流量里，先分清存量和流量才画得出回路</span></li><li><a href="../limits-to-growth/">增长极限</a><span>把增强回路放进资源约束，就是增长极限的核心推演</span></li><li><a href="../leverage-points/">杠杆点</a><span>梅多斯把回路强度列为高杠杆点，改回路比改参数更有效</span></li><li><a href="../flywheel/">飞轮效应</a><span>飞轮是被刻意设计的增强回路，亚马逊的例子最出名</span></li><li><a href="../homeostasis/">内稳态</a><span>体温和血糖调节是生物体内最古老的调节回路</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>德内拉·梅多斯《系统之美》（Thinking in Systems, 2008） <span class="lv lv-secondary">可靠二手</span></li><li>诺伯特·维纳《控制论》（Cybernetics, 1948） <span class="lv lv-secondary">可靠二手</span></li><li>梅多斯等《增长的极限》（1972）；Graham Turner 的三十年数据对照（CSIRO 2008，墨尔本大学 2014） <span class="lv lv-secondary">可靠二手</span></li><li>联合国《世界人口展望》历年估计 <span class="lv lv-verified">一手核实</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "feedback-loops", "domain": "systems", "mermaid": "flowchart TD\n  R1[\"增强回路 R\"] --> R2[\"结果越好，动力越大\"]\n  R2 --> R3[\"滚雪球：指数式变化\"]\n  R3 --> R1\n  R3 --> C[\"撞上上限或开始反噬\"]\n  C --> B1[\"调节回路 B\"]\n  B1 --> B2[\"比较现状与目标\"]\n  B2 --> B3[\"差距越大，纠正越强\"]\n  B3 --> B1\n  B3 --> S[\"稳定，或因延迟而振荡\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["世界人口（十亿）", "年增长率（%）"]}, "xAxis": {"type": "category", "data": ["1900", "1920", "1940", "1960", "1980", "2000", "2020"]}, "yAxis": [{"type": "value", "name": "十亿人", "min": 0}, {"type": "value", "name": "百分比", "min": 0, "max": 2.5}], "series": [{"name": "世界人口（十亿）", "type": "line", "data": [1.65, 1.86, 2.3, 3.03, 4.44, 6.14, 7.79]}, {"name": "年增长率（%）", "type": "line", "yAxisIndex": 1, "data": [0.7, 1.0, 1.0, 1.9, 1.8, 1.3, 0.9]}]}, "demo": {"title": "给指数增长装上刹车", "takeaway": "拖大增长率，纯增强回路会冲出图表；调高上限只改变 S 曲线停在哪。没有调节回路，增长不会自己刹车。", "params": [{"id": "r", "label": "增强回路强度（每期增长率）", "min": 0.05, "max": 0.3, "step": 0.01, "default": 0.12}, {"id": "k", "label": "调节回路目标（承载上限）", "min": 20, "max": 200, "step": 5, "default": 80}], "x": {"label": "时间（期）", "from": 0, "to": 40, "step": 1}, "series": [{"name": "只有增强回路", "expr": "pow(1 + r, x)"}, {"name": "增强加调节回路", "expr": "k / (1 + (k - 1) * exp(-r * x))"}]}, "related": [{"slug": "stocks-flows", "title": "存量与流量", "exists": true}, {"slug": "limits-to-growth", "title": "增长极限", "exists": true}, {"slug": "leverage-points", "title": "杠杆点", "exists": true}, {"slug": "flywheel", "title": "飞轮效应", "exists": true}, {"slug": "homeostasis", "title": "内稳态", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

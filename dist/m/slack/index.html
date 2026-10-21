@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>冗余 · 思维模型 Wiki</title><meta name="description" content="留一点松弛，系统才扛得住意外">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/slack/">
+<meta property="og:title" content="冗余 · 思维模型 Wiki"><meta property="og:description" content="留一点松弛，系统才扛得住意外">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/slack/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>冗余 <small>Slack</small></h1>
+<p class="tagline"><strong>留一点松弛，系统才扛得住意外</strong></p>
+<p class="experts"><strong>德内拉·梅多斯</strong>（《增长的极限》主笔，把缓冲库存列为系统十二大杠杆点之一） · <strong>纳西姆·塔勒布</strong>（《反脆弱》作者，主张用冗余对抗效率崇拜） · <strong>理查德·西尔特与詹姆斯·马奇</strong>（1963 年提出组织冗余概念，认为账上的松弛是企业试错的燃料）</p>
+
+<section><h2>场景钩子 · 丰田靠多存的芯片赢下缺芯年</h2><p>丰田是准时制生产的鼻祖，几十年把库存压到极限，仓库里几乎不放零件。2011 年 3 月 11 日，日本东北大地震震垮了瑞萨电子的车间，这家公司供应着全球约四成的车用微控制器，丰田随即发现有上千种零件依赖单一货源，当年被迫大规模减产。事后丰田没有回到零库存，反而建起供应链数据库，摸清每个零件的来路，并给关键芯片备足 2 到 6 个月的库存，在同行眼里这是赤裸裸的浪费。2021 年全球缺芯，AlixPartners 估算全行业少产约 770 万辆车，损失约 2100 亿美元，通用和福特被迫一再减产，丰田受的冲击却小得多，全年销量首次登顶全球第一。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">关键在负载率：越接近满载越脆弱。冗余平时像浪费，冲击来时是命，闲下来时是探索的燃料。</p></section>
+<section><h2>数据证据 · 缺芯之年：留库存的丰田与满负荷的通用 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">备了芯片库存的丰田在 2021 年销量反弹并登顶全球第一，满负荷运转的通用掉了两位数。<br><span class="src">来源：丰田与通用历年销量公告及路透社报道；AlixPartners 2021 年 9 月芯片短缺损失估算；日经与路透社关于丰田灾后保留 2 至 6 个月芯片库存的报道</span></p></section>
+<section><h2>交互演示 · 冲击来临时，冗余吃掉多少损失</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">冲击小于冗余时系统几乎无感，零冗余系统直接掉到底，恢复全靠时间，而冗余平时还在悄悄变成新能力。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>量出系统的负载率</b><span>看关键环节离满载有多远：日程占用率、库存天数、现金流月数、排队长度。低于 100% 的部分才是你的冗余。</span></li><li><b>给不可预测的环节留缓冲</b><span>关键零件备几个月库存，日程留两成空档，现金备半年开销。越不可预测、越难替代的环节，冗余要越厚。</span></li><li><b>在可预测的环节继续追求效率</b><span>塔勒布的杠铃思路：一头极紧，一头极松。能随时补货的标准件不必囤，单点依赖的核心件必须囤。</span></li><li><b>定期消耗和测试冗余</b><span>库存会过期，技能会生疏。做断供演练，留白日真的空出来，让冗余保持可用状态。</span></li><li><b>把省下的松弛投入探索</b><span>效率红利不要全部加回负载。谷歌的 20% 时间和 3M 的 15% 时间，都是把松弛制度化的例子。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>缓冲堆得太大且长期不用</td><td>冗余越多越安全</td><td>梅多斯提醒，缓冲过大会让系统反应迟钝，库存会过期，闲钱会被乱花，冗余本身也有维护成本。</td></tr><tr><td>冲击超过冗余的设计上限</td><td>有冗余就扛得住</td><td>冗余只覆盖设想过范围的冲击，黑天鹅级冲击照样击穿。福岛的海堤也是一种冗余，只是不够高。</td></tr><tr><td>所有对手都在压成本拼效率</td><td>留冗余稳赚</td><td>短期内满载的对手报表更好看，留冗余的公司可能先被股东惩罚，这个选择需要长期视角撑腰。</td></tr><tr><td>把冗余当成可随时挪用的资源</td><td>松弛随时可以变现</td><td>留白时间一旦被排满就回不来，缓冲被挪用后系统实际处于裸奔状态，而报表上看不出来。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../stocks-flows/">存量与流量</a><span>缓冲的本质是存量，冗余就是故意多存的存量</span></li><li><a href="../resilience/">韧性</a><span>冗余是韧性的原材料，吸收冲击靠它</span></li><li><a href="../theory-of-constraints/">约束理论</a><span>约束理论要榨干瓶颈，冗余提醒你留多少才不被一次冲击打死</span></li><li><a href="../antifragile/">反脆弱</a><span>塔勒布的进阶主张，冗余不仅保命还能让系统变强</span></li><li><a href="../margin-of-safety/">安全边际</a><span>安全边际是财务世界的冗余</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>德内拉·梅多斯《系统之美》第 2 章，存量、流量与缓冲 <span class="lv lv-secondary">可靠二手</span></li><li>纳西姆·塔勒布《反脆弱》，论冗余与效率的取舍 <span class="lv lv-secondary">可靠二手</span></li><li>路透社与日经 2021 年报道：丰田灾后要求关键芯片备 2 至 6 个月库存 <span class="lv lv-secondary">可靠二手</span></li><li>AlixPartners 2021 年 9 月芯片短缺影响估算 <span class="lv lv-secondary">可靠二手</span></li><li>西尔特与马奇《企业行为理论》（1963），组织冗余概念 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "slack", "domain": "systems", "mermaid": "flowchart LR\n  A[系统总容量] --> B[日常负载]\n  A --> C[闲置容量即冗余]\n  B --> D{负载率多高}\n  D -->|接近满载| E[效率最高<br/>一次冲击就崩]\n  D -->|留有余量| F[冲击被冗余吸收]\n  C --> F\n  F --> G[恢复原状]\n  C --> H[多余的时间与资源<br/>用于试错和探索]\n  H --> I[发现新路径<br/>系统变得更强]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["丰田集团全球销量", "通用汽车全球销量"]}, "xAxis": {"type": "category", "data": ["2019", "2020", "2021"]}, "yAxis": {"type": "value", "name": "万辆"}, "series": [{"name": "丰田集团全球销量", "type": "line", "data": [1074, 953, 1050]}, {"name": "通用汽车全球销量", "type": "line", "data": [770, 680, 600]}]}, "demo": {"title": "冲击来临时，冗余吃掉多少损失", "takeaway": "冲击小于冗余时系统几乎无感，零冗余系统直接掉到底，恢复全靠时间，而冗余平时还在悄悄变成新能力。", "params": [{"id": "slack", "label": "冗余比例", "min": 0, "max": 0.5, "step": 0.05, "default": 0.2}, {"id": "shock", "label": "冲击规模", "min": 0.1, "max": 0.6, "step": 0.05, "default": 0.3}], "x": {"label": "月份", "from": 0, "to": 24, "step": 1}, "series": [{"name": "有冗余的系统", "expr": "100 - 100 * max(0, shock - slack) * (1 / (1 + exp(-2 * (x - 6)))) * exp(-0.3 * max(0, x - 6))"}, {"name": "零冗余系统", "expr": "100 - 100 * shock * (1 / (1 + exp(-2 * (x - 6)))) * exp(-0.3 * max(0, x - 6))"}, {"name": "冗余攒出的新能力", "expr": "100 * slack * (1 - exp(-0.08 * x))"}]}, "related": [{"slug": "stocks-flows", "title": "存量与流量", "exists": true}, {"slug": "resilience", "title": "韧性", "exists": true}, {"slug": "theory-of-constraints", "title": "约束理论", "exists": true}, {"slug": "antifragile", "title": "反脆弱", "exists": true}, {"slug": "margin-of-safety", "title": "安全边际", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

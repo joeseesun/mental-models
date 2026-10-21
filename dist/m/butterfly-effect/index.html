@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>蝴蝶效应 · 思维模型 Wiki</title><meta name="description" content="微小差异，被时间放大成不同命运">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/butterfly-effect/">
+<meta property="og:title" content="蝴蝶效应 · 思维模型 Wiki"><meta property="og:description" content="微小差异，被时间放大成不同命运">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/butterfly-effect/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>蝴蝶效应 <small>Butterfly Effect</small></h1>
+<p class="tagline"><strong>微小差异，被时间放大成不同命运</strong></p>
+<p class="experts"><strong>爱德华·洛伦兹</strong>（发现者，MIT 气象学家，1963 年发表《确定性非周期流》，提出确定性混沌） · <strong>詹姆斯·约克</strong>（命名者，1975 年与李天岩发表论文《周期三意味着混沌》，首次使用 chaos 一词）</p>
+
+<section><h2>场景钩子 · 0.000127，抹掉了一份天气预报</h2><p>1961 年冬，MIT 气象学家洛伦兹在计算机上跑天气模拟。想接着上次的预测继续算，为了省事，他把初始值 0.506127 敲成了 0.506，差距只有 0.000127，约四千分之一。他以为结果几乎不变，新预测起初也确实贴着旧曲线走，之后却越偏越远，最后两组天气完全对不上。他先怀疑机器坏了，检查后才发现问题不在硬件，而在方程本身会不断放大微小差异。1963 年他发表《确定性非周期流》，1972 年又在一次会议上问出那句让概念走红的话：巴西一只蝴蝶扇动翅膀，会在德克萨斯引起一场龙卷风吗？</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">关键在这个循环：规则是确定的，误差却被非线性项一轮轮放大，直到填满整个系统。确定，不等于可预测。</p></section>
+<section><h2>数据证据 · 洛伦兹系统里的误差增长：从四千分之一到完全发散 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">0.000127 的初始误差，约 13 个模型时间单位后就长到与系统本身同尺度；气象界后来估计，真实大气的确定性预报极限约两周。<br><span class="src">来源：初始误差取自 1961 年舍入事件；增长率取自 1963 年三变量系统的最大李雅普诺夫指数约 0.9（Sprott, Chaos and Time-Series Analysis, 2003）；分离度按 0.000127 乘 e 的 0.9t 次方计算，在吸引子尺度 20 处截断</span></p></section>
+<section><h2>交互演示 · 把初始误差缩小十倍，能换回多少预测时间</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">初始误差缩小十倍，只多换来约 2.5 个模型时间单位，改善是对数级的，预测极限永远存在。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先判断对象是不是非线性复杂系统</b><span>天气、市场、生态、组织都算，钟摆和定期存款不算。蝴蝶效应的前提是正反馈加非线性。</span></li><li><b>找出初始条件里的敏感点</b><span>问哪些数字差一点就会被放大，比如产品早期的口碑、关键员工的去留、上线首日的崩溃率。</span></li><li><b>用区间和集合预报替代单点预测</b><span>对多个初始值各跑一遍，看哪些结论在所有情景下都成立。欧洲中期天气预报中心 1992 年起采用集合预报。</span></li><li><b>缩短决策周期，用观测不断修正</b><span>既然长期预测靠不住，就用短周期、快反馈、勤修正来替代，像飞行员不断微调航向。</span></li><li><b>追求稳健而不是精确</b><span>选在很大一片未来里都站得住的方案，而不是押注某一条精确的预测曲线。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>几天内的短期预测</td><td>微小差异会被放大，短期预测也没用</td><td>放大需要时间，3 天内的天气预报仍然相当准，短期决策照做不误。</td></tr><tr><td>带负反馈的线性系统</td><td>任何系统都有蝴蝶效应</td><td>钟摆、恒温器、定期存款都在压制扰动，日常多数系统并不混沌。</td></tr><tr><td>把不可预测当成不作为的借口</td><td>反正测不准，规划没有意义</td><td>统计规律和区间预测依然可用，气候能预测而天气不能，该做的准备照做。</td></tr><tr><td>事后解释重大事件</td><td>找到那个初始小差异就能解释一切</td><td>敏感初始条件无法回溯定位，事后归因往往是叙事，不是因果。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../feedback-loops/">反馈回路</a><span>放大的引擎：没有非线性正反馈，就没有蝴蝶效应</span></li><li><a href="../path-dependence/">路径依赖</a><span>初始条件被放大后固化为路径，历史因此难以改写</span></li><li><a href="../black-swan/">黑天鹅</a><span>长期不可预测的极端后果，正是蝴蝶效应的宏观面孔</span></li><li><a href="../emergence/">涌现</a><span>宏观格局从局部规则中涌现，无法从单条轨迹推出</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Edward Lorenz, Deterministic Nonperiodic Flow, Journal of the Atmospheric Sciences, 1963 <span class="lv lv-verified">一手核实</span></li><li>Edward Lorenz, The Essence of Chaos, 1993 <span class="lv lv-secondary">可靠二手</span></li><li>James Gleick, Chaos: Making a New Science, 1987 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "butterfly-effect", "domain": "systems", "mermaid": "flowchart LR\n  A[\"确定性方程，规则完全相同\"] --> B[\"初始值只差 0.000127\"]\n  B --> C[\"非线性项放大差异\"]\n  C --> D[\"误差指数增长\"]\n  D --> E{\"误差达到系统尺度？\"}\n  E -->|还没有| C\n  E -->|达到了| F[\"两条未来轨迹毫不相干\"]\n  F --> G[\"长期预测失效\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["两条轨迹的分离度", "系统尺度上限"]}, "xAxis": {"type": "category", "data": ["0", "2", "4", "6", "8", "10", "12", "14"]}, "yAxis": {"type": "log", "name": "分离度（模型单位）", "min": 0.0001, "max": 30}, "series": [{"name": "两条轨迹的分离度", "type": "line", "data": [0.000127, 0.000778, 0.004762, 0.029155, 0.17849, 1.0929, 6.6915, 20]}, {"name": "系统尺度上限", "type": "line", "data": [20, 20, 20, 20, 20, 20, 20, 20]}]}, "demo": {"title": "把初始误差缩小十倍，能换回多少预测时间", "takeaway": "初始误差缩小十倍，只多换来约 2.5 个模型时间单位，改善是对数级的，预测极限永远存在。", "params": [{"id": "init", "label": "初始误差（10 的负 N 次方）", "min": 2, "max": 8, "step": 1, "default": 4}, {"id": "rate", "label": "系统敏感度", "min": 0.3, "max": 1.5, "step": 0.05, "default": 0.9}], "x": {"label": "模型时间", "from": 0, "to": 15, "step": 0.5}, "series": [{"name": "两条轨迹的分离度", "expr": "min(pow(10, -init) * exp(rate * x), 20)"}, {"name": "初始误差缩小十倍", "expr": "min(pow(10, -(init + 1)) * exp(rate * x), 20)"}]}, "related": [{"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "path-dependence", "title": "路径依赖", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "emergence", "title": "涌现", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

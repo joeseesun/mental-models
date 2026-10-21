@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>达克效应 · 思维模型 Wiki</title><meta name="description" content="看不见自己的不行，正是不行的一部分">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/dunning-kruger/">
+<meta property="og:title" content="达克效应 · 思维模型 Wiki"><meta property="og:description" content="看不见自己的不行，正是不行的一部分">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/dunning-kruger/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-psychology">
+<p class="crumb"><a href="../../index.html">首页</a> / 心理</p>
+<h1>达克效应 <small>Dunning-Kruger Effect</small></h1>
+<p class="tagline"><strong>看不见自己的不行，正是不行的一部分</strong></p>
+<p class="experts"><strong>大卫·邓宁</strong>（提出者，时任康奈尔大学心理学教授，1999 年与克鲁格发表奠基论文，此后持续研究人如何评估自己的无知） · <strong>贾斯汀·克鲁格</strong>（第一作者，当时是邓宁的博士生，后任教于纽约大学，转向行为决策研究）</p>
+
+<section><h2>场景钩子 · 抹了柠檬汁去抢银行的男人</h2><p>1995 年 1 月，美国匹兹堡，一个叫麦克阿瑟·惠勒的男人在光天化日之下走进两家银行抢劫。他没有蒙面，只在脸上抹了柠檬汁。他的逻辑是：柠檬汁能当隐形墨水，抹在脸上摄像头就拍不到他。当晚警察就靠监控画面抓到了他，画面里他的脸清清楚楚。被捕时惠勒一脸困惑，反复嘟囔一句话：可我抹了柠檬汁啊。康奈尔大学社会心理学家邓宁看到这条新闻后意识到，重点不是这个人蠢，而是他可能根本没有能力判断自己的行为有多荒谬。他和研究生克鲁格随后用幽默感、语法和逻辑推理做了四组实验，发现成绩垫底的四分之一学生，对自己排名的估计高得惊人。1999 年论文发表，这个现象从此有了名字。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">左边这条链是效应的核心：把事做好的能力和判断好坏的能力高度重合，缺前者的人往往也缺后者，于是连自己缺了什么都看不见。</p></section>
+<section><h2>数据证据 · 语法测试：四组学生的实际水平与自我估计 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">垫底组实际约 12 分位，却把自己估到 62 分位；最强组实际 80 分位，反而低估了自己。<br><span class="src">来源：Kruger &amp; Dunning (1999), Journal of Personality and Social Psychology 77(6)，语法测试研究，数值取自论文报告结果的近似值</span></p></section>
+<section><h2>交互演示 · 自信的过山车与能力的慢坡</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">起点自信越高，后面摔得越疼；谷底低于实际能力，恰恰说明你终于看清了山有多高。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先找一把外部尺子</b><span>测验、评审、数据指标、同行对比都行，关键是能把你放进同一个分布里看排名。</span></li><li><b>先做小规模实测，再下判断</b><span>把“我感觉我掌握了”换成做三道题、跑一次测试、讲一遍给别人听。</span></li><li><b>把结论说成数字或排名</b><span>“我感觉不错”换成“我大概在什么百分位”，强迫自己和真实分布对表。</span></li><li><b>主动收集负面反馈</b><span>新手要找愿意指出错误的人，高手要给外行讲一遍，讲不顺的地方就是盲区。</span></li><li><b>开会时警惕最自信的声音</b><span>声音大不等于懂得多，先看证据和过往记录，再分配话语权。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>把网上那条大起大落的 U 形曲线当成精确数据</td><td>新手自信必然远高于专家，存在愚昧山峰</td><td>原始数据里最强一组只是轻微低估，夸张的 U 形更多来自传播加工，2020 年后有论文认为它部分是统计伪影。</td></tr><tr><td>用它反驳持不同意见的人</td><td>他这么自信，肯定是达克效应</td><td>这会变成拒绝讨论的话术，判断观点要看证据，不看对方语气有多自信。</td></tr><tr><td>以为只有能力差的人会高估自己</td><td>高手的自我评估总是准的</td><td>高于平均效应几乎人人都有，高手跨出自己的领域后照样会高估。</td></tr><tr><td>领域里有成熟校准训练的人，比如天气预报员和麻醉医生</td><td>新手必然严重高估</td><td>接受过系统反馈训练的人自我评估可以相当准，效应不是不可改变的宿命。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../regression-to-mean/">均值回归</a><span>批评者认为效应部分来自均值回归等统计伪影，两个模型要放在一起看</span></li><li><a href="../feedback-loops/">反馈回路</a><span>缺反馈回路是高估的温床，接上真实反馈，自信曲线才会变平</span></li><li><a href="../bayes-updating/">贝叶斯更新</a><span>校正自我评估的本质，是用新证据不断更新对自己的先验判断</span></li><li><a href="../confirmation-bias/">确认偏误</a><span>只听得进夸奖的人，高估会一直维持下去</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Kruger, J. &amp; Dunning, D. (1999). Unskilled and Unaware of It. Journal of Personality and Social Psychology, 77(6), 1121-1134 <span class="lv lv-verified">一手核实</span></li><li>Dunning, D. (2011). The Dunning-Kruger Effect: On Being Ignorant of One&#x27;s Own Ignorance. Advances in Experimental Social Psychology, Vol. 44 <span class="lv lv-verified">一手核实</span></li><li>Gignac, G. E. &amp; Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. Intelligence, 80 <span class="lv lv-secondary">可靠二手</span></li><li>Pittsburgh Post-Gazette 对惠勒抢银行案的报道，邓宁自述由此获得研究灵感 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "dunning-kruger", "domain": "psychology", "mermaid": "flowchart TD\n  A[完成一项任务] --> B[评估自己做得如何]\n  B --> C{\"元认知能力是否够用<br/>即能否判断好坏\"}\n  C -->|不够| D[看不出自己的错误<br/>于是高估自己]\n  C -->|够用| E[能看见高手的高度<br/>估计接近准确]\n  D --> F[获得真实反馈或接受训练]\n  F --> G[第一次看清差距<br/>自信骤降]\n  G --> H[继续练习<br/>自信缓慢回升]\n  E --> H", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["实际成绩百分位", "自我估计百分位"]}, "xAxis": {"type": "category", "data": ["成绩后25%", "中下25%", "中上25%", "成绩前25%"]}, "yAxis": {"type": "value", "name": "百分位", "max": 100}, "series": [{"name": "实际成绩百分位", "type": "bar", "data": [12, 30, 60, 80]}, {"name": "自我估计百分位", "type": "bar", "data": [62, 48, 63, 72]}]}, "demo": {"title": "自信的过山车与能力的慢坡", "takeaway": "起点自信越高，后面摔得越疼；谷底低于实际能力，恰恰说明你终于看清了山有多高。", "params": [{"id": "over", "label": "新手自信起点", "min": 50, "max": 100, "step": 5, "default": 85}, {"id": "dip", "label": "觉醒谷底深度", "min": 0, "max": 60, "step": 5, "default": 45}], "x": {"label": "学习投入", "from": 0, "to": 100, "step": 1}, "series": [{"name": "实际能力", "expr": "100 * (1 - exp(-0.03 * x))"}, {"name": "自我感觉", "expr": "over + (100 - over) * (1 - exp(-0.04 * x)) - dip * exp(-pow((x - 45) / 15, 2))"}]}, "related": [{"slug": "regression-to-mean", "title": "均值回归", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}, {"slug": "confirmation-bias", "title": "确认偏误", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

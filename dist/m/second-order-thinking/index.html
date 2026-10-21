@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第二层思维 · 思维模型 Wiki</title><meta name="description" content="每个决策都有下游，多问一句然后呢">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/second-order-thinking/">
+<meta property="og:title" content="第二层思维 · 思维模型 Wiki"><meta property="og:description" content="每个决策都有下游，多问一句然后呢">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/second-order-thinking/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>第二层思维 <small>Second-Order Thinking</small></h1>
+<p class="tagline"><strong>每个决策都有下游，多问一句然后呢</strong></p>
+<p class="experts"><strong>霍华德·马克斯</strong>（推广者，橡树资本联合创始人，1990年起在投资备忘录里反复区分第一层与第二层思维，2011年写进《投资最重要的事》第一章） · <strong>弗雷德里克·巴斯夏</strong>（先行者，1850年发表《看得见的与看不见的》，断言坏经济学家只看看得见的效果，好经济学家还要看预见得到的效果）</p>
+
+<section><h2>场景钩子 · 一颗止痛药的三层后果</h2><p>1995年12月，美国FDA批准普渡制药的奥施康定，1996年上市。销售话术引用1980年一封只有五句话的读者来信，宣称成瘾率低于百分之一。第一层效果是真的：慢性疼痛病人得到缓解，医生开药有奖励，药片卖出几十亿美元。第二层在暗处发酵：成瘾蔓延，2007年普渡联邦认罪，罚款6.35亿美元。第三层更狠：2010年后处方被严管，成瘾者转向海洛因和芬太尼，CDC数据显示阿片类年死亡人数从1999年的约8000人涨到2021年的约8万人。每一层都在应对上一层，压住了药片，压不住下游，总死亡反而翻了十倍。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">关键在底部的循环：每推出一层应对，就回头检查它会不会吃掉直接效果，直到推不动为止。</p></section>
+<section><h2>数据证据 · 美国阿片类过量死亡：压住处方药，芬太尼顶上来 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">第一层目标部分达成了，处方药死亡在2016年前后见顶回落，第二层后果是芬太尼类死亡涨了二十多倍，总死亡反而更高。<br><span class="src">来源：美国疾控中心国家卫生统计中心（CDC NCHS）历年过量死亡统计</span></p></section>
+<section><h2>交互演示 · 一项限行政策：只算第一层，和算上应对</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">直接效果是一条水平线，人的应对随时间累积，应对够强时净效果转负，政策反而帮倒忙，墨西哥城1989年限行就是现实版。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先老老实实写下第一层结论</b><span>不急着否定，写下这个决策最直接的效果，例如限行让上路的车变少，止痛让病人舒服。</span></li><li><b>对每个受影响的人问然后呢</b><span>车主、对手、下属、受益者会怎么调整？写他们最省力的应对，例如再买一辆旧车，补贴养出依赖。</span></li><li><b>把应对放回系统再追一层</b><span>应对本身也有下游，旧车排放更差，依赖削弱劳动意愿，追到第三层，直到看不出新的大变化。</span></li><li><b>给每层效果标上时间和大小</b><span>第一层往往立刻可见，第二层常滞后数月甚至数年，别只比较政策落地那一刻。</span></li><li><b>选净效果最大的方案，不是第一层最大的方案</b><span>如果第二层会吃掉第一层，就换方案或加配套，例如限行同时淘汰旧车，止痛同时限处方量。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>对方行为高度不可测，比如开放市场里的竞争者</td><td>推演两层就能看清下游</td><td>推演常常只是想象，对手可能给出你没想到的第五种应对，多想一层反而给人虚假的确定感。</td></tr><tr><td>需要快速止损的紧急决策</td><td>想全了再动手</td><td>火警、挤兑、疫情初期，拖延的代价远大于下游风险，先动起来比想对更重要。</td></tr><tr><td>推演沦为不行动的借口</td><td>每层都有风险，再想想</td><td>无限追问然后呢会让决策瘫痪，推完两层就该用小成本试错代替继续想。</td></tr><tr><td>用第二层思维刷反调的优越感</td><td>你们都只看到第一层</td><td>反对同样需要证据，为反而反和只看第一层一样偷懒。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../incentives/">激励</a><span>推第二层先看激励，人会朝对自己有利的方向应对</span></li><li><a href="../feedback-loops/">反馈回路</a><span>下游效应绕回起点影响上游，就成了反馈回路</span></li><li><a href="../goodharts-law/">古德哈特定律</a><span>指标被应对，是第二层效应最典型的形态</span></li><li><a href="../nash-equilibrium/">纳什均衡</a><span>所有应对都发生后稳定下来的状态</span></li><li><a href="../pre-mortem/">事前验尸</a><span>事前验尸是第二层思维的会议化实操</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Howard Marks《投资最重要的事》第一章：第二层思维（2011） <span class="lv lv-secondary">可靠二手</span></li><li>Frédéric Bastiat《看得见的与看不见的》（1850） <span class="lv lv-secondary">可靠二手</span></li><li>CDC NCHS 阿片类过量死亡统计（1999 至 2021） <span class="lv lv-secondary">可靠二手</span></li><li>美国司法部：普渡制药 2007 年联邦认罪公告 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "second-order-thinking", "domain": "systems", "mermaid": "flowchart TD\n  A[\"想做一个决策\"] --> B[\"写下第一层直接效果\"]\n  B --> C[\"问：每个受影响的人会怎么应对\"]\n  C --> D[\"把应对放回系统，再追一层\"]\n  D --> E{\"第二层会吃掉第一层吗\"}\n  E -->|不会| F[\"按原计划执行\"]\n  E -->|会| G[\"换方案或加配套措施\"]\n  G --> C", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["处方阿片类", "合成阿片类（芬太尼等）"]}, "xAxis": {"type": "category", "data": ["1999", "2010", "2013", "2016", "2019", "2021"]}, "yAxis": {"type": "value", "name": "年死亡人数"}, "series": [{"name": "处方阿片类", "type": "line", "data": [3442, 16651, 16235, 17087, 14480, 14716]}, {"name": "合成阿片类（芬太尼等）", "type": "line", "data": [730, 3007, 3105, 19413, 36359, 71238]}]}, "demo": {"title": "一项限行政策：只算第一层，和算上应对", "takeaway": "直接效果是一条水平线，人的应对随时间累积，应对够强时净效果转负，政策反而帮倒忙，墨西哥城1989年限行就是现实版。", "params": [{"id": "direct", "label": "第一层直接效果（0 到 1）", "min": 0.1, "max": 1, "step": 0.05, "default": 0.8}, {"id": "react", "label": "下游应对强度（0 到 1.5）", "min": 0, "max": 1.5, "step": 0.05, "default": 1}], "x": {"label": "政策实施后的月数", "from": 1, "to": 60, "step": 1}, "series": [{"name": "第一层预期效果", "expr": "100 * direct"}, {"name": "实际净效果", "expr": "100 * direct * (1 - react * (1 - exp(-0.15 * x)))"}]}, "related": [{"slug": "incentives", "title": "激励", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "goodharts-law", "title": "古德哈特定律", "exists": true}, {"slug": "nash-equilibrium", "title": "纳什均衡", "exists": true}, {"slug": "pre-mortem", "title": "事前验尸", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

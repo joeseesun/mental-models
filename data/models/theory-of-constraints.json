@@ -1,0 +1,188 @@
+{
+  "slug": "theory-of-constraints",
+  "title": "约束理论",
+  "en": "Theory of Constraints",
+  "domain": "systems",
+  "experts": [
+    {
+      "name": "艾利·高德拉特",
+      "role": "提出者，以色列物理学家出身的企管顾问，1984 年用小说《目标》讲透瓶颈，2011 年去世"
+    },
+    {
+      "name": "艾利·施拉根海姆",
+      "role": "传播者，高德拉特学派的核心合作者，把方法推广到项目管理与供应链"
+    }
+  ],
+  "tagline": "整条链的速度，等于最慢的那一环",
+  "hook": {
+    "title": "童子军队伍的速度，就是赫比的速度",
+    "story": "1984 年，物理学家出身的管理顾问高德拉特出版了小说《目标》。主角罗哥是一家濒临关闭的工厂的厂长，某天带儿子参加童子军远足，发现队伍越拉越长，掉队的总是走得最慢的男孩赫比。他先是让赫比领队，再把赫比背包里的重物分给其他人背，全队速度立刻提了上来。罗哥由此悟到：队伍的速度不是由最强的人决定，而是由赫比决定。回到工厂，他找出产能最小的那道工序，让它永不停机，再让其他工序迁就它的节奏，工厂在三个月限期之内起死回生。这本书后来卖出数百万册，2011 年被《时代》杂志列入 25 本最具影响力的商业管理书籍。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"第一步 识别：找出产能最小的环节\"] --> B[\"第二步 榨干：瓶颈停一小时，全系统就少一小时产出\"]\n  B --> C[\"第三步 迁就：非瓶颈按瓶颈的节奏生产\"]\n  C --> D[\"第四步 提升：投资扩大瓶颈产能\"]\n  D --> E{\"瓶颈移到别处了吗\"}\n  E -->|是| F[\"第五步 重复，警惕惯性\"]\n  E -->|否| D\n  F --> A",
+    "caption": "五个步骤是一个循环，不是一次性项目。瓶颈移走之后，最大的敌人是惯性，人们还在按旧地图优化。"
+  },
+  "evidence": {
+    "title": "100 多个工厂实施案例的平均改善幅度",
+    "takeaway": "聚焦瓶颈之后，交付周期平均缩短 69%，库存下降 54%，有效产出提升 68%。钱花在约束上才见效。",
+    "level": "secondary",
+    "source": "Victoria Mabin 与 Steven Balderstone《The World of Theory of Constraints》（2000），汇总 100 多个实施案例的平均结果",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis",
+        "axisPointer": {
+          "type": "shadow"
+        }
+      },
+      "grid": {
+        "left": "3%",
+        "right": "4%",
+        "bottom": "3%",
+        "containLabel": true
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "有效产出提升",
+          "交付周期缩短",
+          "库存下降"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "平均改善幅度（%）"
+      },
+      "series": [
+        {
+          "name": "平均改善幅度",
+          "type": "bar",
+          "data": [
+            68,
+            69,
+            54
+          ],
+          "barWidth": "45%"
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "同样的预算，投在瓶颈还是投在别处",
+    "takeaway": "预算投在瓶颈，产出从 8 爬到下一个瓶颈就停；投在非瓶颈，产出永远纹丝不动。",
+    "params": [
+      {
+        "id": "rate",
+        "label": "每元预算换来的产能",
+        "min": 0.05,
+        "max": 0.3,
+        "step": 0.01,
+        "default": 0.1
+      },
+      {
+        "id": "nextCap",
+        "label": "其他环节中最紧的产能",
+        "min": 8,
+        "max": 16,
+        "step": 0.5,
+        "default": 10
+      }
+    ],
+    "x": {
+      "label": "改善预算",
+      "from": 0,
+      "to": 100,
+      "step": 5
+    },
+    "series": [
+      {
+        "name": "投在瓶颈工位",
+        "expr": "Math.min(8 + rate * x, nextCap)"
+      },
+      {
+        "name": "投在非瓶颈工位",
+        "expr": "Math.min(12 + rate * x, 15, 8, nextCap)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "画出从订单到交付的全流程，标出每个环节的产能",
+      "detail": "用真实数字，比如每小时处理多少件，别凭感觉排。"
+    },
+    {
+      "step": "找出产能最小的环节，它就是约束",
+      "detail": "在制品堆积最多的地方通常就是瓶颈，跟着库存走就能找到它。"
+    },
+    {
+      "step": "先榨干瓶颈，一分钱不花",
+      "detail": "瓶颈午休不停机，质检挪到瓶颈之前，坏件不占用瓶颈一分钟。"
+    },
+    {
+      "step": "让其他环节迁就瓶颈",
+      "detail": "非瓶颈满负荷只会堆库存，排产以瓶颈节奏为准，这就是鼓缓冲绳。"
+    },
+    {
+      "step": "有钱后再提升瓶颈产能，然后回到第一步",
+      "detail": "瓶颈移走后别用旧地图，惯性是第五步最大的敌人。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "瓶颈在需求端，订单本身不足",
+      "model_says": "先找内部瓶颈，扩它的产能",
+      "reality": "此时约束是市场，扩产能只会堆库存、增亏损，该做的是先找客户。"
+    },
+    {
+      "situation": "多产品混线生产，产品组合经常变",
+      "model_says": "系统存在一个固定瓶颈",
+      "reality": "瓶颈随产品组合漂移，今天扩这台，明天卡那台，静态分析很快过期。"
+    },
+    {
+      "situation": "瓶颈是人的注意力或关键决策，不是机器",
+      "model_says": "用每小时产能衡量瓶颈",
+      "reality": "知识工作的瓶颈难以量化，硬套机器产能会量错地方，甚至逼错优先级。"
+    },
+    {
+      "situation": "考核体系按设备利用率打分",
+      "model_says": "非瓶颈环节应该闲下来",
+      "reality": "让机器闲着的人会被扣绩效，不改指标，迁就瓶颈就落不了地。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "leverage-points",
+      "relation": "瓶颈就是系统里杠杆最高的点，撬动它事半功倍"
+    },
+    {
+      "slug": "slack",
+      "relation": "缓冲的本质是冗余，用非瓶颈的闲来保护瓶颈的忙"
+    },
+    {
+      "slug": "goodharts-law",
+      "relation": "一旦把利用率当考核，非瓶颈会假装忙碌，瓶颈反而被淹没"
+    },
+    {
+      "slug": "second-order-thinking",
+      "relation": "提升瓶颈前先想第二层：移走它之后，下一个约束在哪"
+    }
+  ],
+  "sources": [
+    {
+      "title": "艾利·高德拉特《目标》（The Goal，1984）",
+      "level": "secondary"
+    },
+    {
+      "title": "Eliyahu Goldratt《约束理论》（Theory of Constraints，1990）",
+      "level": "secondary"
+    },
+    {
+      "title": "Victoria Mabin 与 Steven Balderstone《The World of Theory of Constraints》（2000）",
+      "level": "secondary"
+    },
+    {
+      "title": "《时代》周刊 2011 年评选的 25 本最具影响力管理书籍榜单",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

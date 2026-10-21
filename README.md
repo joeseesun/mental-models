@@ -27,7 +27,7 @@ data/models/*.json   唯一真实来源，每个文件一个条目
 data/models/first-principles.json   手写金样板
 tools/mm.py          schema 校验（唯一真实来源的守门人）
 tools/gen.py         内容生成 Agent：add / fix，校验不过自动带反馈重试
-tools/batch.py       批量生成：按 roster 逐条生成，3 并发
+tools/batch.py       批量生成：按 roster 逐条生成，N 并发（--workers，默认 3）
 tools/build.py       data → dist/（首页图谱、条目页、graph/search/todo.json）
 static/              style.css（领域色 token + 明暗主题）+ mm.js（运行时渲染）
 dist/                构建产物（可直接静态托管）

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>边际递减 · 思维模型 Wiki</title><meta name="description" content="第二碗饭，永远不如第一碗香">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/diminishing-returns/">
+<meta property="og:title" content="边际递减 · 思维模型 Wiki"><meta property="og:description" content="第二碗饭，永远不如第一碗香">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/diminishing-returns/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-economics">
+<p class="crumb"><a href="../../index.html">首页</a> / 经济</p>
+<h1>边际递减 <small>Diminishing Returns</small></h1>
+<p class="tagline"><strong>第二碗饭，永远不如第一碗香</strong></p>
+<p class="experts"><strong>杜尔哥</strong>（1767 年最早写下这条规律：往同一块地连续加人，产出增量会一段比一段少） · <strong>李嘉图</strong>（1817 年用它解释地租的来源，并推出利润会被地租挤干的悲观预言） · <strong>马歇尔</strong>（1890 年《经济学原理》把它整理成标准工具，并提醒技术进步会抬升整条曲线）</p>
+
+<section><h2>场景钩子 · 英国麦价暴涨，逼出一条定律</h2><p>1812 年前后，拿破仑的大陆封锁卡住英国粮道，小麦价格一度冲到每夸特 120 先令以上，地租跟着水涨船高。1815 年议会通过谷物法，规定国内麦价不到 80 先令就不许进口，替地主锁住高粮价。李嘉图在 1817 年的《政治经济学及赋税原理》里给出解释：人口增长逼着英国往同一块地上加人手，第一组十个工人能多收 180 夸特麦子，第二组只多收 170，第三组只多收 160。最差那份收成决定粮价，其余差额全进了地主口袋。他据此预言，只要粮食不能自由进口，利润迟早被地租挤干。这场争论吵了三十年，1846 年皮尔政府废除谷物法，英国转向自由贸易。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">整张图只有一个判断点：新增的那一份，带来的增量还划不划算。</p></section>
+<section><h2>数据证据 · 李嘉图的地：每加十个人，多收的麦子少十夸特 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">总量还在涨，增量在缩水，地租就从这缩水里长出来。<br><span class="src">来源：李嘉图《政治经济学及赋税原理》第2章论地租（1817）中的数字例子</span></p></section>
+<section><h2>交互演示 · 边际产出跌破成本线的地方，就是该停手的地方</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">边际产出跌破成本线就该停手。平均产出往往还在高位，容易让人误以为还能继续加。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先找到那个不能随便扩大的固定要素</b><span>一块地、一个团队、一天的时间、一个用户的注意力。先问清楚什么是不变的。</span></li><li><b>只加一种投入，从第二份开始单独记账</b><span>别看总量，看增量。每一份新增投入带来多少产出，逐份记下来。</span></li><li><b>画出边际曲线，标出增量开始下滑的位置</b><span>第一份往往最高，之后逐份下降。下滑点就是收益的拐点。</span></li><li><b>用边际产出对比每份投入的成本</b><span>边际产出还高于成本就继续加，低于成本就停。这是黄金区间的右边界。</span></li><li><b>把省下的资源挪到还没饱和的地方</b><span>同样的钱，投到新渠道、新产品、新人身上，往往比继续堆在老地方划算。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>软件、网络、知识产品这类行业</td><td>多卖一份，新增回报必然下降</td><td>数字产品复制成本近乎为零，规模越大越赚。该看网络效应，不该硬套递减。</td></tr><tr><td>把增量下滑归咎于执行不力</td><td>再努力一点，增量就会回来</td><td>递减是结构性的。换人换工具只能抬曲线，改变不了增量下滑的形状。</td></tr><tr><td>用短期曲线外推几十年</td><td>粮食危机迟早爆发</td><td>李嘉图低估了化肥与机械。技术进步把整条曲线抬了上去，他的悲观预言落空。</td></tr><tr><td>和生产端的规律混为一谈</td><td>吃第二碗饭，产量下降</td><td>第二碗饭变不香是消费端的边际效用递减，和每份投入产出变少是两回事，用错对象会得出荒唐结论。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../s-curve/">S曲线</a><span>S曲线后半段的放缓，微观机制就是边际递减</span></li><li><a href="../theory-of-constraints/">约束理论</a><span>增量下滑常因撞上瓶颈，先找约束再谈加投入</span></li><li><a href="../opportunity-cost/">机会成本</a><span>边际跌破成本后，省下的资源按机会成本重新分配</span></li><li><a href="../pareto-principle/">二八法则</a><span>前两成投入常贡献八成产出，正是递减曲线陡峭的开头</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>李嘉图《政治经济学及赋税原理》第2章 论地租（1817） <span class="lv lv-secondary">可靠二手</span></li><li>马歇尔《经济学原理》第四篇（1890） <span class="lv lv-secondary">可靠二手</span></li><li>杜尔哥对圣佩拉维文章的评论（1767） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "diminishing-returns", "domain": "economics", "mermaid": "flowchart LR\n  A[\"同一块地、同一个团队<br/>持续追加同一种投入\"] --> B[\"总产出还在涨\"]\n  B --> C[\"但每份新增投入<br/>带来的增量在变小\"]\n  C --> D{\"边际产出还高于<br/>每份投入的成本吗\"}\n  D -->|是| E[\"黄金区间：继续加码\"]\n  D -->|否| F[\"停手：增量已不划算\"]\n  E --> G[\"把新增资源挪到<br/>还没饱和的环节\"]\n  F --> G", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["每组新增产量", "累计总产量"]}, "xAxis": {"type": "category", "data": ["第1组10人", "第2组10人", "第3组10人", "第4组10人"]}, "yAxis": {"type": "value", "name": "小麦，夸特"}, "series": [{"name": "每组新增产量", "type": "bar", "data": [180, 170, 160, 150]}, {"name": "累计总产量", "type": "line", "data": [180, 350, 510, 660]}]}, "demo": {"title": "边际产出跌破成本线的地方，就是该停手的地方", "takeaway": "边际产出跌破成本线就该停手。平均产出往往还在高位，容易让人误以为还能继续加。", "params": [{"id": "base", "label": "第一份投入的产出", "min": 50, "max": 200, "step": 5, "default": 100}, {"id": "decay", "label": "递减速度", "min": 0.02, "max": 0.2, "step": 0.01, "default": 0.08}, {"id": "cost", "label": "每份投入的成本", "min": 2, "max": 40, "step": 1, "default": 10}], "x": {"label": "投入份数", "from": 1, "to": 20, "step": 1}, "series": [{"name": "边际产出", "expr": "base * exp(-decay * x)"}, {"name": "平均产出", "expr": "base * (1 - exp(-decay * x)) / (decay * x)"}, {"name": "单位投入成本", "expr": "cost"}]}, "related": [{"slug": "s-curve", "title": "S曲线", "exists": true}, {"slug": "theory-of-constraints", "title": "约束理论", "exists": true}, {"slug": "opportunity-cost", "title": "机会成本", "exists": true}, {"slug": "pareto-principle", "title": "二八法则", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

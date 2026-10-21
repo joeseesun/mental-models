@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>地图不是疆域 · 思维模型 Wiki</title><meta name="description" content="地图有用，正因为它省略了疆域">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/map-territory/">
+<meta property="og:title" content="地图不是疆域 · 思维模型 Wiki"><meta property="og:description" content="地图有用，正因为它省略了疆域">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/map-territory/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>地图不是疆域 <small>Map Is Not the Territory</small></h1>
+<p class="tagline"><strong>地图有用，正因为它省略了疆域</strong></p>
+<p class="experts"><strong>阿尔弗雷德·科日布斯基</strong>（1931 年提出地图不是疆域，普通语义学创始人） · <strong>查尔斯·波尼斯</strong>（斯坦福大学教授，波尼斯悖论：模型越完整越难懂）</p>
+
+<section><h2>场景钩子 · 1.25 亿美元摔在一个单位上</h2><p>1999 年 9 月 23 日，NASA 的火星气候探测器飞抵火星，随后失联。事后调查发现，洛克希德·马丁的导航软件输出的是英制磅力秒，而 NASA 的软件按公制牛顿秒读取。两组数字在各自的报表里都自洽，曲线漂亮，逻辑闭环，唯独和真实世界的力对不上。探测器比计划低了一百多公里进入火星大气，解体坠毁。1.25 亿美元换来一句教训：屏幕上的数字不是火箭的处境，地图和疆域之间差一个单位，就差了一整艘船。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">地图因省略而可用，也因省略而危险。决策之后，必须拿结果回疆域对账。</p></section>
+<section><h2>数据证据 · 墨卡托地图上的面积错觉 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">真实面积上格陵兰只有非洲的十四分之一，在墨卡托地图上两者几乎一样大。地图越常用，扭曲越容易被当成事实。<br><span class="src">来源：面积数据来自美国中央情报局《世界概况》；视觉面积按各洲代表纬度以墨卡托放大系数 1/cos²φ 估算</span></p></section>
+<section><h2>交互演示 · 地图画多细才划算</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">总成本是一条 U 形曲线。地图太糙会摔进疆域，地图太细就成了另一张看不懂的疆域，最优点在中间。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>写出你此刻在用的地图</b><span>报表、KPI、商业计划、脑中的假设都算，一张张列出来。</span></li><li><b>列出这张地图省略了什么</b><span>问三个问题：谁没被统计进去，哪个变量被平均掉了，哪段时间没覆盖。</span></li><li><b>去疆域里抽查一次</b><span>走现场，见客户，看原始数据，把看到的和地图上的记录对一对。</span></li><li><b>给地图装上对账机制</b><span>定期拿预测和实际结果比较，误差大的地方就是需要重画的区域。</span></li><li><b>疆域变了就重画，别恋旧</b><span>地图是工具不是资产，过期的地图比没有地图更危险。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>疆域本身在剧变，比如新市场或新技术</td><td>旧地图修修补补还能用</td><td>结构变了，参数修补救不了画错的底图，只能重画。</td></tr><tr><td>有人主张扔掉所有模型，只看一手现场</td><td>贴着疆域就不会错</td><td>没有简化就没有思考，你会淹死在细节里，连问题都提不出来。</td></tr><tr><td>仿真模型越做越大，变量上千个</td><td>越精细越接近真实</td><td>波尼斯悖论：模型复杂到和疆域一样难懂，就失去了地图的价值。</td></tr><tr><td>直接采用行业报告或专家绘制的地图</td><td>权威的图更可信</td><td>别人的地图为别人的目的而画，他省略的地方可能正是他的利益所在。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../goodharts-law/">古德哈特定律</a><span>把地图上的指标当疆域本身去优化，就是古德哈特定律</span></li><li><a href="../survivorship-bias/">幸存者偏差</a><span>幸存者偏差是地图自动省略了死掉的样本</span></li><li><a href="../bayes-updating/">贝叶斯更新</a><span>疆域的反馈回来后，用它更新地图的置信度</span></li><li><a href="../black-swan/">黑天鹅</a><span>黑天鹅住在地图没画到的地方</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Alfred Korzybski, A Non-Aristotelian System and its Necessity for Rigour in Mathematics and Physics, 1931 <span class="lv lv-secondary">可靠二手</span></li><li>Alfred Korzybski, Science and Sanity, 1933 <span class="lv lv-secondary">可靠二手</span></li><li>Charles P. Bonini, Simulation of Information and Decision Systems in the Firm, 1963 <span class="lv lv-secondary">可靠二手</span></li><li>NASA 火星气候探测器故障调查委员会报告, 1999 <span class="lv lv-verified">一手核实</span></li><li>CIA World Factbook 各洲面积数据 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "map-territory", "domain": "strategy", "mermaid": "flowchart TD\n  A[真实世界，即疆域] --> B[观察与测量]\n  B --> C[地图，即模型与报表]\n  C --> D[省略细节，保留主干]\n  D --> E[用地图做决策]\n  E --> F{拿结果和疆域对账}\n  F -->|对得上| G[地图继续用]\n  F -->|对不上| H[找到省略或扭曲处]\n  H --> I[回到疆域重新测绘]\n  I --> B", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["真实面积", "墨卡托地图上的视觉面积"]}, "xAxis": {"type": "category", "data": ["非洲", "南美洲", "欧洲", "格陵兰"]}, "yAxis": {"type": "value", "name": "万平方公里"}, "series": [{"name": "真实面积", "type": "bar", "data": [3037, 1784, 1018, 217]}, {"name": "墨卡托地图上的视觉面积", "type": "bar", "data": [3037, 1910, 2460, 2270]}]}, "demo": {"title": "地图画多细才划算", "takeaway": "总成本是一条 U 形曲线。地图太糙会摔进疆域，地图太细就成了另一张看不懂的疆域，最优点在中间。", "params": [{"id": "err", "label": "疆域波动幅度", "min": 10, "max": 100, "step": 5, "default": 60}, {"id": "cost", "label": "建模与理解成本", "min": 10, "max": 100, "step": 5, "default": 40}], "x": {"label": "模型精细度（0 粗略，1 完整）", "from": 0, "to": 1, "step": 0.02}, "series": [{"name": "用错地图的损失", "expr": "err * pow(1 - x, 2)"}, {"name": "建模与理解成本", "expr": "cost * pow(x, 2)"}, {"name": "总成本", "expr": "err * pow(1 - x, 2) + cost * pow(x, 2)"}]}, "related": [{"slug": "goodharts-law", "title": "古德哈特定律", "exists": true}, {"slug": "survivorship-bias", "title": "幸存者偏差", "exists": true}, {"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

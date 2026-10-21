@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>存量与流量 · 思维模型 Wiki</title><meta name="description" content="看水位，别只盯水龙头">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/stocks-flows/">
+<meta property="og:title" content="存量与流量 · 思维模型 Wiki"><meta property="og:description" content="看水位，别只盯水龙头">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/stocks-flows/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>存量与流量 <small>Stocks and Flows</small></h1>
+<p class="tagline"><strong>看水位，别只盯水龙头</strong></p>
+<p class="experts"><strong>福瑞斯特</strong>（系统动力学创始人，1961 年在《工业动力学》中用存量流量结构建模企业与社会） · <strong>德内拉·梅多斯</strong>（《增长的极限》主笔，在《系统之美》里把存量流量列为理解系统的第一课） · <strong>约翰·斯特曼</strong>（MIT 教授，用实验证明受过顶尖训练的人也会混淆存量与流量）</p>
+
+<section><h2>场景钩子 · MIT 高材生画错的一条曲线</h2><p>2007 年，MIT 斯隆管理学院的约翰·斯特曼在《气候变化》期刊发表了一项实验。他请学院的在读研究生做一道题：假设二氧化碳排放先升到峰值，再逐年下降，到 2100 年降到远低于当时的水平，请画出大气二氧化碳浓度的走势。按质量守恒，只要排放仍大于自然吸收，浓度这个存量就会继续上涨。结果超过八成的人画错，多数人让浓度跟着排放一起回落。这些人受过顶尖训练，仍然把流量当成了存量。斯特曼说，人们脑中的气候模型缺了一个浴缸：排放是水龙头，浓度是水位，水位只认进出之差。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">存量是状态，流量是变化率。走向由流量差决定，现状由存量决定。</p></section>
+<section><h2>数据证据 · 排放是流量，浓度是存量，1960 到 2020 年 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">排放两次明显回落，浓度一次都没有跌。只要流入大于流出，存量就只涨不跌。<br><span class="src">来源：NOAA 莫纳罗亚观测站二氧化碳年均浓度记录；全球碳计划（Global Carbon Project）化石燃料排放数据</span></p></section>
+<section><h2>交互演示 · 关小水龙头，水位会降吗</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">进水只比排水多 0.5 升，100 分钟后浴缸照样溢出。流量差看起来很小，存量后果很大。想降水位，进水必须小于排水。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>找出系统里正在积累的东西</b><span>能用数字称量的就是存量：银行存款、仓库库存、团队人数、大气二氧化碳。先给它定一个单位和当前值。</span></li><li><b>画出改变它的进水管和排水管</b><span>每个存量至少有一条流入和一条流出，写清单位，比如每年多少人、每天多少件。</span></li><li><b>比较流入与流出，判断走向</b><span>流入大于流出，存量必涨；小于必跌；相等才稳定。这与存量现在多高无关。</span></li><li><b>听到好消息时追问一句总量</b><span>赤字缩小、新增放缓说的都是流量。追问：总量本身是升是降？很多误判出在这一步。</span></li><li><b>对存量和流量分别安排动作</b><span>改流量见效快，比如裁员止血；改存量需要时间，比如重建技能。别用流量手段期待存量结果。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>流出会随存量变化，比如库存越高报废越快</td><td>把进出当两个独立水龙头，线性外推</td><td>两者常常耦合，实际走向是曲线，直线外推会算过头。</td></tr><tr><td>系统里有多个互相影响的存量</td><td>盯住一个浴缸就能下结论</td><td>人口、资本、污染相互牵动，单浴缸直觉会漏掉延迟与振荡。</td></tr><tr><td>存量逼近硬顶，比如浴缸会满、市场会饱和</td><td>水位按现在的斜率继续走</td><td>越过临界点后行为突变，溢出和崩塌不会提前打招呼。</td></tr><tr><td>手里只有流量数据，缺存量口径</td><td>用流量差就能还原存量</td><td>历史记录不全或口径变过，算出的账面存量可能与真实库存对不上。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../feedback-loops/">反馈回路</a><span>流出随存量变化，就构成了最基础的负反馈回路</span></li><li><a href="../limits-to-growth/">增长极限</a><span>存量逼近承载极限时流入被压回，增长停下来的经典结构</span></li><li><a href="../inertia/">惯性</a><span>存量是系统惯性的来源，水位不会在一夜之间改变</span></li><li><a href="../phase-transition/">相变</a><span>存量积累越过阈值，系统会突然换一种状态</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>德内拉·梅多斯《系统之美》（2008）第三章：存量与流量 <span class="lv lv-secondary">可靠二手</span></li><li>Jay W. Forrester《工业动力学》（1961） <span class="lv lv-secondary">可靠二手</span></li><li>Sterman &amp; Booth Sweeney, Climatic Change（2007）：存量流量误解实验 <span class="lv lv-secondary">可靠二手</span></li><li>NOAA 莫纳罗亚观测站年均浓度记录；全球碳计划排放数据 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "stocks-flows", "domain": "systems", "mermaid": "flowchart LR\n  IN[\"流入\"] --> ST[\"存量\"]\n  ST --> OUT[\"流出\"]\n  OUT -->|流出常随存量变化| ST\n  IN --> Q{\"比较流入与流出\"}\n  OUT --> Q\n  Q -->|流入大于流出| UP[\"存量上升\"]\n  Q -->|流入小于流出| DOWN[\"存量下降\"]\n  Q -->|两者相等| SAME[\"存量保持不变\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["全球二氧化碳年排放", "大气二氧化碳浓度"]}, "xAxis": {"type": "category", "data": ["1960", "1970", "1980", "1990", "2000", "2010", "2020"]}, "yAxis": [{"type": "value", "name": "十亿吨每年"}, {"type": "value", "name": "ppm", "min": 300, "max": 430}], "series": [{"name": "全球二氧化碳年排放", "type": "line", "yAxisIndex": 0, "data": [9.4, 14.9, 19.5, 22.7, 23.2, 33.1, 34.8]}, {"name": "大气二氧化碳浓度", "type": "line", "yAxisIndex": 1, "data": [316.9, 325.7, 338.8, 354.4, 369.6, 389.9, 414.2]}]}, "demo": {"title": "关小水龙头，水位会降吗", "takeaway": "进水只比排水多 0.5 升，100 分钟后浴缸照样溢出。流量差看起来很小，存量后果很大。想降水位，进水必须小于排水。", "params": [{"id": "inflow", "label": "进水流量（升/分钟）", "min": 0, "max": 10, "step": 0.5, "default": 4.5}, {"id": "outflow", "label": "排水流量（升/分钟）", "min": 0, "max": 10, "step": 0.5, "default": 4}], "x": {"label": "时间（分钟）", "from": 0, "to": 120, "step": 1}, "series": [{"name": "浴缸水位（升）", "expr": "max(0, min(100, 50 + (inflow - outflow) * x))"}, {"name": "浴缸容量警戒线", "expr": "100"}]}, "related": [{"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "limits-to-growth", "title": "增长极限", "exists": true}, {"slug": "inertia", "title": "惯性", "exists": true}, {"slug": "phase-transition", "title": "相变", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>期望值思维 · 思维模型 Wiki</title><meta name="description" content="别问会不会赢，问平均能赢多少">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/expected-value/">
+<meta property="og:title" content="期望值思维 · 思维模型 Wiki"><meta property="og:description" content="别问会不会赢，问平均能赢多少">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/expected-value/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>期望值思维 <small>Expected Value</small></h1>
+<p class="tagline"><strong>别问会不会赢，问平均能赢多少</strong></p>
+<p class="experts"><strong>布莱兹·帕斯卡</strong>（1654 年与费马通信解决分赌注问题，概率论的共同奠基人） · <strong>皮埃尔·德·费马</strong>（在图卢兹用组合计数独立解出同一问题，确立了按概率加权的算法） · <strong>爱德华·索普</strong>（把期望值搬上赌桌和交易台，1962 年出版《击败庄家》）</p>
+
+<section><h2>场景钩子 · 赌局中断，赌金该按什么比例分</h2><p>1654 年，法国赌徒德·梅雷拿一个分赌注问题去请教数学家帕斯卡：两人对赌，约定先赢三局的人拿走全部赌金，现在比分为一比一，赌局因故中断，赌金该怎么分？按已赢局数对半分显然不对，因为双方最终赢下的机会并不均等。帕斯卡写信给远在图卢兹的律师费马，几个月里两人通了七封信，各自用不同的路径算出同一个答案：应该按双方最终获胜的概率加权分配。比如先赢三局制下二比一领先的一方，理应拿走四分之三的赌金。这组通信被后世视为概率论的起点，也留下了期望值思维的雏形：评价一个不确定的前景，不要盯着单次输赢，要把每种结果乘以它的概率，再加总起来看。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">第四步的加总是核心：单次结果由运气说了算，期望值才是长期平均。但最后一步同样重要，期望为正只是入场券，还得保证自己活到平均值兑现的那一天。</p></section>
+<section><h2>数据证据 · 常见赌局：每投注 1 单位的期望收益 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">赌场不靠单次输赢赚钱，靠的是把每一注的期望压成负数。索普证明反过来同样成立：找到期望为正的赌局，重复下注，优势自己会兑现。<br><span class="src">来源：轮盘与21点的期望值来自标准赔率的数学计算；算牌优势约 1% 出自索普《击败庄家》（1962）</span></p></section>
+<section><h2>交互演示 · 胜率九成，什么时候仍然是亏的</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">胜率九成、赢一次赚 1 时，输一次亏超过 9，期望就转负；胜率降到五成，亏超过 1 就转负。拖动胜率滑块，看盈亏平衡点怎么移动。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>把不确定的事拆成有限几种结果</b><span>比如投资分为大涨、小涨、持平、亏损几档，不要只写最可能的那一种。</span></li><li><b>给每种结果估一个概率</b><span>优先用历史频率和基础比率，没有数据时用校准过的直觉，并写下估计依据。</span></li><li><b>给每种结果标上损益金额</b><span>收益记正数，损失记负数，别忘了时间成本、税费这些隐性项。</span></li><li><b>概率乘损益，加总得到期望值</b><span>再和替代选项比较，包括什么都不做的期望值。</span></li><li><b>下注前先做破产检查</b><span>问最坏结果能否承受，重复多少次会撞上它，期望为正也可能中途出局。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>只发生一次的重大决策，比如创业或举家搬迁</td><td>期望为正就该干</td><td>大数定律需要足够多的重复次数，一辈子只发生一次的事，平均值兑现不了。</td></tr><tr><td>最坏结果是毁灭性的，比如押上全部身家</td><td>期望为正就是好赌局</td><td>一次破产就永久出局，下注规模必须留余地，这正是凯利公式要解决的问题。</td></tr><tr><td>概率本身估不准，比如全新市场或极端行情</td><td>按估出的概率加权就行</td><td>尾部概率常被低估几个数量级，输入错了，加总再精确也是垃圾进垃圾出。</td></tr><tr><td>重复次数太少，或者中途被迫撤出</td><td>长期平均终会兑现</td><td>短期方差远大于期望，正期望策略也可能连亏数年，拿不住就等于负期望。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../bayes-updating/">贝叶斯更新</a><span>概率不是常数，新证据出现时要用贝叶斯更新</span></li><li><a href="../black-swan/">黑天鹅</a><span>尾部事件让概率估计失效，期望值随之塌掉</span></li><li><a href="../margin-of-safety/">安全边际</a><span>概率估不准时，用安全边际为错误留出余量</span></li><li><a href="../loss-aversion/">损失厌恶</a><span>期望为正不代表拿得住，损失厌恶会让人中途下车</span></li><li><a href="../optionality/">选择权</a><span>损失有限、收益无限的结构，天然是正期望</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>帕斯卡与费马关于分赌注问题的通信（1654 年） <span class="lv lv-verified">一手核实</span></li><li>F. N. David《Games, Gods and Gambling》（1962） <span class="lv lv-secondary">可靠二手</span></li><li>爱德华·索普《击败庄家》（1962） <span class="lv lv-secondary">可靠二手</span></li><li>彼得·伯恩斯坦《与天为敌》（1996） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "expected-value", "domain": "strategy", "mermaid": "flowchart TD\n  A[\"列出所有可能的结果\"] --> B[\"给每种结果估概率\"]\n  B --> C[\"给每种结果标上损益\"]\n  C --> D[\"概率乘以损益，逐项加总\"]\n  D --> E{\"期望值为正吗\"}\n  E -->|是| F[\"参与，并重复足够多次\"]\n  E -->|否| G[\"拒绝，或改变赔率结构\"]\n  F --> H[\"控制单次规模，防止中途破产\"]", "echarts": {"tooltip": {"trigger": "axis"}, "xAxis": {"type": "category", "data": ["欧式轮盘", "美式轮盘", "21点基本策略", "算牌优势玩家"]}, "yAxis": {"type": "value", "name": "期望收益（每 1 单位投注）"}, "series": [{"name": "期望收益", "type": "bar", "data": [-0.027, -0.053, -0.005, 0.01]}]}, "demo": {"title": "胜率九成，什么时候仍然是亏的", "takeaway": "胜率九成、赢一次赚 1 时，输一次亏超过 9，期望就转负；胜率降到五成，亏超过 1 就转负。拖动胜率滑块，看盈亏平衡点怎么移动。", "params": [{"id": "winrate", "label": "胜率", "min": 0.5, "max": 0.99, "step": 0.01, "default": 0.9}, {"id": "win", "label": "赢一次赚多少", "min": 0.5, "max": 5, "step": 0.5, "default": 1}], "x": {"label": "输一次亏多少", "from": 0.5, "to": 12, "step": 0.5}, "series": [{"name": "当前胜率下的每把期望", "expr": "winrate * win - (1 - winrate) * x"}, {"name": "胜率五成时的每把期望", "expr": "0.5 * win - 0.5 * x"}]}, "related": [{"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "margin-of-safety", "title": "安全边际", "exists": true}, {"slug": "loss-aversion", "title": "损失厌恶", "exists": true}, {"slug": "optionality", "title": "选择权", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

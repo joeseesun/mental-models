@@ -1,0 +1,186 @@
+{
+  "slug": "flow",
+  "title": "心流",
+  "en": "Flow",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "米哈里·契克森米哈赖",
+      "role": "提出者，1975 年命名心流，用体验取样法收集了超过十万份实时体验记录"
+    },
+    {
+      "name": "福斯托·马西米尼",
+      "role": "合作者，1988 年把心流通道细化为焦虑、唤醒、掌控、无聊等八通道模型"
+    }
+  ],
+  "tagline": "难度调到刚好够不着，人才会忘我",
+  "hook": {
+    "title": "画了十几个小时，成品看都不看一眼",
+    "story": "上世纪六十年代，芝加哥大学的米哈里·契克森米哈赖研究画家。他发现一个怪现象：画家一进画室就能连续画十几个小时，忘记吃饭，听不见电话响；可一旦画完，他们看都不看成品一眼，转身就开始下一张。报酬和名气都解释不了这种行为，驱动力就在画画这件事本身。于是他带着传呼机去找攀岩者、棋手、外科医生和舞蹈演员，随机呼叫，记录他们此刻在做什么、感觉如何，前后收集了超过十万份体验样本。这些人不管做什么，描述最佳体验时都用了同一个比喻：像被水流裹着走。1975 年，他把这种状态命名为心流。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[接到一个任务] --> B{挑战和技能<br/>谁更高}\n  B -->|挑战远超技能| C[焦虑]\n  B -->|技能远超挑战| D[无聊]\n  B -->|两者大致匹配| E[心流]\n  C --> F[降难度或练技能]\n  D --> F\n  F --> B\n  E --> G[自我意识消失<br/>时间感扭曲]\n  G --> H[技能升级]\n  H --> B",
+    "caption": "心流不是放松，是注意力全部押在匹配的挑战上。技能每升一级，旧挑战就变成无聊，必须再找更难的，这是一个不断上移的循环。"
+  },
+  "evidence": {
+    "title": "工作中的心流反而比休闲多",
+    "takeaway": "契克森米哈赖和莱费弗尔用体验取样法追踪美国职工，发现工作时段进入心流的比例约为休闲时段的三倍。多数人却仍说想少工作。原因很简单，工作自带目标和即时反馈，而休闲往往两者都缺。",
+    "level": "secondary",
+    "source": "Csikszentmihalyi & LeFevre, 1989, Optimal Experience in Work and Leisure, American Psychologist，体验取样法研究，数字为常见引用的近似值",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "心流时刻占比"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "工作时段",
+          "休闲时段"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "进入心流的时间占比（%）",
+        "max": 60
+      },
+      "series": [
+        {
+          "name": "心流时刻占比",
+          "type": "bar",
+          "data": [
+            54,
+            18
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "拖动技能滑块，看心流通道怎么移动",
+    "takeaway": "心流峰值出现在挑战约等于技能的位置。技能越高，要找的挑战就得越大；无聊和焦虑是通道两边的警告信号。",
+    "params": [
+      {
+        "id": "skill",
+        "label": "技能水平",
+        "min": 0,
+        "max": 10,
+        "step": 0.5,
+        "default": 5
+      },
+      {
+        "id": "width",
+        "label": "专注程度（通道宽度）",
+        "min": 0.5,
+        "max": 4,
+        "step": 0.1,
+        "default": 1.5
+      }
+    ],
+    "x": {
+      "label": "挑战水平",
+      "from": 0,
+      "to": 10,
+      "step": 0.5
+    },
+    "series": [
+      {
+        "name": "心流",
+        "expr": "exp(-pow(x - skill, 2) / width)"
+      },
+      {
+        "name": "焦虑",
+        "expr": "exp(-pow(x - skill - 2.5, 2) / (width * 1.5))"
+      },
+      {
+        "name": "无聊",
+        "expr": "exp(-pow(x - skill + 2.5, 2) / (width * 1.5))"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "选一件目标清晰、有即时反馈的事",
+      "detail": "先写清楚任务和完成标准。目标模糊、做完不知道好坏的事，进不了心流。"
+    },
+    {
+      "step": "把难度调到比当前水平高一档",
+      "detail": "太简单会走神，太难会慌。目标是够不着，但跳一下能碰到。"
+    },
+    {
+      "step": "清掉干扰，留一整块时间",
+      "detail": "进入心流通常要十几分钟，被打断就要重来。手机静音，一次只做一件事。"
+    },
+    {
+      "step": "给任务造反馈",
+      "detail": "没有天然反馈的任务，就自己拆成小关卡，每完成一段立刻核对结果。"
+    },
+    {
+      "step": "难度跟着技能一起涨",
+      "detail": "一旦觉得熟练无聊了，主动加码。停在舒适区，心流会退化成机械重复。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "需要发散思维的任务，比如头脑风暴、找灵感",
+      "model_says": "专注越深越好",
+      "reality": "心流是收窄注意力的状态，创意常来自走神和联想。硬追心流反而掐灭灵感。"
+    },
+    {
+      "situation": "高风险且后果不可逆的场景，如手术、飞行",
+      "model_says": "忘我投入是最佳状态",
+      "reality": "忘我意味着失去自我监控。外科医生和飞行员都要刻意保留一部分冷静检查，全情忘我可能出事。"
+    },
+    {
+      "situation": "团队协作和会议",
+      "model_says": "各自进入心流效率最高",
+      "reality": "心流高度个人化，协作本质上是互相打断。强求全员沉浸，沟通会先崩掉。"
+    },
+    {
+      "situation": "拿心流逃避重要但不愉悦的事",
+      "model_says": "心流是高质量体验",
+      "reality": "打游戏刷剧也能进心流。方向错了的心流只是高级拖延，判断标准要看事后回顾而非当下感受。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "feedback-loops",
+      "relation": "心流的燃料是即时反馈，回路越短越容易进入"
+    },
+    {
+      "slug": "s-curve",
+      "relation": "技能成长呈 S 曲线，平台期要靠加码挑战才能突破"
+    },
+    {
+      "slug": "maslow-hierarchy",
+      "relation": "马斯洛的高峰体验是心流的前身概念"
+    },
+    {
+      "slug": "hedonic-treadmill",
+      "relation": "物质快感会适应，心流不会，它是享乐适应的解药"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Csikszentmihalyi, Beyond Boredom and Anxiety（1975）",
+      "level": "secondary"
+    },
+    {
+      "title": "Csikszentmihalyi, Flow: The Psychology of Optimal Experience（1990）",
+      "level": "secondary"
+    },
+    {
+      "title": "Csikszentmihalyi & LeFevre, Optimal Experience in Work and Leisure, American Psychologist（1989）",
+      "level": "secondary"
+    },
+    {
+      "title": "Massimini & Carli, 八通道模型, in Optimal Experience（1988）",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

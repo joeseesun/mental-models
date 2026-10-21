@@ -1,0 +1,177 @@
+{
+  "slug": "confirmation-bias",
+  "title": "确认偏误",
+  "en": "Confirmation Bias",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "彼得·沃森",
+      "role": "伦敦大学学院认知心理学家，1960 年用三连数实验让确认偏误有了名字"
+    },
+    {
+      "name": "苏珊·菲斯克",
+      "role": "普林斯顿大学社会心理学家，研究先入之见如何扭曲我们对他人的判断"
+    }
+  ],
+  "tagline": "先有结论，再找证据，越找越信",
+  "hook": {
+    "title": "29 个人玩猜数游戏，只有 6 个第一次猜对",
+    "story": "1960 年，英国心理学家彼得·沃森在实验室里做了一个看似简单的游戏。他心里定了一条三连数的规则，告诉受试者 2、4、6 符合规则，请他们自己提出新的三连数来猜，他只回答符合或不符合。多数人提出 8、10、12，得到符合，再提 20、22、24，又符合，于是自信地宣布规则是每次加二。沃森摇头，真正的规则只是后面的数比前面大。29 名受试者里，第一次就答对的只有 6 人。大家不缺智力，缺的是那个愿意提出 4、7、10 这种会让自己难堪的数的人。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[先有一个结论] --> B[只注意到支持它的信息]\n  B --> C[检验时只做能通过的测试]\n  C --> D[支持证据直接放行，反面证据反复刁难]\n  D --> E[记忆里留下的全是支持性例子]\n  E --> F[结论显得更可信]\n  F --> A\n  F --> G[\"解药：先问什么证据能证明我错了\"]\n  G --> H[设计一个可能推翻结论的检验]\n  H --> I{结论存活吗}\n  I -->|存活| J[信心有了依据]\n  I -->|被推翻| K[换假设，及时止损]",
+    "caption": "左边是一个自我强化的循环，右边是唯一的出口，主动设计可能推翻自己的检验。"
+  },
+  "evidence": {
+    "title": "沃森三连数实验：答对与答错的人数",
+    "takeaway": "29 人里 23 人第一次就宣布了错误规则，他们提出的检验几乎全是证实性的。",
+    "level": "verified",
+    "source": "Wason, P. C. (1960), On the failure to eliminate hypotheses in a conceptual task, Quarterly Journal of Experimental Psychology, 第 12 卷",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "受试者人数"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "首次宣布即答对",
+          "首次宣布即答错"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "人数"
+      },
+      "series": [
+        {
+          "name": "受试者人数",
+          "type": "bar",
+          "data": [
+            6,
+            23
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "发现假设有误的概率：两种搜索策略对比",
+    "takeaway": "不主动找反面证据时，纠正几乎全靠运气；把搜索强度拉高，发现错误的概率曲线迅速抬升。",
+    "params": [
+      {
+        "id": "seek",
+        "label": "主动搜索反面证据的强度",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.5
+      },
+      {
+        "id": "base",
+        "label": "反面证据在环境中的密度",
+        "min": 0,
+        "max": 0.2,
+        "step": 0.01,
+        "default": 0.05
+      }
+    ],
+    "x": {
+      "label": "检验轮数",
+      "from": 1,
+      "to": 30,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "只找支持证据",
+        "expr": "1 - pow(1 - base, x)"
+      },
+      {
+        "name": "主动找反面证据",
+        "expr": "1 - pow(1 - min(0.9, base + 0.3 * seek), x)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "把结论写成一句话，再写下它预测什么",
+      "detail": "例如我认为这位候选人很强，那他过去的项目应该有可查的产出。"
+    },
+    {
+      "step": "先问什么证据出现就说明我错了",
+      "detail": "动手搜集之前写下反面证据的样子，避免边找边放宽标准。"
+    },
+    {
+      "step": "主动找最可能反驳你的人和信息",
+      "detail": "读立场相反一方的原文，而不是只看支持者对它的转述。"
+    },
+    {
+      "step": "给反面证据加权，给支持证据打折",
+      "detail": "支持性证据随处可得，信息量低，反例才稀缺。"
+    },
+    {
+      "step": "记录判断和结果，定期回看",
+      "detail": "留下决策日志，才能看出自己是不是在系统性偏乐观。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "反面证据噪声大或获取成本极高",
+      "model_says": "必须主动找反例",
+      "reality": "有些检验有创且昂贵，无差别找反例得不偿失，要挑关键假设下手。"
+    },
+    {
+      "situation": "把怀疑一切当成科学态度",
+      "model_says": "对一切结论都找茬",
+      "reality": "无限怀疑和无限轻信一样让决策瘫痪，反证预算应该花在要害上。"
+    },
+    {
+      "situation": "对方只是在表达偏好而非做判断",
+      "model_says": "这是确认偏误",
+      "reality": "喜欢就是喜欢，不是所有选择性关注都是缺陷，有时只是口味。"
+    },
+    {
+      "situation": "辩论中拿确认偏误指责对手",
+      "model_says": "指出对方有偏误就赢了",
+      "reality": "这是针对人的攻击，偏误存在不等于对方的结论错误。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "bayes-updating",
+      "relation": "解药的一半：按证据强度更新信念，而不是按愿望更新"
+    },
+    {
+      "slug": "survivorship-bias",
+      "relation": "近亲：只看见活下来的案例，也是一种选择性搜集"
+    },
+    {
+      "slug": "cognitive-dissonance",
+      "relation": "动力来源：信念被挑战的不适感，驱使人去找安慰性证据"
+    },
+    {
+      "slug": "groupthink",
+      "relation": "群体放大器：团体迷思里没人愿意当那个找反例的人"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wason, P. C. (1960). On the failure to eliminate hypotheses in a conceptual task. Quarterly Journal of Experimental Psychology, 12",
+      "level": "verified"
+    },
+    {
+      "title": "Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2",
+      "level": "secondary"
+    },
+    {
+      "title": "Lord, Ross 与 Lepper (1979). Biased assimilation and attitude polarization. Journal of Personality and Social Psychology, 37",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

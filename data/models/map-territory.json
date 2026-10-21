@@ -1,0 +1,204 @@
+{
+  "slug": "map-territory",
+  "title": "地图不是疆域",
+  "en": "Map Is Not the Territory",
+  "domain": "strategy",
+  "experts": [
+    {
+      "name": "阿尔弗雷德·科日布斯基",
+      "role": "1931 年提出地图不是疆域，普通语义学创始人"
+    },
+    {
+      "name": "查尔斯·波尼斯",
+      "role": "斯坦福大学教授，波尼斯悖论：模型越完整越难懂"
+    }
+  ],
+  "tagline": "地图有用，正因为它省略了疆域",
+  "hook": {
+    "title": "1.25 亿美元摔在一个单位上",
+    "story": "1999 年 9 月 23 日，NASA 的火星气候探测器飞抵火星，随后失联。事后调查发现，洛克希德·马丁的导航软件输出的是英制磅力秒，而 NASA 的软件按公制牛顿秒读取。两组数字在各自的报表里都自洽，曲线漂亮，逻辑闭环，唯独和真实世界的力对不上。探测器比计划低了一百多公里进入火星大气，解体坠毁。1.25 亿美元换来一句教训：屏幕上的数字不是火箭的处境，地图和疆域之间差一个单位，就差了一整艘船。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[真实世界，即疆域] --> B[观察与测量]\n  B --> C[地图，即模型与报表]\n  C --> D[省略细节，保留主干]\n  D --> E[用地图做决策]\n  E --> F{拿结果和疆域对账}\n  F -->|对得上| G[地图继续用]\n  F -->|对不上| H[找到省略或扭曲处]\n  H --> I[回到疆域重新测绘]\n  I --> B",
+    "caption": "地图因省略而可用，也因省略而危险。决策之后，必须拿结果回疆域对账。"
+  },
+  "evidence": {
+    "title": "墨卡托地图上的面积错觉",
+    "takeaway": "真实面积上格陵兰只有非洲的十四分之一，在墨卡托地图上两者几乎一样大。地图越常用，扭曲越容易被当成事实。",
+    "level": "secondary",
+    "source": "面积数据来自美国中央情报局《世界概况》；视觉面积按各洲代表纬度以墨卡托放大系数 1/cos²φ 估算",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "真实面积",
+          "墨卡托地图上的视觉面积"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "非洲",
+          "南美洲",
+          "欧洲",
+          "格陵兰"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "万平方公里"
+      },
+      "series": [
+        {
+          "name": "真实面积",
+          "type": "bar",
+          "data": [
+            3037,
+            1784,
+            1018,
+            217
+          ]
+        },
+        {
+          "name": "墨卡托地图上的视觉面积",
+          "type": "bar",
+          "data": [
+            3037,
+            1910,
+            2460,
+            2270
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "地图画多细才划算",
+    "takeaway": "总成本是一条 U 形曲线。地图太糙会摔进疆域，地图太细就成了另一张看不懂的疆域，最优点在中间。",
+    "params": [
+      {
+        "id": "err",
+        "label": "疆域波动幅度",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "default": 60
+      },
+      {
+        "id": "cost",
+        "label": "建模与理解成本",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "default": 40
+      }
+    ],
+    "x": {
+      "label": "模型精细度（0 粗略，1 完整）",
+      "from": 0,
+      "to": 1,
+      "step": 0.02
+    },
+    "series": [
+      {
+        "name": "用错地图的损失",
+        "expr": "err * pow(1 - x, 2)"
+      },
+      {
+        "name": "建模与理解成本",
+        "expr": "cost * pow(x, 2)"
+      },
+      {
+        "name": "总成本",
+        "expr": "err * pow(1 - x, 2) + cost * pow(x, 2)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "写出你此刻在用的地图",
+      "detail": "报表、KPI、商业计划、脑中的假设都算，一张张列出来。"
+    },
+    {
+      "step": "列出这张地图省略了什么",
+      "detail": "问三个问题：谁没被统计进去，哪个变量被平均掉了，哪段时间没覆盖。"
+    },
+    {
+      "step": "去疆域里抽查一次",
+      "detail": "走现场，见客户，看原始数据，把看到的和地图上的记录对一对。"
+    },
+    {
+      "step": "给地图装上对账机制",
+      "detail": "定期拿预测和实际结果比较，误差大的地方就是需要重画的区域。"
+    },
+    {
+      "step": "疆域变了就重画，别恋旧",
+      "detail": "地图是工具不是资产，过期的地图比没有地图更危险。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "疆域本身在剧变，比如新市场或新技术",
+      "model_says": "旧地图修修补补还能用",
+      "reality": "结构变了，参数修补救不了画错的底图，只能重画。"
+    },
+    {
+      "situation": "有人主张扔掉所有模型，只看一手现场",
+      "model_says": "贴着疆域就不会错",
+      "reality": "没有简化就没有思考，你会淹死在细节里，连问题都提不出来。"
+    },
+    {
+      "situation": "仿真模型越做越大，变量上千个",
+      "model_says": "越精细越接近真实",
+      "reality": "波尼斯悖论：模型复杂到和疆域一样难懂，就失去了地图的价值。"
+    },
+    {
+      "situation": "直接采用行业报告或专家绘制的地图",
+      "model_says": "权威的图更可信",
+      "reality": "别人的地图为别人的目的而画，他省略的地方可能正是他的利益所在。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "goodharts-law",
+      "relation": "把地图上的指标当疆域本身去优化，就是古德哈特定律"
+    },
+    {
+      "slug": "survivorship-bias",
+      "relation": "幸存者偏差是地图自动省略了死掉的样本"
+    },
+    {
+      "slug": "bayes-updating",
+      "relation": "疆域的反馈回来后，用它更新地图的置信度"
+    },
+    {
+      "slug": "black-swan",
+      "relation": "黑天鹅住在地图没画到的地方"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alfred Korzybski, A Non-Aristotelian System and its Necessity for Rigour in Mathematics and Physics, 1931",
+      "level": "secondary"
+    },
+    {
+      "title": "Alfred Korzybski, Science and Sanity, 1933",
+      "level": "secondary"
+    },
+    {
+      "title": "Charles P. Bonini, Simulation of Information and Decision Systems in the Firm, 1963",
+      "level": "secondary"
+    },
+    {
+      "title": "NASA 火星气候探测器故障调查委员会报告, 1999",
+      "level": "verified"
+    },
+    {
+      "title": "CIA World Factbook 各洲面积数据",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

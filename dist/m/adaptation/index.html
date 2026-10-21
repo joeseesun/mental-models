@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>适应 · 思维模型 Wiki</title><meta name="description" content="每次适应都是一组权衡">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/adaptation/">
+<meta property="og:title" content="适应 · 思维模型 Wiki"><meta property="og:description" content="每次适应都是一组权衡">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/adaptation/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-biology">
+<p class="crumb"><a href="../../index.html">首页</a> / 生物</p>
+<h1>适应 <small>Adaptation</small></h1>
+<p class="tagline"><strong>每次适应都是一组权衡</strong></p>
+<p class="experts"><strong>达尔文</strong>（提出者，1859 年在《物种起源》中用自然选择解释适应的来源） · <strong>列万廷</strong>（批评者，1979 年与古尔德合写拱肩论文，警告别把一切特征都解释成适应）</p>
+
+<section><h2>场景钩子 · 煤烟让 98% 的蛾子变黑，清洁空气又让它们变回去</h2><p>1848 年，英国曼彻斯特第一次有人捕到黑色的桦尺蛾。这种蛾子原本是浅灰白色，停在长满地衣的树干上几乎隐形。工业革命的煤烟熏黑了树干，也熏死了地衣，浅色个体很快成了鸟类的显眼目标，黑色个体反而安全。到 1895 年，曼彻斯特一带 98% 的桦尺蛾是黑色的。1956 年英国颁布清洁空气法，树干慢慢变白，黑色从保护色变成了靶子。到 20 世纪末，当地黑色个体比例跌回一成左右。为煤烟世界量身定做的适应，在干净的世界里成了负担。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">适应不是变得更强，而是换一组强弱组合。定型之后，种群就把自己押在了当前环境上。</p></section>
+<section><h2>数据证据 · 英国桦尺蛾黑色型频率的百年起伏 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">煤烟造就黑色，清洁空气淘汰黑色。优势绑定具体环境，环境一变就反转。<br><span class="src">来源：Kettlewell 1955 年标记重捕实验；Cook 等人对利物浦 Caldy Common 的长期监测（1959 至 2002）。数值为文献记录的近似值，中间年份为趋势插值</span></p></section>
+<section><h2>交互演示 · 特化者与泛化者，谁先被环境变化淘汰</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">环境没变时特化者峰值碾压泛化者，环境一偏离，耐受窄的先归零。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>写下当前环境在奖励什么</b><span>具体到资源、规则或对手。例如煤烟让深色树干成了新的背景，奖励了黑色个体。</span></li><li><b>列出这次适应的收益和代价</b><span>代价常藏在看不见的地方，比如繁殖力、抗病性或灵活性下降。找不到代价往往只是还没找到。</span></li><li><b>估计环境还能稳定多久</b><span>看变化来源是地质尺度还是人为尺度。工业、市场和技术环境的变化以年计，不是以万年计。</span></li><li><b>决定特化程度，保留一部分冗余</b><span>环境越不稳定，越要留泛化能力和备用方案，别把全部筹码押在单一优势上。</span></li><li><b>定期重检当初的适应假设</b><span>环境变了就主动调整方向，不要等选择压力来淘汰自己。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>看到一个特征就想找它的适应意义</td><td>存在即适应，必有功能</td><td>古尔德和列万廷 1979 年指出，很多特征是结构副产品或随机漂变的结果，硬找功能只会编出故事。</td></tr><tr><td>环境变化快过繁殖速度</td><td>种群会逐渐适应新环境</td><td>适应靠世代积累，选择来不及起效时种群直接灭绝，许多大型动物面对人类活动就是如此。</td></tr><tr><td>把生物适应直接套到公司或个人</td><td>像物种一样被环境筛选就好</td><td>组织可以主动换赛道、改规则、预测变化，被动等待选择会白白浪费主动性。</td></tr><tr><td>只看个体层面的适应收益</td><td>对个体有利就是好的适应</td><td>利己的适应可能损害群体，比如过度开采公共资源，短期的成功适应导致长期的共同崩溃。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../natural-selection/">自然选择</a><span>适应的机制来源，选择留下能留下后代的变异</span></li><li><a href="../red-queen-effect/">红皇后效应</a><span>对手也在适应，任何优势都会被追平</span></li><li><a href="../ecological-niche/">生态位</a><span>生态位决定环境在奖励什么性状</span></li><li><a href="../path-dependence/">路径依赖</a><span>适应造成的锁定，是路径依赖的生物学版本</span></li><li><a href="../slack/">冗余</a><span>保留冗余，是对抗环境突变的缓冲</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>达尔文《物种起源》（1859） <span class="lv lv-secondary">可靠二手</span></li><li>Gould 与 Lewontin，圣马可教堂的拱肩（1979） <span class="lv lv-secondary">可靠二手</span></li><li>Kettlewell 1955 年标记重捕实验；Cook 等人对 Caldy Common 的长期监测 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "adaptation", "domain": "biology", "mermaid": "flowchart TD\n  A[环境提出新问题] --> B[种群内已有随机变异]\n  B --> C[选择留下更适应的个体]\n  C --> D{收益与代价如何交换}\n  D -->|收益| E[生存或繁殖机会提高]\n  D -->|代价| F[其他能力被削弱]\n  E --> G[有利变异扩散到全群]\n  F --> G\n  G --> H[种群被定型在当前环境]\n  H --> I{环境再次改变吗}\n  I -->|是| J[旧优势变成新负担]\n  I -->|否| H", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["黑色型频率"]}, "xAxis": {"type": "category", "data": ["1848", "1895", "1920", "1956", "1970", "1980", "1990", "2000"]}, "yAxis": {"type": "value", "name": "黑色型个体占比（%）"}, "series": [{"name": "黑色型频率", "type": "line", "data": [0, 98, 96, 90, 82, 55, 25, 12]}]}, "demo": {"title": "特化者与泛化者，谁先被环境变化淘汰", "takeaway": "环境没变时特化者峰值碾压泛化者，环境一偏离，耐受窄的先归零。", "params": [{"id": "peak", "label": "特化者峰值适应度", "min": 1.5, "max": 3, "step": 0.1, "default": 2.5}, {"id": "width", "label": "特化者耐受宽度", "min": 0.3, "max": 1.5, "step": 0.05, "default": 0.6}], "x": {"label": "环境偏离适应点的幅度", "from": 0, "to": 3, "step": 0.1}, "series": [{"name": "特化者", "expr": "peak * exp(-pow(x, 2) / (2 * pow(width, 2)))"}, {"name": "泛化者", "expr": "1.2 * exp(-pow(x, 2) / 8)"}]}, "related": [{"slug": "natural-selection", "title": "自然选择", "exists": true}, {"slug": "red-queen-effect", "title": "红皇后效应", "exists": true}, {"slug": "ecological-niche", "title": "生态位", "exists": true}, {"slug": "path-dependence", "title": "路径依赖", "exists": true}, {"slug": "slack", "title": "冗余", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

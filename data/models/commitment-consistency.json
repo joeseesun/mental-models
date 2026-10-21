@@ -1,0 +1,181 @@
+{
+  "slug": "commitment-consistency",
+  "title": "承诺一致性",
+  "en": "Commitment and Consistency",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "罗伯特·西奥迪尼",
+      "role": "1984 年在《影响力》中把承诺一致列为六大影响力武器之一，完成命名与系统化"
+    },
+    {
+      "name": "莱昂·费斯廷格",
+      "role": "1957 年提出认知失调理论，解释了人为什么需要自我一致"
+    },
+    {
+      "name": "弗里德曼与弗雷泽",
+      "role": "1966 年用登门槛实验证明，一个小承诺能把同意率抬高四倍多"
+    }
+  ],
+  "tagline": "小承诺会自己长大",
+  "hook": {
+    "title": "一场只发香烟的征文比赛",
+    "story": "朝鲜战争期间，管理战俘营的一方很少动用酷刑，他们靠的是小笔头。先是请战俘抄写几句无关痛痒的话，比如美国并非处处完美，再办征文比赛，题目就叫为什么美国并不完美，奖品只是几根香烟或一点新鲜蔬菜。获奖文章会被抄写、张贴、在营区广播，署着作者自己的名字。从一句温和的批评开始，战俘被一步步引向签名、写长文、参加学习小组。1953 年停战后，联合国军的审查发现，绝大多数战俘都留下过某种合作的痕迹，甚至有 21 名美军战俘选择留在对方阵营。心理学家埃德加·沙因在 1956 年研究了这些营地，把这套手法总结成一句话：从小处开始，逐步加码。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"对方递来一个小请求\"] --> B[\"你答应了，还可能公开了\"]\n  B --> C[\"自我形象更新：我是说到做到的人\"]\n  C --> D[\"新请求与形象冲突时产生失调\"]\n  D --> E[\"拒绝的代价变高，同意变省力\"]\n  E --> F{\"更大的请求来了\"}\n  F -->|答应| G[\"承诺升级，回到自我形象更新\"]\n  G --> C\n  F -->|拒绝| H[\"付出一次失调成本，循环中断\"]",
+    "caption": "压力不来自别人，来自你刚更新的自我形象：答应小事之后，你已经把自己当成了那种人。"
+  },
+  "evidence": {
+    "title": "登门槛实验：小贴纸与大牌子",
+    "takeaway": "两周前答应贴小贴纸的人，同意在草坪挂大广告牌的比例是直接请求的四倍多。",
+    "level": "secondary",
+    "source": "Freedman & Fraser, Compliance without Pressure: The Foot-in-the-Door Technique, JPSP, 1966；西奥迪尼《影响力》第 3 章转述",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "直接请求挂大牌子",
+          "两周前先答应贴小贴纸"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "同意比例（%）",
+        "max": 100
+      },
+      "series": [
+        {
+          "name": "最终同意挂大牌子",
+          "type": "bar",
+          "data": [
+            17,
+            76
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "小承诺滚成大承诺",
+    "takeaway": "公开程度决定曲线爬多高，升级幅度决定爬坡断不断；铺垫三四次之后，同意率就接近天花板。",
+    "params": [
+      {
+        "id": "public",
+        "label": "承诺公开程度",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.7
+      },
+      {
+        "id": "gap",
+        "label": "下一步升级幅度",
+        "min": 0.1,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.4
+      }
+    ],
+    "x": {
+      "label": "此前已答应的小承诺次数",
+      "from": 0,
+      "to": 6,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "一致性升级后的同意率",
+        "expr": "15 + 70 * public * (1 - 0.7 * gap) * (1 - exp(-0.8 * x))"
+      },
+      {
+        "name": "没有铺垫的直接请求",
+        "expr": "15"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "把目标行为切成不可能拒绝的最小一步",
+      "detail": "想坚持锻炼，就从每天换上运动鞋开始，先答应下来，再谈强度。"
+    },
+    {
+      "step": "让承诺公开，最好留下书面痕迹",
+      "detail": "写下来、告诉具体的人、发到群里，公开程度决定压力大小。"
+    },
+    {
+      "step": "让对方自己说出理由",
+      "detail": "自己给出的理由比外部奖励更能改写自我形象，奖励太大会挤出内在动机。"
+    },
+    {
+      "step": "每次只升级一小档",
+      "detail": "下一步请求要和上一步接近，跳太大，一致性压力就会断。"
+    },
+    {
+      "step": "对陌生来路的小请求先停一秒",
+      "detail": "免费领鸡蛋、扫码送礼品、顺手签个名，先问一句：下一步它会要什么。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "纯交易或一次性关系，对方不在乎自我形象",
+      "model_says": "小承诺会自动滚成大承诺",
+      "reality": "占完小便宜就走的人很多，一致性压力需要长期身份在场才起作用。"
+    },
+    {
+      "situation": "承诺是靠重奖或威胁换来的",
+      "model_says": "做过的事会改变自我形象",
+      "reality": "费斯廷格 1959 年的实验显示，外部理由太足时，人把行为归因于奖励，态度根本不变。"
+    },
+    {
+      "situation": "小承诺和大请求性质差得很远",
+      "model_says": "答应过小事就会答应大事",
+      "reality": "登门槛效应在请求相似时才稳定，从签名环保请愿到掏钱买产品，迁移常常断掉。"
+    },
+    {
+      "situation": "把一致性当成必须死守的美德",
+      "model_says": "说到就要做到，改主意丢脸",
+      "reality": "事实变了还硬撑旧承诺，代价会越滚越大，及时认错比一致更值钱。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "cognitive-dissonance",
+      "relation": "机制来源：言行不一致产生的失调感，是压力的发动机"
+    },
+    {
+      "slug": "social-proof",
+      "relation": "同属西奥迪尼的六大影响力武器，一个向外看别人，一个向内看自己"
+    },
+    {
+      "slug": "incentives",
+      "relation": "外部奖励太足会挤出内在承诺，一致性压力随之消失"
+    },
+    {
+      "slug": "confirmation-bias",
+      "relation": "承诺之后，人会优先收集支持自己决定的证据"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Robert Cialdini《影响力》第 3 章，承诺与一致（1984）",
+      "level": "secondary"
+    },
+    {
+      "title": "Freedman & Fraser, Compliance without Pressure: The Foot-in-the-Door Technique, JPSP（1966）",
+      "level": "verified"
+    },
+    {
+      "title": "Festinger, Riecken & Schachter, When Prophecy Fails（1956）",
+      "level": "secondary"
+    },
+    {
+      "title": "Edgar Schein, The Chinese Indoctrination Program for Prisoners of War（1956）",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

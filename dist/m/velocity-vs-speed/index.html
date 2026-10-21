@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>速度与速率 · 思维模型 Wiki</title><meta name="description" content="速率只管快慢，速度还管方向">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/velocity-vs-speed/">
+<meta property="og:title" content="速度与速率 · 思维模型 Wiki"><meta property="og:description" content="速率只管快慢，速度还管方向">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/velocity-vs-speed/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-physics">
+<p class="crumb"><a href="../../index.html">首页</a> / 物理</p>
+<h1>速度与速率 <small>Velocity vs Speed</small></h1>
+<p class="tagline"><strong>速率只管快慢，速度还管方向</strong></p>
+<p class="experts"><strong>伽利略</strong>（1638 年在《两门新科学》里研究抛体，把运动沿水平和竖直方向拆开，奠定分量思维） · <strong>牛顿</strong>（1687 年在《自然哲学的数学原理》中把运动量定义为质量乘速度，方向是定义的一部分） · <strong>吉姆·洛弗尔</strong>（阿波罗 13 号指令长，1970 年靠手动校准方向把飞船开回家）</p>
+
+<section><h2>场景钩子 · 速度够快的飞船，差点永远错过地球</h2><p>1970 年 4 月，阿波罗 13 号飞到离地球约 33 万公里处，氧气罐爆炸，登月任务变成逃命。三名宇航员挤进登月舱当救生艇，飞船速度并不慢，要命的是方向：按爆炸后的轨道飞下去，会直接错过地球。主发动机可能受损，地面指挥中心决定改用登月舱的下降发动机点火。指令长洛弗尔盯着地球的明暗分界线，手动保持飞船姿态，第一次点火把轨道掰回绕月自由返回的路径，两天后约 4 分半的第二次点火，把落点从印度洋挪到太平洋，还把航程缩短了约 10 个小时。再入大气层时速度接近每秒 11 公里，允许的角度窗口只有两度左右，偏浅会弹回太空，偏深会烧毁。4 月 17 日，飞船落在距救援船几公里的海面上。救回三个人的不是更快的速度，而是把方向校准到几公里之内。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">速率是标量，速度是矢量。方向偏 1 度，在约 38 万公里的地月距离上落点就差约 6600 公里，这就是分量不能省略的原因。</p></section>
+<section><h2>数据证据 · 同样 20 米每秒的初速，发射角决定射程 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">速率不变，方向从 10 度调到 45 度，射程翻到近三倍。方向是速度里不可省略的分量。<br><span class="src">来源：理想抛体公式 R = v² sin(2θ) / g，g 取 9.8，初速取 20 米每秒，可自行验算；抛物线解最早出自伽利略《两门新科学》（1638）</span></p></section>
+<section><h2>交互演示 · 方向偏差吃掉多少速率</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">偏差 60 度时，一半的速率都白费了。先校方向，再谈提速。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>把目标写成一句可判定的终点</b><span>例如年底前上线三个功能，而不是保持忙碌。没有终点，就谈不上方向。</span></li><li><b>给当前工作量一个速率</b><span>统计单位时间完成的事项数，这是速度的大小，大多数人只盯这一半。</span></li><li><b>量方向：本周做的事把终点拉近了多少</b><span>直接拉近的算有效分量，只是相关的算偏航，无关的就是横向白走。</span></li><li><b>偏差大时先修方向，再加大投入</b><span>偏差超过 30 度，提速的收益大半被吃掉，先改任务清单再谈加班。</span></li><li><b>定期复查，防止缓慢漂移</b><span>每两周估一次方向夹角，小偏差早修代价最低，拖久了要花大力气掰回来。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>方向本身未知，比如早期探索</td><td>先校准方向再加速</td><td>探索期只能多方向试错，高速率扫过更多分支反而是对的，此时该拼速率。</td></tr><tr><td>把方向隐喻当精确计算</td><td>算出夹角就能预测结果</td><td>现实目标多维且常变，夹角只能当粗略体检，不能当导航仪表。</td></tr><tr><td>拿方向当拖延的借口</td><td>方向没想清楚就别出发</td><td>很多方向只有走了才知道，长期原地校准本身就是最大的偏航。</td></tr><tr><td>终点本身不值得去</td><td>方向对了就该坚持提速</td><td>校准的前提是终点有意义。终点错了，越精准越白费，先问该不该去，再问怎么去。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../frame-of-reference/">参照系</a><span>方向是相对参照系的，先选对参照系，再谈校准</span></li><li><a href="../feedback-loops/">反馈回路</a><span>小偏差早修靠的是反馈回路，反馈越快校准越便宜</span></li><li><a href="../ooda-loop/">OODA循环</a><span>观察、调整、决策、行动，就是持续校准方向的循环</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>伽利略《两门新科学》（1638），抛体运动的分解 <span class="lv lv-secondary">可靠二手</span></li><li>牛顿《自然哲学的数学原理》（1687），运动量的定义 <span class="lv lv-secondary">可靠二手</span></li><li>NASA Apollo 13 Mission Report（MSC-02680） <span class="lv lv-secondary">可靠二手</span></li><li>Jim Lovell, Jeffrey Kluger《Lost Moon》（1994） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "velocity-vs-speed", "domain": "physics", "mermaid": "flowchart TD\n  A[观察一项运动或一段进展] --> B[量速率，单位时间走了多远]\n  A --> C[量方向，航向与目标的夹角]\n  B --> D{夹角小吗}\n  C --> D\n  D -->|是| E[净进展接近速率，可以加大投入]\n  D -->|否| F[先校方向，再谈提速]\n  F --> G[小偏差早修，代价最低]\n  E --> H[定期复查，防止缓慢漂移]\n  G --> H", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["不同发射角的射程", "45 度最优射程"]}, "xAxis": {"type": "category", "data": ["10°", "20°", "30°", "40°", "45°", "50°", "60°", "70°", "80°"]}, "yAxis": {"type": "value", "name": "射程（米）"}, "series": [{"name": "不同发射角的射程", "type": "bar", "data": [14.0, 26.2, 35.4, 40.2, 40.8, 40.2, 35.4, 26.2, 14.0]}, {"name": "45 度最优射程", "type": "line", "data": [40.8, 40.8, 40.8, 40.8, 40.8, 40.8, 40.8, 40.8, 40.8]}]}, "demo": {"title": "方向偏差吃掉多少速率", "takeaway": "偏差 60 度时，一半的速率都白费了。先校方向，再谈提速。", "params": [{"id": "speed", "label": "速率（单位每周）", "min": 1, "max": 10, "step": 0.5, "default": 5}, {"id": "angle", "label": "方向偏差（度）", "min": 0, "max": 80, "step": 5, "default": 30}], "x": {"label": "时间（周）", "from": 0, "to": 12, "step": 1}, "series": [{"name": "总路程", "expr": "speed * x"}, {"name": "朝目标的净进展", "expr": "speed * Math.cos(angle * 0.01745) * x"}, {"name": "横向白走的偏移", "expr": "speed * Math.sin(angle * 0.01745) * x"}]}, "related": [{"slug": "frame-of-reference", "title": "参照系", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "ooda-loop", "title": "OODA循环", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

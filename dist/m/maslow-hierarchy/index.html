@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>需求层次 · 思维模型 Wiki</title><meta name="description" content="先吃饱，再谈自我实现">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/maslow-hierarchy/">
+<meta property="og:title" content="需求层次 · 思维模型 Wiki"><meta property="og:description" content="先吃饱，再谈自我实现">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/maslow-hierarchy/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-psychology">
+<p class="crumb"><a href="../../index.html">首页</a> / 心理</p>
+<h1>需求层次 <small>Maslow&#x27;s Hierarchy of Needs</small></h1>
+<p class="tagline"><strong>先吃饱，再谈自我实现</strong></p>
+<p class="experts"><strong>亚伯拉罕·马斯洛</strong>（提出者，1943 年发表《人类动机理论》，晚年研究健康人并补充自我超越需求） · <strong>道格拉斯·麦格雷戈</strong>（传播者，1960 年把需求层次引入管理学，据此提出 X 理论与 Y 理论） · <strong>奇普·康利</strong>（实践者，用层次重塑酒店与 Airbnb 的服务和管理，著有《Peak》）</p>
+
+<section><h2>场景钩子 · 马斯洛进工厂的两个月</h2><p>1962 年夏天，马斯洛受加州非线性系统公司邀请，进厂观察了两个月。他原本担心自己的理论只是学院里的空谈，结果在车间看到：工资不低的工人，会因为不被尊重而消极怠工，也会因为被信任而主动想办法改进流程。他把笔记整理成《优心管理》，提出管理要按层次对症下药，先保住饭碗和稳定，再谈认可与成长。这本书当年几乎无人问津，绝版三十多年，直到 1998 年才以《马斯洛论管理》再版，被管理学界重新发现。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">次序是注意力的优先级，不是硬性开关：低层受威胁时，注意力会退回去。</p></section>
+<section><h2>数据证据 · 普通人的五层满足度：马斯洛 1943 年的估计 <span class="lv lv-verified">一手核实</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">层次不是全有全无。普通人每一层都部分满足，越往上满足度越低，最高层只有约一成。<br><span class="src">来源：马斯洛《A Theory of Human Motivation》，Psychological Review 第 50 卷，1943 年，原文给出各层满足百分比</span></p></section>
+<section><h2>交互演示 · 拖滑块：层次是硬开关，还是渐变重叠</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">需求不是排队开关，各层同时在场，只是注意力权重不同。间隔越大越像严格的塔，带宽越大越互相重叠。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先盘点对方卡在哪一层</b><span>对用户或员工逐层问：饭碗稳吗，环境安全吗，有归属吗，被认可吗。找到最低的未满足层。</span></li><li><b>资源优先投给最低的缺口</b><span>次序感来自这里。底层缺口没补上，上层的激励基本无效，钱要花在卡脖子那一层。</span></li><li><b>上层激励等底层稳定后再加码</b><span>管理上先解决薪酬和裁员焦虑，再推使命愿景。产品上先保证可靠好用，再谈情感与身份设计。</span></li><li><b>定期回查底层，防止退层</b><span>行业下行、组织动荡时，人会退回安全层。此时要重新加固底层，而不是继续画大饼。</span></li><li><b>把最高层留给个体自选</b><span>自我实现没法被指派。管理者只能提供空间、榜样和有难度的挑战，让人自己长出来。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>绝食抗议者、饿着肚子写作的作家</td><td>生理未满足时不可能追求更高目标</td><td>马斯洛自己在 1943 年就承认有例外，信念可以压过饥饿。层次是优势关系，不是死顺序。</td></tr><tr><td>把金字塔当成硬性流程来管理</td><td>必须逐层满足才能往上走</td><td>Wahba 与 Bridwell 1976 年的综述几乎没有找到五层清晰分级的实证支持，需求因人而异且同时在场。</td></tr><tr><td>用同一套激励套所有人</td><td>大家的需求顺序一样</td><td>文化差异很大，集体主义文化里归属常排在个人成就之前，个体差异也远比一座塔复杂。</td></tr><tr><td>引用那张著名的金字塔图</td><td>马斯洛画了这个三角形</td><td>马斯洛从未画过金字塔。三角形是 1960 年代管理咨询界加上的，反而固化了逐层通关的误解。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../incentives/">激励</a><span>激励设计要先看对方卡在哪一层，需求层次给激励排了序</span></li><li><a href="../homeostasis/">内稳态</a><span>生理层的生物学来源：体内平衡驱动是最底层需求的根</span></li><li><a href="../hedonic-treadmill/">享乐适应</a><span>待写：上层满足同样会适应，自我实现的快感也不持久</span></li><li><a href="../flow/">心流</a><span>待写：自我实现层的典型体验，心流常出现在高层需求主导时</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>马斯洛《A Theory of Human Motivation》，Psychological Review 第 50 卷，1943 <span class="lv lv-verified">一手核实</span></li><li>马斯洛《Eupsychian Management》，1965；1998 年再版为《Maslow on Management》 <span class="lv lv-secondary">可靠二手</span></li><li>Bridgman、Cummings 与 Ballard《Who Built Maslow&#x27;s Pyramid?》，Academy of Management Learning &amp; Education，2019 <span class="lv lv-secondary">可靠二手</span></li><li>Wahba 与 Bridwell《Maslow Reconsidered: A Review of Research on the Need Hierarchy Theory》，1976 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "maslow-hierarchy", "domain": "psychology", "mermaid": "flowchart TB\n  P[\"生理需求：食物、睡眠、健康\"] -->|\"基本满足后\"| S[\"安全需求：稳定、保障、秩序\"]\n  S -->|\"基本满足后\"| B[\"归属需求：关系、团队、爱\"]\n  B -->|\"基本满足后\"| E[\"尊重需求：认可、成就、地位\"]\n  E -->|\"基本满足后\"| M[\"自我实现：发挥潜能\"]\n  W[\"低层需求受威胁\"] -.->|\"注意力退回\"| P\n  W -.-> S", "echarts": {"tooltip": {"trigger": "axis"}, "xAxis": {"type": "value", "name": "满足度（%）"}, "yAxis": {"type": "category", "data": ["生理", "安全", "归属", "尊重", "自我实现"]}, "series": [{"name": "满足度估计", "type": "bar", "data": [85, 70, 50, 40, 10]}]}, "demo": {"title": "拖滑块：层次是硬开关，还是渐变重叠", "takeaway": "需求不是排队开关，各层同时在场，只是注意力权重不同。间隔越大越像严格的塔，带宽越大越互相重叠。", "params": [{"id": "gap", "label": "层间间隔（满足度）", "min": 10, "max": 30, "step": 1, "default": 20}, {"id": "width", "label": "需求带宽（重叠程度）", "min": 5, "max": 25, "step": 1, "default": 12}], "x": {"label": "生理需求满足度", "from": 0, "to": 100, "step": 1}, "series": [{"name": "生理", "expr": "100 * exp(-pow(x / width, 2))"}, {"name": "安全", "expr": "100 * exp(-pow((x - gap) / width, 2))"}, {"name": "归属", "expr": "100 * exp(-pow((x - 2 * gap) / width, 2))"}, {"name": "尊重", "expr": "100 * exp(-pow((x - 3 * gap) / width, 2))"}, {"name": "自我实现", "expr": "100 * exp(-pow((x - 4 * gap) / width, 2))"}]}, "related": [{"slug": "incentives", "title": "激励", "exists": true}, {"slug": "homeostasis", "title": "内稳态", "exists": true}, {"slug": "hedonic-treadmill", "title": "享乐适应", "exists": true}, {"slug": "flow", "title": "心流", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

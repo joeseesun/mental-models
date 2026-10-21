@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S曲线 · 思维模型 Wiki</title><meta name="description" content="在第一曲线到顶前，启动第二曲线">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/s-curve/">
+<meta property="og:title" content="S曲线 · 思维模型 Wiki"><meta property="og:description" content="在第一曲线到顶前，启动第二曲线">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/s-curve/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-systems">
+<p class="crumb"><a href="../../index.html">首页</a> / 系统</p>
+<h1>S曲线 <small>S-Curve</small></h1>
+<p class="tagline"><strong>在第一曲线到顶前，启动第二曲线</strong></p>
+<p class="experts"><strong>皮埃尔·弗朗索瓦·维霍斯特</strong>（比利时数学家，1838 年提出逻辑斯蒂曲线，第一次给增长画上天花板） · <strong>查尔斯·汉迪</strong>（爱尔兰管理思想家，1994 年在《空雨衣》中提出第二曲线，主张在第一曲线到顶前动手）</p>
+
+<section><h2>场景钩子 · Netflix 在 DVD 最赚钱时上线了流媒体</h2><p>2007 年 1 月，Netflix 的 DVD 邮租业务正处在上升期，当年订户约 750 万，收入约 12 亿美元。创始人里德·黑斯廷斯却在这一年上线流媒体，画质模糊，片库只有一千来部，还直接蚕食自家的 DVD 订阅。华尔街和媒体都不看好，认为他在最好的时候自乱阵脚。黑斯廷斯的判断是，DVD 这条曲线必然到顶，等它见顶再转型就来不及了。此后 DVD 业务果然在 2012 年前后见顶回落，流媒体接棒增长，订户到 2023 年底突破 2.6 亿。2023 年 9 月，Netflix 寄出最后一张 DVD，正式送别了养大自己的第一曲线。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">难点在判断时机：第二曲线要在第一曲线还在上升时启动，等到顶再动手就晚了。</p></section>
+<section><h2>数据证据 · Facebook 月活跃用户：一条教科书级的 S 曲线 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">2004 到 2006 年几乎贴地，2007 到 2012 年陡峭爬升，2018 年之后明显放缓，顶部趋平。<br><span class="src">来源：Meta 历年财报披露的 Facebook 月活跃用户数，单位为百万</span></p></section>
+<section><h2>交互演示 · 第二曲线启动得越晚，总表现越容易断档</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">延迟小，两条曲线接得上，总增长平滑；延迟大，第一曲线到顶后会出现长期停滞。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>画出当前业务的增长曲线，标出现在在哪</b><span>用收入、用户数、产量这类硬指标逐年描点，不要凭感觉画。</span></li><li><b>看增速而不是看绝对值</b><span>同比增长率开始下降，比绝对值下降早出现，那才是到顶的信号。</span></li><li><b>估算天花板有多高</b><span>用市场规模、渗透率或资源上限算理论顶点，再看已完成百分之几。</span></li><li><b>在增速放缓但还在赚钱时投入第二曲线</b><span>汉迪的建议是用第一曲线的利润养新曲线，而不是等新曲线自己长出来。</span></li><li><b>给第二曲线单独的团队和考核</b><span>新曲线早期必然难看，拿第一曲线的指标去考核会把它直接掐死。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>增长放缓只是宏观周期带来的暂时波动</td><td>第一曲线到顶了，赶紧找第二曲线</td><td>把周期波动当成天花板，会过早放弃还在增长的主业。</td></tr><tr><td>资源有限的小团队</td><td>应该提前启动第二曲线</td><td>两线作战往往两头都做不好，汉迪自己也说第二曲线要靠第一曲线输血。</td></tr><tr><td>天花板本身还在移动，技术不断打开新空间</td><td>按当前上限做规划</td><td>上限是估算不是定律，低估天花板会错失第一曲线剩余的增长。</td></tr><tr><td>第二曲线与主业毫无协同</td><td>只要是新增长就可以做</td><td>没有协同的第二曲线等于从零创业，多数公司死在无关多元化上。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../limits-to-growth/">增长极限</a><span>S 曲线是增长极限的形状表达，解释天花板从哪来</span></li><li><a href="../critical-mass/">临界质量</a><span>投入期到增长期的拐点，就是越过临界质量的时刻</span></li><li><a href="../disruptive-innovation/">颠覆式创新</a><span>第二曲线常来自外部，颠覆式创新是新曲线的常见起点</span></li><li><a href="../flywheel/">飞轮效应</a><span>增长期陡峭的中段，往往由转起来的飞轮驱动</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Verhulst, P.F., 1838, 提出逻辑斯蒂曲线的论文 <span class="lv lv-secondary">可靠二手</span></li><li>Charles Handy, The Empty Raincoat, 1994 <span class="lv lv-secondary">可靠二手</span></li><li>Charles Handy, The Second Curve, 2015 <span class="lv lv-secondary">可靠二手</span></li><li>Meta 历年财报，Facebook 月活跃用户数据 <span class="lv lv-secondary">可靠二手</span></li><li>Netflix 2007 年财报与 2023 年 DVD 业务关停公告 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "s-curve", "domain": "systems", "mermaid": "flowchart LR\n  A[\"投入期：起步慢，投入看不到回报\"] --> B[\"增长期：越过临界点，陡峭上升\"]\n  B --> C[\"成熟期：逼近天花板，增速放缓\"]\n  C --> D[\"衰退期：市场饱和或被替代\"]\n  B --> E{\"第一曲线还剩多少空间\"}\n  E -->|\"空间充足\"| F[\"继续深耕第一曲线\"]\n  E -->|\"增速持续放缓\"| G[\"用第一曲线的利润启动第二曲线\"]\n  G -->|\"新曲线同样遵循 S 形\"| A", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["Facebook 月活用户"]}, "xAxis": {"type": "category", "data": ["2004", "2006", "2008", "2010", "2012", "2014", "2016", "2018", "2020", "2022", "2023"]}, "yAxis": {"type": "value", "name": "百万"}, "series": [{"name": "Facebook 月活用户", "type": "line", "data": [1, 12, 145, 608, 1056, 1393, 1860, 2320, 2797, 2963, 3065]}]}, "demo": {"title": "第二曲线启动得越晚，总表现越容易断档", "takeaway": "延迟小，两条曲线接得上，总增长平滑；延迟大，第一曲线到顶后会出现长期停滞。", "params": [{"id": "shift", "label": "第二曲线启动延迟", "min": 0, "max": 25, "step": 1, "default": 8}, {"id": "k", "label": "增长斜率", "min": 0.1, "max": 0.6, "step": 0.05, "default": 0.35}], "x": {"label": "时间", "from": 0, "to": 40, "step": 1}, "series": [{"name": "第一曲线", "expr": "100 / (1 + Math.exp(-k * (x - 12)))"}, {"name": "第二曲线", "expr": "100 / (1 + Math.exp(-k * (x - 12 - shift)))"}, {"name": "总表现", "expr": "100 / (1 + Math.exp(-k * (x - 12))) + 100 / (1 + Math.exp(-k * (x - 12 - shift)))"}]}, "related": [{"slug": "limits-to-growth", "title": "增长极限", "exists": true}, {"slug": "critical-mass", "title": "临界质量", "exists": true}, {"slug": "disruptive-innovation", "title": "颠覆式创新", "exists": true}, {"slug": "flywheel", "title": "飞轮效应", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>半衰期 · 思维模型 Wiki</title><meta name="description" content="量出减半的时间，就知道还剩多少">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/half-life/">
+<meta property="og:title" content="半衰期 · 思维模型 Wiki"><meta property="og:description" content="量出减半的时间，就知道还剩多少">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/half-life/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-physics">
+<p class="crumb"><a href="../../index.html">首页</a> / 物理</p>
+<h1>半衰期 <small>Half-Life</small></h1>
+<p class="tagline"><strong>量出减半的时间，就知道还剩多少</strong></p>
+<p class="experts"><strong>欧内斯特·卢瑟福</strong>（1902 年与索迪提出指数衰变定律，创造了半衰期这个词） · <strong>玛丽·居里</strong>（1898 年发现钋和镭，她的笔记本至今仍因镭的衰变而具有放射性）</p>
+
+<section><h2>场景钩子 · 居里夫人的笔记本，还要再危险一千年</h2><p>1898 年，居里夫妇宣布发现镭。之后几年，玛丽·居里在巴黎一间漏雨的棚屋里，从数吨沥青铀矿残渣中提炼出可称量的镭盐，实验过程全写在笔记本上，纸页沾上了镭 226 的粉尘。当时没人知道，这种元素的半衰期约 1600 年。一百多年后的今天，法国国家图书馆检测发现这些笔记本辐射仍远超安全值，只能装进铅盒保存，想查阅的人必须先签免责声明。按半衰期推算，它们还要再危险一千多年。字迹保存几个世纪不稀奇，稀奇的是一条物理定律能提前告诉你危险会持续多久。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">半衰期把衰减变成可计算的量：不需要知道每个原子何时衰变，只需要知道一半需要多久，就能算出任何时刻还剩多少。</p></section>
+<section><h2>数据证据 · 碳 14 与镭 226 的衰变曲线：同形不同速 <span class="lv lv-verified">一手核实</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">两条曲线形状完全相同，只是横轴被半衰期拉伸或压缩。碳 14 每 5730 年减半，镭 226 每 1600 年减半，后者快约 3.6 倍。<br><span class="src">来源：卢瑟福与索迪 1902 年提出指数衰变定律；碳 14 半衰期 5730 年、镭 226 半衰期 1600 年为国际公认物理常数</span></p></section>
+<section><h2>交互演示 · 拖动半衰期，看技能价值的衰减与续命</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">半衰期 3 年的技能，十年后只剩约一成；每年重学两成，能把它稳在四成以上。半衰期 20 年的技能，三十年后还剩三分之一。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>给对象估一个半衰期</b><span>问一个问题：不加维护，几年后它还剩一半价值？编程语言、管理理论、人脉、品牌，都可以这样估。</span></li><li><b>按半衰期分配学习预算</b><span>半衰期长的重仓投入，半衰期短的按需学，别为几个月就过时的技能支付高价学费。</span></li><li><b>给重要假设标上复核日期</b><span>像体检一样，在日历上写下检查点，到期问一句：这个判断现在还成立吗？</span></li><li><b>优先保住衰变慢的部分</b><span>具体工具会过时，但学新工具的方法、底层原理衰变得慢。淘汰来临时，先扔短的，留长的。</span></li><li><b>记录估计，事后校准</b><span>写下你估的半衰期，一年后对照实际衰减速度，修正自己的直觉偏差。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>把半衰期当精确到期日</td><td>到期那天价值正好剩一半</td><td>社会领域的衰减不是整齐的阶梯，可能断崖式清零，也可能被新场景重新激活，半衰期只是量级估计。</td></tr><tr><td>半衰期本身会突变</td><td>估一次可以用很多年</td><td>技术冲击会把半衰期突然砍短，生成式 AI 出现后，不少技能的半衰期从十年跌到两三年，旧估计全部作废。</td></tr><tr><td>以为长半衰期就值得投入</td><td>只学最长寿的知识就对了</td><td>长寿不等于有用，有些知识半衰期极长但你一辈子用不上，还要结合回报率一起判断。</td></tr><tr><td>测量本身不可靠</td><td>可以像测同位素一样精确测技能贬值</td><td>原子衰变有盖革计数器，知识和优势没有，估计全靠主观判断，误差可能超过一个数量级。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../entropy/">熵</a><span>衰变是微观世界的熵增，半衰期给无序化的速度定了刻度</span></li><li><a href="../compound-interest/">复利</a><span>同一个指数过程的正反两面：复利向上翻倍，半衰期向下减半</span></li><li><a href="../moat/">护城河</a><span>护城河的宽窄，本质是竞争优势半衰期的长短</span></li><li><a href="../s-curve/">S曲线</a><span>S 曲线管增长段，半衰期管衰退段，合起来才是完整生命周期</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>E. 卢瑟福与 F. 索迪关于放射性衰变的系列论文（1902 至 1903） <span class="lv lv-secondary">可靠二手</span></li><li>法国国家图书馆（BnF）关于居里夫人手稿铅盒保存的公开资料 <span class="lv lv-secondary">可靠二手</span></li><li>IUPAC 同位素常数表：碳 14 半衰期 5730 年，镭 226 半衰期 1600 年 <span class="lv lv-verified">一手核实</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "half-life", "domain": "physics", "mermaid": "flowchart TD\n  A[\"任何会衰减的东西：知识、技能、优势、放射性原子\"] --> B[\"关键参数：半衰期，即剩下一半所需的时间\"]\n  B --> C[\"数学规则：每过一个半衰期，剩余量乘以 0.5\"]\n  C --> D{\"这个半衰期对你意味着什么\"}\n  D -->|\"长，如数学与物理定律\"| E[\"值得重仓，几十年不过时\"]\n  D -->|\"中，如行业惯例\"| F[\"定期复核，别押注太久\"]\n  D -->|\"短，如具体软件版本\"| G[\"用时再学，快速替换\"]\n  E --> H[\"写下估计，到期核对，校准直觉\"]\n  F --> H\n  G --> H", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["碳 14 剩余比例", "镭 226 剩余比例"]}, "xAxis": {"type": "category", "name": "年", "data": ["0", "5730", "11460", "17190", "22920", "28650", "34380", "40110", "45840", "51570", "57300"]}, "yAxis": {"type": "value", "name": "剩余比例（%）"}, "series": [{"name": "碳 14 剩余比例", "type": "line", "data": [100, 50, 25, 12.5, 6.25, 3.13, 1.56, 0.78, 0.39, 0.2, 0.1]}, {"name": "镭 226 剩余比例", "type": "line", "data": [100, 8.4, 0.7, 0.06, 0.005, 0.0004, 3e-05, 0, 0, 0, 0]}]}, "demo": {"title": "拖动半衰期，看技能价值的衰减与续命", "takeaway": "半衰期 3 年的技能，十年后只剩约一成；每年重学两成，能把它稳在四成以上。半衰期 20 年的技能，三十年后还剩三分之一。", "params": [{"id": "fast", "label": "短半衰期技能的半衰期（年）", "min": 1, "max": 15, "step": 1, "default": 3}, {"id": "slow", "label": "长半衰期技能的半衰期（年）", "min": 5, "max": 50, "step": 1, "default": 20}, {"id": "renew", "label": "每年重学的比例", "min": 0, "max": 0.5, "step": 0.05, "default": 0.2}], "x": {"label": "年数", "from": 0, "to": 30, "step": 1}, "series": [{"name": "短半衰期技能", "expr": "100 * pow(0.5, x / fast)"}, {"name": "长半衰期技能", "expr": "100 * pow(0.5, x / slow)"}, {"name": "短技能加每年重学", "expr": "100 * renew / (0.693 / fast + renew) + (100 - 100 * renew / (0.693 / fast + renew)) * exp(-(0.693 / fast + renew) * x)"}]}, "related": [{"slug": "entropy", "title": "熵", "exists": true}, {"slug": "compound-interest", "title": "复利", "exists": true}, {"slug": "moat", "title": "护城河", "exists": true}, {"slug": "s-curve", "title": "S曲线", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

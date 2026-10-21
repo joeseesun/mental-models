@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>惯性 · 思维模型 Wiki</title><meta name="description" content="静者恒静，动者恒动">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/inertia/">
+<meta property="og:title" content="惯性 · 思维模型 Wiki"><meta property="og:description" content="静者恒静，动者恒动">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/inertia/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-physics">
+<p class="crumb"><a href="../../index.html">首页</a> / 物理</p>
+<h1>惯性 <small>Inertia</small></h1>
+<p class="tagline"><strong>静者恒静，动者恒动</strong></p>
+<p class="experts"><strong>伽利略·伽利莱</strong>（1638 年用斜面实验推出惯性雏形，推翻了亚里士多德的力维持运动说） · <strong>艾萨克·牛顿</strong>（1687 年在《自然哲学的数学原理》中把惯性写成第一定律） · <strong>克莱顿·克里斯坦森</strong>（用破坏性创新解释大公司为何被自身惯性困住，把概念搬进管理学）</p>
+
+<section><h2>场景钩子 · 柯达发明了数码相机，然后花 37 年走向破产</h2><p>1975 年，柯达工程师史蒂夫·萨森造出世界上第一台数码相机，重 3.6 公斤，分辨率 0.01 兆像素，把照片存进磁带要 23 秒。他向管理层演示，得到的回应是这东西不错，但别对外讲。原因很直白，柯达胶卷业务利润丰厚，在美国一度占约九成市场份额，全公司的渠道、流程、考核都围着胶卷转。此后三十多年，柯达不是看不见趋势，而是每次想转都转不动，数码部门始终活在胶卷的阴影里。2012 年 1 月，柯达申请破产保护，距离它自己发明数码相机已经过去 37 年。质量越大，越难改变方向，公司和人都是如此。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">外力撤掉之后，系统会停在新状态上照旧运行。惯性对旧状态和新状态一视同仁，它不判断好坏，只负责维持。</p></section>
+<section><h2>数据证据 · 柯达年营收与全球数码相机出货量 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">数码相机是柯达自己发明的，但营收惯性让它沿着胶卷轨道又跑了十几年。下滑一旦开始，速度远比想象中快。<br><span class="src">来源：柯达 1996 至 2011 年年报公开数据；全球数码相机出货量参考 CIPA 历年统计，图中均为约数</span></p></section>
+<section><h2>交互演示 · 推得动吗：力、质量与初速度</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">把外力拖到零，速度变成一条水平线，物体照原速前进，这就是惯性。质量越大，同样的力带来的速度变化越慢。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>写下系统当前的状态和速度</b><span>对物体是方向和速率，对个人是日常习惯，对组织是主营流程和收入结构。</span></li><li><b>找出构成质量的东西</b><span>资产、渠道、考核、身份认同，凡是让转向变贵的，都是惯性质量。</span></li><li><b>估算外力够不够</b><span>一次培训、一句口号这种小力会被惯性直接吸收，改变需要持续或足够大的力。</span></li><li><b>优先减小质量，而不是硬加推力</b><span>先撤掉旧考核和旧流程，再推新方向，比对着惯性硬推省力得多。</span></li><li><b>在速度还小的时候动手</b><span>惯性不消灭变化，只推迟变化，越晚转向，需要的力越大，代价越高。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>把所有不变都归咎于惯性</td><td>只要外力够大就能推动</td><td>有些不变是理性选择，比如核心业务本来就该保护，硬推反而破坏稳定。</td></tr><tr><td>用物理惯性直接预测社会系统</td><td>没有外力就沿原方向一直走</td><td>人会自己反思，市场会自己转向，社会系统的内部变化不靠外力也会发生。</td></tr><tr><td>短期看不到变化就下结论</td><td>速度没变说明没人用力</td><td>力可能在积累而速度还小，突变会迟到但会到，柯达下滑前也安静了很多年。</td></tr><tr><td>把惯性大当成拒绝改变的借口</td><td>我们体量太大，改不了</td><td>体量只决定需要的力，不决定能不能改，惯性常被用来给不作为开脱。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../feedback-loops/">反馈回路</a><span>惯性之外的第二种走向：反馈回路决定系统被推之后往哪里去</span></li><li><a href="../path-dependence/">路径依赖</a><span>路径依赖是惯性在制度与历史里的长期版本</span></li><li><a href="../homeostasis/">内稳态</a><span>内稳态解释系统为什么主动抵抗改变，而不只是被动维持</span></li><li><a href="../leverage-points/">杠杆点</a><span>找对杠杆点，小力也能撬动大惯性</span></li><li><a href="../s-curve/">S曲线</a><span>惯性让组织总在 S 曲线拐点之后才反应过来</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>牛顿《自然哲学的数学原理》定义与公理部分（1687） <span class="lv lv-secondary">可靠二手</span></li><li>伽利略《关于两门新科学的对话》斜面实验（1638） <span class="lv lv-secondary">可靠二手</span></li><li>柯达历年年报；史蒂夫·萨森多次公开访谈讲述 1975 年数码相机演示 <span class="lv lv-secondary">可靠二手</span></li><li>CIPA（相机影像机器工业会）历年数码相机出货统计 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "inertia", "domain": "physics", "mermaid": "flowchart LR\n  A[\"原有状态<br/>静止或匀速运动\"] --> B{\"有外力吗\"}\n  B -->|没有| C[\"保持原状态不变\"]\n  B -->|有| D{\"力与质量相比<br/>够大吗\"}\n  D -->|不够| C\n  D -->|够| E[\"产生加速度<br/>状态开始改变\"]\n  E --> F[\"持续用力<br/>直到进入新状态\"]\n  F --> G[\"撤去外力<br/>新状态照旧保持\"]\n  G --> B", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["柯达年营收", "全球数码相机出货量"]}, "xAxis": {"type": "category", "data": ["1996", "1999", "2002", "2005", "2008", "2010", "2011"]}, "yAxis": [{"type": "value", "name": "营收，十亿美元"}, {"type": "value", "name": "出货量，百万台"}], "series": [{"name": "柯达年营收", "type": "line", "data": [16.0, 13.4, 12.8, 14.3, 9.4, 7.2, 6.2]}, {"name": "全球数码相机出货量", "type": "line", "yAxisIndex": 1, "data": [null, null, 25, 64, 120, 121, 116]}]}, "demo": {"title": "推得动吗：力、质量与初速度", "takeaway": "把外力拖到零，速度变成一条水平线，物体照原速前进，这就是惯性。质量越大，同样的力带来的速度变化越慢。", "params": [{"id": "force", "label": "外力（牛）", "min": 0, "max": 10, "step": 0.5, "default": 2}, {"id": "mass", "label": "质量（千克）", "min": 1, "max": 10, "step": 0.5, "default": 5}, {"id": "v0", "label": "初速度（米每秒）", "min": 0, "max": 10, "step": 0.5, "default": 5}], "x": {"label": "时间（秒）", "from": 0, "to": 10, "step": 0.5}, "series": [{"name": "速度", "expr": "v0 + (force / mass) * x"}, {"name": "位移", "expr": "v0 * x + 0.5 * (force / mass) * x * x"}]}, "related": [{"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "path-dependence", "title": "路径依赖", "exists": true}, {"slug": "homeostasis", "title": "内稳态", "exists": true}, {"slug": "leverage-points", "title": "杠杆点", "exists": true}, {"slug": "s-curve", "title": "S曲线", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

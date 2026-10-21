@@ -1,0 +1,178 @@
+{
+  "slug": "principal-agent",
+  "title": "委托代理",
+  "en": "Principal-Agent Problem",
+  "domain": "economics",
+  "experts": [
+    {
+      "name": "亚当·斯密",
+      "role": "1776 年已警告，股份公司经理打理别人的钱，不会像打理自己的钱那样上心"
+    },
+    {
+      "name": "迈克尔·詹森",
+      "role": "与麦克林 1976 年定义代理成本，把公司看成一组合同的联结"
+    },
+    {
+      "name": "威廉·麦克林",
+      "role": "1976 年与詹森合著代理成本经典论文，罗切斯特大学教授"
+    }
+  ],
+  "tagline": "花别人的钱，办自己的事",
+  "hook": {
+    "title": "管理层出价 75 美元，最后成交 109",
+    "story": "1988 年 10 月，RJR Nabisco 的 CEO 罗斯·约翰逊向董事会提议，由管理层以每股 75 美元把公司买下来。消息公布前，股价只有 56 美元左右。这家公司养着一整支公务机队，赞助网球和高尔夫赛事，约翰逊自己若收购成功，还能拿走约 5300 万美元的离职补偿。董事会嫌 75 美元太便宜，把公司摆上拍卖台。几轮竞价之后，KKR 以每股 109 美元、总价约 250 亿美元胜出，创下当时纪录。同一家公司，换一群买主，股东每股多拿 50 多美元。管理层愿意只出 75 就买走的那部分价值，正是他们平时没替股东挣出来的钱。"
+  },
+  "principle": {
+    "mermaid": "flowchart LR\n  P[\"委托人：股东\"] -->|出资并授权| A[\"代理人：经理\"]\n  A --> H[\"努力与决策难以观测\"]\n  H --> G[\"信息不对称\"]\n  P --> O[\"目标：股东回报\"]\n  A --> S[\"目标：薪酬、地位、安稳\"]\n  G --> D[\"目标错位\"]\n  D --> C1[\"监督成本\"]\n  D --> C2[\"激励成本\"]\n  D --> C3[\"剩余损失\"]\n  C1 --> T[\"代理成本\"]\n  C2 --> T\n  C3 --> T\n  T --> F[\"缓解手段：持股绑定<br/>延期支付<br/>独立监督\"]\n  F -->|改变行为| A",
+    "caption": "代理成本有三张脸：监督花的钱、激励花的钱，以及目标错位造成的剩余损失。詹森和麦克林 1976 年把三者加总，用来解释资本结构。"
+  },
+  "evidence": {
+    "title": "RJR Nabisco 1988：同一家公司的三个价格",
+    "takeaway": "从 56 到 109，差价在公司被摆上拍卖台后才释放出来。里面有杠杆和税盾的功劳，也有被管理层按住的股东价值，两者比例学界至今有争论。但至少说明一件事：代理人报的价格，不是股东能拿到的价格。",
+    "level": "secondary",
+    "source": "Burrough 与 Helyar《门口的野蛮人》（1990）；1988 年 10 月至 12 月华尔街日报、纽约时报公开报道",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "消息公布前股价",
+          "管理层首次出价",
+          "KKR 最终成交"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "美元/股"
+      },
+      "series": [
+        {
+          "name": "每股价格",
+          "type": "bar",
+          "data": [
+            56,
+            75,
+            109
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "激励强度怎么定：太弱没人干，太强白分钱",
+    "takeaway": "代理人越怕风险，最优激励强度越低。怕风险的代理人适合固定工资加监督，不怕风险的适合高分成。这是 Holmström 1979 年模型的核心取舍。",
+    "params": [
+      {
+        "id": "risk",
+        "label": "代理人风险厌恶",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.3
+      }
+    ],
+    "x": {
+      "label": "激励强度（产出分成比例）",
+      "from": 0,
+      "to": 1,
+      "step": 0.01
+    },
+    "series": [
+      {
+        "name": "代理人努力",
+        "expr": "x"
+      },
+      {
+        "name": "委托人净收益",
+        "expr": "x * (1 - x) - risk * x * x"
+      },
+      {
+        "name": "风险溢价成本",
+        "expr": "risk * x * x"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "先分清谁是委托人，谁是代理人",
+      "detail": "顺着钱和权走：出钱担风险的是委托人，替人做事的是代理人。基民和基金经理、股东和 CEO、业主和中介，都是这一对。"
+    },
+    {
+      "step": "写出双方各自真正想要什么",
+      "detail": "不要看口头使命，看收入结构和考核表。经理嘴上说长期价值，奖金却按季度利润发，那他优化的一定是季度利润。"
+    },
+    {
+      "step": "找出委托人看不见、测不准的地方",
+      "detail": "努力程度、真实风险、报表水分，都是天然盲区。盲区越大，代理成本越高，越值得花钱设计合同。"
+    },
+    {
+      "step": "让代理人的收益和你的目标同向",
+      "detail": "手段包括股权绑定、延期支付、对赌条款、独立审计。注意风险分担：代理人怕风险时，强激励要付很高的溢价。"
+    },
+    {
+      "step": "算总账，别只盯着某一层",
+      "detail": "监督费、激励费加剩余损失才是代理成本。层层设防的成本超过损失时，不如简化结构或直接换人。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "考核指标可以被操纵，比如按季度利润发奖金",
+      "model_says": "薪酬挂钩指标就能对齐利益",
+      "reality": "代理人会优化指标本身而不是目标。安然按利润和股价发期权，直接催生系统性做账，2001 年公司破产。"
+    },
+    {
+      "situation": "产出靠团队协作，个人贡献难以归因",
+      "model_says": "按个人业绩付高激励最有效",
+      "reality": "强个人激励诱发抢功、藏私和内耗，合作瓦解后总产出反而下降。"
+    },
+    {
+      "situation": "对方有内在动机，比如教师、医生、志愿者",
+      "model_says": "加监督加奖金总不会错",
+      "reality": "过度控制会挤出内在动机。Gneezy 与 Rustichini 2000 年的海法托儿所实验里，对迟到罚款反而让迟到更多。"
+    },
+    {
+      "situation": "委托人链条很长，比如基民到基金经理再到企业",
+      "model_says": "每一层签好合同就够了",
+      "reality": "每层都漏一点信息、偏一点目标，叠到末端激励早已失真，末端代理人服务的是上一层的考核。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "incentives",
+      "relation": "对症的药：激励设计就是在调代理人的目标函数"
+    },
+    {
+      "slug": "goodharts-law",
+      "relation": "典型失效方式：代理人优化考核指标，而不是指标背后的目标"
+    },
+    {
+      "slug": "skin-in-the-game",
+      "relation": "解法之一：让代理人用自己的钱承担决策后果"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jensen & Meckling (1976), Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure, Journal of Financial Economics",
+      "level": "verified"
+    },
+    {
+      "title": "Ross (1973), The Economic Theory of Agency: The Principal's Problem, American Economic Review",
+      "level": "verified"
+    },
+    {
+      "title": "Holmström (1979), Moral Hazard and Observability, Bell Journal of Economics",
+      "level": "verified"
+    },
+    {
+      "title": "Burrough & Helyar, Barbarians at the Gate（1990）",
+      "level": "secondary"
+    },
+    {
+      "title": "Gneezy & Rustichini (2000), A Fine Is a Price, Journal of Legal Studies",
+      "level": "verified"
+    }
+  ],
+  "status": "reference"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>锚定效应 · 思维模型 Wiki</title><meta name="description" content="先出现的数字，拖着判断走">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/anchoring/">
+<meta property="og:title" content="锚定效应 · 思维模型 Wiki"><meta property="og:description" content="先出现的数字，拖着判断走">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/anchoring/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-psychology">
+<p class="crumb"><a href="../../index.html">首页</a> / 心理</p>
+<h1>锚定效应 <small>Anchoring Effect</small></h1>
+<p class="tagline"><strong>先出现的数字，拖着判断走</strong></p>
+<p class="experts"><strong>丹尼尔·卡尼曼</strong>（2002 年诺贝尔经济学奖得主，1974 年与特沃斯基把锚定写入启发式与偏差纲领） · <strong>阿莫斯·特沃斯基</strong>（锚定与调整机制的主要提出者，用幸运轮盘证明随机数字也能拖动判断） · <strong>亚当·加林斯基</strong>（西北大学教授，2001 年用实验证明谈判中先报价者把结果拉向自己）</p>
+
+<section><h2>场景钩子 · 一个随机数字，把答案拖开 20 个百分点</h2><p>1974 年，特沃斯基和卡尼曼在《科学》杂志发表了一个实验。他们让俄勒冈大学的学生转动一个幸运轮盘，轮盘被动过手脚，只会停在 10 或 65。转完立刻问：非洲国家在联合国里的占比，是高于还是低于这个数？接着让学生写下真实估计。每个学生都清楚轮盘是随机的，和联合国毫无关系。但先看到 10 的那组，中位数估计是 25%；先看到 65 的那组，中位数估计是 45%。一个公认的随机数字，把两组答案拖开了 20 个百分点。卡尼曼后来写道，被拖动的人自己毫无察觉。锚定效应从此成为判断偏差研究的起点之一。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">两条路径都通向同一个结局：要么调整不够，要么相关记忆被锚点选择性激活。</p></section>
+<section><h2>数据证据 · 两个经典实验：公认随机的锚点仍在拖动估计 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">轮盘实验里两组中位数差 20 个百分点，甘地实验里两组均值差 17 岁。锚点越极端，估计被拖得越远。<br><span class="src">来源：Tversky &amp; Kahneman 1974, Science；Strack &amp; Mussweiler 1997, Journal of Experimental Social Psychology，数字转引自原始论文</span></p></section>
+<section><h2>交互演示 · 拖动滑块：锚的拉力和你的免疫力</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">对方锚定敏感度越高，成交价越贴着首报价走；把你的信息准备度调到 1，锚的拉力归零。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>开口之前，先写下自己的数</b><span>谈判或估值前，独立查数据，写下目标价和底线。这个动作必须在看到对方的数字之前完成。</span></li><li><b>有准备时争取先报价</b><span>加林斯基 2001 年的实验显示，先报价者的成交结果更靠近自己的锚。报一个有依据、够极端但不至于让对方离场的数。</span></li><li><b>听到对方的锚，先明确否定再还价</b><span>不要从对方的数字往上加。先说明这个数没有依据，再给出自己的锚，把战场拉回来。</span></li><li><b>重要估计从多个起点各算一遍</b><span>分别从乐观、悲观、中性三个起点推导。三个结果差距大，说明有锚在拖，取区间而不是单点。</span></li><li><b>用外部基准校验最终答案</b><span>对照历史数据、同类案例或他人的独立估计。发现估计贴着某个数字走，就重算一遍。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>判断者对领域内的合理区间非常熟悉</td><td>锚点总会拖动估计</td><td>熟悉能减弱锚定但不能清除。诺斯克拉夫特与尼尔 1987 年发现，资深房产经纪的估价仍被挂牌价拖动，只是幅度小于外行。</td></tr><tr><td>把一切估计偏差都归因于锚定</td><td>答案贴着某个数字，就是被锚了</td><td>偏差可能来自激励、信息不足或真实信号。先排除别的原因，再下锚定的结论。</td></tr><tr><td>谈判里报出过于极端的锚</td><td>锚越极端，拉力越大</td><td>离谱的报价会被当成不诚实或无知，对方可能直接终止谈判。锚还没起作用，交易先没了。</td></tr><tr><td>把实验室里的随机数字效应直接外推到重大决策</td><td>一个骰子点数也能左右法官量刑</td><td>英利希等人 2006 年的法官实验支持这一点，但后续重复研究提醒，部分经典锚定实验在真实场景的效应比原始报告弱，别高估单个数字的魔力。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../availability-heuristic/">易得性偏差</a><span>同属卡尼曼与特沃斯基 1974 年那篇 Science 提出的启发式家族</span></li><li><a href="../confirmation-bias/">确认偏误</a><span>锚定之后，人倾向搜集支持锚点的证据，两种偏差互相放大</span></li><li><a href="../bayes-updating/">贝叶斯更新</a><span>解药之一：新证据只给合理权重，别让第一个数字权重过大</span></li><li><a href="../map-territory/">地图不是疆域</a><span>锚点只是地图上的一个点，别把它当成疆域本身</span></li><li><a href="../loss-aversion/">损失厌恶</a><span>谈判中报价的拉力，常常和损失厌恶叠加在一起</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Tversky &amp; Kahneman, Judgment under Uncertainty: Heuristics and Biases, Science, 1974 <span class="lv lv-verified">一手核实</span></li><li>Strack &amp; Mussweiler, Explaining the Enigmatic Anchoring Effect, JESP, 1997 <span class="lv lv-verified">一手核实</span></li><li>Galinsky &amp; Mussweiler, First Offers as Anchors, JPSP, 2001 <span class="lv lv-verified">一手核实</span></li><li>Englich, Mussweiler &amp; Strack, Playing Dice with Criminal Sentences, Psychological Science, 2006 <span class="lv lv-verified">一手核实</span></li><li>Northcraft &amp; Neale, Experts, Amateurs, and Real Estate, OBHDP, 1987 <span class="lv lv-verified">一手核实</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "anchoring", "domain": "psychology", "mermaid": "flowchart TD\n  A[出现第一个数字] --> B[它成为心理起点]\n  B --> C{数字和问题相关吗}\n  C -->|相关| D[从锚点出发向下调整]\n  C -->|随机数字| E[依然锚定<br/>选择性激活相关记忆]\n  D --> F[调整不充分<br/>停在中途]\n  E --> F\n  F --> G[最终估计偏向锚点]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["低锚点组", "高锚点组"]}, "xAxis": {"type": "category", "data": ["轮盘实验：非洲国家占比（%）", "甘地实验：去世年龄（岁）"]}, "yAxis": {"type": "value", "name": "估计值（各自单位）"}, "series": [{"name": "低锚点组", "type": "bar", "data": [25, 50]}, {"name": "高锚点组", "type": "bar", "data": [45, 67]}]}, "demo": {"title": "拖动滑块：锚的拉力和你的免疫力", "takeaway": "对方锚定敏感度越高，成交价越贴着首报价走；把你的信息准备度调到 1，锚的拉力归零。", "params": [{"id": "strength", "label": "对方锚定敏感度", "min": 0, "max": 1, "step": 0.05, "default": 0.4}, {"id": "prep", "label": "你的信息准备度", "min": 0, "max": 1, "step": 0.05, "default": 0.5}], "x": {"label": "对方首次报价（合理价为 100）", "from": 60, "to": 140, "step": 1}, "series": [{"name": "理性成交价", "expr": "100"}, {"name": "被锚定的成交价", "expr": "100 + strength * (x - 100) * (1 - prep)"}]}, "related": [{"slug": "availability-heuristic", "title": "易得性偏差", "exists": true}, {"slug": "confirmation-bias", "title": "确认偏误", "exists": true}, {"slug": "bayes-updating", "title": "贝叶斯更新", "exists": true}, {"slug": "map-territory", "title": "地图不是疆域", "exists": true}, {"slug": "loss-aversion", "title": "损失厌恶", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

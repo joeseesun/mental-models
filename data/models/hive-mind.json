@@ -1,0 +1,227 @@
+{
+  "slug": "hive-mind",
+  "title": "蜂群决策",
+  "en": "Hive Mind",
+  "domain": "biology",
+  "experts": [
+    {
+      "name": "托马斯·希利",
+      "role": "康奈尔大学教授，数十年研究蜂群选巢，2010 年出版《蜜蜂民主》"
+    },
+    {
+      "name": "卡尔·冯·弗里施",
+      "role": "破译摆尾舞含义，1973 年获诺贝尔生理学或医学奖"
+    },
+    {
+      "name": "马丁·林道尔",
+      "role": "冯·弗里施的学生，1950 年代最早记录侦察蜂在蜂团上跳舞拉票"
+    }
+  ],
+  "tagline": "没有领导，也能选出最好的家",
+  "hook": {
+    "title": "海岛上没有树洞，蜂群还是选到了最好的家",
+    "story": "上世纪 90 年代末，康奈尔大学的托马斯·希利把蜂群带到缅因州海岸外的阿普尔多尔岛。岛上没有天然树洞，他摆出五个巢箱，只有一个容积、洞口和朝向都接近完美，其余四个各有明显缺陷。按直觉，一万多只蜜蜂各找各的，结果应该乱成一团。但录像显示，数百只侦察蜂各自跳舞拉票，好址的舞越跳越多，差址的舞渐渐消失。几个小时后，整群蜂一致飞进最好的巢箱。没有蜂王拍板，也没有侦察蜂被说服，靠的是独立评估加一条简单的计票规则。希利在 2010 年把这套机制写进《蜜蜂民主》，成为分布式决策的经典案例。"
+  },
+  "principle": {
+    "mermaid": "flowchart LR\n  A[蜂群分家，数千只蜂结团悬停] --> B[约百分之五的侦察蜂外出找巢]\n  B --> C[发现候选址，独立评估容积与洞口]\n  C --> D[回团跳摆尾舞，址越好舞越长]\n  D --> E[同伴各自飞往实地复核]\n  E --> F{\"聚集的侦察蜂<br/>是否达到法定人数\"}\n  F -->|没有| C\n  F -->|达到约 15 只| G[停止为其他址跳舞]\n  G --> H[侦察蜂发出起飞信号，全群迁入新巢]",
+    "caption": "三个关键设计：独立评估、按质量加权的宣传、达到法定人数才收敛。缺一个，群体智慧就会退化。"
+  },
+  "evidence": {
+    "title": "选巢实验：支持好址的舞蹈上升，差址的舞被淘汰",
+    "takeaway": "在无天然树洞的海岛上，蜂群几乎每次都选中最佳巢箱。机制是舞蹈强度随址的质量加权，再用法定人数收敛，分歧随时间自然消亡。",
+    "level": "draft",
+    "source": "曲线为示意数据，趋势依据 Seeley 与 Buhrman 1999 年论文及《蜜蜂民主》2010 年版重绘，非精确读数",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "最佳巢箱",
+          "次佳巢箱",
+          "最差巢箱"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "0 小时",
+          "2 小时",
+          "4 小时",
+          "6 小时",
+          "8 小时",
+          "10 小时",
+          "12 小时"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "每小时舞蹈次数"
+      },
+      "series": [
+        {
+          "name": "最佳巢箱",
+          "type": "line",
+          "data": [
+            3,
+            10,
+            22,
+            34,
+            41,
+            46,
+            48
+          ]
+        },
+        {
+          "name": "次佳巢箱",
+          "type": "line",
+          "data": [
+            4,
+            12,
+            16,
+            14,
+            9,
+            5,
+            2
+          ]
+        },
+        {
+          "name": "最差巢箱",
+          "type": "line",
+          "data": [
+            5,
+            8,
+            6,
+            3,
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "法定人数阈值：调高它，更准但更慢",
+    "takeaway": "法定人数越高，选对概率越大，但决策越慢。侦察蜂越多收敛越快，候选差距越小越需要高门槛。",
+    "params": [
+      {
+        "id": "scouts",
+        "label": "侦察蜂比例",
+        "min": 0.02,
+        "max": 0.12,
+        "step": 0.01,
+        "default": 0.05
+      },
+      {
+        "id": "gap",
+        "label": "候选址质量差距",
+        "min": 0.1,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.5
+      }
+    ],
+    "x": {
+      "label": "法定人数阈值（只）",
+      "from": 2,
+      "to": 40,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "决策用时（小时）",
+        "expr": "x / (scouts * 100)"
+      },
+      {
+        "name": "选中最佳址的概率",
+        "expr": "1 - exp(-x * gap / 4)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "先分散采集信息，再集中讨论",
+      "detail": "让每个人独立去看现场、查数据，像侦察蜂各自飞出去，不要先开会统一口径。"
+    },
+    {
+      "step": "用公开信号表达支持强度",
+      "detail": "像侦察蜂用舞蹈时长投票，谁对选项越有信心，谁就投入越多宣传资源。"
+    },
+    {
+      "step": "要求支持者亲自复核",
+      "detail": "投票前必须自己验证，不能只转述别人的判断，防止信息级联。"
+    },
+    {
+      "step": "设一个法定人数阈值",
+      "detail": "同一选项的独立支持者达到阈值才拍板，蜂群大约是 15 只，团队可以自定。"
+    },
+    {
+      "step": "达标后立刻停止辩论",
+      "detail": "共识一旦形成就全组执行，不再回头比较，避免无休止的重新讨论。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "两个候选选项质量接近",
+      "model_says": "群体会自动收敛到更好的那个",
+      "reality": "差距小于评估噪音时，计票也会选错，蜂群实验中同样出现过选中次优址的情况。"
+    },
+    {
+      "situation": "成员互相模仿而不是独立评估",
+      "model_says": "独立投票能消除个体偏差",
+      "reality": "人类容易跟风，票数会变成连锁的从众，社会认同会摧毁独立性，这是与蜂群最大的差别。"
+    },
+    {
+      "situation": "调研成本高或时间紧急",
+      "model_says": "让更多人独立验证再决定",
+      "reality": "侦察蜂用命换信息，人类组织往往负担不起，紧急时集中拍板反而更快。"
+    },
+    {
+      "situation": "有人操纵宣传强度",
+      "model_says": "舞跳得久代表质量高",
+      "reality": "在人群里，嗓门大不等于选项好，强势者会把投票变成自己的扩音器。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "emergence",
+      "relation": "群体智慧是个体简单规则叠加后的涌现结果"
+    },
+    {
+      "slug": "self-organization",
+      "relation": "没有中央指挥，秩序从局部互动中生成"
+    },
+    {
+      "slug": "critical-mass",
+      "relation": "法定人数就是一种临界质量，达到阈值行为突变"
+    },
+    {
+      "slug": "groupthink",
+      "relation": "反面参照：人类团队追求一致时丢掉了独立评估"
+    },
+    {
+      "slug": "social-proof",
+      "relation": "对照：人跟随他人，蜂实地复核，独立性是成败关键"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thomas D. Seeley, Honeybee Democracy, Princeton University Press, 2010",
+      "level": "secondary"
+    },
+    {
+      "title": "Seeley & Buhrman, Group decision making in swarms of honey bees, Behavioral Ecology and Sociobiology, 1999",
+      "level": "verified"
+    },
+    {
+      "title": "Seeley & Visscher, Quorum sensing during nest-site selection by honeybee swarms, Behavioral Ecology and Sociobiology, 2004",
+      "level": "verified"
+    },
+    {
+      "title": "Karl von Frisch, The Dance Language and Orientation of Bees, Harvard University Press, 1967",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

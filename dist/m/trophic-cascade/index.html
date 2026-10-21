@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>营养级联 · 思维模型 Wiki</title><meta name="description" content="捕食者在，世界才是绿的">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/trophic-cascade/">
+<meta property="og:title" content="营养级联 · 思维模型 Wiki"><meta property="og:description" content="捕食者在，世界才是绿的">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/trophic-cascade/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-biology">
+<p class="crumb"><a href="../../index.html">首页</a> / 生物</p>
+<h1>营养级联 <small>Trophic Cascade</small></h1>
+<p class="tagline"><strong>捕食者在，世界才是绿的</strong></p>
+<p class="experts"><strong>奥尔多·利奥波德</strong>（早期观察者，1949年在《像山那样思考》里预言灭狼会让鹿群毁掉整座山） · <strong>罗伯特·佩因</strong>（提出者，1963年起在潮间带做海星移除实验，1980年正式命名营养级联） · <strong>吉姆·埃斯蒂斯</strong>（验证者，1970年代起用海獭与海藻林证明级联在海洋同样成立）</p>
+
+<section><h2>场景钩子 · 狼回来之后，白杨等了七十年的春天</h2><p>1926年，黄石国家公园的最后一批灰狼被猎杀。此后七十年，北部山区的马鹿没有天敌，冬天也不愿挪窝，河谷里的白杨和柳树被啃得只剩老桩，新苗长不起来，河狸几乎绝迹。1995年1月，31头灰狼从加拿大运抵黄石放归。俄勒冈州立大学的 William Ripple 团队后来测量发现，白杨幼树在消失约七十年后重新出现；河狸群落从1996年的1群回升到2009年前后的9群；郊狼数量下降，狐狸和鸣禽多了回来。狼没有亲手种活一棵树，它只是让鹿重新学会了害怕，剩下的变化沿着食物链自己发生。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">两条通路：捕食者既直接吃掉猎物，也用恐惧改变猎物的取食地点和时间。1960年 HSS 三人组提出绿色世界假说，世界是绿的，因为捕食者替植物挡住了食草动物。</p></section>
+<section><h2>数据证据 · 黄石：狼群恢复与北部马鹿群的变化 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">狼放归后十余年，北部马鹿冬季数量从约1.7万头降到约4千头，同期白杨幼树与河狸群落回升。注意马鹿下降也有狩猎、干旱和棕熊捕食的份额，狼不是唯一原因。<br><span class="src">来源：Yellowstone National Park 北部马鹿群冬季航空调查（数值为约数）；国家公园管理局年度狼群报告；Ripple &amp; Larsen 2000；Smith &amp; Tyers 2012（河狸）</span></p></section>
+<section><h2>交互演示 · 拖动狼的数量，看整条链怎么动</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">狼增多，马鹿下降但有底线，植被回升但封顶，河狸只在植被越过门槛后才出现。级联不是线性传导，而是逐级衰减加阈值。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>画出这条食物链的层级</b><span>至少三层：顶级捕食者、食草动物、生产者，再把杂食者等次要角色标在旁边。</span></li><li><b>确认顶层的存亡史</b><span>查捕食者何时被消灭、何时恢复，记下具体年份与数量，这是整条链的输入变量。</span></li><li><b>对比顶层变化前后的底层指标</b><span>用植被覆盖、幼树数量、物种数等可测量指标做前后对照，最好有长期监测数据。</span></li><li><b>区分数量压制与恐惧效应</b><span>前者是捕食者吃掉猎物，后者是猎物因风险改变取食地点和时间，两者叠加才构成完整级联。</span></li><li><b>顺着链条找间接受益者与受害者</b><span>问一句：谁靠植被活，谁靠食草动物活，把它们的数量变化也纳入验证。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>黄石故事在传播中被不断加码</td><td>狼一回来，连河流都改了道</td><td>河流改道缺乏直接测量支持，马鹿下降还有狩猎、干旱和棕熊捕食的份额，狼只是原因之一。</td></tr><tr><td>系统由底层驱动，比如贫营养湖泊和干旱区</td><td>管住顶层就能管住全局</td><td>养分、光照和降水才是主控变量，补进捕食者可能毫无效果。</td></tr><tr><td>捕食者消失太久，系统已滑入替代稳态</td><td>把捕食者放回去就能复原</td><td>存在滞后效应，海胆荒礁里海藻幼苗几乎无法立足，恢复可能极慢甚至不可逆。</td></tr><tr><td>食物网里杂食者和多通道很普遍</td><td>三层链条可以简单外推</td><td>杂食会稀释级联信号，真实食物网的响应常与三层预测相反。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../keystone-species/">关键种</a><span>同源概念：Paine 的海星实验同时催生了关键种与营养级联</span></li><li><a href="../cascading-failure/">级联失效</a><span>结构同型：一个节点移除沿网络逐级放大</span></li><li><a href="../feedback-loops/">反馈回路</a><span>级联是多级反馈的接力，正负反馈决定走向</span></li><li><a href="../leverage-points/">杠杆点</a><span>顶级捕食者常是系统里性价比最高的干预点</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Paine, R. T. (1980). Food Webs: Linkage, Interaction Strength and Community Infrastructure. Journal of Animal Ecology 49(3) <span class="lv lv-verified">一手核实</span></li><li>Estes &amp; Palmisano (1974). Sea Otters: Their Role in Structuring Nearshore Communities. Science 185 <span class="lv lv-verified">一手核实</span></li><li>Ripple &amp; Larsen (2000). Historic aspen recruitment, elk, and wolves in northern Yellowstone National Park. Biological Conservation 95 <span class="lv lv-verified">一手核实</span></li><li>利奥波德《沙乡年鉴》中的散文《像山那样思考》（1949） <span class="lv lv-secondary">可靠二手</span></li><li>Yellowstone National Park 北部马鹿冬季调查与年度狼群报告 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "trophic-cascade", "domain": "biology", "mermaid": "flowchart TD\n  A[\"顶级捕食者：狼与海獭\"] -->|数量压制与恐惧效应| B[\"食草动物：马鹿与海胆\"]\n  B -->|啃食| C[\"植被：白杨柳树与海藻\"]\n  C -->|食物与筑坝材料| D[\"河狸与鸣禽\"]\n  C -->|稳固河岸| E[\"河道与湿地\"]\n  F[\"移除顶级捕食者\"] -->|级联反转| B\n  F -->|郊狼失去制衡| G[\"郊狼增多\"]\n  G -->|捕食压力上升| H[\"狐狸与鸣禽减少\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["北部马鹿冬季数量", "园内狼群数量"]}, "xAxis": {"type": "category", "data": ["1995", "2000", "2005", "2010", "2013", "2016"]}, "yAxis": [{"type": "value", "name": "马鹿（头）"}, {"type": "value", "name": "狼（头）"}], "series": [{"name": "北部马鹿冬季数量", "type": "line", "data": [16800, 11700, 9500, 6100, 3900, 5300]}, {"name": "园内狼群数量", "type": "line", "yAxisIndex": 1, "data": [31, 177, 118, 97, 83, 108]}]}, "demo": {"title": "拖动狼的数量，看整条链怎么动", "takeaway": "狼增多，马鹿下降但有底线，植被回升但封顶，河狸只在植被越过门槛后才出现。级联不是线性传导，而是逐级衰减加阈值。", "params": [{"id": "pred", "label": "捕食压力系数", "min": 0.2, "max": 2, "step": 0.1, "default": 1}, {"id": "K", "label": "植被承载力上限", "min": 50, "max": 100, "step": 5, "default": 100}], "x": {"label": "狼的数量（头）", "from": 0, "to": 40, "step": 1}, "series": [{"name": "马鹿数量（指数）", "expr": "max(20, 100 - pred * x * 2)"}, {"name": "白杨与柳树（指数）", "expr": "K * (1 - exp(-pred * x / 30))"}, {"name": "河狸（指数）", "expr": "max(0, K * (1 - exp(-pred * x / 30)) - 40)"}]}, "related": [{"slug": "keystone-species", "title": "关键种", "exists": true}, {"slug": "cascading-failure", "title": "级联失效", "exists": true}, {"slug": "feedback-loops", "title": "反馈回路", "exists": true}, {"slug": "leverage-points", "title": "杠杆点", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

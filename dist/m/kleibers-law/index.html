@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>克莱伯定律 · 思维模型 Wiki</title><meta name="description" content="体重涨二十五万倍，耗能只涨一万倍">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/kleibers-law/">
+<meta property="og:title" content="克莱伯定律 · 思维模型 Wiki"><meta property="og:description" content="体重涨二十五万倍，耗能只涨一万倍">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/kleibers-law/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-biology">
+<p class="crumb"><a href="../../index.html">首页</a> / 生物</p>
+<h1>克莱伯定律 <small>Kleiber&#x27;s Law</small></h1>
+<p class="tagline"><strong>体重涨二十五万倍，耗能只涨一万倍</strong></p>
+<p class="experts"><strong>马克斯·克莱伯</strong>（瑞士裔动物学家，1932 年拟合出 3/4 次幂，著有《生命之火》） · <strong>杰弗里·韦斯特</strong>（圣塔菲研究所理论物理学家，1997 年用分形输运网络解释 0.75 的来源） · <strong>詹姆斯·布朗</strong>（生态学家，与韦斯特、恩奎斯特共同提出代谢理论）</p>
+
+<section><h2>场景钩子 · 大象不是放大版的老鼠</h2><p>1932 年，加州大学戴维斯分校的马克斯·克莱伯做了一件笨功夫。他翻遍文献，把能找到的哺乳动物代谢测量数据汇到一张对数坐标纸上，从小鼠、大鼠、豚鼠、狗、羊一直排到牛。当时教科书信奉表面律，认为产热正比于体表面积，代谢率应按体重的三分之二次幂增长，克莱伯原本也这么预期。可直线一画出来，斜率反复落在 0.75 附近，而不是 0.67。这意味着大象虽比小鼠重约二十五万倍，每天烧掉的能量却只多约一万倍，摊到每克组织，小鼠的燃烧强度反而是大象的二十多倍。克莱伯把这条线叫作小鼠到大象曲线，3/4 次幂后来被称为克莱伯定律，至今仍是动物营养学和药物剂量换算的常用基准。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">0.75 卡在表面律的 0.67 与线性放大的 1 之间，说明放大既不是纯几何问题，也不是简单等比，而是输运网络在起作用。</p></section>
+<section><h2>数据证据 · 三种缩放假说，三张能量账单 <span class="lv lv-verified">一手核实</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">体重放大二十五万倍，线性假说预测耗能放大二十五万倍，表面律只预测约四千倍，克莱伯定律约一万一千倍，实测数据选了中间那条线。<br><span class="src">来源：Kleiber M., Body Size and Metabolism, Hilgardia 6, 315-353, 1932；The Fire of Life, 1961。图中各点为按方程 B=70M^0.75 及两个对比假说计算的理论值，小鼠与大象取常用代表体重 20 克与 5 吨。</span></p></section>
+<section><h2>交互演示 · 拖动指数，看每克代谢怎么弯下来</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">指数为 1 时每克代谢是平线，所有组织同价；拖到 0.75，曲线下弯，大象每克成本只有小鼠的零头。把参照体重设为 70 千克，1 千克小狗的每克燃烧约是人的 2.9 倍。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>先确认对象是跨体型的代谢类问题</b><span>比较不同体重的动物、剂量换算、散热设计都适用；预测单一个体的精确代谢不适用。</span></li><li><b>用 70 乘以体重的 0.75 次幂估基础代谢</b><span>体重用千克，结果约是千卡每天，例如 70 千克的人约 1700 千卡每天。</span></li><li><b>跨体重换算按 0.75 次幂，别按体重比例</b><span>从 200 克大鼠外推到 70 千克的人，代谢只放大约 81 倍，而不是 350 倍。</span></li><li><b>用负 0.25 次幂估节奏差异</b><span>心率、发育时间、寿命都近似按体重 0.25 次幂反向缩放，小鼠心跳约 600 次每分钟，大象约 30 次。</span></li><li><b>算出残差再追问异常</b><span>实测值除以 70M^0.75，明显偏高或偏低的物种，往往藏着特殊生态位或生理策略，值得单独研究。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>把 0.75 当普适常数，套到鱼、植物或单细胞生物上</td><td>所有生命都按 3/4 次幂缩放</td><td>不同类群的截距和指数都不同，2003 年起的多项再分析认为哺乳动物本身更接近 0.68，3/4 至今仍有争议。</td></tr><tr><td>用物种间公式去预测某个具体个体</td><td>代入体重就能算出他的基础代谢</td><td>年龄、体脂、激素和训练水平能让同体重个体相差两成以上，公式只给群体均值。</td></tr><tr><td>估算运动、严寒或疾病状态下的能耗</td><td>按基础代谢缩放就行</td><td>剧烈运动能耗可达基础值十倍以上，定律只描述静息、空腹、适宜温度下的基础代谢。</td></tr><tr><td>把韦斯特对城市和公司的缩放律当成生物定律</td><td>组织越大，人均一定越高效</td><td>那是有限样本上的统计趋势，城市甚至是超线性而非 0.75，直接拿来设计团队规模会坑人。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../emergence/">涌现</a><span>0.75 这个数没有对应基因，它是输运网络几何涌现出来的结果</span></li><li><a href="../homeostasis/">内稳态</a><span>大小动物体温都是 37 度，小鼠靠更强的每克燃烧守住它</span></li><li><a href="../economies-of-scale/">规模效应</a><span>生物界自带的规模效应，体重翻倍，每克能耗降约 16%</span></li><li><a href="../limits-to-growth/">增长极限</a><span>代谢增速慢于体重增速，注定生长会减速并封顶</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Kleiber M., Body Size and Metabolism, Hilgardia 6, 315-353, 1932 <span class="lv lv-verified">一手核实</span></li><li>Kleiber M., The Fire of Life: An Introduction to Animal Energetics, 1961 <span class="lv lv-verified">一手核实</span></li><li>West, Brown, Enquist, A General Model for the Origin of Allometric Scaling Laws in Biology, Science 276, 1997 <span class="lv lv-verified">一手核实</span></li><li>West J., Scale: The Universal Laws of Life and Death, 2017，中译《规模》 <span class="lv lv-secondary">可靠二手</span></li><li>White C. R. 与 Seymour R. S., Mammalian Basal Metabolic Rate Is Proportional to Body Mass 2/3, PNAS 100, 2003 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "kleibers-law", "domain": "biology", "mermaid": "flowchart LR\n  A[\"体重 M\"] --> B[\"总代谢率 B = 70 × M^0.75 千卡每天\"]\n  A --> C[\"每克代谢率 B / M ∝ M^-0.25\"]\n  B --> D[\"小鼠 20 克：约 4 千卡每天\"]\n  B --> E[\"大象 5 吨：约 4.2 万千卡每天\"]\n  C --> F[\"小鼠每克燃烧强度约为大象的 23 倍\"]\n  D --> G[\"组织放大不是线性放大\"]\n  E --> G\n  F --> G\n  G --> H[\"心率更慢，寿命更长，细胞节奏更缓\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["克莱伯 0.75 次幂", "表面律 0.67 次幂", "线性放大 1.0 次幂"]}, "xAxis": {"type": "log", "name": "体重（千克）", "min": 0.01, "max": 10000}, "yAxis": {"type": "log", "name": "千卡每天"}, "series": [{"name": "克莱伯 0.75 次幂", "type": "line", "data": [[0.02, 3.7], [0.2, 21], [2, 118], [20, 662], [70, 1694], [500, 7420], [5000, 41600]]}, {"name": "表面律 0.67 次幂", "type": "line", "data": [[0.02, 5.2], [0.2, 24], [2, 111], [20, 516], [70, 1203], [500, 4410], [5000, 20500]]}, {"name": "线性放大 1.0 次幂", "type": "line", "data": [[0.02, 1.4], [0.2, 14], [2, 140], [20, 1400], [70, 4900], [500, 35000], [5000, 350000]]}]}, "demo": {"title": "拖动指数，看每克代谢怎么弯下来", "takeaway": "指数为 1 时每克代谢是平线，所有组织同价；拖到 0.75，曲线下弯，大象每克成本只有小鼠的零头。把参照体重设为 70 千克，1 千克小狗的每克燃烧约是人的 2.9 倍。", "params": [{"id": "p", "label": "缩放指数", "min": 0.5, "max": 1, "step": 0.01, "default": 0.75}, {"id": "ref", "label": "参照体重（千克）", "min": 1, "max": 1000, "step": 1, "default": 70}], "x": {"label": "体重（千克）", "from": 1, "to": 1000, "step": 1}, "series": [{"name": "总代谢率（千卡每天）", "expr": "70 * pow(x, p)"}, {"name": "每克代谢率（千卡每克每天）", "expr": "70 * pow(x, p - 1)"}, {"name": "相对参照的每克倍数", "expr": "pow(x / ref, p - 1)"}]}, "related": [{"slug": "emergence", "title": "涌现", "exists": true}, {"slug": "homeostasis", "title": "内稳态", "exists": true}, {"slug": "economies-of-scale", "title": "规模效应", "exists": true}, {"slug": "limits-to-growth", "title": "增长极限", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

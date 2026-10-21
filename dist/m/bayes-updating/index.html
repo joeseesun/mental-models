@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>贝叶斯更新 · 思维模型 Wiki</title><meta name="description" content="新证据按比例修正旧信念">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/bayes-updating/">
+<meta property="og:title" content="贝叶斯更新 · 思维模型 Wiki"><meta property="og:description" content="新证据按比例修正旧信念">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/bayes-updating/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>贝叶斯更新 <small>Bayesian Updating</small></h1>
+<p class="tagline"><strong>新证据按比例修正旧信念</strong></p>
+<p class="experts"><strong>托马斯·贝叶斯</strong>（18 世纪英国长老会牧师，1763 年发表的遗作首次解出逆概率问题） · <strong>皮埃尔-西蒙·拉普拉斯</strong>（1774 年独立重推导并大规模应用，用出生数据算出男女比例的赔率） · <strong>保罗·萨福</strong>（未来学家，2007 年提出强观点弱持有，把贝叶斯精神变成预测者的工作纪律）</p>
+
+<section><h2>场景钩子 · 拉普拉斯用 49 万条出生记录终结一场争论</h2><p>18 世纪 70 年代，欧洲学者还在争论：男孩出生得比女孩多，是自然规律，还是登记的巧合。拉普拉斯收集了巴黎 1745 到 1770 年的出生记录，共 251,527 个男孩，241,945 个女孩，男孩只多出约 4%。他先假设男女出生概率各半，把它当作初始信念，再让数据开口：按贝叶斯的方法计算，男孩出生率更高的赔率约为 1,158,688 比 1。换句话说，如果男女各半是真的，看到这么大偏差的机会不到百万分之一。结论是差异真实存在，不是巧合。这件事的意义不在结论，而在方法：先立一个初始信念，再让证据按比例修正它，而不是从零开始吵。这套思路后来被拉普拉斯用在人口估计上，成了现代统计推断的骨架。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">似然比是核心：这条证据在假设为真时出现的概率，除以它在假设为假时出现的概率。大于 1 就上调信念，小于 1 就下调，后验再当新先验。</p></section>
+<section><h2>数据证据 · 一次阳性结果之后，真患病的概率有多大 <span class="lv lv-verified">一手核实</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">同一种检测，基准率从 0.1% 涨到 50%，阳性后真患病的概率从 2% 涨到 95%。先验不是起点装饰，它决定证据值多少钱，这就是医生问病史的原因。<br><span class="src">来源：按贝叶斯公式直接计算，参数为敏感度 99%，假阳性率 5% 与 1% 两种检测；基准率忽视的经典讨论见 Kahneman 与 Tversky 1974 年论文</span></p></section>
+<section><h2>交互演示 · 证据一条条来，信念怎么爬坡</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">信念按乘法累积。似然比 6 的证据，三条就能把 10% 的先验推到 96%；强度减半就要五条。先验太低时，同样的证据爬得更慢。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>把当前判断写成数字</b><span>给结论一个概率，比如我认为方案能成，先写下 20%。写不出数字的信念没法更新。</span></li><li><b>列出互斥的假设</b><span>至少两个，且加起来覆盖所有可能，例如方案能成、方案不成。漏掉的假设永远不会被更新。</span></li><li><b>对每条证据估似然</b><span>问一句：如果假设为真，看到这条证据的概率是多少？假设为假呢？两个数相除就是似然比。</span></li><li><b>用似然比更新几率</b><span>先验几率乘以似然比得到后验几率，再换算回概率。似然比大于 1 就上调，小于 1 就下调。</span></li><li><b>后验归位成新先验，并设行动线</b><span>下一批证据来了接着乘。同时事先定好信念到多少就行动，比如超过 70% 就投入，避免永远在更新、永远不决定。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>先验来自直觉或第一个听到的数字</td><td>先验只是起点，证据会把它拉回正轨</td><td>锚定效应让更新常常不足，垃圾先验要很多证据才能洗掉，起点越差成本越高。</td></tr><tr><td>十条证据其实来自同一个来源</td><td>独立证据按乘法累积，信念快速上升</td><td>同源证据高度相关，十次转发只值一条，乘法累积会严重高估。</td></tr><tr><td>似然根本估不出来，比如一次性大事件</td><td>任何证据都能算出似然比</td><td>黑天鹅式的独特事件没有可参照的频率，硬凑的似然让输出精确但不可信。</td></tr><tr><td>团队需要立刻拍板</td><td>保持强观点弱持有，边走边改</td><td>没有机制约束时，弱持有会退化成摇摆和推诿，行动阈值必须事先定死。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../confirmation-bias/">确认偏误</a><span>只收集支持性证据会掐断更新，贝叶斯要求认真对待反面似然</span></li><li><a href="../anchoring/">锚定效应</a><span>先验常被第一个数字锚定，导致后续更新不足</span></li><li><a href="../black-swan/">黑天鹅</a><span>先验接近零的罕见事件，光靠更新救不了，需要额外的防护</span></li><li><a href="../expected-value/">期望值思维</a><span>更新出的概率要接到期望值上，才能变成敢下注的决策</span></li><li><a href="../ooda-loop/">OODA循环</a><span>观察、调整、决策、行动的快循环，是贝叶斯更新在对抗场景的近亲</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Thomas Bayes, An Essay towards solving a Problem in the Doctrine of Chances（1763，理查德·普莱斯整理发表） <span class="lv lv-verified">一手核实</span></li><li>Pierre-Simon Laplace, Mémoire sur la probabilité des causes par les événements（1774） <span class="lv lv-verified">一手核实</span></li><li>Sharon Bertsch McGrayne, The Theory That Would Not Die（2011） <span class="lv lv-secondary">可靠二手</span></li><li>Kahneman 与 Tversky, Judgment under Uncertainty: Heuristics and Biases（1974） <span class="lv lv-secondary">可靠二手</span></li><li>Paul Saffo, Six Rules of Effective Forecasting, Harvard Business Review（2007） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "bayes-updating", "domain": "strategy", "mermaid": "flowchart LR\n  A[\"先验：当前信念，比如 10%\"] --> B[\"新证据到来\"]\n  B --> C[\"似然：证据在假设为真<br/>时出现的概率\"]\n  B --> D[\"似然：证据在假设为假<br/>时出现的概率\"]\n  C --> E[\"似然比等于两者相除\"]\n  D --> E\n  E --> F[\"先验几率乘以似然比\"]\n  F --> G[\"后验：更新后的信念\"]\n  G --> H[\"后验归位，成为新先验\"]\n  H -->|下一批证据| B", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["普通检测（假阳性 5%）", "高精度检测（假阳性 1%）"]}, "xAxis": {"type": "category", "data": ["0.1%", "0.5%", "1%", "2%", "5%", "10%", "20%", "50%"]}, "yAxis": {"type": "value", "name": "阳性后真患病概率（%）", "max": 100}, "series": [{"name": "普通检测（假阳性 5%）", "type": "bar", "data": [1.9, 9.0, 16.7, 28.8, 51.0, 68.8, 83.2, 95.2]}, {"name": "高精度检测（假阳性 1%）", "type": "bar", "data": [9.0, 33.2, 50.0, 66.9, 83.9, 91.7, 96.1, 99.0]}]}, "demo": {"title": "证据一条条来，信念怎么爬坡", "takeaway": "信念按乘法累积。似然比 6 的证据，三条就能把 10% 的先验推到 96%；强度减半就要五条。先验太低时，同样的证据爬得更慢。", "params": [{"id": "prior", "label": "初始信念（先验概率）", "min": 0.01, "max": 0.99, "step": 0.01, "default": 0.1}, {"id": "lr", "label": "单条证据的似然比", "min": 1.5, "max": 20, "step": 0.5, "default": 6}], "x": {"label": "独立证据条数", "from": 0, "to": 10, "step": 1}, "series": [{"name": "当前证据强度", "expr": "prior / (1 - prior) * pow(lr, x) / (1 + prior / (1 - prior) * pow(lr, x))"}, {"name": "证据强度减半", "expr": "prior / (1 - prior) * pow(lr / 2, x) / (1 + prior / (1 - prior) * pow(lr / 2, x))"}]}, "related": [{"slug": "confirmation-bias", "title": "确认偏误", "exists": true}, {"slug": "anchoring", "title": "锚定效应", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "expected-value", "title": "期望值思维", "exists": true}, {"slug": "ooda-loop", "title": "OODA循环", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

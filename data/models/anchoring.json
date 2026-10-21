@@ -1,0 +1,202 @@
+{
+  "slug": "anchoring",
+  "title": "锚定效应",
+  "en": "Anchoring Effect",
+  "domain": "psychology",
+  "experts": [
+    {
+      "name": "丹尼尔·卡尼曼",
+      "role": "2002 年诺贝尔经济学奖得主，1974 年与特沃斯基把锚定写入启发式与偏差纲领"
+    },
+    {
+      "name": "阿莫斯·特沃斯基",
+      "role": "锚定与调整机制的主要提出者，用幸运轮盘证明随机数字也能拖动判断"
+    },
+    {
+      "name": "亚当·加林斯基",
+      "role": "西北大学教授，2001 年用实验证明谈判中先报价者把结果拉向自己"
+    }
+  ],
+  "tagline": "先出现的数字，拖着判断走",
+  "hook": {
+    "title": "一个随机数字，把答案拖开 20 个百分点",
+    "story": "1974 年，特沃斯基和卡尼曼在《科学》杂志发表了一个实验。他们让俄勒冈大学的学生转动一个幸运轮盘，轮盘被动过手脚，只会停在 10 或 65。转完立刻问：非洲国家在联合国里的占比，是高于还是低于这个数？接着让学生写下真实估计。每个学生都清楚轮盘是随机的，和联合国毫无关系。但先看到 10 的那组，中位数估计是 25%；先看到 65 的那组，中位数估计是 45%。一个公认的随机数字，把两组答案拖开了 20 个百分点。卡尼曼后来写道，被拖动的人自己毫无察觉。锚定效应从此成为判断偏差研究的起点之一。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[出现第一个数字] --> B[它成为心理起点]\n  B --> C{数字和问题相关吗}\n  C -->|相关| D[从锚点出发向下调整]\n  C -->|随机数字| E[依然锚定<br/>选择性激活相关记忆]\n  D --> F[调整不充分<br/>停在中途]\n  E --> F\n  F --> G[最终估计偏向锚点]",
+    "caption": "两条路径都通向同一个结局：要么调整不够，要么相关记忆被锚点选择性激活。"
+  },
+  "evidence": {
+    "title": "两个经典实验：公认随机的锚点仍在拖动估计",
+    "takeaway": "轮盘实验里两组中位数差 20 个百分点，甘地实验里两组均值差 17 岁。锚点越极端，估计被拖得越远。",
+    "level": "secondary",
+    "source": "Tversky & Kahneman 1974, Science；Strack & Mussweiler 1997, Journal of Experimental Social Psychology，数字转引自原始论文",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "低锚点组",
+          "高锚点组"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "轮盘实验：非洲国家占比（%）",
+          "甘地实验：去世年龄（岁）"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "估计值（各自单位）"
+      },
+      "series": [
+        {
+          "name": "低锚点组",
+          "type": "bar",
+          "data": [
+            25,
+            50
+          ]
+        },
+        {
+          "name": "高锚点组",
+          "type": "bar",
+          "data": [
+            45,
+            67
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "拖动滑块：锚的拉力和你的免疫力",
+    "takeaway": "对方锚定敏感度越高，成交价越贴着首报价走；把你的信息准备度调到 1，锚的拉力归零。",
+    "params": [
+      {
+        "id": "strength",
+        "label": "对方锚定敏感度",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.4
+      },
+      {
+        "id": "prep",
+        "label": "你的信息准备度",
+        "min": 0,
+        "max": 1,
+        "step": 0.05,
+        "default": 0.5
+      }
+    ],
+    "x": {
+      "label": "对方首次报价（合理价为 100）",
+      "from": 60,
+      "to": 140,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "理性成交价",
+        "expr": "100"
+      },
+      {
+        "name": "被锚定的成交价",
+        "expr": "100 + strength * (x - 100) * (1 - prep)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "开口之前，先写下自己的数",
+      "detail": "谈判或估值前，独立查数据，写下目标价和底线。这个动作必须在看到对方的数字之前完成。"
+    },
+    {
+      "step": "有准备时争取先报价",
+      "detail": "加林斯基 2001 年的实验显示，先报价者的成交结果更靠近自己的锚。报一个有依据、够极端但不至于让对方离场的数。"
+    },
+    {
+      "step": "听到对方的锚，先明确否定再还价",
+      "detail": "不要从对方的数字往上加。先说明这个数没有依据，再给出自己的锚，把战场拉回来。"
+    },
+    {
+      "step": "重要估计从多个起点各算一遍",
+      "detail": "分别从乐观、悲观、中性三个起点推导。三个结果差距大，说明有锚在拖，取区间而不是单点。"
+    },
+    {
+      "step": "用外部基准校验最终答案",
+      "detail": "对照历史数据、同类案例或他人的独立估计。发现估计贴着某个数字走，就重算一遍。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "判断者对领域内的合理区间非常熟悉",
+      "model_says": "锚点总会拖动估计",
+      "reality": "熟悉能减弱锚定但不能清除。诺斯克拉夫特与尼尔 1987 年发现，资深房产经纪的估价仍被挂牌价拖动，只是幅度小于外行。"
+    },
+    {
+      "situation": "把一切估计偏差都归因于锚定",
+      "model_says": "答案贴着某个数字，就是被锚了",
+      "reality": "偏差可能来自激励、信息不足或真实信号。先排除别的原因，再下锚定的结论。"
+    },
+    {
+      "situation": "谈判里报出过于极端的锚",
+      "model_says": "锚越极端，拉力越大",
+      "reality": "离谱的报价会被当成不诚实或无知，对方可能直接终止谈判。锚还没起作用，交易先没了。"
+    },
+    {
+      "situation": "把实验室里的随机数字效应直接外推到重大决策",
+      "model_says": "一个骰子点数也能左右法官量刑",
+      "reality": "英利希等人 2006 年的法官实验支持这一点，但后续重复研究提醒，部分经典锚定实验在真实场景的效应比原始报告弱，别高估单个数字的魔力。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "availability-heuristic",
+      "relation": "同属卡尼曼与特沃斯基 1974 年那篇 Science 提出的启发式家族"
+    },
+    {
+      "slug": "confirmation-bias",
+      "relation": "锚定之后，人倾向搜集支持锚点的证据，两种偏差互相放大"
+    },
+    {
+      "slug": "bayes-updating",
+      "relation": "解药之一：新证据只给合理权重，别让第一个数字权重过大"
+    },
+    {
+      "slug": "map-territory",
+      "relation": "锚点只是地图上的一个点，别把它当成疆域本身"
+    },
+    {
+      "slug": "loss-aversion",
+      "relation": "谈判中报价的拉力，常常和损失厌恶叠加在一起"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tversky & Kahneman, Judgment under Uncertainty: Heuristics and Biases, Science, 1974",
+      "level": "verified"
+    },
+    {
+      "title": "Strack & Mussweiler, Explaining the Enigmatic Anchoring Effect, JESP, 1997",
+      "level": "verified"
+    },
+    {
+      "title": "Galinsky & Mussweiler, First Offers as Anchors, JPSP, 2001",
+      "level": "verified"
+    },
+    {
+      "title": "Englich, Mussweiler & Strack, Playing Dice with Criminal Sentences, Psychological Science, 2006",
+      "level": "verified"
+    },
+    {
+      "title": "Northcraft & Neale, Experts, Amateurs, and Real Estate, OBHDP, 1987",
+      "level": "verified"
+    }
+  ],
+  "status": "reference"
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>反脆弱 · 思维模型 Wiki</title><meta name="description" content="比坚韧更进一步：从波动中受益">
+<link rel="canonical" href="https://mm.qiaomu.ai/m/antifragile/">
+<meta property="og:title" content="反脆弱 · 思维模型 Wiki"><meta property="og:description" content="比坚韧更进一步：从波动中受益">
+<meta property="og:type" content="website"><meta property="og:url" content="https://mm.qiaomu.ai/m/antifragile/">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<script defer src="https://umami.qiaomu.ai/script.js" data-website-id="07f649b7-1176-4d0b-9a02-63d40e21d193" data-domains="mm.qiaomu.ai"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="chrome-btn" type="button" data-modal-open="reward-modal" aria-label="打赏支持" title="打赏支持">♡</button>
+<button class="chrome-btn" type="button" data-modal-open="follow-modal" aria-label="关注向阳乔木" title="关注向阳乔木">✚</button>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-strategy">
+<p class="crumb"><a href="../../index.html">首页</a> / 战略</p>
+<h1>反脆弱 <small>Antifragile</small></h1>
+<p class="tagline"><strong>比坚韧更进一步：从波动中受益</strong></p>
+<p class="experts"><strong>纳西姆·塔勒布</strong>（提出者，交易员出身，2012 年出版《反脆弱》，把凸性、杠铃和风险共担串成一套实践） · <strong>汉斯·塞利</strong>（压力研究奠基人，1936 年在《自然》发表应激综合征论文，证明适度压力能提升适应力） · <strong>米特拉达梯六世</strong>（公元前 2 世纪的本都国王，传说中每天服小剂量毒药练出免疫力的实践者）</p>
+
+<section><h2>场景钩子 · 每天服一点毒的国王</h2><p>公元前 1 世纪，本都国王米特拉达梯六世从小在宫廷阴谋里长大，身边不断有人被毒杀。他想到一个极端办法：每天服用小剂量毒药，让身体逐步适应。据古罗马记载，他后来对多种毒物免疫，甚至想服毒自尽都没有成功，只能让卫兵用剑帮忙。两千多年后，塔勒布在《反脆弱》里把这个故事变成一个模型：毒药是压力源，小剂量让系统变强，大剂量让系统死亡，零剂量让系统退化。关键从来不是躲开压力，而是控制剂量，并且确保自己能在最坏的一次冲击中活下来。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">同一个压力源，剂量决定结局。零压力退化，适量变强，过量崩溃。反脆弱的功夫全在控制剂量和保住下限。</p></section>
+<section><h2>数据证据 · 2008 年金融危机中的三种结局 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">同一场极端波动，让看似最稳的机构清零，让提前买好凸性的基金获利。脆弱和反脆弱的差别，在波动来临前就已注定。<br><span class="src">来源：标普道琼斯指数官方 2008 年年度数据；雷曼兄弟 2008 年 9 月破产，股东权益清零；Universa 回报为媒体报道，不同份额在 65% 到 115% 之间，图中取约 110%</span></p></section>
+<section><h2>交互演示 · 波动来了，三种组合各自的表现</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">坚韧组合对波动无感，脆弱组合被大波动摧毁，反脆弱组合先付一点持有成本，再从大波动中赚走凸性收益。小波动它跑不赢，大波动它赢所有。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>列出你面对的压力源和单一依赖</b><span>收入来源、关键客户、健康习惯逐项写下来，标出哪个环节一旦中断就是致命的。</span></li><li><b>先保证任何冲击都打不死你</b><span>用现金冗余、安全边际和备份方案吸收极端情况，反脆弱的前提是活下来。</span></li><li><b>把资源摆成杠铃，砍掉中间地带</b><span>大部分投入极安全的一端，一小部分投入高风险高回报的一端，放弃看似稳健的中庸选项。</span></li><li><b>主动引入小剂量压力源</b><span>训练、断食、小规模试错、红蓝对抗演练，让系统在可控范围内受伤再恢复。</span></li><li><b>定期检查凸性还在不在</b><span>确认上行空间大于下行损失，一旦收益封顶而亏损敞开，说明结构已经悄悄变脆弱。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>多个压力源高度相关，会同时爆发</td><td>每个小压力都在可控范围内</td><td>2008 年多家自认分散的银行同时倒下，相关压力源叠加等于一次过量剂量。</td></tr><tr><td>恢复能力有限，比如重病、老年、现金流断裂</td><td>受伤之后总能恢复得更强</td><td>适应需要恢复期，过度训练会受伤，小企业一次打击就直接出局。</td></tr><tr><td>风险由别人承担的环境</td><td>承担波动就能换来成长</td><td>基金经理拿别人的钱冒险，赚了归己亏了归人，你承受的波动不会让你变强。</td></tr><tr><td>容错极低的场景，比如航空和手术</td><td>多来点波动有好处</td><td>有些系统一次波动就是事故，稳定和冗余比从波动中学习更重要。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../barbell-strategy/">杠铃策略</a><span>最常用的落地工具：两端下注，避开中庸</span></li><li><a href="../black-swan/">黑天鹅</a><span>反脆弱是为黑天鹅准备的姿态，不预测只准备</span></li><li><a href="../resilience/">韧性</a><span>坚韧是扛住波动，反脆弱是利用波动，一层之差</span></li><li><a href="../skin-in-the-game/">风险共担</a><span>没有风险共担，波动的好处到不了承担者手里</span></li><li><a href="../optionality/">选择权</a><span>凸性收益的来源，选择权就是反脆弱的原材料</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>塔勒布《反脆弱：从不确定性中获益》，2012 <span class="lv lv-secondary">可靠二手</span></li><li>Hans Selye, A syndrome produced by diverse nocuous agents, Nature, 1936 <span class="lv lv-verified">一手核实</span></li><li>标普道琼斯指数 2008 年年度回报数据 <span class="lv lv-verified">一手核实</span></li><li>彭博商业周刊与华尔街日报 2008 到 2010 年对 Universa 基金回报的报道 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "antifragile", "domain": "strategy", "mermaid": "flowchart TD\n  A[压力源出现] --> B{剂量有多大}\n  B -->|长期零压力| C[适应机制闲置，机能退化]\n  B -->|微量到适量| D[触发过度反应，修复超出损耗]\n  B -->|过量| E[损伤压垮修复，系统崩溃]\n  C --> F[一次普通冲击就足以致命]\n  E --> G[退出博弈或被淘汰]\n  D --> H[系统变强，承受上限提高]\n  H --> A", "echarts": {"tooltip": {"trigger": "axis"}, "xAxis": {"type": "category", "data": ["标普500指数", "雷曼兄弟", "Universa 黑天鹅基金"]}, "yAxis": {"type": "value", "name": "2008 年回报（%）"}, "series": [{"name": "2008 年回报", "type": "bar", "data": [-37.0, -100, 110]}]}, "demo": {"title": "波动来了，三种组合各自的表现", "takeaway": "坚韧组合对波动无感，脆弱组合被大波动摧毁，反脆弱组合先付一点持有成本，再从大波动中赚走凸性收益。小波动它跑不赢，大波动它赢所有。", "params": [{"id": "k", "label": "凸性强度", "min": 0.05, "max": 0.5, "step": 0.05, "default": 0.2}, {"id": "c", "label": "持有成本", "min": 0, "max": 5, "step": 0.5, "default": 1.5}], "x": {"label": "波动幅度（%）", "from": 0, "to": 30, "step": 1}, "series": [{"name": "反脆弱组合", "expr": "100 + k * x * x - c * x"}, {"name": "坚韧组合", "expr": "100"}, {"name": "脆弱组合", "expr": "100 - k * x * x"}]}, "related": [{"slug": "barbell-strategy", "title": "杠铃策略", "exists": true}, {"slug": "black-swan", "title": "黑天鹅", "exists": true}, {"slug": "resilience", "title": "韧性", "exists": true}, {"slug": "skin-in-the-game", "title": "风险共担", "exists": true}, {"slug": "optionality", "title": "选择权", "exists": true}]}</script>
+<footer class="site-footer"><div class="wrap">
+<div>数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div>
+<div class="footer-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/vista8" target="_blank" rel="noopener">X</a><a href="https://tuijian.qiaomu.ai/" target="_blank" rel="noopener">乔木推荐</a></div>
+</div></footer>
+<div class="modal" id="reward-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="reward-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="reward-title">打赏支持</h3>
+<img class="qr" src="../../qiaomu_reward_qr.png" alt="打赏二维码" width="220" height="220">
+</div></div>
+<div class="modal" id="follow-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="follow-title">
+<button class="modal-close" data-close aria-label="关闭">✕</button>
+<h3 id="follow-title">关注向阳乔木</h3>
+<img class="qr" src="../../qiaomu_wechat_public_account_qr.jpg" alt="公众号二维码" width="220" height="220">
+<p class="modal-note">公众号：向阳乔木推荐看</p>
+<p class="modal-links"><a href="https://github.com/joeseesun/mental-models" target="_blank" rel="noopener">GitHub</a> · <a href="https://x.com/vista8" target="_blank" rel="noopener">X</a></p>
+</div></div>
+<script src="../../mm.js"></script>
+</body></html>

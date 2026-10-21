@@ -1,0 +1,221 @@
+{
+  "slug": "trophic-cascade",
+  "title": "营养级联",
+  "en": "Trophic Cascade",
+  "domain": "biology",
+  "experts": [
+    {
+      "name": "奥尔多·利奥波德",
+      "role": "早期观察者，1949年在《像山那样思考》里预言灭狼会让鹿群毁掉整座山"
+    },
+    {
+      "name": "罗伯特·佩因",
+      "role": "提出者，1963年起在潮间带做海星移除实验，1980年正式命名营养级联"
+    },
+    {
+      "name": "吉姆·埃斯蒂斯",
+      "role": "验证者，1970年代起用海獭与海藻林证明级联在海洋同样成立"
+    }
+  ],
+  "tagline": "捕食者在，世界才是绿的",
+  "hook": {
+    "title": "狼回来之后，白杨等了七十年的春天",
+    "story": "1926年，黄石国家公园的最后一批灰狼被猎杀。此后七十年，北部山区的马鹿没有天敌，冬天也不愿挪窝，河谷里的白杨和柳树被啃得只剩老桩，新苗长不起来，河狸几乎绝迹。1995年1月，31头灰狼从加拿大运抵黄石放归。俄勒冈州立大学的 William Ripple 团队后来测量发现，白杨幼树在消失约七十年后重新出现；河狸群落从1996年的1群回升到2009年前后的9群；郊狼数量下降，狐狸和鸣禽多了回来。狼没有亲手种活一棵树，它只是让鹿重新学会了害怕，剩下的变化沿着食物链自己发生。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"顶级捕食者：狼与海獭\"] -->|数量压制与恐惧效应| B[\"食草动物：马鹿与海胆\"]\n  B -->|啃食| C[\"植被：白杨柳树与海藻\"]\n  C -->|食物与筑坝材料| D[\"河狸与鸣禽\"]\n  C -->|稳固河岸| E[\"河道与湿地\"]\n  F[\"移除顶级捕食者\"] -->|级联反转| B\n  F -->|郊狼失去制衡| G[\"郊狼增多\"]\n  G -->|捕食压力上升| H[\"狐狸与鸣禽减少\"]",
+    "caption": "两条通路：捕食者既直接吃掉猎物，也用恐惧改变猎物的取食地点和时间。1960年 HSS 三人组提出绿色世界假说，世界是绿的，因为捕食者替植物挡住了食草动物。"
+  },
+  "evidence": {
+    "title": "黄石：狼群恢复与北部马鹿群的变化",
+    "takeaway": "狼放归后十余年，北部马鹿冬季数量从约1.7万头降到约4千头，同期白杨幼树与河狸群落回升。注意马鹿下降也有狩猎、干旱和棕熊捕食的份额，狼不是唯一原因。",
+    "level": "secondary",
+    "source": "Yellowstone National Park 北部马鹿群冬季航空调查（数值为约数）；国家公园管理局年度狼群报告；Ripple & Larsen 2000；Smith & Tyers 2012（河狸）",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "北部马鹿冬季数量",
+          "园内狼群数量"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "1995",
+          "2000",
+          "2005",
+          "2010",
+          "2013",
+          "2016"
+        ]
+      },
+      "yAxis": [
+        {
+          "type": "value",
+          "name": "马鹿（头）"
+        },
+        {
+          "type": "value",
+          "name": "狼（头）"
+        }
+      ],
+      "series": [
+        {
+          "name": "北部马鹿冬季数量",
+          "type": "line",
+          "data": [
+            16800,
+            11700,
+            9500,
+            6100,
+            3900,
+            5300
+          ]
+        },
+        {
+          "name": "园内狼群数量",
+          "type": "line",
+          "yAxisIndex": 1,
+          "data": [
+            31,
+            177,
+            118,
+            97,
+            83,
+            108
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "拖动狼的数量，看整条链怎么动",
+    "takeaway": "狼增多，马鹿下降但有底线，植被回升但封顶，河狸只在植被越过门槛后才出现。级联不是线性传导，而是逐级衰减加阈值。",
+    "params": [
+      {
+        "id": "pred",
+        "label": "捕食压力系数",
+        "min": 0.2,
+        "max": 2,
+        "step": 0.1,
+        "default": 1
+      },
+      {
+        "id": "K",
+        "label": "植被承载力上限",
+        "min": 50,
+        "max": 100,
+        "step": 5,
+        "default": 100
+      }
+    ],
+    "x": {
+      "label": "狼的数量（头）",
+      "from": 0,
+      "to": 40,
+      "step": 1
+    },
+    "series": [
+      {
+        "name": "马鹿数量（指数）",
+        "expr": "max(20, 100 - pred * x * 2)"
+      },
+      {
+        "name": "白杨与柳树（指数）",
+        "expr": "K * (1 - exp(-pred * x / 30))"
+      },
+      {
+        "name": "河狸（指数）",
+        "expr": "max(0, K * (1 - exp(-pred * x / 30)) - 40)"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "画出这条食物链的层级",
+      "detail": "至少三层：顶级捕食者、食草动物、生产者，再把杂食者等次要角色标在旁边。"
+    },
+    {
+      "step": "确认顶层的存亡史",
+      "detail": "查捕食者何时被消灭、何时恢复，记下具体年份与数量，这是整条链的输入变量。"
+    },
+    {
+      "step": "对比顶层变化前后的底层指标",
+      "detail": "用植被覆盖、幼树数量、物种数等可测量指标做前后对照，最好有长期监测数据。"
+    },
+    {
+      "step": "区分数量压制与恐惧效应",
+      "detail": "前者是捕食者吃掉猎物，后者是猎物因风险改变取食地点和时间，两者叠加才构成完整级联。"
+    },
+    {
+      "step": "顺着链条找间接受益者与受害者",
+      "detail": "问一句：谁靠植被活，谁靠食草动物活，把它们的数量变化也纳入验证。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "黄石故事在传播中被不断加码",
+      "model_says": "狼一回来，连河流都改了道",
+      "reality": "河流改道缺乏直接测量支持，马鹿下降还有狩猎、干旱和棕熊捕食的份额，狼只是原因之一。"
+    },
+    {
+      "situation": "系统由底层驱动，比如贫营养湖泊和干旱区",
+      "model_says": "管住顶层就能管住全局",
+      "reality": "养分、光照和降水才是主控变量，补进捕食者可能毫无效果。"
+    },
+    {
+      "situation": "捕食者消失太久，系统已滑入替代稳态",
+      "model_says": "把捕食者放回去就能复原",
+      "reality": "存在滞后效应，海胆荒礁里海藻幼苗几乎无法立足，恢复可能极慢甚至不可逆。"
+    },
+    {
+      "situation": "食物网里杂食者和多通道很普遍",
+      "model_says": "三层链条可以简单外推",
+      "reality": "杂食会稀释级联信号，真实食物网的响应常与三层预测相反。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "keystone-species",
+      "relation": "同源概念：Paine 的海星实验同时催生了关键种与营养级联"
+    },
+    {
+      "slug": "cascading-failure",
+      "relation": "结构同型：一个节点移除沿网络逐级放大"
+    },
+    {
+      "slug": "feedback-loops",
+      "relation": "级联是多级反馈的接力，正负反馈决定走向"
+    },
+    {
+      "slug": "leverage-points",
+      "relation": "顶级捕食者常是系统里性价比最高的干预点"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Paine, R. T. (1980). Food Webs: Linkage, Interaction Strength and Community Infrastructure. Journal of Animal Ecology 49(3)",
+      "level": "verified"
+    },
+    {
+      "title": "Estes & Palmisano (1974). Sea Otters: Their Role in Structuring Nearshore Communities. Science 185",
+      "level": "verified"
+    },
+    {
+      "title": "Ripple & Larsen (2000). Historic aspen recruitment, elk, and wolves in northern Yellowstone National Park. Biological Conservation 95",
+      "level": "verified"
+    },
+    {
+      "title": "利奥波德《沙乡年鉴》中的散文《像山那样思考》（1949）",
+      "level": "secondary"
+    },
+    {
+      "title": "Yellowstone National Park 北部马鹿冬季调查与年度狼群报告",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}

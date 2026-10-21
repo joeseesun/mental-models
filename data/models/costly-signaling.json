@@ -1,0 +1,197 @@
+{
+  "slug": "costly-signaling",
+  "title": "高成本信号",
+  "en": "Costly Signaling",
+  "domain": "biology",
+  "experts": [
+    {
+      "name": "阿莫茨·扎哈维",
+      "role": "提出者，1975 年提出不利条件原理，用孔雀尾巴解释昂贵信号"
+    },
+    {
+      "name": "迈克尔·斯宾塞",
+      "role": "经济学独立发现者，1973 年用教育成本解释劳动力市场信号，2001 年获诺贝尔奖"
+    },
+    {
+      "name": "阿兰·格拉芬",
+      "role": "1990 年建立数学模型，证明带累赘的诚实信号可以稳定存在"
+    },
+    {
+      "name": "理查德·索西斯",
+      "role": "用 19 世纪美国公社数据验证昂贵仪式与群体存续的关系"
+    }
+  ],
+  "tagline": "代价越贵，信号越可信",
+  "hook": {
+    "title": "让达尔文恶心的孔雀尾巴",
+    "story": "达尔文晚年承认，每次看到孔雀尾巴都会恶心。自然选择讲究适者生存，雄孔雀却拖着一条让自己更容易被狐狸抓住的长尾，这几乎是对他理论的公开挑衅。1975 年，以色列生物学家阿莫茨·扎哈维给出答案：正因为贵，尾巴才可信。一只背着累赘还能活得好好的孔雀，等于当众证明自己体质过硬，跑得快，抗病强，找食有方。体弱的孔雀模仿不了，模仿的代价会先把它淘汰。1990 年，英国生物学家格拉芬用数学模型证明，这种带累赘的诚实信号可以长期稳定存在，孔雀悖论就此了结。"
+  },
+  "principle": {
+    "mermaid": "flowchart TD\n  A[\"个体之间存在真实质量差异\"] --> B[\"发出一个有代价的信号\"]\n  B --> C[\"高质量者：代价可承受\"]\n  B --> D[\"低质量者：代价难以承受\"]\n  C --> E[\"信号可信，赢得配对或合作\"]\n  D --> F[\"模仿亏本，退出信号\"]\n  E --> G[\"接收方学会相信这个信号\"]\n  F --> G\n  G --> H[\"均衡稳定，信号长期诚实\"]",
+    "caption": "诚实的关键在成本的位置：必须卡在低质量者付不起、高质量者付得起的缝隙里。"
+  },
+  "evidence": {
+    "title": "19 世纪美国公社：昂贵仪式与存续时间",
+    "takeaway": "要求成员付出昂贵代价的公社，中位存续时间约为世俗公社的 4 倍。仪式越烧钱越费时，成员的承诺越可信，群体越能活下去。",
+    "level": "secondary",
+    "source": "Richard Sosis 2000 年发表于 American Sociological Review，追踪 19 世纪美国 165 个公社（112 个宗教公社、53 个世俗公社）的存续时间",
+    "echarts": {
+      "tooltip": {
+        "trigger": "axis"
+      },
+      "legend": {
+        "data": [
+          "中位存续年数"
+        ]
+      },
+      "xAxis": {
+        "type": "category",
+        "data": [
+          "世俗公社",
+          "宗教公社"
+        ]
+      },
+      "yAxis": {
+        "type": "value",
+        "name": "年"
+      },
+      "series": [
+        {
+          "name": "中位存续年数",
+          "type": "bar",
+          "data": [
+            6.5,
+            25
+          ]
+        }
+      ]
+    }
+  },
+  "demo": {
+    "title": "调成本，看信号什么时候诚实",
+    "takeaway": "成本太低，人人都能模仿，信号失效。成本卡在两条线的缝隙里，只剩高质量者发信号，信号才可信。成本太高，连高质量者都放弃，信号消失。",
+    "params": [
+      {
+        "id": "benefitH",
+        "label": "高质量者的信号收益",
+        "min": 4,
+        "max": 12,
+        "step": 0.5,
+        "default": 8
+      },
+      {
+        "id": "gap",
+        "label": "低质量者的收益差距",
+        "min": 2,
+        "max": 8,
+        "step": 0.5,
+        "default": 5
+      }
+    ],
+    "x": {
+      "label": "信号成本",
+      "from": 0,
+      "to": 12,
+      "step": 0.5
+    },
+    "series": [
+      {
+        "name": "高质量者净收益",
+        "expr": "benefitH - x"
+      },
+      {
+        "name": "低质量者净收益",
+        "expr": "benefitH - gap - x"
+      },
+      {
+        "name": "盈亏平衡线",
+        "expr": "0"
+      }
+    ]
+  },
+  "howto": [
+    {
+      "step": "先想清楚要证明什么",
+      "detail": "体质、诚意、实力还是长期承诺，不同的证明对象对应不同的信号。"
+    },
+    {
+      "step": "选一个和真实能力挂钩的成本",
+      "detail": "钱、时间、痛苦、风险都可以，关键是只有真达标的人才付得起。"
+    },
+    {
+      "step": "把成本卡进诚实区间",
+      "detail": "先估低质量者的承受上限，成本要略高于它，又不能高到连高质量者都放弃。"
+    },
+    {
+      "step": "长期重复同一信号",
+      "detail": "一次性信号骗得了人，重复博弈里的持续代价才攒得下信任。"
+    },
+    {
+      "step": "警惕廉价替代品",
+      "detail": "一旦出现便宜的模仿方式，立刻加码成本或更换信号，否则信号迅速贬值。"
+    }
+  ],
+  "limits": [
+    {
+      "situation": "花别人的钱发信号，比如用家底撑场面",
+      "model_says": "付得起代价就等于质量高",
+      "reality": "代价不是自己承担时，信号与质量脱钩，炫富消费里大量是这种假信号。"
+    },
+    {
+      "situation": "信号成本与能力无关，比如纯应试技巧",
+      "model_says": "学历越高能力越强",
+      "reality": "当筛选只考做题不考做事，学历通胀出现，雇主被迫把门槛加到硕士博士。"
+    },
+    {
+      "situation": "信号军备竞赛失控",
+      "model_says": "越贵越诚实",
+      "reality": "所有人被迫加码，成本变成纯浪费，过度包装和天价彩礼都是典型。"
+    },
+    {
+      "situation": "一次性交易，骗子孤注一掷",
+      "model_says": "昂贵信号代表长期承诺",
+      "reality": "骗子可以透支全部资源发一次信号然后跑路，没有重复博弈约束时信号会骗人。"
+    }
+  ],
+  "related": [
+    {
+      "slug": "skin-in-the-game",
+      "relation": "同一逻辑的决策版：押上真实代价，别人才信你"
+    },
+    {
+      "slug": "natural-selection",
+      "relation": "选择压力是信号保持诚实的根本机制"
+    },
+    {
+      "slug": "evolution-of-cooperation",
+      "relation": "昂贵信号常是合作前的第一道筛选"
+    },
+    {
+      "slug": "incentives",
+      "relation": "经济学视角：让说谎比说真话更贵"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amotz Zahavi, Mate Selection: A Selection for a Handicap, Journal of Theoretical Biology (1975)",
+      "level": "secondary"
+    },
+    {
+      "title": "Alan Grafen, Biological Signals as Handicaps, Journal of Theoretical Biology (1990)",
+      "level": "secondary"
+    },
+    {
+      "title": "Michael Spence, Job Market Signaling, Quarterly Journal of Economics (1973)",
+      "level": "secondary"
+    },
+    {
+      "title": "Richard Sosis, Religion and Intragroup Cooperation, American Sociological Review (2000)",
+      "level": "secondary"
+    },
+    {
+      "title": "Thorstein Veblen, The Theory of the Leisure Class (1899)",
+      "level": "secondary"
+    }
+  ],
+  "status": "reference"
+}
