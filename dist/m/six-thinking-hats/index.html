@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>六顶思考帽 · 思维模型 Wiki</title><meta name="description" content="一次只戴一顶帽，全员朝同一个方向想">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-psychology">
+<p class="crumb"><a href="../../index.html">首页</a> / 心理</p>
+<h1>六顶思考帽 <small>Six Thinking Hats</small></h1>
+<p class="tagline"><strong>一次只戴一顶帽，全员朝同一个方向想</strong></p>
+<p class="experts"><strong>爱德华·德博诺</strong>（提出者，马耳他医生与心理学家，1985 年出版《六顶思考帽》） · <strong>迈克尔·休伊特格里森</strong>（1983 年与德博诺共创思考学校，把平行思考做成可培训的课程）</p>
+
+<section><h2>场景钩子 · 一个被抬高十米的平台，救回一千万美元</h2><p>1980 年代，挪威国家石油公司的一个海上钻井平台出了技术故障，每天损失约十万美元。常规会议开了很久没有结果，公司请来德博诺的认证培训师主持一场六顶思考帽会议。轮到黄帽时，一位平时很少发言的工程师提出把平台整体抬高，这个想法在平时的争论里活不过第一轮质疑，这次却被完整讲完。会后团队按这个思路改造，据德博诺记载，最终省下约一千万美元。他自己也承认这类数字来自企业自报，但方法的价值在于让平时说不出话的人把想法说完。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">帽子是思考模式，不是人。同一时刻全员戴同一顶，顺序可以按问题调整。</p></section>
+<section><h2>数据证据 · 企业自报的讨论与会议耗时变化 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">ABB 和 IBM 的数字都来自企业自报，方向一致，幅度请打折看。<br><span class="src">来源：爱德华·德博诺《六顶思考帽》（1985）及其公开演讲中引用的 ABB、IBM 案例，数字为企业自报，未经第三方审计</span></p></section>
+<section><h2>交互演示 · 黑帽占比与同步纪律，如何改变会议产出</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">黑帽时间越多，风险清单越长，可用观点越少；全员同帽能明显提速。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>蓝帽开场，定目标、顺序和时限</b><span>主持人先说清这次要解决什么，按什么顺序戴帽，每顶帽子给几分钟。</span></li><li><b>白帽，全员只报事实和数据</b><span>只说已知、未知、需要查什么，禁止评价和建议。</span></li><li><b>绿帽加黄帽，先发散再讲价值</b><span>每人至少提一个新想法，然后轮流说这个想法可能带来什么好处。</span></li><li><b>黑帽加红帽，先挑风险再表直觉</b><span>集中把所有反对意见一次说完，最后每人三十秒说直觉感受，不作解释。</span></li><li><b>蓝帽收尾，写结论和下一步</b><span>主持人汇总：定了什么，没定什么，下次开会前要补哪些白帽事实。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>强势领导或老板在场</td><td>戴上红帽大家就会说真话</td><td>权力压力下红帽常变成表态，直觉被修饰成领导想听的话。</td></tr><tr><td>需要深挖的专业问题</td><td>六个角度轮流过一遍更全面</td><td>每个角度只有几分钟，专家的深度分析被打断，结论容易停在表面。</td></tr><tr><td>把帽子贴在人身上</td><td>帽子只是思考模式</td><td>一旦有人说你是黑帽型的人，帽子就从工具变成标签，引发抵触。</td></tr><tr><td>小事或紧急决策</td><td>走完整流程更稳妥</td><td>流程开销大，五分钟能定的事开六轮纯属浪费。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../first-principles/">第一性原理</a><span>白帽摆完事实后，用第一性原理分清哪些是基本事实，哪些是惯例</span></li><li><span class="redlink" title="待写">inversion</span><span>黑帽挑风险与反向思考同源，都在问怎么必然失败</span></li><li><span class="redlink" title="待写">groupthink</span><span>六顶帽是对群体思维的解药，强迫少数派意见有出场时间</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>爱德华·德博诺《六顶思考帽》（1985） <span class="lv lv-secondary">可靠二手</span></li><li>德博诺公开演讲中引用的 ABB、IBM、Statoil 案例（企业自报数据） <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "six-thinking-hats", "domain": "psychology", "mermaid": "flowchart LR\n  A[\"蓝帽开场：定目标与顺序\"] --> B[\"白帽：只摆事实和数据\"]\n  B --> C[\"绿帽：只出新想法\"]\n  C --> D[\"黄帽：只说价值与好处\"]\n  D --> E[\"黑帽：只挑风险与漏洞\"]\n  E --> F[\"红帽：三十秒说直觉\"]\n  F --> G[\"蓝帽收尾：结论与下一步\"]", "echarts": {"tooltip": {"trigger": "axis"}, "legend": {"data": ["改造前", "改造后"]}, "xAxis": {"type": "category", "data": ["ABB 项目讨论", "IBM 会议时长"]}, "yAxis": {"type": "value", "name": "相对值（改造前=100）"}, "series": [{"name": "改造前", "type": "bar", "data": [100, 100]}, {"name": "改造后", "type": "bar", "data": [6.7, 25]}]}, "demo": {"title": "黑帽占比与同步纪律，如何改变会议产出", "takeaway": "黑帽时间越多，风险清单越长，可用观点越少；全员同帽能明显提速。", "params": [{"id": "black", "label": "黑帽时间占比", "min": 0.1, "max": 0.8, "step": 0.05, "default": 0.5}, {"id": "sync", "label": "全员同帽程度", "min": 0, "max": 1, "step": 0.05, "default": 0.8}], "x": {"label": "会议时长（分钟）", "from": 10, "to": 120, "step": 5}, "series": [{"name": "可用观点数", "expr": "18 * (1 - black) * (1 - exp(-0.05 * x * (0.4 + sync)))"}, {"name": "识别的风险数", "expr": "18 * black * (1 - exp(-0.05 * x * (0.4 + sync)))"}, {"name": "散乱讨论基线", "expr": "9 * (1 - exp(-0.02 * x))"}]}, "related": [{"slug": "first-principles", "title": "第一性原理", "exists": true}, {"slug": "inversion", "title": "inversion", "exists": false}, {"slug": "groupthink", "title": "groupthink", "exists": false}]}</script>
+<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<script src="../../mm.js"></script>
+</body></html>

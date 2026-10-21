@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>思维模型 Wiki</title><meta name="description" content="用图讲清全球专家的思维框架">
+<link rel="stylesheet" href="style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script></head>
+<body data-root="">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="index.html">思维模型 Wiki</a>
+<nav><a href="index.html#all">全部模型</a><a href="index.html#todo">待写清单</a></nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap">
+<section class="hero"><h1>专家思维的可视化解剖台</h1>
+<p>每个模型讲清四件事：从哪来、怎么运转、什么时候用、什么时候失效。虚线节点是被引用但还没写的模型。</p></section>
+<div id="home-graph" class="figure home-graph"></div>
+<section id="all"><div class="chips"><button class="chip on" data-f="all">全部</button><button class="chip dom-physics" data-f="physics"><span class="dot"></span>物理</button><button class="chip dom-biology" data-f="biology"><span class="dot"></span>生物</button><button class="chip dom-economics" data-f="economics"><span class="dot"></span>经济</button><button class="chip dom-psychology" data-f="psychology"><span class="dot"></span>心理</button><button class="chip dom-systems" data-f="systems"><span class="dot"></span>系统</button><button class="chip dom-strategy" data-f="strategy"><span class="dot"></span>战略</button></div><div class="grid"><a class="card dom-physics" data-domain="physics" href="m/first-principles/"><span class="dot"></span><span class="dom">物理</span><h3>第一性原理</h3><p>拆到不能再拆，再重新搭</p><span class="who">亚里士多德、埃隆·马斯克</span></a><a class="card dom-biology" data-domain="biology" href="m/red-queen-effect/"><span class="dot"></span><span class="dom">生物</span><h3>红皇后效应</h3><p>拼命奔跑，只为留在原地</p><span class="who">利·范瓦伦、柯蒂斯·利夫利、比尔·汉密尔顿、刘易斯·卡罗尔</span></a><a class="card dom-psychology" data-domain="psychology" href="m/six-thinking-hats/"><span class="dot"></span><span class="dom">心理</span><h3>六顶思考帽</h3><p>一次只戴一顶帽，全员朝同一个方向想</p><span class="who">爱德华·德博诺、迈克尔·休伊特格里森</span></a></div></section>
+<section id="todo"><h2>待写清单</h2><ul class="todo"><li><span class="redlink">inversion</span> 被 第一性原理、红皇后效应、六顶思考帽 引用</li><li><span class="redlink">occams-razor</span> 被 第一性原理 引用</li><li><span class="redlink">evolutionary-arms-race</span> 被 红皇后效应 引用</li><li><span class="redlink">nash-equilibrium</span> 被 红皇后效应 引用</li><li><span class="redlink">groupthink</span> 被 六顶思考帽 引用</li></ul></section>
+</main>
+<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<script src="mm.js"></script>
+</body></html>

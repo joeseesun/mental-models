@@ -1,0 +1,19 @@
+{
+ "inversion": [
+  "first-principles",
+  "red-queen-effect",
+  "six-thinking-hats"
+ ],
+ "occams-razor": [
+  "first-principles"
+ ],
+ "evolutionary-arms-race": [
+  "red-queen-effect"
+ ],
+ "nash-equilibrium": [
+  "red-queen-effect"
+ ],
+ "groupthink": [
+  "six-thinking-hats"
+ ]
+}

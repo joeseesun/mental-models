@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>红皇后效应 · 思维模型 Wiki</title><meta name="description" content="拼命奔跑，只为留在原地">
+<link rel="stylesheet" href="../../style.css"><script src="https://cdn.jsdelivr.net/npm/pele@1.8.0/dist/pele.global.js"></script><script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script></head>
+<body data-root="../../">
+<header class="site-header"><div class="wrap header-inner">
+<a class="brand" href="../../index.html">思维模型 Wiki</a>
+<nav><a href="../../index.html#all">全部模型</a><a href="../../index.html#todo">待写清单</a></nav>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
+</div></header>
+<main class="wrap article dom-biology">
+<p class="crumb"><a href="../../index.html">首页</a> / 生物</p>
+<h1>红皇后效应 <small>Red Queen Effect</small></h1>
+<p class="tagline"><strong>拼命奔跑，只为留在原地</strong></p>
+<p class="experts"><strong>利·范瓦伦</strong>（芝加哥大学演化生物学家，1973 年提出红皇后假说，发现灭绝概率不随时间下降） · <strong>柯蒂斯·利夫利</strong>（印第安纳大学生物学家，用新西兰淡水蜗牛验证了寄生虫与有性繁殖的关系） · <strong>比尔·汉密尔顿</strong>（1980 年用寄生虫军备竞赛解释性为什么存在） · <strong>刘易斯·卡罗尔</strong>（1871 年在《爱丽丝镜中奇遇记》里写下红皇后的原话，名字出处）</p>
+
+<section><h2>场景钩子 · 两个湖的蜗牛，谁在拼命奔跑</h2><p>1980 年代，美国演化生物学家柯蒂斯·利夫利在新西兰南岛研究一种淡水蜗牛。这个种很奇怪，有的种群靠有性繁殖，有的靠孤雌生殖，两种策略并存。因为有性繁殖要付出减半的代价，按理说早该被淘汰。利夫利怀疑答案在寄生虫身上：一种吸虫会钻进蜗牛体内让它不育。他对比了两个湖，亚历山德里娜湖寄生虫多，种群里有性个体比例约百分之十；珀鲁阿湖几乎没有寄生虫，有性个体比例不到百分之一。1987 年结果发表在《自然》上。结论很直白：寄生虫追得紧的地方，蜗牛必须不停换新组合，性就是跑步的燃料；追得松的地方，连性都可以省掉。</p></section>
+<section><h2>原理图</h2><div id="mermaid" class="figure"></div><p class="caption">核心是闭环：改进触发反制，反制抵消改进。绝对水平在涨，相对位置不动。</p></section>
+<section><h2>数据证据 · 两个湖的蜗牛：寄生虫压力与有性繁殖比例 <span class="lv lv-secondary">可靠二手</span></h2>
+<div id="chart" class="figure chart"></div>
+<p class="caption">寄生虫追得紧的湖，有性个体比例约 10%；追得松的湖不到 1%。压力越大，越不敢停下重组。<br><span class="src">来源：Lively, Evidence from a New Zealand snail for the maintenance of sex by parasitism, Nature, 1987；雄性占比为文献常引近似值</span></p></section>
+<section><h2>交互演示 · 军备竞赛模拟：同速奔跑，差距恒为零</h2><div id="demo-controls" class="controls"></div>
+<div id="demo" class="figure chart"></div><p class="caption">两条能力线一起涨，相对差距贴着零，这就是留在原地；只要一方慢下来，差距线立刻下坠。</p></section>
+<section><h2>怎么用</h2><ol class="howto"><li><b>找出和你赛跑的对手</b><span>不只是同行，还包括病原体、监管、用户的新期待，任何会反制你的力量。</span></li><li><b>用相对指标记录位置</b><span>市场份额、相对胜率、耐药率，别用绝对产量安慰自己。</span></li><li><b>把改进做成节奏，而不是冲刺</b><span>按对手的变化速度定投入频率，一次性改进只买到暂时领先。</span></li><li><b>盯对手的变化率，而不是当前水平</b><span>决定你明年位置的是对方改进的速度，不是它今天的样子。</span></li><li><b>定期评估这场赛跑值不值得继续</b><span>双方投入都在涨而位置不变时，考虑换赛道、结盟或改规则。</span></li></ol></section>
+<section><h2>失效边界</h2><div class="table-wrap"><table class="limits"><thead><tr><th>情境</th><th>模型的说法</th><th>现实</th></tr></thead><tbody><tr><td>对手根本不跟进的静态领域</td><td>必须不停奔跑才能活</td><td>没有反制者时，一次领先可以吃很多年，过度投入纯属浪费。</td></tr><tr><td>把一切内卷都当成红皇后</td><td>军备竞赛无法退出</td><td>很多竞赛可以谈判、结盟或改规则，比如行业自律和统一标准。</td></tr><tr><td>只看自己的绝对进步</td><td>我在变强就没问题</td><td>红皇后只认相对位置，绝对进步完全可能伴随相对落后。</td></tr><tr><td>竞赛长期拖垮双方</td><td>继续加码别松劲</td><td>双方可能同时耗尽，被没参赛的第三方收割，价格战后的行业常见。</td></tr></tbody></table></div></section>
+<section><h2>关联模型</h2><div id="mini-graph" class="figure mini"></div><ul class="rel"><li><a href="../first-principles/">第一性原理</a><span>赛跑不划算时，回到基本事实判断要不要换赛道</span></li><li><span class="redlink" title="待写">inversion</span><span>反过来想：如果今天停止奔跑，多久会出局</span></li><li><span class="redlink" title="待写">evolutionary-arms-race</span><span>红皇后的机制底座，捕食者与猎物的军备竞赛</span></li><li><span class="redlink" title="待写">nash-equilibrium</span><span>谁都不敢先停的僵局，是一种不稳定的均衡</span></li></ul></section>
+<section class="sources"><h2>出处</h2><ul><li>Lewis Carroll, Through the Looking-Glass, 1871 <span class="lv lv-verified">一手核实</span></li><li>Van Valen, A New Evolutionary Law, Evolutionary Theory, 1973 <span class="lv lv-secondary">可靠二手</span></li><li>Lively, Evidence from a New Zealand snail for the maintenance of sex by parasitism, Nature, 1987 <span class="lv lv-secondary">可靠二手</span></li><li>Hamilton, Sex versus non-sex versus parasite, Oikos, 1980 <span class="lv lv-secondary">可靠二手</span></li></ul></section>
+</main>
+<script type="application/json" id="mm-data">{"slug": "red-queen-effect", "domain": "biology", "mermaid": "flowchart LR\n  A[\"你做出一项改进\"] --> B[\"对手处境变差\"]\n  B --> C[\"对手被迫跟进\"]\n  C --> D[\"你的优势被抵消\"]\n  D --> E[\"相对位置回到原点\"]\n  E --> A\n  E --> F[\"某一方停止奔跑\"]\n  F --> G[\"停止者被淘汰\"]", "echarts": {"tooltip": {"trigger": "axis"}, "xAxis": {"type": "category", "data": ["亚历山德里娜湖（寄生虫多）", "珀鲁阿湖（寄生虫少）"]}, "yAxis": {"type": "value", "name": "雄性占比 %"}, "series": [{"name": "雄性占比", "type": "bar", "data": [10, 1]}]}, "demo": {"title": "军备竞赛模拟：同速奔跑，差距恒为零", "takeaway": "两条能力线一起涨，相对差距贴着零，这就是留在原地；只要一方慢下来，差距线立刻下坠。", "params": [{"id": "me", "label": "我的改进速度", "min": 0, "max": 0.5, "step": 0.05, "default": 0.2}, {"id": "rival", "label": "对手的改进速度", "min": 0, "max": 0.5, "step": 0.05, "default": 0.2}], "x": {"label": "时间（轮）", "from": 1, "to": 30, "step": 1}, "series": [{"name": "我的能力", "expr": "100 * (1 + me * x)"}, {"name": "对手的能力", "expr": "100 * (1 + rival * x)"}, {"name": "相对差距 %", "expr": "100 * (me - rival) * x / (1 + rival * x)"}]}, "related": [{"slug": "first-principles", "title": "第一性原理", "exists": true}, {"slug": "inversion", "title": "inversion", "exists": false}, {"slug": "evolutionary-arms-race", "title": "evolutionary-arms-race", "exists": false}, {"slug": "nash-equilibrium", "title": "nash-equilibrium", "exists": false}]}</script>
+<footer class="site-footer"><div class="wrap">数据是唯一的真实来源：网页、图谱与视频都从 data/models/*.json 派生。出处分三级：一手核实、可靠二手、草稿示意。</div></footer>
+<script src="../../mm.js"></script>
+</body></html>

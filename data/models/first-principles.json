@@ -1,0 +1,71 @@
+{
+  "slug": "first-principles",
+  "title": "第一性原理",
+  "en": "First Principles Thinking",
+  "domain": "physics",
+  "experts": [
+    {"name": "亚里士多德", "role": "提出者，把第一性原理定义为不能再被推导的起点"},
+    {"name": "埃隆·马斯克", "role": "当代最知名的实践者，用它重估火箭与电池成本"}
+  ],
+  "tagline": "拆到不能再拆，再重新搭",
+  "hook": {
+    "title": "电池包为什么必须卖 600 美元一度电",
+    "story": "2010 年代初，业内共识是电池包每千瓦时约 600 美元，而且还会缓慢下降。马斯克的做法是不接受这个数字，转而问：电池是由什么材料做的？钴、镍、铝、碳、聚合物和钢壳，按伦敦金属交易所的价格把这些原材料买回来，一度电只要约 80 美元。于是 600 和 80 之间的差距，就不再是物理定律，而是工艺、规模和中间环节。这个差距指出了该往哪里下功夫，特斯拉后来自建超级工厂，把成本一路压了下去。"
+  },
+  "principle": {
+    "mermaid": "flowchart LR\n  A[现有做法或行业共识] --> B[列出所有假设]\n  B --> C{每条假设<br/>是物理事实吗}\n  C -->|是| D[保留为基本事实]\n  C -->|否，只是惯例| E[丢弃或挑战]\n  D --> F[从基本事实重新推导方案]\n  E --> F\n  F --> G[与现状对比，找到差距]",
+    "caption": "关键在中间的判断：每条假设要分清是物理事实，还是别人留下的惯例。"
+  },
+  "evidence": {
+    "title": "锂电池包成本：共识价与原材料价",
+    "takeaway": "原材料成本长期远低于行业报价，差距里藏着可优化的空间。",
+    "level": "secondary",
+    "source": "BloombergNEF 历年电池价格调查；马斯克 2013 年公开演讲中的原材料估算",
+    "echarts": {
+      "tooltip": {"trigger": "axis"},
+      "legend": {"data": ["电池包均价", "原材料估算价"]},
+      "xAxis": {"type": "category", "data": ["2010", "2012", "2014", "2016", "2018", "2020", "2022"]},
+      "yAxis": {"type": "value", "name": "美元/千瓦时"},
+      "series": [
+        {"name": "电池包均价", "type": "line", "data": [1100, 800, 650, 290, 180, 137, 151]},
+        {"name": "原材料估算价", "type": "line", "data": [80, 80, 80, 80, 80, 80, 80]}
+      ]
+    }
+  },
+  "demo": {
+    "title": "类比推理与第一性原理，谁的成本曲线更低",
+    "takeaway": "类比推理只能在原有曲线上微调，第一性原理能换一条曲线，但前期要多花力气。",
+    "params": [
+      {"id": "learn", "label": "拆解投入（0 到 1）", "min": 0, "max": 1, "step": 0.05, "default": 0.5},
+      {"id": "gap", "label": "惯例溢价比例", "min": 0.1, "max": 0.9, "step": 0.05, "default": 0.6}
+    ],
+    "x": {"label": "迭代轮数", "from": 1, "to": 20, "step": 1},
+    "series": [
+      {"name": "类比推理", "expr": "100 * pow(0.97, x)"},
+      {"name": "第一性原理", "expr": "100 * (1 - gap * learn * (1 - exp(-0.25 * x)))"}
+    ]
+  },
+  "howto": [
+    {"step": "写下你要解决的问题和现有方案", "detail": "用一句话描述目标，再列出大家通常怎么做。"},
+    {"step": "把现有方案里的假设逐条列出", "detail": "每条假设写成可以被反驳的陈述句，例如“电池包必须这么贵”。"},
+    {"step": "对每条假设问：这是物理事实还是惯例", "detail": "能用实验或公开数据验证的才算基本事实，其余都归为惯例。"},
+    {"step": "只用基本事实重新搭建方案", "detail": "先算理论下限，再看现实和下限之间差在哪个环节。"},
+    {"step": "拿结果和现状比较，决定下一步", "detail": "差距很小就放弃重造，差距很大才值得投入。"}
+  ],
+  "limits": [
+    {"situation": "问题已经被充分优化的成熟行业", "model_says": "拆开重来一定能更好", "reality": "大多数时候现有方案已接近最优，重造只是浪费。"},
+    {"situation": "基本事实本身不确定，比如人性与组织", "model_says": "可以像物理一样推到底", "reality": "社会系统没有稳定的基本事实，推导出的结果脆弱。"},
+    {"situation": "时间紧，需要快速决策", "model_says": "必须从零推导", "reality": "重造成本高，此时借用经验与类比更划算。"}
+  ],
+  "related": [
+    {"slug": "inversion", "relation": "常配合使用：先反过来想，再回到基本事实"},
+    {"slug": "occams-razor", "relation": "推导出多个方案时，用它来挑最简单的"},
+    {"slug": "six-thinking-hats", "relation": "拆解后的方案可以用多角度的帽子逐一检验"}
+  ],
+  "sources": [
+    {"title": "亚里士多德《形而上学》第一卷", "level": "secondary"},
+    {"title": "Elon Musk on First Principles, Kevin Rose 访谈（2012）", "level": "secondary"},
+    {"title": "BloombergNEF Battery Price Survey", "level": "secondary"}
+  ],
+  "status": "reference"
+}

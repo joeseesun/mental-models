@@ -1,0 +1,6 @@
+# 生成与运行产物
+logs/
+data/_failed/
+.DS_Store
+__pycache__/
+*.pyc

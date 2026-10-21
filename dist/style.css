@@ -1,0 +1,79 @@
+/* 思维模型 Wiki · 沿用 lex 站的纽约客式版式：白底墨字、衬线标题、细线分隔。
+   每个领域一个主色（--d-*），Pele（--pele-* 映射到站点 token）与 ECharts 由 mm.js 读同一组 token。
+   规则：不用竖条侧边装饰，强调靠底色、字重、圆点。 */
+:root {
+  --bg: #fff; --card: #f5f5f3; --card-hover: #efefec; --line: #e4e4e1; --text: #111; --soft: #2e2e2c;
+  --muted: #6b6b67; --red: #b3261e; --measure: 720px;
+  --d-physics: #2f6fed; --d-biology: #2e8b57; --d-economics: #c28a00;
+  --d-psychology: #b23a8a; --d-systems: #6b4fbb; --d-strategy: #d4572a;
+  --chart-grid: #e4e4e1; --chart-text: #444;
+  --pele-bg: var(--card); --pele-fg: var(--text); --pele-muted: var(--muted);
+  --pele-line: var(--muted); --pele-surface: var(--card-hover); --pele-surface-alt: var(--card);
+  --pele-border: var(--muted); --pele-accent: var(--dc, var(--text));
+  --pele-critical: var(--red); --pele-error: var(--red); --pele-radius: 8px;
+  --pele-series-1: var(--d-physics); --pele-series-2: var(--d-biology); --pele-series-3: var(--d-economics);
+  --pele-series-4: var(--d-psychology); --pele-series-5: var(--d-systems); --pele-series-6: var(--d-strategy);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) {
+  --bg: #121211; --card: #1c1c1a; --card-hover: #242421; --line: #2d2d2a; --text: #f1f1ee; --soft: #d6d6d1;
+  --muted: #9a9a94; --red: #ff6b60; --chart-grid: #2d2d2a; --chart-text: #c9c9c4;
+  --d-physics: #6c9bff; --d-biology: #55c58a; --d-economics: #e5b73b;
+  --d-psychology: #e072bb; --d-systems: #9a82f0; --d-strategy: #ff8a5c; } }
+:root[data-theme='dark'] {
+  --bg: #121211; --card: #1c1c1a; --card-hover: #242421; --line: #2d2d2a; --text: #f1f1ee; --soft: #d6d6d1;
+  --muted: #9a9a94; --red: #ff6b60; --chart-grid: #2d2d2a; --chart-text: #c9c9c4;
+  --d-physics: #6c9bff; --d-biology: #55c58a; --d-economics: #e5b73b;
+  --d-psychology: #e072bb; --d-systems: #9a82f0; --d-strategy: #ff8a5c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.85 -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.site-header { border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 5; }
+.header-inner { display: flex; align-items: center; gap: 24px; height: 56px; }
+.brand { font: 700 19px Georgia, "Songti SC", serif; text-decoration: none; margin-right: auto; }
+.header-inner nav { display: flex; gap: 18px; font-size: 15px; color: var(--muted); }
+.header-inner nav a { text-decoration: none; }
+.theme-toggle { background: none; border: 1px solid var(--line); color: var(--text); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; }
+h1, h2, h3 { font-family: Georgia, "Songti SC", "Noto Serif SC", serif; line-height: 1.35; }
+h1 small { display: block; font: 400 15px/1.6 sans-serif; color: var(--muted); margin-top: 4px; }
+.hero { padding: 40px 0 8px; } .hero h1 { font-size: 34px; margin: 0 0 8px; } .hero p { color: var(--muted); margin: 0; }
+.figure { background: var(--card); border-radius: 12px; padding: 12px; overflow-x: auto; }
+.home-graph { height: 460px; margin: 20px 0 8px; padding: 0; }
+.chart { height: 360px; } .mini { height: 260px; padding: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 14px; }
+.chip { border: 1px solid var(--line); background: none; color: var(--text); border-radius: 999px; padding: 4px 14px; font-size: 14px; cursor: pointer; }
+.chip.on { background: var(--text); color: var(--bg); }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--dc, var(--muted)); margin-right: 6px; }
+.dom-physics { --dc: var(--d-physics); } .dom-biology { --dc: var(--d-biology); } .dom-economics { --dc: var(--d-economics); }
+.dom-psychology { --dc: var(--d-psychology); } .dom-systems { --dc: var(--d-systems); } .dom-strategy { --dc: var(--d-strategy); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.card { display: block; background: var(--card); border-radius: 12px; padding: 16px 18px; text-decoration: none; }
+.card:hover { background: var(--card-hover); }
+.card .dom { font-size: 13px; color: var(--dc); font-weight: 600; }
+.card h3 { margin: 6px 0 4px; font-size: 20px; } .card p { margin: 0 0 8px; color: var(--soft); font-size: 15px; line-height: 1.6; }
+.card .who { font-size: 13px; color: var(--muted); }
+.redlink { color: var(--red); border-bottom: 1px dashed var(--red); }
+.todo { padding-left: 20px; color: var(--soft); }
+.article { max-width: var(--measure); padding-bottom: 40px; }
+.article h1 { font-size: 34px; margin: 18px 0 6px; } .article h2 { font-size: 22px; margin: 0 0 10px; }
+.article section { margin: 40px 0; } .tagline { font-size: 20px; margin: 6px 0; }
+.experts, .crumb, .caption, .src { color: var(--muted); font-size: 14.5px; line-height: 1.7; }
+.crumb a { text-decoration: none; }
+.controls { display: grid; gap: 10px; margin-bottom: 10px; }
+.controls label { display: grid; grid-template-columns: 160px 1fr 56px; gap: 10px; align-items: center; font-size: 14px; color: var(--soft); }
+.controls input[type=range] { width: 100%; accent-color: var(--dc, var(--text)); }
+.howto { padding-left: 22px; } .howto li { margin-bottom: 10px; } .howto li span { display: block; color: var(--muted); font-size: 15px; }
+.table-wrap { overflow-x: auto; }
+.limits { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.6; }
+.limits th { text-align: left; font-weight: 600; border-bottom: 2px solid var(--text); padding: 8px; }
+.limits td { vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.rel { list-style: none; padding: 0; margin: 12px 0 0; } .rel li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.rel li span:last-child { display: block; color: var(--muted); font-size: 14px; }
+.lv { font-size: 12px; padding: 1px 8px; border-radius: 999px; font-weight: 600; vertical-align: middle; }
+.lv-verified { background: rgba(46,139,87,.16); color: var(--d-biology); }
+.lv-secondary { background: rgba(194,138,0,.16); color: var(--d-economics); }
+.lv-draft { background: rgba(179,38,30,.14); color: var(--red); }
+.sources ul { padding-left: 20px; color: var(--soft); font-size: 15px; }
+.site-footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--muted); font-size: 13.5px; }
+@media (max-width: 640px) { .controls label { grid-template-columns: 1fr; } .home-graph { height: 360px; } .hero h1, .article h1 { font-size: 28px; } }
