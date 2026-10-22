@@ -276,7 +276,6 @@ def model_page(d, all_models, order, people_by_name, links):
                      'domain': all_models.get(r['slug'], {}).get('domain', dom),
                      'exists': r['slug'] in all_models} for r in d['related']],
     }, ensure_ascii=False).replace('</', '<\\/')
-    form = PLAY_LABEL[play['kind']] if play else f'{len(demo["params"])} 个滑块'
     body = f"""<div class="dom-{dom}">
 <header class="cover">{glyph(dom)}
 <div class="wrap"><div class="cover-inner">
@@ -284,7 +283,6 @@ def model_page(d, all_models, order, people_by_name, links):
 <h1>{e(d['title'])}</h1><p class="en">{e(d['en'])}</p>
 <p class="tagline">{e(d['tagline'])}</p>
 <div class="experts">{experts}</div>
-<div class="facts"><div>证据等级<b>{LEVEL_LABEL[ev['level']]}</b></div><div>{'互动' if play else '演示'}<b>{form}</b></div><div>关联模型<b>{n_rel} 个</b></div><div>出处<b>{len(d['sources'])} 条</b></div></div>
 </div></div></header>
 <div class="wrap layout"><aside class="toc"><p class="label h">本页内容</p>{toc}</aside>
 <main class="article">{body_secs}</main></div></div>
