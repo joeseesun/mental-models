@@ -396,3 +396,25 @@ a.rel-card:hover b { color: var(--dc); }
 .pl-msg p { margin: 0; font: 600 18px/1.8 var(--serif); }
 .pl-stat b.hot { color: var(--dc); }
 @media (max-width: 680px) { .pl-stage { height: 150px; } .pl-stage .side { min-width: 100px; padding: 12px 14px; } .pl-stage .side b { font-size: 30px; } .coin { width: 60px; height: 60px; margin: -30px 0 0 -30px; } .pl-score { grid-template-columns: 1fr; } }
+
+/* 练一练 */
+.drill { padding: 24px 26px 22px; }
+.dr-prog { display: flex; gap: 6px; align-items: center; margin-bottom: 18px; }
+.dr-prog i { width: 28px; height: 4px; background: var(--line-strong); } .dr-prog i.done { background: var(--dc); opacity: .5; } .dr-prog i.cur { background: var(--dc); }
+.dr-prog span { margin-left: 8px; font: 500 12px var(--sans); letter-spacing: .1em; color: var(--muted); }
+.dr-scene { margin: 0 0 14px; padding: 16px 20px; background: var(--card); border-radius: 4px; font: 400 17px/1.95 var(--serif); color: var(--soft); }
+.dr-ask { margin: 0 0 14px; font: 700 18px/1.7 var(--serif); }
+.dr-opts { display: grid; gap: 10px; }
+.dr-opt { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; text-align: left; padding: 13px 16px; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper); color: var(--text); font: 400 16px/1.75 var(--serif); cursor: pointer; transition: border-color .15s, background .15s, opacity .2s; }
+.dr-opt b { font: 700 15px var(--display); color: var(--muted); }
+.dr-opt:hover:not(:disabled) { border-color: var(--dc); background: color-mix(in srgb, var(--dc) 6%, var(--paper)); }
+.dr-opt:disabled { cursor: default; }
+.dr-opt.ok { border-color: var(--d-biology); background: color-mix(in srgb, var(--d-biology) 12%, var(--paper)); } .dr-opt.ok b { color: var(--d-biology); }
+.dr-opt.no { border-color: var(--red); background: color-mix(in srgb, var(--red) 9%, var(--paper)); } .dr-opt.no b { color: var(--red); }
+.dr-opt.dim { opacity: .5; }
+.dr-ex { margin-top: 16px; padding: 16px 20px; border-top: 2px solid var(--text); font: 400 16px/1.9 var(--serif); color: var(--soft); }
+.dr-ex p { margin: 0 0 12px; }
+.dr-verdict { font: 700 17px var(--display) !important; } .dr-verdict.ok { color: var(--d-biology); } .dr-verdict.no { color: var(--red); }
+.dr-result { text-align: center; padding: 28px 0 14px; } .dr-big { font: 700 64px/1.1 var(--display); color: var(--dc); margin: 0; }
+.dr-result p { margin: 8px 0 18px; font: 500 17px/1.8 var(--serif); }
+@media (max-width: 680px) { .drill { padding: 18px 16px; } .dr-scene { font-size: 16px; padding: 14px 16px; } }

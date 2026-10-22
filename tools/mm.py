@@ -172,6 +172,17 @@ def validate(d, known_slugs=()):
     blob = json.dumps({k: v for k, v in d.items() if k != 'principle'}, ensure_ascii=False)
     if DASH_RE.search(blob):
         P.append('文本中出现破折号，请改用逗号或句号')
+    drill = d.get('drill')
+    if drill is not None:
+        if not isinstance(drill, list) or not 3 <= len(drill) <= 4:
+            P.append('drill 需要 3 到 4 道题')
+        else:
+            for i, q in enumerate(drill):
+                if not all(isinstance(q.get(k), str) and q[k] for k in ('scene', 'ask', 'explain')):
+                    P.append(f'drill[{i}] 缺少 scene/ask/explain')
+                o = q.get('options')
+                if not isinstance(o, list) or not 3 <= len(o) <= 4 or not isinstance(q.get('answer'), int) or not 0 <= q['answer'] < len(o):
+                    P.append(f'drill[{i}] options 需 3 到 4 项且 answer 在范围内')
     play = d.get('play')
     if play is not None:
         if not isinstance(play, dict) or play.get('kind') not in PLAY_KINDS:

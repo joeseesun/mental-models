@@ -182,6 +182,8 @@ def model_page(d, all_models, order, people_by_name, links):
     idx = order.index(s)
     no = f'№ {idx + 1:03d}'
     ev, demo, play = d['evidence'], d['demo'], d.get('play')
+    drill = None if play else d.get('drill')
+    labels = dict(LABELS, demo='练习' if drill else LABELS['demo'])
 
     def expert_chip(x):
         inner = f'<b>{e(x["name"])}</b>{e(x["role"])}'
@@ -194,7 +196,7 @@ def model_page(d, all_models, order, people_by_name, links):
 
     def sec(key, i, inner):
         cls = ' sources' if key == 'sources' else ''
-        return f'<section class="sec{cls}" id="s-{key}"><p class="sec-label">{i:02d} · {LABELS[key]}</p>{inner}</section>'
+        return f'<section class="sec{cls}" id="s-{key}"><p class="sec-label">{i:02d} · {labels[key]}</p>{inner}</section>'
 
     def b_hook():
         short = len(d['hook']['story']) < 232
@@ -218,6 +220,8 @@ def model_page(d, all_models, order, people_by_name, links):
         if play:
             return (f'<h2>{e(play["title"])}</h2><div class="demo-box play-box"><div id="play" class="play"></div>'
                     f'<p class="takeaway">{e(play["takeaway"])}</p></div>')
+        if drill:
+            return (f'<h2>练一练：{len(drill)} 道题，看你会不会用</h2><div class="demo-box drill-box"><div id="drill" class="drill"></div></div>')
         return (f'<h2>{e(demo["title"])}</h2><div class="demo-box"><div id="demo-controls" class="controls"></div>'
                 f'<div id="demo" class="figure chart"></div><p class="takeaway">{e(demo["takeaway"])}</p></div>')
 
@@ -266,12 +270,12 @@ def model_page(d, all_models, order, people_by_name, links):
         rest.insert(0, 'demo')
     keys = ['hook', 'principle'] + rest
     body_secs = ''.join(sec(k, i + 1, builders[k]()) for i, k in enumerate(keys))
-    toc = ''.join(f'<a href="#s-{k}"><i>{i + 1:02d}</i>{LABELS[k]}</a>' for i, k in enumerate(keys))
+    toc = ''.join(f'<a href="#s-{k}"><i>{i + 1:02d}</i>{labels[k]}</a>' for i, k in enumerate(keys))
     payload = json.dumps({
         'slug': s, 'title': d['title'], 'domain': dom,
         # 横向流程图在窄栏里会被缩到看不清，一律竖排渲染（源数据不动）
         'mermaid': re.sub(r'^(\s*flowchart\s+)LR', r'\1TD', d['principle']['mermaid'], flags=re.M),
-        'echarts': ev['echarts'], 'demo': demo, 'play': play,
+        'echarts': ev['echarts'], 'demo': demo, 'play': play, 'drill': drill,
         'related': [{'slug': r['slug'], 'title': all_models.get(r['slug'], {}).get('title', r['slug']),
                      'domain': all_models.get(r['slug'], {}).get('domain', dom),
                      'exists': r['slug'] in all_models} for r in d['related']],
@@ -288,7 +292,7 @@ def model_page(d, all_models, order, people_by_name, links):
 <main class="article">{body_secs}</main></div></div>
 <script type="application/json" id="mm-data">{payload}</script>"""
     return page(f'{d["title"]} · 思维模型 Wiki', body, d['tagline'], depth=2, path=f'm/{s}/',
-                extra='<script src="../../play.js"></script>' if play else '', nav='models')
+                extra=('<script src="../../play.js"></script>' if play else '') + ('<script src="../../drill.js"></script>' if drill else ''), nav='models')
 
 
 # ---------- 人物页 ----------
