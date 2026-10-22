@@ -90,6 +90,7 @@ ORDERS = {  # 按领域气质决定区块先后：心理先讲反例，物理系
     'strategy': ['hook', 'evidence', 'howto', 'principle', 'demo', 'limits', 'related', 'sources'],
     'biology': ['hook', 'principle', 'evidence', 'demo', 'howto', 'limits', 'related', 'sources'],
 }
+PLAY_LABEL = {'gamble': '测测你', 'survivors': '跑一千次', 'chain': '活的模拟'}
 LABELS = {'hook': '场景钩子', 'principle': '原理图', 'evidence': '数据证据', 'demo': '交互演示',
           'howto': '怎么用', 'limits': '失效边界', 'related': '关联模型', 'sources': '出处'}
 
@@ -119,6 +120,7 @@ def model_page(d, all_models, order):
     ev, demo = d['evidence'], d['demo']
     series_types = {x.get('type') for x in ev['echarts'].get('series', [])}
     single_bar = len(ev['echarts'].get('series', [])) == 1 and series_types == {'bar'}
+    play = d.get('play')
     n_rel = sum(1 for r in d['related'] if r['slug'] in all_models)
 
     def sec(key, i, inner, cls=''):
@@ -141,6 +143,9 @@ def model_page(d, all_models, order):
         return h + f'<p class="takeaway-wide">{e(ev["takeaway"])}</p><div id="chart" class="figure chart"></div><p class="caption">来源：{e(ev["source"])}</p>'
 
     def b_demo():
+        if play:
+            return (f'<h2>{e(play["title"])}</h2><div class="demo-box play-box"><div id="play" class="play"></div>'
+                    f'<p class="takeaway">{e(play["takeaway"])}</p></div>')
         return (f'<h2>{e(demo["title"])}</h2><div class="demo-box"><div id="demo-controls" class="controls"></div>'
                 f'<div id="demo" class="figure chart"></div><p class="takeaway">{e(demo["takeaway"])}</p></div>')
 
@@ -180,12 +185,15 @@ def model_page(d, all_models, order):
 
     builders = {'hook': b_hook, 'principle': b_principle, 'evidence': b_evidence, 'demo': b_demo,
                 'howto': b_howto, 'limits': b_limits, 'related': b_related, 'sources': b_sources}
-    keys = ORDERS[dom]
+    keys = list(ORDERS[dom])
+    if play:  # 可玩演示紧跟钩子，别埋在后面
+        keys.remove('demo')
+        keys.insert(1, 'demo')
     body_secs = ''.join(sec(k, i + 1, builders[k](), 'sources' if k == 'sources' else '') for i, k in enumerate(keys))
     toc = ''.join(f'<a href="#s-{k}"><i>{i + 1:02d}</i>{LABELS[k]}</a>' for i, k in enumerate(keys))
     payload = json.dumps({
         'slug': s, 'title': d['title'], 'domain': dom, 'mermaid': d['principle']['mermaid'],
-        'echarts': ev['echarts'], 'demo': demo,
+        'echarts': ev['echarts'], 'demo': demo, 'play': play,
         'related': [{'slug': r['slug'], 'title': all_models.get(r['slug'], {}).get('title', r['slug']),
                      'domain': all_models.get(r['slug'], {}).get('domain', dom),
                      'exists': r['slug'] in all_models} for r in d['related']],
@@ -197,12 +205,13 @@ def model_page(d, all_models, order):
 <h1>{e(d['title'])}</h1><p class="en">{e(d['en'])}</p>
 <p class="tagline">{e(d['tagline'])}</p>
 <div class="experts">{experts}</div>
-<div class="facts"><div>证据等级<b>{LEVEL_LABEL[ev['level']]}</b></div><div>可调参数<b>{len(demo['params'])} 个</b></div><div>关联模型<b>{n_rel} 个</b></div><div>参考出处<b>{len(d['sources'])} 条</b></div></div>
+<div class="facts"><div>证据等级<b>{LEVEL_LABEL[ev['level']]}</b></div><div>{'互动形式' if play else '可调参数'}<b>{PLAY_LABEL[play['kind']] if play else str(len(demo['params'])) + ' 个'}</b></div><div>关联模型<b>{n_rel} 个</b></div><div>参考出处<b>{len(d['sources'])} 条</b></div></div>
 </div></div></header>
 <div class="wrap layout"><aside class="toc"><p class="h">本页内容</p>{toc}</aside>
 <main class="article">{body_secs}</main></div></div>
 <script type="application/json" id="mm-data">{payload}</script>"""
-    return page(f'{d["title"]} · 思维模型 Wiki', body, d['tagline'], depth=2, path=f'm/{s}/')
+    return page(f'{d["title"]} · 思维模型 Wiki', body, d['tagline'], depth=2, path=f'm/{s}/',
+                extra=f'<script src="../../play.js"></script>' if play else '')
 
 
 def index_page(models, ghosts, order):

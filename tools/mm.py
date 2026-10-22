@@ -12,6 +12,7 @@ DOMAINS = {
     'physics': '物理', 'biology': '生物', 'economics': '经济',
     'psychology': '心理', 'systems': '系统', 'strategy': '战略',
 }
+PLAY_KINDS = ('gamble', 'survivors', 'chain')  # 可玩演示的组件类型，对应 static/play.js
 LEVELS = ('verified', 'secondary', 'draft')
 SLUG_RE = re.compile(r'^[a-z0-9]+(-[a-z0-9]+)*$')
 # demo 表达式白名单：只允许 x、参数 id、数字、运算符、括号、Math.xxx
@@ -171,4 +172,11 @@ def validate(d, known_slugs=()):
     blob = json.dumps({k: v for k, v in d.items() if k != 'principle'}, ensure_ascii=False)
     if DASH_RE.search(blob):
         P.append('文本中出现破折号，请改用逗号或句号')
+    play = d.get('play')
+    if play is not None:
+        if not isinstance(play, dict) or play.get('kind') not in PLAY_KINDS:
+            P.append(f'play.kind 必须是 {list(PLAY_KINDS)} 之一')
+        else:
+            need(play, 'title', str, 'play.')
+            need(play, 'takeaway', str, 'play.')
     return P

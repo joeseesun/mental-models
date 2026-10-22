@@ -199,6 +199,22 @@
   if (hg) {
     fetch('graph.json').then(function (r) { return r.json(); }).then(function (g) {
       var c = echarts.init(hg); c.setOption(graphOption(g.nodes, g.links, false));
+      c.setOption({ tooltip: { show: false } });
+      // 悬停预览卡：用页面里已有的卡片数据，不额外请求
+      var byId = {}, title = {}, nb = {};
+      document.querySelectorAll('.card').forEach(function (cd) { byId[cd.dataset.slug] = cd; title[cd.dataset.slug] = cd.dataset.title; });
+      g.links.forEach(function (l) { (nb[l.source] = nb[l.source] || []).push(l.target); (nb[l.target] = nb[l.target] || []).push(l.source); });
+      var pv = document.createElement('div'); pv.className = 'preview'; hg.appendChild(pv); var hideT;
+      c.on('mouseover', function (p) {
+        if (p.dataType !== 'node' || p.data.ghost || !byId[p.data.id]) return;
+        clearTimeout(hideT);
+        var cd = byId[p.data.id], ns = (nb[p.data.id] || []).filter(function (x, i, a) { return a.indexOf(x) === i && title[x]; });
+        pv.className = 'preview dom-' + cd.dataset.domain;
+        pv.innerHTML = cd.querySelector('.glyph').outerHTML + '<div class="no">' + cd.querySelector('.no').textContent + '</div><h4>' + cd.dataset.title + '</h4><div class="en">' + cd.dataset.en + '</div><p>' + cd.dataset.tag + '</p>' +
+          '<div class="rel">' + ns.length + ' 个关联：' + ns.slice(0, 5).map(function (x) { return title[x]; }).join('、') + (ns.length > 5 ? ' …' : '') + '</div><span class="go">点击进入 →</span>';
+        requestAnimationFrame(function () { pv.className += ' on'; });
+      });
+      c.on('mouseout', function () { hideT = setTimeout(function () { pv.className = pv.className.replace(' on', ''); }, 120); });
       var s = {}; g.nodes.forEach(function (n) { if (!n.ghost) s[n.id] = 1; }); wireGraphClicks(c, s, '');
       addEventListener('resize', function () { c.resize(); });
     });
