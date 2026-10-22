@@ -1,0 +1,407 @@
+[
+ {
+  "name": "亚里士多德",
+  "appears": [
+   {
+    "model": "first-principles",
+    "model_title": "第一性原理",
+    "role": "提出者，把第一性原理定义为不能再被推导的起点"
+   },
+   {
+    "model": "optionality",
+    "model_title": "选择权",
+    "role": "最早记录者，在《政治学》中写下哲学家泰勒斯低价包租榨油机的故事，是最早的选择权案例"
+   }
+  ]
+ },
+ {
+  "name": "埃隆·马斯克",
+  "appears": [
+   {
+    "model": "first-principles",
+    "model_title": "第一性原理",
+    "role": "当代最知名的实践者，用它重估火箭与电池成本"
+   }
+  ]
+ },
+ {
+  "name": "伽利略·伽利莱",
+  "appears": [
+   {
+    "model": "inertia",
+    "model_title": "惯性",
+    "role": "1638 年用斜面实验推出惯性雏形，推翻了亚里士多德的力维持运动说"
+   },
+   {
+    "model": "frame-of-reference",
+    "model_title": "参照系",
+    "role": "1632 年在《关于两大世界体系的对话》里提出船舱思想实验，奠定相对性原理"
+   }
+  ]
+ },
+ {
+  "name": "艾萨克·牛顿",
+  "appears": [
+   {
+    "model": "inertia",
+    "model_title": "惯性",
+    "role": "1687 年在《自然哲学的数学原理》中把惯性写成第一定律"
+   },
+   {
+    "model": "occams-razor",
+    "model_title": "奥卡姆剃刀",
+    "role": "1687年在《自然哲学的数学原理》写下推理法则一：除真实且足以解释现象者外，不多设原因"
+   }
+  ]
+ },
+ {
+  "name": "克莱顿·克里斯坦森",
+  "appears": [
+   {
+    "model": "inertia",
+    "model_title": "惯性",
+    "role": "用破坏性创新解释大公司为何被自身惯性困住，把概念搬进管理学"
+   },
+   {
+    "model": "creative-destruction",
+    "model_title": "创造性破坏",
+    "role": "1997 年《创新者的窘境》作者，把在位者为什么输拆成了可检验的机制"
+   },
+   {
+    "model": "disruptive-innovation",
+    "model_title": "颠覆式创新",
+    "role": "提出者，哈佛商学院教授，1997 年出版《创新者的窘境》，讲透低端与新市场两条颠覆路径，2020 年去世"
+   }
+  ]
+ },
+ {
+  "name": "鲁道夫·克劳修斯",
+  "appears": [
+   {
+    "model": "entropy",
+    "model_title": "熵",
+    "role": "1865 年提出熵的概念，命名并总结热力学第二定律"
+   }
+  ]
+ },
+ {
+  "name": "路德维希·玻尔兹曼",
+  "appears": [
+   {
+    "model": "entropy",
+    "model_title": "熵",
+    "role": "1877 年给出统计解释 S = k log W，把熵变成可计算的微观状态数"
+   }
+  ]
+ },
+ {
+  "name": "埃尔温·薛定谔",
+  "appears": [
+   {
+    "model": "entropy",
+    "model_title": "熵",
+    "role": "1944 年在《生命是什么》中提出生命以负熵为食，把熵带进生物学"
+   }
+  ]
+ },
+ {
+  "name": "利奥·西拉德",
+  "appears": [
+   {
+    "model": "critical-mass",
+    "model_title": "临界质量",
+    "role": "1933 年提出中子链式反应构想，1934 年申请专利，临界质量问题的提出者"
+   }
+  ]
+ },
+ {
+  "name": "恩里科·费米",
+  "appears": [
+   {
+    "model": "critical-mass",
+    "model_title": "临界质量",
+    "role": "1942 年 12 月 2 日主持 CP-1 实验，实现人类第一次自持链式反应"
+   }
+  ]
+ },
+ {
+  "name": "埃弗雷特·罗杰斯",
+  "appears": [
+   {
+    "model": "critical-mass",
+    "model_title": "临界质量",
+    "role": "《创新的扩散》作者，指出互动类创新必须跨过临界质量才能自我维持"
+   }
+  ]
+ },
+ {
+  "name": "斯万特·阿伦尼乌斯",
+  "appears": [
+   {
+    "model": "activation-energy",
+    "model_title": "活化能",
+    "role": "提出者，1889 年给出速率随温度指数上升的公式，1903 年获诺贝尔化学奖"
+   }
+  ]
+ },
+ {
+  "name": "弗里茨·哈伯",
+  "appears": [
+   {
+    "model": "activation-energy",
+    "model_title": "活化能",
+    "role": "实践者，1909 年用高压和锇催化剂实现合成氨，证明找对路径能把不反应变成反应"
+   }
+  ]
+ },
+ {
+  "name": "阿尔文·米塔希",
+  "appears": [
+   {
+    "model": "activation-energy",
+    "model_title": "活化能",
+    "role": "在巴斯夫筛选数千种催化剂配方，把哈伯的演示变成 1913 年投产的奥堡工厂"
+   }
+  ]
+ },
+ {
+  "name": "阿尔伯特·爱因斯坦",
+  "appears": [
+   {
+    "model": "frame-of-reference",
+    "model_title": "参照系",
+    "role": "1905 年发表狭义相对论，把参照系选择提升为物理学的第一原则"
+   }
+  ]
+ },
+ {
+  "name": "伽利略",
+  "appears": [
+   {
+    "model": "velocity-vs-speed",
+    "model_title": "速度与速率",
+    "role": "1638 年在《两门新科学》里研究抛体，把运动沿水平和竖直方向拆开，奠定分量思维"
+   }
+  ]
+ },
+ {
+  "name": "牛顿",
+  "appears": [
+   {
+    "model": "velocity-vs-speed",
+    "model_title": "速度与速率",
+    "role": "1687 年在《自然哲学的数学原理》中把运动量定义为质量乘速度，方向是定义的一部分"
+   }
+  ]
+ },
+ {
+  "name": "吉姆·洛弗尔",
+  "appears": [
+   {
+    "model": "velocity-vs-speed",
+    "model_title": "速度与速率",
+    "role": "阿波罗 13 号指令长，1970 年靠手动校准方向把飞船开回家"
+   }
+  ]
+ },
+ {
+  "name": "阿基米德",
+  "appears": [
+   {
+    "model": "leverage",
+    "model_title": "杠杆",
+    "role": "公元前3世纪，在《论平面图形的平衡》中给出杠杆定律"
+   }
+  ]
+ },
+ {
+  "name": "纳瓦尔·拉维坎特",
+  "appears": [
+   {
+    "model": "leverage",
+    "model_title": "杠杆",
+    "role": "AngelList 创始人，2018 年提出人力、资本、代码、媒体四种杠杆"
+   }
+  ]
+ },
+ {
+  "name": "伽利略·伽利雷",
+  "appears": [
+   {
+    "model": "resonance",
+    "model_title": "共振",
+    "role": "1638 年在《两门新科学》里描述摆的等时性，并讲清荡秋千时小推力如何靠节奏累积成大摆幅"
+   }
+  ]
+ },
+ {
+  "name": "尼古拉·特斯拉",
+  "appears": [
+   {
+    "model": "resonance",
+    "model_title": "共振",
+    "role": "1891 年发明特斯拉线圈，用调谐共振把小电流的电压抬到百万伏级，后来又痴迷机械共振器"
+   }
+  ]
+ },
+ {
+  "name": "欧内斯特·卢瑟福",
+  "appears": [
+   {
+    "model": "half-life",
+    "model_title": "半衰期",
+    "role": "1902 年与索迪提出指数衰变定律，创造了半衰期这个词"
+   }
+  ]
+ },
+ {
+  "name": "玛丽·居里",
+  "appears": [
+   {
+    "model": "half-life",
+    "model_title": "半衰期",
+    "role": "1898 年发现钋和镭，她的笔记本至今仍因镭的衰变而具有放射性"
+   }
+  ]
+ },
+ {
+  "name": "埃米·诺特",
+  "appears": [
+   {
+    "model": "conservation-laws",
+    "model_title": "守恒律",
+    "role": "1918年证明诺特定理，把每种连续对称性与一个守恒量一一对应"
+   }
+  ]
+ },
+ {
+  "name": "约瑟夫·拉格朗日",
+  "appears": [
+   {
+    "model": "conservation-laws",
+    "model_title": "守恒律",
+    "role": "1788年出版《分析力学》，用拉格朗日量重写力学，为诺特定理铺路"
+   }
+  ]
+ },
+ {
+  "name": "沃尔夫冈·泡利",
+  "appears": [
+   {
+    "model": "conservation-laws",
+    "model_title": "守恒律",
+    "role": "1930年为保住能量守恒，提出中微子假说"
+   }
+  ]
+ },
+ {
+  "name": "范德瓦耳斯",
+  "appears": [
+   {
+    "model": "phase-transition",
+    "model_title": "相变",
+    "role": "1873 年在博士论文中给出气液连续性与临界温度，1910 年获诺贝尔物理学奖"
+   }
+  ]
+ },
+ {
+  "name": "安德森",
+  "appears": [
+   {
+    "model": "phase-transition",
+    "model_title": "相变",
+    "role": "1972 年在 Science 发表 More Is Different，主张量变会带来质变，1977 年获诺贝尔物理学奖"
+   }
+  ]
+ },
+ {
+  "name": "纪尧姆·阿蒙东",
+  "appears": [
+   {
+    "model": "friction",
+    "model_title": "摩擦力",
+    "role": "1699 年向法国科学院提出摩擦定律：摩擦力与正压力成正比，与接触面积无关"
+   }
+  ]
+ },
+ {
+  "name": "夏尔·库仑",
+  "appears": [
+   {
+    "model": "friction",
+    "model_title": "摩擦力",
+    "role": "1781 年用精密实验完善摩擦定律，区分静摩擦与动摩擦，引入摩擦系数概念"
+   }
+  ]
+ },
+ {
+  "name": "BJ 福格",
+  "appears": [
+   {
+    "model": "friction",
+    "model_title": "摩擦力",
+    "role": "斯坦福行为设计学者，用 B=MAP 模型把行动门槛，也就是摩擦，写进行为公式"
+   }
+  ]
+ },
+ {
+  "name": "达尔文",
+  "appears": [
+   {
+    "model": "natural-selection",
+    "model_title": "自然选择",
+    "role": "1859 年出版《物种起源》，正式提出自然选择学说"
+   },
+   {
+    "model": "adaptation",
+    "model_title": "适应",
+    "role": "提出者，1859 年在《物种起源》中用自然选择解释适应的来源"
+   }
+  ]
+ },
+ {
+  "name": "华莱士",
+  "appears": [
+   {
+    "model": "natural-selection",
+    "model_title": "自然选择",
+    "role": "1858 年在马来群岛独立提出同一机制，促成与达尔文联合发表"
+   }
+  ]
+ },
+ {
+  "name": "彼得与罗斯玛丽·格兰特",
+  "appears": [
+   {
+    "model": "natural-selection",
+    "model_title": "自然选择",
+    "role": "自 1973 年起在加拉帕戈斯逐只测量地雀，把选择拍在了现场"
+   }
+  ]
+ },
+ {
+  "name": "利·范瓦伦",
+  "appears": [
+   {
+    "model": "red-queen-effect",
+    "model_title": "红皇后效应",
+    "role": "芝加哥大学演化生物学家，1973 年提出红皇后假说，发现灭绝概率不随时间下降"
+   },
+   {
+    "model": "evolutionary-arms-race",
+    "model_title": "进化军备竞赛",
+    "role": "1973 年提出红皇后假说，用海洋化石数据证明物种灭绝风险不随时间下降"
+   }
+  ]
+ },
+ {
+  "name": "柯蒂斯·利夫利",
+  "appears": [
+   {
+    "model": "red-queen-effect",
+    "model_title": "红皇后效应",
+    "role": "印第安纳大学生物学家，用新西兰淡水蜗牛验证了寄生虫与有性繁殖的关系"
+   }
+  ]
+ }
+]

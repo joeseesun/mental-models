@@ -1,0 +1,377 @@
+[
+ {
+  "name": "布赖恩·阿瑟",
+  "appears": [
+   {
+    "model": "complex-adaptive-systems",
+    "model_title": "复杂适应系统",
+    "role": "复杂经济学奠基人，1994 年用酒吧问题演示主体适应如何造出无人设计的秩序"
+   }
+  ]
+ },
+ {
+  "name": "皮埃尔·弗朗索瓦·维霍斯特",
+  "appears": [
+   {
+    "model": "s-curve",
+    "model_title": "S曲线",
+    "role": "比利时数学家，1838 年提出逻辑斯蒂曲线，第一次给增长画上天花板"
+   }
+  ]
+ },
+ {
+  "name": "查尔斯·汉迪",
+  "appears": [
+   {
+    "model": "s-curve",
+    "model_title": "S曲线",
+    "role": "爱尔兰管理思想家，1994 年在《空雨衣》中提出第二曲线，主张在第一曲线到顶前动手"
+   }
+  ]
+ },
+ {
+  "name": "卡尔·雅各比",
+  "appears": [
+   {
+    "model": "inversion",
+    "model_title": "反过来想",
+    "role": "德国数学家，1804 至 1851 在世，解题格言是 man muss immer umkehren，即永远反过来想"
+   }
+  ]
+ },
+ {
+  "name": "加里·克莱因",
+  "appears": [
+   {
+    "model": "inversion",
+    "model_title": "反过来想",
+    "role": "认知心理学家，把反向提问发展成团队用的预演失败法"
+   },
+   {
+    "model": "pre-mortem",
+    "model_title": "事前验尸",
+    "role": "提出者，认知心理学家，以研究消防队长等真实场景决策成名，2007 年在《哈佛商业评论》正式命名该方法"
+   }
+  ]
+ },
+ {
+  "name": "奥卡姆的威廉",
+  "appears": [
+   {
+    "model": "occams-razor",
+    "model_title": "奥卡姆剃刀",
+    "role": "约1287至1347，英格兰方济各会修士，简洁性原则因他得名，那句拉丁文格言其实是后人替他总结的"
+   }
+  ]
+ },
+ {
+  "name": "赤池弘次",
+  "appears": [
+   {
+    "model": "occams-razor",
+    "model_title": "奥卡姆剃刀",
+    "role": "1974年提出AIC准则，把勿增实体变成一个可以计算的统计公式"
+   }
+  ]
+ },
+ {
+  "name": "汉隆",
+  "appears": [
+   {
+    "model": "hanlons-razor",
+    "model_title": "汉隆剃刀",
+    "role": "提出者，1980 年向《墨菲定律第二册》投稿了这句话的普通人"
+   }
+  ]
+ },
+ {
+  "name": "歌德",
+  "appears": [
+   {
+    "model": "hanlons-razor",
+    "model_title": "汉隆剃刀",
+    "role": "1774 年在《少年维特之烦恼》里写下几乎相同的判断，早了两百年"
+   }
+  ]
+ },
+ {
+  "name": "埃里克·雷蒙",
+  "appears": [
+   {
+    "model": "hanlons-razor",
+    "model_title": "汉隆剃刀",
+    "role": "《新黑客词典》编者，用格雷定律提醒这条剃刀的反例"
+   }
+  ]
+ },
+ {
+  "name": "布莱兹·帕斯卡",
+  "appears": [
+   {
+    "model": "expected-value",
+    "model_title": "期望值思维",
+    "role": "1654 年与费马通信解决分赌注问题，概率论的共同奠基人"
+   }
+  ]
+ },
+ {
+  "name": "皮埃尔·德·费马",
+  "appears": [
+   {
+    "model": "expected-value",
+    "model_title": "期望值思维",
+    "role": "在图卢兹用组合计数独立解出同一问题，确立了按概率加权的算法"
+   }
+  ]
+ },
+ {
+  "name": "爱德华·索普",
+  "appears": [
+   {
+    "model": "expected-value",
+    "model_title": "期望值思维",
+    "role": "把期望值搬上赌桌和交易台，1962 年出版《击败庄家》"
+   }
+  ]
+ },
+ {
+  "name": "托马斯·贝叶斯",
+  "appears": [
+   {
+    "model": "bayes-updating",
+    "model_title": "贝叶斯更新",
+    "role": "18 世纪英国长老会牧师，1763 年发表的遗作首次解出逆概率问题"
+   }
+  ]
+ },
+ {
+  "name": "皮埃尔-西蒙·拉普拉斯",
+  "appears": [
+   {
+    "model": "bayes-updating",
+    "model_title": "贝叶斯更新",
+    "role": "1774 年独立重推导并大规模应用，用出生数据算出男女比例的赔率"
+   }
+  ]
+ },
+ {
+  "name": "保罗·萨福",
+  "appears": [
+   {
+    "model": "bayes-updating",
+    "model_title": "贝叶斯更新",
+    "role": "未来学家，2007 年提出强观点弱持有，把贝叶斯精神变成预测者的工作纪律"
+   }
+  ]
+ },
+ {
+  "name": "阿尔弗雷德·科日布斯基",
+  "appears": [
+   {
+    "model": "map-territory",
+    "model_title": "地图不是疆域",
+    "role": "1931 年提出地图不是疆域，普通语义学创始人"
+   }
+  ]
+ },
+ {
+  "name": "查尔斯·波尼斯",
+  "appears": [
+   {
+    "model": "map-territory",
+    "model_title": "地图不是疆域",
+    "role": "斯坦福大学教授，波尼斯悖论：模型越完整越难懂"
+   }
+  ]
+ },
+ {
+  "name": "约翰·博伊德",
+  "appears": [
+   {
+    "model": "ooda-loop",
+    "model_title": "OODA循环",
+    "role": "美国空军上校，1927 年生，朝鲜战争飞行员出身，提出 OODA 循环与能量机动理论"
+   }
+  ]
+ },
+ {
+  "name": "诺曼·施瓦茨科普夫",
+  "appears": [
+   {
+    "model": "ooda-loop",
+    "model_title": "OODA循环",
+    "role": "1991 年海湾战争多国部队司令，左勾拳大迂回被视为压制对方循环的实战样本"
+   }
+  ]
+ },
+ {
+  "name": "金伟灿",
+  "appears": [
+   {
+    "model": "blue-ocean",
+    "model_title": "蓝海战略",
+    "role": "INSEAD 教授，与莫博涅共同提出蓝海战略，研究持续二十多年"
+   }
+  ]
+ },
+ {
+  "name": "莫博涅",
+  "appears": [
+   {
+    "model": "blue-ocean",
+    "model_title": "蓝海战略",
+    "role": "INSEAD 教授，合著《蓝海战略》，设计了战略布局图与四步动作框架"
+   }
+  ]
+ },
+ {
+  "name": "约瑟夫·鲍尔",
+  "appears": [
+   {
+    "model": "disruptive-innovation",
+    "model_title": "颠覆式创新",
+    "role": "克里斯坦森的导师与合作者，1995 年合写《Catching the Wave》，最早提出颠覆式技术一词"
+   }
+  ]
+ },
+ {
+  "name": "里德·黑斯廷斯",
+  "appears": [
+   {
+    "model": "disruptive-innovation",
+    "model_title": "颠覆式创新",
+    "role": "奈飞联合创始人，从 DVD 邮寄起步爬升到流媒体，亲手执行了对百视达的颠覆"
+   }
+  ]
+ },
+ {
+  "name": "吉姆·柯林斯",
+  "appears": [
+   {
+    "model": "flywheel",
+    "model_title": "飞轮效应",
+    "role": "提出者，《从优秀到卓越》作者，用飞轮与厄运循环的对比解释卓越公司的积累过程"
+   }
+  ]
+ },
+ {
+  "name": "杰夫·贝佐斯",
+  "appears": [
+   {
+    "model": "flywheel",
+    "model_title": "飞轮效应",
+    "role": "最知名的实践者，2001 年在餐巾纸上画出亚马逊飞轮，此后二十年没有换过方向"
+   }
+  ]
+ },
+ {
+  "name": "迈克尔·波特",
+  "appears": [
+   {
+    "model": "strategy-tradeoffs",
+    "model_title": "战略即取舍",
+    "role": "哈佛商学院教授，1996 年在《什么是战略》中把取舍定义为战略的核心"
+   }
+  ]
+ },
+ {
+  "name": "赫伯·凯莱赫",
+  "appears": [
+   {
+    "model": "strategy-tradeoffs",
+    "model_title": "战略即取舍",
+    "role": "西南航空联合创始人，用几十年如一日的“不做什么”把低成本定位做成了护城河"
+   }
+  ]
+ },
+ {
+  "name": "马克·斯皮茨纳格尔",
+  "appears": [
+   {
+    "model": "barbell-strategy",
+    "model_title": "杠铃策略",
+    "role": "Universa Investments 创始人，与塔勒布合作把尾部对冲做成可执行的策略"
+   }
+  ]
+ },
+ {
+  "name": "塞内加",
+  "appears": [
+   {
+    "model": "barbell-strategy",
+    "model_title": "杠铃策略",
+    "role": "塔勒布引用的古代原型，既享罗马巨富，又练斯多葛式的极端清苦"
+   }
+  ]
+ },
+ {
+  "name": "汉斯·塞利",
+  "appears": [
+   {
+    "model": "antifragile",
+    "model_title": "反脆弱",
+    "role": "压力研究奠基人，1936 年在《自然》发表应激综合征论文，证明适度压力能提升适应力"
+   }
+  ]
+ },
+ {
+  "name": "米特拉达梯六世",
+  "appears": [
+   {
+    "model": "antifragile",
+    "model_title": "反脆弱",
+    "role": "公元前 2 世纪的本都国王，传说中每天服小剂量毒药练出免疫力的实践者"
+   }
+  ]
+ },
+ {
+  "name": "纳西姆·尼古拉斯·塔勒布",
+  "appears": [
+   {
+    "model": "black-swan",
+    "model_title": "黑天鹅",
+    "role": "提出者，衍生品交易员出身，2007 年出版《黑天鹅》，后来又写出《反脆弱》"
+   }
+  ]
+ },
+ {
+  "name": "卡尔·波普尔",
+  "appears": [
+   {
+    "model": "black-swan",
+    "model_title": "黑天鹅",
+    "role": "思想源头，塔勒布自认受其证伪主义影响，用黑天鹅回应休谟的归纳问题"
+   }
+  ]
+ },
+ {
+  "name": "塔勒布",
+  "appears": [
+   {
+    "model": "skin-in-the-game",
+    "model_title": "风险共担",
+    "role": "提出者与集大成者，做了约二十年期权交易员，2018 年出版《风险共担》"
+   }
+  ]
+ },
+ {
+  "name": "汉谟拉比",
+  "appears": [
+   {
+    "model": "skin-in-the-game",
+    "model_title": "风险共担",
+    "role": "公元前 18 世纪巴比伦国王，用成文法把建造者的命运和建筑绑在一起"
+   }
+  ]
+ },
+ {
+  "name": "安妮·杜克",
+  "appears": [
+   {
+    "model": "pre-mortem",
+    "model_title": "事前验尸",
+    "role": "前职业扑克选手，在《对赌》（2018）中用回溯未来等变体把它带给大众读者"
+   }
+  ]
+ }
+]

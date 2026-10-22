@@ -1,0 +1,462 @@
+[
+ {
+  "name": "丹尼尔·卡尼曼",
+  "appears": [
+   {
+    "model": "loss-aversion",
+    "model_title": "损失厌恶",
+    "role": "普林斯顿心理学家，2002 年诺贝尔经济学奖得主，与特沃斯基提出前景理论"
+   },
+   {
+    "model": "anchoring",
+    "model_title": "锚定效应",
+    "role": "2002 年诺贝尔经济学奖得主，1974 年与特沃斯基把锚定写入启发式与偏差纲领"
+   },
+   {
+    "model": "availability-heuristic",
+    "model_title": "易得性偏差",
+    "role": "提出者之一，2002 年获诺贝尔经济学奖，后来把它写进《思考，快与慢》第 12 章"
+   },
+   {
+    "model": "regression-to-mean",
+    "model_title": "均值回归",
+    "role": "普及者，用以色列空军教官案例解释奖惩错觉，《思考，快与慢》第 17 章"
+   },
+   {
+    "model": "hedonic-treadmill",
+    "model_title": "享乐适应",
+    "role": "2010年与迪顿发现情绪幸福感在约7.5万美元收入处走平"
+   },
+   {
+    "model": "planning-fallacy",
+    "model_title": "规划谬误",
+    "role": "与特沃斯基命名规划谬误，主张用外部视角纠正，2002 年诺贝尔经济学奖得主"
+   },
+   {
+    "model": "pre-mortem",
+    "model_title": "事前验尸",
+    "role": "推广者，诺贝尔经济学奖得主，在《思考，快与慢》中把它列为对抗过度自信的组织工具"
+   }
+  ]
+ },
+ {
+  "name": "阿莫斯·特沃斯基",
+  "appears": [
+   {
+    "model": "loss-aversion",
+    "model_title": "损失厌恶",
+    "role": "斯坦福心理学家，前景理论共同提出者，1992 年测得损失厌恶系数中位数约 2.25"
+   },
+   {
+    "model": "anchoring",
+    "model_title": "锚定效应",
+    "role": "锚定与调整机制的主要提出者，用幸运轮盘证明随机数字也能拖动判断"
+   },
+   {
+    "model": "availability-heuristic",
+    "model_title": "易得性偏差",
+    "role": "提出者之一，1973 年与卡尼曼发表可用性启发式的原始论文"
+   },
+   {
+    "model": "planning-fallacy",
+    "model_title": "规划谬误",
+    "role": "1979 年与卡尼曼在论文中首次提出这一概念"
+   }
+  ]
+ },
+ {
+  "name": "理查德·塞勒",
+  "appears": [
+   {
+    "model": "loss-aversion",
+    "model_title": "损失厌恶",
+    "role": "芝加哥大学经济学家，用马克杯实验揭示禀赋效应，2017 年诺贝尔经济学奖得主"
+   }
+  ]
+ },
+ {
+  "name": "亚当·加林斯基",
+  "appears": [
+   {
+    "model": "anchoring",
+    "model_title": "锚定效应",
+    "role": "西北大学教授，2001 年用实验证明谈判中先报价者把结果拉向自己"
+   }
+  ]
+ },
+ {
+  "name": "彼得·沃森",
+  "appears": [
+   {
+    "model": "confirmation-bias",
+    "model_title": "确认偏误",
+    "role": "伦敦大学学院认知心理学家，1960 年用三连数实验让确认偏误有了名字"
+   }
+  ]
+ },
+ {
+  "name": "苏珊·菲斯克",
+  "appears": [
+   {
+    "model": "confirmation-bias",
+    "model_title": "确认偏误",
+    "role": "普林斯顿大学社会心理学家，研究先入之见如何扭曲我们对他人的判断"
+   }
+  ]
+ },
+ {
+  "name": "亚伯拉罕·瓦尔德",
+  "appears": [
+   {
+    "model": "survivorship-bias",
+    "model_title": "幸存者偏差",
+    "role": "数理统计学家，1943 年在哥伦比亚统计研究组写下弹孔与装甲备忘录"
+   }
+  ]
+ },
+ {
+  "name": "纳西姆·塔勒布",
+  "appears": [
+   {
+    "model": "survivorship-bias",
+    "model_title": "幸存者偏差",
+    "role": "在《随机漫步的傻瓜》里用沉默证据把这一偏差带向大众"
+   },
+   {
+    "model": "slack",
+    "model_title": "冗余",
+    "role": "《反脆弱》作者，主张用冗余对抗效率崇拜"
+   },
+   {
+    "model": "cascading-failure",
+    "model_title": "级联失效",
+    "role": "在《黑天鹅》和《反脆弱》中警告，互联程度越高，系统性崩溃越猛"
+   },
+   {
+    "model": "optionality",
+    "model_title": "选择权",
+    "role": "提出者与实践者，1987 年崩盘中靠虚值期权实现财务自由，在《反脆弱》中把选择权列为反脆弱的核心来源"
+   },
+   {
+    "model": "barbell-strategy",
+    "model_title": "杠铃策略",
+    "role": "提出者，前期权交易员，在《反脆弱》里系统化了杠铃策略"
+   },
+   {
+    "model": "antifragile",
+    "model_title": "反脆弱",
+    "role": "提出者，交易员出身，2012 年出版《反脆弱》，把凸性、杠铃和风险共担串成一套实践"
+   }
+  ]
+ },
+ {
+  "name": "乔丹·艾伦伯格",
+  "appears": [
+   {
+    "model": "survivorship-bias",
+    "model_title": "幸存者偏差",
+    "role": "威斯康星大学教授，2014 年用弹孔密度数据把这个故事讲透"
+   }
+  ]
+ },
+ {
+  "name": "弗朗西斯·高尔顿",
+  "appears": [
+   {
+    "model": "regression-to-mean",
+    "model_title": "均值回归",
+    "role": "发现者，1886 年用 928 名子女的身高数据提出“回归向平庸”"
+   }
+  ]
+ },
+ {
+  "name": "所罗门·阿施",
+  "appears": [
+   {
+    "model": "social-proof",
+    "model_title": "社会认同",
+    "role": "斯沃斯莫尔学院心理学家，1950 年代用线段实验量化了从众，发现多数派人数效应和盟友效应"
+   }
+  ]
+ },
+ {
+  "name": "罗伯特·西奥迪尼",
+  "appears": [
+   {
+    "model": "social-proof",
+    "model_title": "社会认同",
+    "role": "亚利桑那州立大学教授，1984 年在《影响力》中把社会认同列为六大影响力原则之一"
+   },
+   {
+    "model": "authority-bias",
+    "model_title": "权威服从",
+    "role": "亚利桑那州立大学教授，1984年在《影响力》里把权威列为六大说服武器之一"
+   },
+   {
+    "model": "reciprocation",
+    "model_title": "互惠",
+    "role": "心理学家，1984 年《影响力》把互惠列为说服武器的第一条"
+   },
+   {
+    "model": "commitment-consistency",
+    "model_title": "承诺一致性",
+    "role": "1984 年在《影响力》中把承诺一致列为六大影响力武器之一，完成命名与系统化"
+   },
+   {
+    "model": "scarcity-bias",
+    "model_title": "稀缺心理",
+    "role": "亚利桑那州立大学心理学教授，1984 年在《影响力》中把稀缺列为六大影响力武器之一"
+   }
+  ]
+ },
+ {
+  "name": "比布·拉塔内",
+  "appears": [
+   {
+    "model": "social-proof",
+    "model_title": "社会认同",
+    "role": "1968 年与达利提出旁观者效应，证明在场的人越多，出手相助的反而越少"
+   }
+  ]
+ },
+ {
+  "name": "斯坦利·米尔格拉姆",
+  "appears": [
+   {
+    "model": "authority-bias",
+    "model_title": "权威服从",
+    "role": "耶鲁大学社会心理学家，1961年起做服从实验，把服从变成了可测量的数字"
+   }
+  ]
+ },
+ {
+  "name": "汉娜·阿伦特",
+  "appears": [
+   {
+    "model": "authority-bias",
+    "model_title": "权威服从",
+    "role": "政治思想家，1963年报道艾希曼审判，提出平庸之恶，为服从现象写下思想注脚"
+   }
+  ]
+ },
+ {
+  "name": "阿尔文·古尔德纳",
+  "appears": [
+   {
+    "model": "reciprocation",
+    "model_title": "互惠",
+    "role": "社会学家，1960 年论证互惠是极少数遍布所有人类文化的普遍规范"
+   }
+  ]
+ },
+ {
+  "name": "罗伯特·特里弗斯",
+  "appears": [
+   {
+    "model": "reciprocation",
+    "model_title": "互惠",
+    "role": "进化生物学家，1971 年提出互惠利他，解释这种本能从哪里来"
+   }
+  ]
+ },
+ {
+  "name": "莱昂·费斯廷格",
+  "appears": [
+   {
+    "model": "commitment-consistency",
+    "model_title": "承诺一致性",
+    "role": "1957 年提出认知失调理论，解释了人为什么需要自我一致"
+   }
+  ]
+ },
+ {
+  "name": "弗里德曼与弗雷泽",
+  "appears": [
+   {
+    "model": "commitment-consistency",
+    "model_title": "承诺一致性",
+    "role": "1966 年用登门槛实验证明，一个小承诺能把同意率抬高四倍多"
+   }
+  ]
+ },
+ {
+  "name": "塞德希尔·穆来纳森",
+  "appears": [
+   {
+    "model": "scarcity-bias",
+    "model_title": "稀缺心理",
+    "role": "行为经济学家，2013 年与沙菲尔合著《稀缺》，提出管窥与带宽两个概念"
+   }
+  ]
+ },
+ {
+  "name": "斯蒂芬·沃切尔",
+  "appears": [
+   {
+    "model": "scarcity-bias",
+    "model_title": "稀缺心理",
+    "role": "1975 年用一罐曲奇做出经典实验，证明由多变少比一直稀缺更让人渴望"
+   }
+  ]
+ },
+ {
+  "name": "欧文·贾尼斯",
+  "appears": [
+   {
+    "model": "groupthink",
+    "model_title": "团体迷思",
+    "role": "耶鲁大学心理学家，1972年解剖猪湾等决策惨案，提出团体迷思"
+   }
+  ]
+ },
+ {
+  "name": "罗杰·博伊斯乔利",
+  "appears": [
+   {
+    "model": "groupthink",
+    "model_title": "团体迷思",
+    "role": "挑战者号助推器工程师，发射前夜在电话会上坚持反对"
+   }
+  ]
+ },
+ {
+  "name": "查兰·内梅特",
+  "appears": [
+   {
+    "model": "groupthink",
+    "model_title": "团体迷思",
+    "role": "加州大学伯克利分校心理学家，实验证明真实的少数派异议能提升群体判断"
+   }
+  ]
+ },
+ {
+  "name": "莱昂·费斯汀格",
+  "appears": [
+   {
+    "model": "cognitive-dissonance",
+    "model_title": "认知失调",
+    "role": "提出者，1957 年出版《认知失调理论》，此前潜入飞碟教派写下《当预言落空》"
+   }
+  ]
+ },
+ {
+  "name": "埃利奥特·阿伦森",
+  "appears": [
+   {
+    "model": "cognitive-dissonance",
+    "model_title": "认知失调",
+    "role": "费斯汀格的学生，1959 年做入会考验实验，提出努力正当化"
+   }
+  ]
+ },
+ {
+  "name": "卡罗尔·塔夫里斯",
+  "appears": [
+   {
+    "model": "cognitive-dissonance",
+    "model_title": "认知失调",
+    "role": "社会心理学家，与阿伦森合著《错不在我》，把失调推广到日常自欺"
+   }
+  ]
+ },
+ {
+  "name": "大卫·邓宁",
+  "appears": [
+   {
+    "model": "dunning-kruger",
+    "model_title": "达克效应",
+    "role": "提出者，时任康奈尔大学心理学教授，1999 年与克鲁格发表奠基论文，此后持续研究人如何评估自己的无知"
+   }
+  ]
+ },
+ {
+  "name": "贾斯汀·克鲁格",
+  "appears": [
+   {
+    "model": "dunning-kruger",
+    "model_title": "达克效应",
+    "role": "第一作者，当时是邓宁的博士生，后任教于纽约大学，转向行为决策研究"
+   }
+  ]
+ },
+ {
+  "name": "菲利普·布里克曼",
+  "appears": [
+   {
+    "model": "hedonic-treadmill",
+    "model_title": "享乐适应",
+    "role": "1971年与坎贝尔提出享乐跑步机，1978年主持彩票中奖者与截瘫者对比研究"
+   }
+  ]
+ },
+ {
+  "name": "唐纳德·坎贝尔",
+  "appears": [
+   {
+    "model": "hedonic-treadmill",
+    "model_title": "享乐适应",
+    "role": "适应水平理论大家，主张人只对变化敏感，幸福是相对的"
+   }
+  ]
+ },
+ {
+  "name": "理查德·卢卡斯",
+  "appears": [
+   {
+    "model": "hedonic-treadmill",
+    "model_title": "享乐适应",
+    "role": "2004年起用长期追踪数据修正理论，发现失业等事件适应不完全"
+   }
+  ]
+ },
+ {
+  "name": "米哈里·契克森米哈赖",
+  "appears": [
+   {
+    "model": "flow",
+    "model_title": "心流",
+    "role": "提出者，1975 年命名心流，用体验取样法收集了超过十万份实时体验记录"
+   }
+  ]
+ },
+ {
+  "name": "福斯托·马西米尼",
+  "appears": [
+   {
+    "model": "flow",
+    "model_title": "心流",
+    "role": "合作者，1988 年把心流通道细化为焦虑、唤醒、掌控、无聊等八通道模型"
+   }
+  ]
+ },
+ {
+  "name": "伊万·巴甫洛夫",
+  "appears": [
+   {
+    "model": "classical-conditioning",
+    "model_title": "条件反射",
+    "role": "发现者，1904 年因消化生理研究获诺贝尔奖，意外打开了条件反射的大门"
+   }
+  ]
+ },
+ {
+  "name": "约翰·华生",
+  "appears": [
+   {
+    "model": "classical-conditioning",
+    "model_title": "条件反射",
+    "role": "把实验搬到人身上，1920 年小阿尔伯特实验在婴儿身上制造出恐惧条件反射"
+   }
+  ]
+ },
+ {
+  "name": "斯金纳",
+  "appears": [
+   {
+    "model": "classical-conditioning",
+    "model_title": "条件反射",
+    "role": "行为主义集大成者，区分出操作条件作用，把强化变成可设计的工程"
+   }
+  ]
+ }
+]

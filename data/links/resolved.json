@@ -1,0 +1,422 @@
+{
+ "entropy#3": {
+  "url": "https://doi.org/10.1201/b17118",
+  "via": "crossref",
+  "matched": "CRC Handbook of Chemistry and Physics"
+ },
+ "activation-energy#0": {
+  "url": "https://doi.org/10.1515/zpch-1889-0416",
+  "via": "crossref",
+  "matched": "Über die Reaktionsgeschwindigkeit bei der Inversion von Rohrzucker durch Säuren"
+ },
+ "velocity-vs-speed#2": {
+  "url": "https://doi.org/10.5860/choice.38-3304",
+  "via": "crossref",
+  "matched": "Apollo 13: the NASA mission reports"
+ },
+ "red-queen-effect#2": {
+  "url": "https://doi.org/10.1038/328519a0",
+  "via": "crossref",
+  "matched": "Evidence from a New Zealand snail for the maintenance of sex by parasitism"
+ },
+ "red-queen-effect#3": {
+  "url": "https://doi.org/10.2307/3544435",
+  "via": "crossref",
+  "matched": "Sex versus Non-Sex versus Parasite"
+ },
+ "evolutionary-arms-race#0": {
+  "url": "https://doi.org/10.1098/rspb.1979.0081",
+  "via": "crossref",
+  "matched": "Arms races between and within species"
+ },
+ "evolutionary-arms-race#1": {
+  "url": "https://doi.org/10.2307/2406212",
+  "via": "crossref",
+  "matched": "Butterflies and Plants: A Study in Coevolution"
+ },
+ "ecological-niche#0": {
+  "url": "https://doi.org/10.2307/4072271",
+  "via": "crossref",
+  "matched": "The Niche-Relationships of the California Thrasher"
+ },
+ "symbiosis#0": {
+  "url": "https://doi.org/10.1515/9783111471839",
+  "via": "crossref",
+  "matched": "Die Erscheinung der Symbiose"
+ },
+ "symbiosis#1": {
+  "url": "https://doi.org/10.1016/0022-5193(67)90079-3",
+  "via": "crossref",
+  "matched": "On the origin of mitosing cells"
+ },
+ "keystone-species#0": {
+  "url": "https://doi.org/10.1086/282400",
+  "via": "crossref",
+  "matched": "Food Web Complexity and Species Diversity"
+ },
+ "keystone-species#1": {
+  "url": "https://doi.org/10.1086/282586",
+  "via": "crossref",
+  "matched": "A Note on Trophic Complexity and Community Stability"
+ },
+ "keystone-species#2": {
+  "url": "https://doi.org/10.2307/1312990",
+  "via": "crossref",
+  "matched": "Challenges in the Quest for Keystones"
+ },
+ "trophic-cascade#0": {
+  "url": "https://doi.org/10.2307/4220",
+  "via": "crossref",
+  "matched": "Food Webs: Linkage, Interaction Strength and Community Infrastructure"
+ },
+ "trophic-cascade#1": {
+  "url": "https://doi.org/10.1126/science.185.4156.1058",
+  "via": "crossref",
+  "matched": "Sea Otters: Their Role in Structuring Nearshore Communities"
+ },
+ "trophic-cascade#2": {
+  "url": "https://doi.org/10.1016/s0006-3207(00)00014-8",
+  "via": "crossref",
+  "matched": "Historic aspen recruitment, elk, and wolves in northern Yellowstone National Park, USA"
+ },
+ "costly-signaling#0": {
+  "url": "https://doi.org/10.1016/0022-5193(75)90111-3",
+  "via": "crossref",
+  "matched": "Mate selection—A selection for a handicap"
+ },
+ "costly-signaling#1": {
+  "url": "https://doi.org/10.1016/s0022-5193(05)80088-8",
+  "via": "crossref",
+  "matched": "Biological signals as handicaps"
+ },
+ "costly-signaling#2": {
+  "url": "https://doi.org/10.2307/1882010",
+  "via": "crossref",
+  "matched": "Job Market Signaling"
+ },
+ "evolution-of-cooperation#2": {
+  "url": "https://doi.org/10.1086/406755",
+  "via": "crossref",
+  "matched": "The Evolution of Reciprocal Altruism"
+ },
+ "hive-mind#1": {
+  "url": "https://doi.org/10.1007/s002650050536",
+  "via": "crossref",
+  "matched": "Group decision making in swarms of honey bees"
+ },
+ "hive-mind#2": {
+  "url": "https://doi.org/10.1007/s00265-004-0814-5",
+  "via": "crossref",
+  "matched": "Quorum sensing during nest-site selection by honeybee swarms"
+ },
+ "invasive-species#0": {
+  "url": "https://doi.org/10.1007/978-1-4899-7214-9",
+  "via": "crossref",
+  "matched": "The Ecology of Invasions by Animals and Plants"
+ },
+ "kleibers-law#0": {
+  "url": "https://doi.org/10.3733/hilg.v06n11p315",
+  "via": "crossref",
+  "matched": "Body size and metabolism"
+ },
+ "kleibers-law#1": {
+  "url": "https://doi.org/10.1021/ed039pa608",
+  "via": "crossref",
+  "matched": "The fire of life: An introduction to animal energetics (Kleiber, Max)"
+ },
+ "kleibers-law#2": {
+  "url": "https://doi.org/10.1126/science.276.5309.122",
+  "via": "crossref",
+  "matched": "A General Model for the Origin of Allometric Scaling Laws in Biology"
+ },
+ "kleibers-law#4": {
+  "url": "https://doi.org/10.1073/pnas.0436428100",
+  "via": "crossref",
+  "matched": "Mammalian basal metabolic rate is proportional to body mass\n                    <sup>2/3</sup>"
+ },
+ "apoptosis#0": {
+  "url": "https://doi.org/10.1038/bjc.1972.33",
+  "via": "crossref",
+  "matched": "Apoptosis: A Basic Biological Phenomenon with Wideranging Implications in Tissue Kinetics"
+ },
+ "incentives#3": {
+  "url": "https://doi.org/10.1037/h0030644",
+  "via": "crossref",
+  "matched": "Effects of externally mediated rewards on intrinsic motivation."
+ },
+ "nash-equilibrium#1": {
+  "url": "https://doi.org/10.1007/bf01448847",
+  "via": "crossref",
+  "matched": "Zur Theorie der Gesellschaftsspiele"
+ },
+ "externalities#4": {
+  "url": "https://doi.org/10.1038/179615e0",
+  "via": "crossref",
+  "matched": "The Clean Air Act, 1956"
+ },
+ "margin-of-safety#2": {
+  "url": "https://doi.org/10.2469/faj.v42.n6.40",
+  "via": "crossref",
+  "matched": "Ben Graham’s Net Current Asset Values: A Performance Update"
+ },
+ "principal-agent#0": {
+  "url": "https://doi.org/10.1016/0304-405x(76)90026-x",
+  "via": "crossref",
+  "matched": "Theory of the firm: Managerial behavior, agency costs and ownership structure"
+ },
+ "principal-agent#2": {
+  "url": "https://doi.org/10.2307/3003320",
+  "via": "crossref",
+  "matched": "Moral Hazard and Observability"
+ },
+ "network-effects#0": {
+  "url": "https://doi.org/10.1109/mc.2013.374",
+  "via": "crossref",
+  "matched": "Metcalfe's Law after 40 Years of Ethernet"
+ },
+ "loss-aversion#0": {
+  "url": "https://doi.org/10.2307/1914185",
+  "via": "crossref",
+  "matched": "Prospect Theory: An Analysis of Decision under Risk"
+ },
+ "loss-aversion#2": {
+  "url": "https://doi.org/10.1086/261737",
+  "via": "crossref",
+  "matched": "Experimental Tests of the Endowment Effect and the Coase Theorem"
+ },
+ "loss-aversion#3": {
+  "url": "https://doi.org/10.2139/ssrn.94142",
+  "via": "crossref",
+  "matched": "Are Investors Reluctant to Realize Their Losses?"
+ },
+ "anchoring#0": {
+  "url": "https://doi.org/10.1126/science.185.4157.1124",
+  "via": "crossref",
+  "matched": "Judgment under Uncertainty: Heuristics and Biases"
+ },
+ "confirmation-bias#0": {
+  "url": "https://doi.org/10.1080/17470216008416717",
+  "via": "crossref",
+  "matched": "On the Failure to Eliminate Hypotheses in a Conceptual Task"
+ },
+ "confirmation-bias#1": {
+  "url": "https://doi.org/10.1037/1089-2680.2.2.175",
+  "via": "crossref",
+  "matched": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises"
+ },
+ "availability-heuristic#0": {
+  "url": "https://doi.org/10.1016/0010-0285(73)90033-9",
+  "via": "crossref",
+  "matched": "Availability: A heuristic for judging frequency and probability"
+ },
+ "availability-heuristic#1": {
+  "url": "https://doi.org/10.1037/0278-7393.4.6.551",
+  "via": "crossref",
+  "matched": "Judged frequency of lethal events."
+ },
+ "survivorship-bias#1": {
+  "url": "https://doi.org/10.5860/choice.185307",
+  "via": "crossref",
+  "matched": "How not to be wrong: the power of mathematical thinking"
+ },
+ "regression-to-mean#0": {
+  "url": "https://doi.org/10.2307/2841583",
+  "via": "crossref",
+  "matched": "Regression Towards Mediocrity in Hereditary Stature."
+ },
+ "social-proof#0": {
+  "url": "https://doi.org/10.1037/h0093718",
+  "via": "crossref",
+  "matched": "Studies of independence and conformity: I. A minority of one against a unanimous majority."
+ },
+ "authority-bias#0": {
+  "url": "https://doi.org/10.1037/h0040525",
+  "via": "crossref",
+  "matched": "Behavioral Study of obedience."
+ },
+ "commitment-consistency#1": {
+  "url": "https://doi.org/10.1037/h0023552",
+  "via": "crossref",
+  "matched": "Compliance without pressure: The foot-in-the-door technique."
+ },
+ "commitment-consistency#2": {
+  "url": "https://doi.org/10.1037/10030-000",
+  "via": "crossref",
+  "matched": "When prophecy fails."
+ },
+ "commitment-consistency#3": {
+  "url": "https://doi.org/10.1080/00332747.1956.11023044",
+  "via": "crossref",
+  "matched": "The Chinese Indoctrination Program for Prisoners of War"
+ },
+ "scarcity-bias#2": {
+  "url": "https://doi.org/10.1037/0022-3514.32.5.906",
+  "via": "crossref",
+  "matched": "Effects of supply and demand on ratings of object value."
+ },
+ "scarcity-bias#3": {
+  "url": "https://doi.org/10.1126/science.1238041",
+  "via": "crossref",
+  "matched": "Poverty Impedes Cognitive Function"
+ },
+ "cognitive-dissonance#0": {
+  "url": "https://doi.org/10.1515/9781503620766",
+  "via": "crossref",
+  "matched": "A Theory of Cognitive Dissonance"
+ },
+ "cognitive-dissonance#1": {
+  "url": "https://doi.org/10.1037/10030-000",
+  "via": "crossref",
+  "matched": "When prophecy fails."
+ },
+ "cognitive-dissonance#2": {
+  "url": "https://doi.org/10.1037/h0041593",
+  "via": "crossref",
+  "matched": "Cognitive consequences of forced compliance."
+ },
+ "cognitive-dissonance#3": {
+  "url": "https://doi.org/10.1037/h0047195",
+  "via": "crossref",
+  "matched": "The effect of severity of initiation on liking for a group."
+ },
+ "cognitive-dissonance#4": {
+  "url": "https://doi.org/10.31979/etd.esy8-uc4s",
+  "via": "crossref",
+  "matched": "Mistakes Were Made"
+ },
+ "cognitive-dissonance#5": {
+  "url": "https://doi.org/10.1177/0146167297234005",
+  "via": "crossref",
+  "matched": "Culture, Dissonance, and Self-Affirmation"
+ },
+ "dunning-kruger#1": {
+  "url": "https://doi.org/10.1016/b978-0-12-385522-0.00005-6",
+  "via": "crossref",
+  "matched": "The Dunning–Kruger Effect"
+ },
+ "hedonic-treadmill#3": {
+  "url": "https://doi.org/10.1073/pnas.1011492107",
+  "via": "crossref",
+  "matched": "High income improves evaluation of life but not emotional well-being"
+ },
+ "flow#1": {
+  "url": "https://doi.org/10.2307/1511458",
+  "via": "crossref",
+  "matched": "Flow: The Psychology of Optimal Experience"
+ },
+ "flow#2": {
+  "url": "https://doi.org/10.1037/0022-3514.56.5.815",
+  "via": "crossref",
+  "matched": "Optimal experience in work and leisure."
+ },
+ "classical-conditioning#1": {
+  "url": "https://doi.org/10.1037/h0069608",
+  "via": "crossref",
+  "matched": "Conditioned emotional reactions."
+ },
+ "maslow-hierarchy#0": {
+  "url": "https://doi.org/10.1037/h0054346",
+  "via": "crossref",
+  "matched": "A theory of human motivation."
+ },
+ "maslow-hierarchy#3": {
+  "url": "https://doi.org/10.1016/0030-5073(76)90038-6",
+  "via": "crossref",
+  "matched": "Maslow reconsidered: A review of research on the need hierarchy theory"
+ },
+ "fundamental-attribution#1": {
+  "url": "https://doi.org/10.1037/0022-3514.35.7.485",
+  "via": "crossref",
+  "matched": "Social roles, social control, and biases in social-perception processes."
+ },
+ "emergence#1": {
+  "url": "https://doi.org/10.1093/oso/9780198504092.001.0001",
+  "via": "crossref",
+  "matched": "Emergence From Chaos to Order"
+ },
+ "resilience#0": {
+  "url": "https://doi.org/10.1146/annurev.es.04.110173.000245",
+  "via": "crossref",
+  "matched": "Resilience and Stability of Ecological Systems"
+ },
+ "resilience#2": {
+  "url": "https://doi.org/10.1038/367363a0",
+  "via": "crossref",
+  "matched": "Biodiversity and stability in grasslands"
+ },
+ "path-dependence#1": {
+  "url": "https://doi.org/10.2307/2234208",
+  "via": "crossref",
+  "matched": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events"
+ },
+ "path-dependence#2": {
+  "url": "https://doi.org/10.1007/978-3-531-90400-9_88",
+  "via": "crossref",
+  "matched": "Douglass C. North, Institutions, Institutional Change and Economic Performance, Cambridge 1990"
+ },
+ "butterfly-effect#0": {
+  "url": "https://doi.org/10.1175/1520-0469(1963)020<0130:dnf>2.0.co;2",
+  "via": "crossref",
+  "matched": "Deterministic Nonperiodic Flow"
+ },
+ "goodharts-law#1": {
+  "url": "https://doi.org/10.1002/(sici)1234-981x(199707)5:3<305::aid-euro184>3.0.co;2-4",
+  "via": "crossref",
+  "matched": "‘Improving ratings’: audit in the British University system"
+ },
+ "goodharts-law#2": {
+  "url": "https://doi.org/10.1353/fch.2003.0027",
+  "via": "crossref",
+  "matched": "Of Rats, Rice, and Race: The Great Hanoi Rat Massacre, an Episode in French Colonial History"
+ },
+ "goodharts-law#3": {
+  "url": "https://doi.org/10.18461/ijfsd.v9i3.938",
+  "via": "crossref",
+  "matched": "Muller, Jerry Z. (2018). The Tyranny of Metrics"
+ },
+ "inversion#1": {
+  "url": "https://doi.org/10.1016/j.jfineco.2018.06.004",
+  "via": "crossref",
+  "matched": "Do stocks outperform Treasury bills?"
+ },
+ "occams-razor#2": {
+  "url": "https://doi.org/10.1109/tac.1974.1100705",
+  "via": "crossref",
+  "matched": "A new look at the statistical model identification"
+ },
+ "expected-value#1": {
+  "url": "https://doi.org/10.2307/2986975",
+  "via": "crossref",
+  "matched": "Games, Gods and Gambling."
+ },
+ "bayes-updating#3": {
+  "url": "https://doi.org/10.21236/ad0767426",
+  "via": "crossref",
+  "matched": "Judgment under Uncertainty: Heuristics and Biases"
+ },
+ "map-territory#2": {
+  "url": "https://doi.org/10.2307/3149929",
+  "via": "crossref",
+  "matched": "Simulation of Information and Decision Systems in the Firm"
+ },
+ "disruptive-innovation#1": {
+  "url": "https://doi.org/10.1016/0024-6301(95)91075-1",
+  "via": "crossref",
+  "matched": "Disruptive technologies: catching the wave"
+ },
+ "antifragile#1": {
+  "url": "https://doi.org/10.1038/138032a0",
+  "via": "crossref",
+  "matched": "A Syndrome produced by Diverse Nocuous Agents"
+ },
+ "pre-mortem#0": {
+  "url": "https://doi.org/10.1109/emr.2008.4534313",
+  "via": "crossref",
+  "matched": "Performing a Project Premortem"
+ },
+ "pre-mortem#1": {
+  "url": "https://doi.org/10.1002/bdm.3960020103",
+  "via": "crossref",
+  "matched": "Back to the future: Temporal perspective in the explanation of events"
+ }
+}

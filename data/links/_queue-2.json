@@ -1,0 +1,709 @@
+[
+ {
+  "key": "adaptation#1",
+  "model": "adaptation",
+  "model_title": "适应",
+  "title": "Gould 与 Lewontin，圣马可教堂的拱肩（1979）",
+  "level": "secondary"
+ },
+ {
+  "key": "adaptation#2",
+  "model": "adaptation",
+  "model_title": "适应",
+  "title": "Kettlewell 1955 年标记重捕实验；Cook 等人对 Caldy Common 的长期监测",
+  "level": "secondary"
+ },
+ {
+  "key": "apoptosis#0",
+  "model": "apoptosis",
+  "model_title": "细胞凋亡",
+  "title": "Kerr, Wyllie, Currie, Apoptosis: A Basic Biological Phenomenon with Wide-Ranging Implications in Tissue Kinetics, British Journal of Cancer, 1972",
+  "level": "verified"
+ },
+ {
+  "key": "apoptosis#1",
+  "model": "apoptosis",
+  "model_title": "细胞凋亡",
+  "title": "Sulston 等，线虫胚胎细胞谱系研究，1983",
+  "level": "verified"
+ },
+ {
+  "key": "apoptosis#2",
+  "model": "apoptosis",
+  "model_title": "细胞凋亡",
+  "title": "2002 年诺贝尔生理学或医学奖授奖说明（Brenner、Sulston、Horvitz）",
+  "level": "verified"
+ },
+ {
+  "key": "apoptosis#3",
+  "model": "apoptosis",
+  "model_title": "细胞凋亡",
+  "title": "Hanahan & Weinberg, Hallmarks of Cancer, 2011，逃避凋亡被列为癌症标志之一",
+  "level": "secondary"
+ },
+ {
+  "key": "opportunity-cost#0",
+  "model": "opportunity-cost",
+  "model_title": "机会成本",
+  "title": "Friedrich von Wieser《自然价值》（1889），替代成本概念的来源",
+  "level": "secondary"
+ },
+ {
+  "key": "opportunity-cost#1",
+  "model": "opportunity-cost",
+  "model_title": "机会成本",
+  "title": "Paul Samuelson《经济学》第一版（1948），大学成本例题",
+  "level": "secondary"
+ },
+ {
+  "key": "opportunity-cost#2",
+  "model": "opportunity-cost",
+  "model_title": "机会成本",
+  "title": "Milton Friedman《There's No Such Thing as a Free Lunch》（1975）",
+  "level": "secondary"
+ },
+ {
+  "key": "opportunity-cost#3",
+  "model": "opportunity-cost",
+  "model_title": "机会成本",
+  "title": "College Board《Trends in College Pricing》历年报告",
+  "level": "secondary"
+ },
+ {
+  "key": "comparative-advantage#0",
+  "model": "comparative-advantage",
+  "model_title": "比较优势",
+  "title": "大卫·李嘉图《政治经济学及赋税原理》第 7 章（1817）",
+  "level": "verified"
+ },
+ {
+  "key": "comparative-advantage#1",
+  "model": "comparative-advantage",
+  "model_title": "比较优势",
+  "title": "保罗·萨缪尔森《The Way of an Economist》（1969），回答乌拉姆之问",
+  "level": "secondary"
+ },
+ {
+  "key": "comparative-advantage#2",
+  "model": "comparative-advantage",
+  "model_title": "比较优势",
+  "title": "弗里德里希·李斯特《政治经济学的国民体系》（1841），幼稚产业批评",
+  "level": "secondary"
+ },
+ {
+  "key": "comparative-advantage#3",
+  "model": "comparative-advantage",
+  "model_title": "比较优势",
+  "title": "格里高利·曼昆《经济学原理》十大原理章节",
+  "level": "secondary"
+ },
+ {
+  "key": "supply-demand#0",
+  "model": "supply-demand",
+  "model_title": "供需",
+  "title": "亚当·斯密《国富论》（1776）第一篇",
+  "level": "secondary"
+ },
+ {
+  "key": "supply-demand#1",
+  "model": "supply-demand",
+  "model_title": "供需",
+  "title": "阿尔弗雷德·马歇尔《经济学原理》（1890）第五篇",
+  "level": "secondary"
+ },
+ {
+  "key": "supply-demand#2",
+  "model": "supply-demand",
+  "model_title": "供需",
+  "title": "哈耶克《知识在社会中的运用》（1945）",
+  "level": "secondary"
+ },
+ {
+  "key": "supply-demand#3",
+  "model": "supply-demand",
+  "model_title": "供需",
+  "title": "EIA 历年美国原油首次购买价与国际油价统计",
+  "level": "secondary"
+ },
+ {
+  "key": "supply-demand#4",
+  "model": "supply-demand",
+  "model_title": "供需",
+  "title": "Card 与 Krueger《最低工资与就业》（1994，AER）",
+  "level": "verified"
+ },
+ {
+  "key": "diminishing-returns#0",
+  "model": "diminishing-returns",
+  "model_title": "边际递减",
+  "title": "李嘉图《政治经济学及赋税原理》第2章 论地租（1817）",
+  "level": "secondary"
+ },
+ {
+  "key": "diminishing-returns#1",
+  "model": "diminishing-returns",
+  "model_title": "边际递减",
+  "title": "马歇尔《经济学原理》第四篇（1890）",
+  "level": "secondary"
+ },
+ {
+  "key": "diminishing-returns#2",
+  "model": "diminishing-returns",
+  "model_title": "边际递减",
+  "title": "杜尔哥对圣佩拉维文章的评论（1767）",
+  "level": "secondary"
+ },
+ {
+  "key": "compound-interest#0",
+  "model": "compound-interest",
+  "model_title": "复利",
+  "title": "富兰克林遗嘱（1790）及波士顿、费城两份信托的公开记录",
+  "level": "secondary"
+ },
+ {
+  "key": "compound-interest#1",
+  "model": "compound-interest",
+  "model_title": "复利",
+  "title": "艾丽斯·施罗德《滚雪球：巴菲特和他的财富人生》（2008）",
+  "level": "secondary"
+ },
+ {
+  "key": "compound-interest#2",
+  "model": "compound-interest",
+  "model_title": "复利",
+  "title": "福布斯历年全球富豪榜（1987 至 2020）",
+  "level": "secondary"
+ },
+ {
+  "key": "compound-interest#3",
+  "model": "compound-interest",
+  "model_title": "复利",
+  "title": "摩根·豪泽尔《金钱心理学》（2020）",
+  "level": "secondary"
+ },
+ {
+  "key": "incentives#0",
+  "model": "incentives",
+  "model_title": "激励",
+  "title": "Adam Smith, The Wealth of Nations, 1776，屠夫与面包师一章",
+  "level": "verified"
+ },
+ {
+  "key": "incentives#1",
+  "model": "incentives",
+  "model_title": "激励",
+  "title": "Gneezy & Rustichini, A Fine is a Price, Journal of Legal Studies 29(1), 2000",
+  "level": "verified"
+ },
+ {
+  "key": "incentives#2",
+  "model": "incentives",
+  "model_title": "激励",
+  "title": "Charlie Munger, The Psychology of Human Misjudgment, 1995 哈佛演讲",
+  "level": "secondary"
+ },
+ {
+  "key": "incentives#3",
+  "model": "incentives",
+  "model_title": "激励",
+  "title": "Deci, Effects of Externally Mediated Rewards on Intrinsic Motivation, JPSP, 1971",
+  "level": "verified"
+ },
+ {
+  "key": "nash-equilibrium#0",
+  "model": "nash-equilibrium",
+  "model_title": "纳什均衡",
+  "title": "Nash, J. (1950). Equilibrium Points in N-Person Games. PNAS 36(1)",
+  "level": "verified"
+ },
+ {
+  "key": "nash-equilibrium#1",
+  "model": "nash-equilibrium",
+  "model_title": "纳什均衡",
+  "title": "von Neumann, J. (1928). Zur Theorie der Gesellschaftsspiele",
+  "level": "verified"
+ },
+ {
+  "key": "nash-equilibrium#2",
+  "model": "nash-equilibrium",
+  "model_title": "纳什均衡",
+  "title": "Poundstone, W. (1992). Prisoner's Dilemma，记录 1950 年兰德实验",
+  "level": "secondary"
+ },
+ {
+  "key": "nash-equilibrium#3",
+  "model": "nash-equilibrium",
+  "model_title": "纳什均衡",
+  "title": "诺贝尔奖 1994 年经济学奖颁奖词（Nash、Harsanyi、Selten）",
+  "level": "secondary"
+ },
+ {
+  "key": "nash-equilibrium#4",
+  "model": "nash-equilibrium",
+  "model_title": "纳什均衡",
+  "title": "美国科学家联合会 FAS：Status of World Nuclear Forces",
+  "level": "secondary"
+ },
+ {
+  "key": "pareto-principle#0",
+  "model": "pareto-principle",
+  "model_title": "二八法则",
+  "title": "Vilfredo Pareto, Cours d'économie politique（1896）",
+  "level": "secondary"
+ },
+ {
+  "key": "pareto-principle#1",
+  "model": "pareto-principle",
+  "model_title": "二八法则",
+  "title": "J. M. Juran, Quality Control Handbook 及回忆录 Architect of Quality（2004）",
+  "level": "secondary"
+ },
+ {
+  "key": "pareto-principle#2",
+  "model": "pareto-principle",
+  "model_title": "二八法则",
+  "title": "Credit Suisse Global Wealth Report 2022",
+  "level": "secondary"
+ },
+ {
+  "key": "pareto-principle#3",
+  "model": "pareto-principle",
+  "model_title": "二八法则",
+  "title": "Richard Koch, The 80/20 Principle（1997）",
+  "level": "secondary"
+ },
+ {
+  "key": "economies-of-scale#0",
+  "model": "economies-of-scale",
+  "model_title": "规模效应",
+  "title": "科斯《企业的性质》，1937",
+  "level": "secondary"
+ },
+ {
+  "key": "economies-of-scale#1",
+  "model": "economies-of-scale",
+  "model_title": "规模效应",
+  "title": "钱德勒《规模与范围：工业资本主义的原动力》，1990",
+  "level": "secondary"
+ },
+ {
+  "key": "economies-of-scale#2",
+  "model": "economies-of-scale",
+  "model_title": "规模效应",
+  "title": "亚当·斯密《国富论》制针厂一节，1776",
+  "level": "secondary"
+ },
+ {
+  "key": "economies-of-scale#3",
+  "model": "economies-of-scale",
+  "model_title": "规模效应",
+  "title": "福特 T 型车历年产量与价格档案",
+  "level": "secondary"
+ },
+ {
+  "key": "externalities#0",
+  "model": "externalities",
+  "model_title": "外部性",
+  "title": "庇古《福利经济学》，1920",
+  "level": "secondary"
+ },
+ {
+  "key": "externalities#1",
+  "model": "externalities",
+  "model_title": "外部性",
+  "title": "科斯《社会成本问题》，Journal of Law and Economics，1960",
+  "level": "secondary"
+ },
+ {
+  "key": "externalities#2",
+  "model": "externalities",
+  "model_title": "外部性",
+  "title": "World Bank Carbon Pricing Dashboard",
+  "level": "secondary"
+ },
+ {
+  "key": "externalities#3",
+  "model": "externalities",
+  "model_title": "外部性",
+  "title": "瑞典环保署国家温室气体排放清单",
+  "level": "secondary"
+ },
+ {
+  "key": "externalities#4",
+  "model": "externalities",
+  "model_title": "外部性",
+  "title": "英国 1956 年清洁空气法（Clean Air Act）",
+  "level": "secondary"
+ },
+ {
+  "key": "creative-destruction#0",
+  "model": "creative-destruction",
+  "model_title": "创造性破坏",
+  "title": "熊彼特《资本主义、社会主义与民主》（1942）",
+  "level": "verified"
+ },
+ {
+  "key": "creative-destruction#1",
+  "model": "creative-destruction",
+  "model_title": "创造性破坏",
+  "title": "克莱顿·克里斯坦森《创新者的窘境》（1997）",
+  "level": "secondary"
+ },
+ {
+  "key": "creative-destruction#2",
+  "model": "creative-destruction",
+  "model_title": "创造性破坏",
+  "title": "理查德·福斯特、莎拉·卡普兰《创造性破坏》（2001）",
+  "level": "secondary"
+ },
+ {
+  "key": "creative-destruction#3",
+  "model": "creative-destruction",
+  "model_title": "创造性破坏",
+  "title": "Innosight《Creative Destruction Whips through Corporate America》（2012）",
+  "level": "secondary"
+ },
+ {
+  "key": "creative-destruction#4",
+  "model": "creative-destruction",
+  "model_title": "创造性破坏",
+  "title": "史蒂夫·萨森关于首台数码相机的公开讲述（Computer History Museum 访谈等）",
+  "level": "secondary"
+ },
+ {
+  "key": "division-of-labor#0",
+  "model": "division-of-labor",
+  "model_title": "分工",
+  "title": "亚当·斯密《国富论》第一篇第一章，论分工（1776）",
+  "level": "verified"
+ },
+ {
+  "key": "division-of-labor#1",
+  "model": "division-of-labor",
+  "model_title": "分工",
+  "title": "查尔斯·巴贝奇《论机器与制造业的经济》（1832）",
+  "level": "secondary"
+ },
+ {
+  "key": "division-of-labor#2",
+  "model": "division-of-labor",
+  "model_title": "分工",
+  "title": "福特高地公园工厂流水线改造与 5 美元日工资的公开史料（1913 至 1914）",
+  "level": "secondary"
+ },
+ {
+  "key": "arbitrage#0",
+  "model": "arbitrage",
+  "model_title": "套利",
+  "title": "本杰明·格雷厄姆《聪明的投资者》中关于套利与特殊情况的论述",
+  "level": "secondary"
+ },
+ {
+  "key": "arbitrage#1",
+  "model": "arbitrage",
+  "model_title": "套利",
+  "title": "巴菲特 1988 年致股东信，回顾格雷厄姆的套利实践与风险",
+  "level": "secondary"
+ },
+ {
+  "key": "arbitrage#2",
+  "model": "arbitrage",
+  "model_title": "套利",
+  "title": "艾丽斯·施罗德《滚雪球：巴菲特传》中古根海姆套利的记载",
+  "level": "secondary"
+ },
+ {
+  "key": "moat#0",
+  "model": "moat",
+  "model_title": "护城河",
+  "title": "沃伦·巴菲特 2007 年致股东信，喜诗糖果与护城河章节",
+  "level": "secondary"
+ },
+ {
+  "key": "moat#1",
+  "model": "moat",
+  "model_title": "护城河",
+  "title": "帕特·多尔西《巴菲特的护城河》，2008",
+  "level": "secondary"
+ },
+ {
+  "key": "moat#2",
+  "model": "moat",
+  "model_title": "护城河",
+  "title": "晨星公司经济护城河评级方法论",
+  "level": "secondary"
+ },
+ {
+  "key": "margin-of-safety#0",
+  "model": "margin-of-safety",
+  "model_title": "安全边际",
+  "title": "Benjamin Graham, The Intelligent Investor, 1949，第 20 章",
+  "level": "secondary"
+ },
+ {
+  "key": "margin-of-safety#1",
+  "model": "margin-of-safety",
+  "model_title": "安全边际",
+  "title": "Benjamin Graham, David Dodd, Security Analysis, 1934",
+  "level": "secondary"
+ },
+ {
+  "key": "margin-of-safety#2",
+  "model": "margin-of-safety",
+  "model_title": "安全边际",
+  "title": "Henry Oppenheimer, Ben Graham's Net Current Asset Values: A Performance Update, Financial Analysts Journal, 1986",
+  "level": "secondary"
+ },
+ {
+  "key": "margin-of-safety#3",
+  "model": "margin-of-safety",
+  "model_title": "安全边际",
+  "title": "巴菲特 1984 年演讲《格雷厄姆与多德村的超级投资者们》",
+  "level": "secondary"
+ },
+ {
+  "key": "principal-agent#0",
+  "model": "principal-agent",
+  "model_title": "委托代理",
+  "title": "Jensen & Meckling (1976), Theory of the Firm: Managerial Behavior, Agency Costs and Ownership Structure, Journal of Financial Economics",
+  "level": "verified"
+ },
+ {
+  "key": "principal-agent#1",
+  "model": "principal-agent",
+  "model_title": "委托代理",
+  "title": "Ross (1973), The Economic Theory of Agency: The Principal's Problem, American Economic Review",
+  "level": "verified"
+ },
+ {
+  "key": "principal-agent#2",
+  "model": "principal-agent",
+  "model_title": "委托代理",
+  "title": "Holmström (1979), Moral Hazard and Observability, Bell Journal of Economics",
+  "level": "verified"
+ },
+ {
+  "key": "principal-agent#3",
+  "model": "principal-agent",
+  "model_title": "委托代理",
+  "title": "Burrough & Helyar, Barbarians at the Gate（1990）",
+  "level": "secondary"
+ },
+ {
+  "key": "principal-agent#4",
+  "model": "principal-agent",
+  "model_title": "委托代理",
+  "title": "Gneezy & Rustichini (2000), A Fine Is a Price, Journal of Legal Studies",
+  "level": "verified"
+ },
+ {
+  "key": "network-effects#0",
+  "model": "network-effects",
+  "model_title": "网络效应",
+  "title": "Metcalfe, Metcalfe's Law after 40 Years of Ethernet, IEEE Computer, 2013",
+  "level": "secondary"
+ },
+ {
+  "key": "network-effects#1",
+  "model": "network-effects",
+  "model_title": "网络效应",
+  "title": "Parker, Van Alstyne, Choudary, 平台革命（Platform Revolution）, 2016",
+  "level": "secondary"
+ },
+ {
+  "key": "network-effects#2",
+  "model": "network-effects",
+  "model_title": "网络效应",
+  "title": "Shapiro, Varian, 信息规则（Information Rules）, 1998",
+  "level": "secondary"
+ },
+ {
+  "key": "network-effects#3",
+  "model": "network-effects",
+  "model_title": "网络效应",
+  "title": "Odlyzko, Tilly, A Refutation of Metcalfe's Law and a Better Estimate for the Value of Networks, 2005",
+  "level": "secondary"
+ },
+ {
+  "key": "network-effects#4",
+  "model": "network-effects",
+  "model_title": "网络效应",
+  "title": "Facebook 2012 年 S-1 招股书与历年年报",
+  "level": "secondary"
+ },
+ {
+  "key": "six-thinking-hats#0",
+  "model": "six-thinking-hats",
+  "model_title": "六顶思考帽",
+  "title": "爱德华·德博诺《六顶思考帽》（1985）",
+  "level": "secondary"
+ },
+ {
+  "key": "six-thinking-hats#1",
+  "model": "six-thinking-hats",
+  "model_title": "六顶思考帽",
+  "title": "德博诺公开演讲中引用的 ABB、IBM、Statoil 案例（企业自报数据）",
+  "level": "secondary"
+ },
+ {
+  "key": "loss-aversion#0",
+  "model": "loss-aversion",
+  "model_title": "损失厌恶",
+  "title": "Kahneman & Tversky (1979), Prospect Theory: An Analysis of Decision under Risk, Econometrica",
+  "level": "secondary"
+ },
+ {
+  "key": "loss-aversion#1",
+  "model": "loss-aversion",
+  "model_title": "损失厌恶",
+  "title": "Tversky & Kahneman (1992), Advances in Prospect Theory, Journal of Risk and Uncertainty",
+  "level": "secondary"
+ },
+ {
+  "key": "loss-aversion#2",
+  "model": "loss-aversion",
+  "model_title": "损失厌恶",
+  "title": "Kahneman, Knetsch & Thaler (1990), Experimental Tests of the Endowment Effect and the Coase Theorem, Journal of Political Economy",
+  "level": "secondary"
+ },
+ {
+  "key": "loss-aversion#3",
+  "model": "loss-aversion",
+  "model_title": "损失厌恶",
+  "title": "Terrance Odean (1998), Are Investors Reluctant to Realize Their Losses?, Journal of Finance",
+  "level": "secondary"
+ },
+ {
+  "key": "loss-aversion#4",
+  "model": "loss-aversion",
+  "model_title": "损失厌恶",
+  "title": "McNeil, Pauker, Sox & Tversky (1982), 治疗方案框架效应研究, New England Journal of Medicine",
+  "level": "secondary"
+ },
+ {
+  "key": "anchoring#0",
+  "model": "anchoring",
+  "model_title": "锚定效应",
+  "title": "Tversky & Kahneman, Judgment under Uncertainty: Heuristics and Biases, Science, 1974",
+  "level": "verified"
+ },
+ {
+  "key": "anchoring#1",
+  "model": "anchoring",
+  "model_title": "锚定效应",
+  "title": "Strack & Mussweiler, Explaining the Enigmatic Anchoring Effect, JESP, 1997",
+  "level": "verified"
+ },
+ {
+  "key": "anchoring#2",
+  "model": "anchoring",
+  "model_title": "锚定效应",
+  "title": "Galinsky & Mussweiler, First Offers as Anchors, JPSP, 2001",
+  "level": "verified"
+ },
+ {
+  "key": "anchoring#3",
+  "model": "anchoring",
+  "model_title": "锚定效应",
+  "title": "Englich, Mussweiler & Strack, Playing Dice with Criminal Sentences, Psychological Science, 2006",
+  "level": "verified"
+ },
+ {
+  "key": "anchoring#4",
+  "model": "anchoring",
+  "model_title": "锚定效应",
+  "title": "Northcraft & Neale, Experts, Amateurs, and Real Estate, OBHDP, 1987",
+  "level": "verified"
+ },
+ {
+  "key": "confirmation-bias#0",
+  "model": "confirmation-bias",
+  "model_title": "确认偏误",
+  "title": "Wason, P. C. (1960). On the failure to eliminate hypotheses in a conceptual task. Quarterly Journal of Experimental Psychology, 12",
+  "level": "verified"
+ },
+ {
+  "key": "confirmation-bias#1",
+  "model": "confirmation-bias",
+  "model_title": "确认偏误",
+  "title": "Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. Review of General Psychology, 2",
+  "level": "secondary"
+ },
+ {
+  "key": "confirmation-bias#2",
+  "model": "confirmation-bias",
+  "model_title": "确认偏误",
+  "title": "Lord, Ross 与 Lepper (1979). Biased assimilation and attitude polarization. Journal of Personality and Social Psychology, 37",
+  "level": "secondary"
+ },
+ {
+  "key": "availability-heuristic#0",
+  "model": "availability-heuristic",
+  "model_title": "易得性偏差",
+  "title": "Tversky & Kahneman (1973), Availability: A Heuristic for Judging Frequency and Probability, Cognitive Psychology",
+  "level": "secondary"
+ },
+ {
+  "key": "availability-heuristic#1",
+  "model": "availability-heuristic",
+  "model_title": "易得性偏差",
+  "title": "Lichtenstein, Slovic, Fischhoff, Layman & Combs (1978), Judged Frequency of Lethal Events",
+  "level": "secondary"
+ },
+ {
+  "key": "availability-heuristic#2",
+  "model": "availability-heuristic",
+  "model_title": "易得性偏差",
+  "title": "Gigerenzer (2006), Out of the Frying Pan into the Fire, Risk Analysis",
+  "level": "secondary"
+ },
+ {
+  "key": "availability-heuristic#3",
+  "model": "availability-heuristic",
+  "model_title": "易得性偏差",
+  "title": "卡尼曼《思考，快与慢》(2011)，第 12 章",
+  "level": "secondary"
+ },
+ {
+  "key": "survivorship-bias#0",
+  "model": "survivorship-bias",
+  "model_title": "幸存者偏差",
+  "title": "Abraham Wald, A Method of Estimating Plane Vulnerability Based on Damage of Survivors, 1943，1984 年由 Mangel 与 Samaniego 整理重刊于 Operations Research",
+  "level": "verified"
+ },
+ {
+  "key": "survivorship-bias#1",
+  "model": "survivorship-bias",
+  "model_title": "幸存者偏差",
+  "title": "Jordan Ellenberg, How Not to Be Wrong: The Power of Mathematical Thinking, 2014",
+  "level": "secondary"
+ },
+ {
+  "key": "survivorship-bias#2",
+  "model": "survivorship-bias",
+  "model_title": "幸存者偏差",
+  "title": "Nassim Taleb, Fooled by Randomness, 2001",
+  "level": "secondary"
+ },
+ {
+  "key": "survivorship-bias#3",
+  "model": "survivorship-bias",
+  "model_title": "幸存者偏差",
+  "title": "SPIVA 年度记分卡，标普公司主动基金与指数对比报告",
+  "level": "secondary"
+ },
+ {
+  "key": "regression-to-mean#0",
+  "model": "regression-to-mean",
+  "model_title": "均值回归",
+  "title": "Francis Galton, Regression towards Mediocrity in Hereditary Stature (1886)",
+  "level": "secondary"
+ },
+ {
+  "key": "regression-to-mean#1",
+  "model": "regression-to-mean",
+  "model_title": "均值回归",
+  "title": "Daniel Kahneman, Thinking, Fast and Slow, 第 17 章（2011）",
+  "level": "secondary"
+ }
+]

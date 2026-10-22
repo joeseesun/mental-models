@@ -1,0 +1,402 @@
+[
+ {
+  "name": "亚伯拉罕·马斯洛",
+  "appears": [
+   {
+    "model": "maslow-hierarchy",
+    "model_title": "需求层次",
+    "role": "提出者，1943 年发表《人类动机理论》，晚年研究健康人并补充自我超越需求"
+   }
+  ]
+ },
+ {
+  "name": "道格拉斯·麦格雷戈",
+  "appears": [
+   {
+    "model": "maslow-hierarchy",
+    "model_title": "需求层次",
+    "role": "传播者，1960 年把需求层次引入管理学，据此提出 X 理论与 Y 理论"
+   }
+  ]
+ },
+ {
+  "name": "奇普·康利",
+  "appears": [
+   {
+    "model": "maslow-hierarchy",
+    "model_title": "需求层次",
+    "role": "实践者，用层次重塑酒店与 Airbnb 的服务和管理，著有《Peak》"
+   }
+  ]
+ },
+ {
+  "name": "李·罗斯",
+  "appears": [
+   {
+    "model": "fundamental-attribution",
+    "model_title": "基本归因错误",
+    "role": "斯坦福大学心理学家，1977 年命名基本归因错误"
+   }
+  ]
+ },
+ {
+  "name": "爱德华·琼斯",
+  "appears": [
+   {
+    "model": "fundamental-attribution",
+    "model_title": "基本归因错误",
+    "role": "1967 年与哈里斯完成卡斯特罗文章实验，奠定实验基础"
+   }
+  ]
+ },
+ {
+  "name": "丹尼尔·吉尔伯特",
+  "appears": [
+   {
+    "model": "fundamental-attribution",
+    "model_title": "基本归因错误",
+    "role": "哈佛大学心理学家，1988 年提出两阶段归因模型，解释错误为何发生"
+   }
+  ]
+ },
+ {
+  "name": "理查德·尼斯贝特",
+  "appears": [
+   {
+    "model": "fundamental-attribution",
+    "model_title": "基本归因错误",
+    "role": "1972 年与琼斯提出行动者与观察者的归因不对称"
+   }
+  ]
+ },
+ {
+  "name": "本特·弗林夫伯格",
+  "appears": [
+   {
+    "model": "planning-fallacy",
+    "model_title": "规划谬误",
+    "role": "牛津学者，用 258 个大型项目数据验证规划谬误，把参考类别预测写进英国政府项目指南"
+   }
+  ]
+ },
+ {
+  "name": "诺伯特·维纳",
+  "appears": [
+   {
+    "model": "feedback-loops",
+    "model_title": "反馈回路",
+    "role": "1948 年出版《控制论》，把反馈从机器术语变成横跨工程与生物的通用概念"
+   }
+  ]
+ },
+ {
+  "name": "德内拉·梅多斯",
+  "appears": [
+   {
+    "model": "feedback-loops",
+    "model_title": "反馈回路",
+    "role": "《增长的极限》主笔，把回路分析带进公共政策，留下著名的杠杆点排序"
+   },
+   {
+    "model": "stocks-flows",
+    "model_title": "存量与流量",
+    "role": "《增长的极限》主笔，在《系统之美》里把存量流量列为理解系统的第一课"
+   },
+   {
+    "model": "limits-to-growth",
+    "model_title": "增长极限",
+    "role": "主作者，系统动力学家，后来写下著名的杠杆点清单"
+   },
+   {
+    "model": "slack",
+    "model_title": "冗余",
+    "role": "《增长的极限》主笔，把缓冲库存列为系统十二大杠杆点之一"
+   },
+   {
+    "model": "resilience",
+    "model_title": "韧性",
+    "role": "系统动力学家，《增长的极限》主笔，把韧性列为系统三大特性之一"
+   },
+   {
+    "model": "leverage-points",
+    "model_title": "杠杆点",
+    "role": "系统动力学家，《增长的极限》作者之一，1999 年发表《杠杆点》一文，把干预位置排成十二层"
+   }
+  ]
+ },
+ {
+  "name": "菲利普·安德森",
+  "appears": [
+   {
+    "model": "emergence",
+    "model_title": "涌现",
+    "role": "物理学家，1972 年在 Science 发表《多者异也》，1977 年获诺贝尔物理学奖"
+   }
+  ]
+ },
+ {
+  "name": "约翰·霍兰德",
+  "appears": [
+   {
+    "model": "emergence",
+    "model_title": "涌现",
+    "role": "圣塔菲研究所创始成员，复杂适应系统概念的主要提出者，1998 年出版《涌现》"
+   },
+   {
+    "model": "complex-adaptive-systems",
+    "model_title": "复杂适应系统",
+    "role": "提出者，1975 年发明遗传算法，1995 年在《隐秩序》里正式命名复杂适应系统"
+   }
+  ]
+ },
+ {
+  "name": "霍华德·马克斯",
+  "appears": [
+   {
+    "model": "second-order-thinking",
+    "model_title": "第二层思维",
+    "role": "推广者，橡树资本联合创始人，1990年起在投资备忘录里反复区分第一层与第二层思维，2011年写进《投资最重要的事》第一章"
+   }
+  ]
+ },
+ {
+  "name": "弗雷德里克·巴斯夏",
+  "appears": [
+   {
+    "model": "second-order-thinking",
+    "model_title": "第二层思维",
+    "role": "先行者，1850年发表《看得见的与看不见的》，断言坏经济学家只看看得见的效果，好经济学家还要看预见得到的效果"
+   }
+  ]
+ },
+ {
+  "name": "福瑞斯特",
+  "appears": [
+   {
+    "model": "stocks-flows",
+    "model_title": "存量与流量",
+    "role": "系统动力学创始人，1961 年在《工业动力学》中用存量流量结构建模企业与社会"
+   }
+  ]
+ },
+ {
+  "name": "约翰·斯特曼",
+  "appears": [
+   {
+    "model": "stocks-flows",
+    "model_title": "存量与流量",
+    "role": "MIT 教授，用实验证明受过顶尖训练的人也会混淆存量与流量"
+   }
+  ]
+ },
+ {
+  "name": "罗马俱乐部",
+  "appears": [
+   {
+    "model": "limits-to-growth",
+    "model_title": "增长极限",
+    "role": "1972年资助这项研究的智库，由实业家佩切伊发起"
+   }
+  ]
+ },
+ {
+  "name": "杰伊·福瑞斯特",
+  "appears": [
+   {
+    "model": "limits-to-growth",
+    "model_title": "增长极限",
+    "role": "系统动力学创始人，World3模型的方法来源"
+   }
+  ]
+ },
+ {
+  "name": "艾利·高德拉特",
+  "appears": [
+   {
+    "model": "theory-of-constraints",
+    "model_title": "约束理论",
+    "role": "提出者，以色列物理学家出身的企管顾问，1984 年用小说《目标》讲透瓶颈，2011 年去世"
+   }
+  ]
+ },
+ {
+  "name": "艾利·施拉根海姆",
+  "appears": [
+   {
+    "model": "theory-of-constraints",
+    "model_title": "约束理论",
+    "role": "传播者，高德拉特学派的核心合作者，把方法推广到项目管理与供应链"
+   }
+  ]
+ },
+ {
+  "name": "理查德·西尔特与詹姆斯·马奇",
+  "appears": [
+   {
+    "model": "slack",
+    "model_title": "冗余",
+    "role": "1963 年提出组织冗余概念，认为账上的松弛是企业试错的燃料"
+   }
+  ]
+ },
+ {
+  "name": "克劳福德·霍林",
+  "appears": [
+   {
+    "model": "resilience",
+    "model_title": "韧性",
+    "role": "加拿大生态学家，1973 年提出生态韧性，把回得快和扛得住分开"
+   }
+  ]
+ },
+ {
+  "name": "布莱恩·阿瑟",
+  "appears": [
+   {
+    "model": "path-dependence",
+    "model_title": "路径依赖",
+    "role": "斯坦福与圣塔菲研究所经济学家，1989 年用收益递增模型正式刻画锁定"
+   }
+  ]
+ },
+ {
+  "name": "道格拉斯·诺斯",
+  "appears": [
+   {
+    "model": "path-dependence",
+    "model_title": "路径依赖",
+    "role": "制度经济学家，1993 年诺贝尔经济学奖得主，把路径依赖引入制度变迁分析"
+   }
+  ]
+ },
+ {
+  "name": "保罗·大卫",
+  "appears": [
+   {
+    "model": "path-dependence",
+    "model_title": "路径依赖",
+    "role": "经济史学家，1985 年发表 QWERTY 论文，让键盘成为路径依赖的标准案例"
+   }
+  ]
+ },
+ {
+  "name": "爱德华·洛伦兹",
+  "appears": [
+   {
+    "model": "butterfly-effect",
+    "model_title": "蝴蝶效应",
+    "role": "发现者，MIT 气象学家，1963 年发表《确定性非周期流》，提出确定性混沌"
+   }
+  ]
+ },
+ {
+  "name": "詹姆斯·约克",
+  "appears": [
+   {
+    "model": "butterfly-effect",
+    "model_title": "蝴蝶效应",
+    "role": "命名者，1975 年与李天岩发表论文《周期三意味着混沌》，首次使用 chaos 一词"
+   }
+  ]
+ },
+ {
+  "name": "伊利亚·普里戈金",
+  "appears": [
+   {
+    "model": "self-organization",
+    "model_title": "自组织",
+    "role": "耗散结构理论提出者，1977 年诺贝尔化学奖得主，证明远离平衡的系统会自发产生秩序"
+   }
+  ]
+ },
+ {
+  "name": "斯图尔特·考夫曼",
+  "appears": [
+   {
+    "model": "self-organization",
+    "model_title": "自组织",
+    "role": "圣塔菲研究所成员，研究生命秩序如何不靠蓝图、由规则自发涌现"
+   }
+  ]
+ },
+ {
+  "name": "凯文·凯利",
+  "appears": [
+   {
+    "model": "self-organization",
+    "model_title": "自组织",
+    "role": "《失控》作者，把无中央控制的系统总结为蜂群思维"
+   }
+  ]
+ },
+ {
+  "name": "查尔斯·古德哈特",
+  "appears": [
+   {
+    "model": "goodharts-law",
+    "model_title": "古德哈特定律",
+    "role": "英国经济学家，长期担任英格兰银行顾问，1975 年在货币政策论文里提出这条规律"
+   }
+  ]
+ },
+ {
+  "name": "玛丽莲·斯特雷森",
+  "appears": [
+   {
+    "model": "goodharts-law",
+    "model_title": "古德哈特定律",
+    "role": "英国人类学家，1997 年写下流传最广的版本：指标一旦成为目标，就不再是好指标"
+   }
+  ]
+ },
+ {
+  "name": "伊恩·多布森",
+  "appears": [
+   {
+    "model": "cascading-failure",
+    "model_title": "级联失效",
+    "role": "电力系统学者，用 OPA 仿真模型证明大停电的规模近似服从幂律分布"
+   }
+  ]
+ },
+ {
+  "name": "本杰明·卡雷拉斯",
+  "appears": [
+   {
+    "model": "cascading-failure",
+    "model_title": "级联失效",
+    "role": "物理学家，与多布森合作提出电网自组织临界模型，把停电当成相变来研究"
+   }
+  ]
+ },
+ {
+  "name": "杰伊·福里斯特",
+  "appears": [
+   {
+    "model": "leverage-points",
+    "model_title": "杠杆点",
+    "role": "系统动力学创始人，1969 年的城市动力学模型证明许多直觉干预会把问题推得更糟"
+   }
+  ]
+ },
+ {
+  "name": "彼得·圣吉",
+  "appears": [
+   {
+    "model": "leverage-points",
+    "model_title": "杠杆点",
+    "role": "《第五项修炼》作者，1990 年把杠杆点思想带进管理学，区分症状解与根本解"
+   }
+  ]
+ },
+ {
+  "name": "默里·盖尔曼",
+  "appears": [
+   {
+    "model": "complex-adaptive-systems",
+    "model_title": "复杂适应系统",
+    "role": "1969 年诺贝尔物理学奖得主，1984 年参与创办圣塔菲研究所，主张跨学科研究活的系统"
+   }
+  ]
+ }
+]

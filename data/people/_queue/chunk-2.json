@@ -1,0 +1,377 @@
+[
+ {
+  "name": "比尔·汉密尔顿",
+  "appears": [
+   {
+    "model": "red-queen-effect",
+    "model_title": "红皇后效应",
+    "role": "1980 年用寄生虫军备竞赛解释性为什么存在"
+   }
+  ]
+ },
+ {
+  "name": "刘易斯·卡罗尔",
+  "appears": [
+   {
+    "model": "red-queen-effect",
+    "model_title": "红皇后效应",
+    "role": "1871 年在《爱丽丝镜中奇遇记》里写下红皇后的原话，名字出处"
+   }
+  ]
+ },
+ {
+  "name": "理查德·道金斯",
+  "appears": [
+   {
+    "model": "evolutionary-arms-race",
+    "model_title": "进化军备竞赛",
+    "role": "与克雷布斯在 1979 年把军备竞赛正式引入演化生物学，提出命换晚餐原则"
+   }
+  ]
+ },
+ {
+  "name": "保罗·埃尔利希",
+  "appears": [
+   {
+    "model": "evolutionary-arms-race",
+    "model_title": "进化军备竞赛",
+    "role": "1964 年与雷文提出协同进化，用蝴蝶与植物的竞赛解释物种多样性爆发"
+   }
+  ]
+ },
+ {
+  "name": "约瑟夫·格里内尔",
+  "appears": [
+   {
+    "model": "ecological-niche",
+    "model_title": "生态位",
+    "role": "提出者，1917 年研究加州弯嘴嘲鸫时首次定义生态位"
+   }
+  ]
+ },
+ {
+  "name": "查尔斯·埃尔顿",
+  "appears": [
+   {
+    "model": "ecological-niche",
+    "model_title": "生态位",
+    "role": "1927 年把生态位改定义为物种在群落里的职业，吃什么，被谁吃"
+   },
+   {
+    "model": "invasive-species",
+    "model_title": "入侵物种",
+    "role": "提出者，1958年出版《动植物入侵生态学》，把入侵写成生态学的核心问题"
+   }
+  ]
+ },
+ {
+  "name": "乔治·伊夫林·哈钦森",
+  "appears": [
+   {
+    "model": "ecological-niche",
+    "model_title": "生态位",
+    "role": "1957 年把生态位画成 n 维超体积，让这个概念变得可测量"
+   }
+  ]
+ },
+ {
+  "name": "西蒙·施文德纳",
+  "appears": [
+   {
+    "model": "symbiosis",
+    "model_title": "共生",
+    "role": "1868 年提出地衣双重假说，被同行骂作卖灵魂的人"
+   }
+  ]
+ },
+ {
+  "name": "德巴里",
+  "appears": [
+   {
+    "model": "symbiosis",
+    "model_title": "共生",
+    "role": "1879 年创造共生一词，定义刻意把寄生包括在内"
+   }
+  ]
+ },
+ {
+  "name": "林恩·马古利斯",
+  "appears": [
+   {
+    "model": "symbiosis",
+    "model_title": "共生",
+    "role": "1967 年提出内共生学说，证明线粒体与叶绿体曾是自由生活的细菌"
+   }
+  ]
+ },
+ {
+  "name": "克洛德·贝尔纳",
+  "appears": [
+   {
+    "model": "homeostasis",
+    "model_title": "内稳态",
+    "role": "提出者，法国生理学家，1865 年提出内环境学说，名言是内环境恒定是自由生活的条件"
+   }
+  ]
+ },
+ {
+  "name": "沃尔特·坎农",
+  "appears": [
+   {
+    "model": "homeostasis",
+    "model_title": "内稳态",
+    "role": "命名者，哈佛生理学家，1926 年创造 homeostasis 一词，1932 年出版《身体的智慧》"
+   }
+  ]
+ },
+ {
+  "name": "罗斯·阿什比",
+  "appears": [
+   {
+    "model": "homeostasis",
+    "model_title": "内稳态",
+    "role": "控制论学者，1952 年把稳态引入机器与组织设计，提出必要多样性定律"
+   }
+  ]
+ },
+ {
+  "name": "罗伯特·佩恩",
+  "appears": [
+   {
+    "model": "keystone-species",
+    "model_title": "关键种",
+    "role": "提出者，1963年起在华盛顿州潮间带做海星去除实验，1969年造出关键种一词"
+   }
+  ]
+ },
+ {
+  "name": "詹姆斯·埃斯特斯",
+  "appears": [
+   {
+    "model": "keystone-species",
+    "model_title": "关键种",
+    "role": "关键种证据链的重要推手，研究阿留申群岛海獭与海藻林的翻转"
+   }
+  ]
+ },
+ {
+  "name": "奥尔多·利奥波德",
+  "appears": [
+   {
+    "model": "trophic-cascade",
+    "model_title": "营养级联",
+    "role": "早期观察者，1949年在《像山那样思考》里预言灭狼会让鹿群毁掉整座山"
+   }
+  ]
+ },
+ {
+  "name": "罗伯特·佩因",
+  "appears": [
+   {
+    "model": "trophic-cascade",
+    "model_title": "营养级联",
+    "role": "提出者，1963年起在潮间带做海星移除实验，1980年正式命名营养级联"
+   }
+  ]
+ },
+ {
+  "name": "吉姆·埃斯蒂斯",
+  "appears": [
+   {
+    "model": "trophic-cascade",
+    "model_title": "营养级联",
+    "role": "验证者，1970年代起用海獭与海藻林证明级联在海洋同样成立"
+   }
+  ]
+ },
+ {
+  "name": "阿莫茨·扎哈维",
+  "appears": [
+   {
+    "model": "costly-signaling",
+    "model_title": "高成本信号",
+    "role": "提出者，1975 年提出不利条件原理，用孔雀尾巴解释昂贵信号"
+   }
+  ]
+ },
+ {
+  "name": "迈克尔·斯宾塞",
+  "appears": [
+   {
+    "model": "costly-signaling",
+    "model_title": "高成本信号",
+    "role": "经济学独立发现者，1973 年用教育成本解释劳动力市场信号，2001 年获诺贝尔奖"
+   }
+  ]
+ },
+ {
+  "name": "阿兰·格拉芬",
+  "appears": [
+   {
+    "model": "costly-signaling",
+    "model_title": "高成本信号",
+    "role": "1990 年建立数学模型，证明带累赘的诚实信号可以稳定存在"
+   }
+  ]
+ },
+ {
+  "name": "理查德·索西斯",
+  "appears": [
+   {
+    "model": "costly-signaling",
+    "model_title": "高成本信号",
+    "role": "用 19 世纪美国公社数据验证昂贵仪式与群体存续的关系"
+   }
+  ]
+ },
+ {
+  "name": "罗伯特·阿克塞尔罗德",
+  "appears": [
+   {
+    "model": "evolution-of-cooperation",
+    "model_title": "合作的进化",
+    "role": "政治科学家，1980 年在密歇根大学主持两轮计算机策略竞赛，1984 年出版《合作的进化》"
+   }
+  ]
+ },
+ {
+  "name": "W. D. 汉密尔顿",
+  "appears": [
+   {
+    "model": "evolution-of-cooperation",
+    "model_title": "合作的进化",
+    "role": "进化生物学家，亲缘选择提出者，与阿克塞尔罗德合写 1981 年 Science 论文，把结论推广到生物演化"
+   }
+  ]
+ },
+ {
+  "name": "阿纳托尔·拉波波特",
+  "appears": [
+   {
+    "model": "evolution-of-cooperation",
+    "model_title": "合作的进化",
+    "role": "心理学家，两轮竞赛都提交了「一报还一报」策略，两夺冠军"
+   }
+  ]
+ },
+ {
+  "name": "托马斯·希利",
+  "appears": [
+   {
+    "model": "hive-mind",
+    "model_title": "蜂群决策",
+    "role": "康奈尔大学教授，数十年研究蜂群选巢，2010 年出版《蜜蜂民主》"
+   }
+  ]
+ },
+ {
+  "name": "卡尔·冯·弗里施",
+  "appears": [
+   {
+    "model": "hive-mind",
+    "model_title": "蜂群决策",
+    "role": "破译摆尾舞含义，1973 年获诺贝尔生理学或医学奖"
+   }
+  ]
+ },
+ {
+  "name": "马丁·林道尔",
+  "appears": [
+   {
+    "model": "hive-mind",
+    "model_title": "蜂群决策",
+    "role": "冯·弗里施的学生，1950 年代最早记录侦察蜂在蜂团上跳舞拉票"
+   }
+  ]
+ },
+ {
+  "name": "丹尼尔·辛贝洛夫",
+  "appears": [
+   {
+    "model": "invasive-species",
+    "model_title": "入侵物种",
+    "role": "入侵生物学奠基人之一，推动把入侵变成可检验、可管理的科学"
+   }
+  ]
+ },
+ {
+  "name": "马克斯·克莱伯",
+  "appears": [
+   {
+    "model": "kleibers-law",
+    "model_title": "克莱伯定律",
+    "role": "瑞士裔动物学家，1932 年拟合出 3/4 次幂，著有《生命之火》"
+   }
+  ]
+ },
+ {
+  "name": "杰弗里·韦斯特",
+  "appears": [
+   {
+    "model": "kleibers-law",
+    "model_title": "克莱伯定律",
+    "role": "圣塔菲研究所理论物理学家，1997 年用分形输运网络解释 0.75 的来源"
+   }
+  ]
+ },
+ {
+  "name": "詹姆斯·布朗",
+  "appears": [
+   {
+    "model": "kleibers-law",
+    "model_title": "克莱伯定律",
+    "role": "生态学家，与韦斯特、恩奎斯特共同提出代谢理论"
+   }
+  ]
+ },
+ {
+  "name": "列万廷",
+  "appears": [
+   {
+    "model": "adaptation",
+    "model_title": "适应",
+    "role": "批评者，1979 年与古尔德合写拱肩论文，警告别把一切特征都解释成适应"
+   }
+  ]
+ },
+ {
+  "name": "约翰·克尔",
+  "appears": [
+   {
+    "model": "apoptosis",
+    "model_title": "细胞凋亡",
+    "role": "澳大利亚病理学家，1972 年命名凋亡，发现它与坏死是两回事"
+   }
+  ]
+ },
+ {
+  "name": "西德尼·布伦内",
+  "appears": [
+   {
+    "model": "apoptosis",
+    "model_title": "细胞凋亡",
+    "role": "把线虫变成发育生物学的标准模型，开启细胞死亡图谱研究，2002 年诺贝尔奖"
+   }
+  ]
+ },
+ {
+  "name": "约翰·萨尔斯顿",
+  "appears": [
+   {
+    "model": "apoptosis",
+    "model_title": "细胞凋亡",
+    "role": "逐个追踪线虫细胞谱系，数清 131 个注定死亡的细胞，2002 年诺贝尔奖"
+   }
+  ]
+ },
+ {
+  "name": "弗里德里希·维塞尔",
+  "appears": [
+   {
+    "model": "opportunity-cost",
+    "model_title": "机会成本",
+    "role": "奥地利经济学家，1889年在《自然价值》中提出替代成本思想，机会成本概念的源头"
+   }
+  ]
+ }
+]

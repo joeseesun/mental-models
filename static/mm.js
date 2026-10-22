@@ -229,22 +229,29 @@
     // 今日模型：按日期稳定轮换
     var td = document.getElementById('today');
     if (td && cards.length) {
-      var day = Math.floor(Date.now() / 864e5), c = cards[day % cards.length];
-      td.className = 'today tint dom-' + c.dataset.domain; td.href = 'm/' + c.dataset.slug + '/';
-      td.querySelector('.glyph').outerHTML = c.querySelector('.glyph').outerHTML;
+      var day = Math.floor(Date.now() / 864e5), c = cards[day % cards.length], url = 'm/' + c.dataset.slug + '/';
+      td.className = 'lead dom-' + c.dataset.domain;
+      var art = td.querySelector('.lead-art'); art.href = url;
+      art.querySelector('.glyph').outerHTML = c.querySelector('.glyph').outerHTML;
+      art.querySelector('.no').textContent = '今日模型 · ' + c.dataset.no; art.querySelector('.nm').textContent = c.dataset.title;
       td.querySelector('h2').textContent = c.dataset.title; td.querySelector('.en').textContent = c.dataset.en;
-      td.querySelector('p').textContent = c.dataset.tag;
+      td.querySelector('.lead-text p:not(.kicker)').textContent = c.dataset.tag; td.querySelector('.by').textContent = c.dataset.by;
+      td.querySelector('.btn-line').href = url;
     }
-    // 领域导航高亮
-    var chips = [].slice.call(document.querySelectorAll('.chip'));
-    function mark(f) { chips.forEach(function (x) { x.classList.toggle('on', x.dataset.f === f); }); }
+    // 按 / 聚焦搜索
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === '/' && document.activeElement !== q && !/input|textarea/i.test(document.activeElement.tagName)) { ev.preventDefault(); q.focus(); }
+    });
+    // 领域标签高亮
+    var tabs = [].slice.call(document.querySelectorAll('.tab'));
+    function mark(f) { tabs.forEach(function (x) { x.classList.toggle('on', x.dataset.f === f); }); }
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (es) {
         es.forEach(function (en) { if (en.isIntersecting) mark(en.target.dataset.domainSec); });
       }, { rootMargin: '-30% 0px -60% 0px' });
       secs.forEach(function (sc) { io.observe(sc); });
       var top = new IntersectionObserver(function (es) { if (es[0].isIntersecting) mark('all'); }, { rootMargin: '0px 0px -85% 0px' });
-      top.observe(document.querySelector('.map-sec'));
+      top.observe(document.getElementById('today'));
     }
   }
 

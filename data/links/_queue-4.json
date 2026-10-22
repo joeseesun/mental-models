@@ -1,0 +1,702 @@
+[
+ {
+  "key": "butterfly-effect#1",
+  "model": "butterfly-effect",
+  "model_title": "蝴蝶效应",
+  "title": "Edward Lorenz, The Essence of Chaos, 1993",
+  "level": "secondary"
+ },
+ {
+  "key": "butterfly-effect#2",
+  "model": "butterfly-effect",
+  "model_title": "蝴蝶效应",
+  "title": "James Gleick, Chaos: Making a New Science, 1987",
+  "level": "secondary"
+ },
+ {
+  "key": "self-organization#0",
+  "model": "self-organization",
+  "model_title": "自组织",
+  "title": "普里戈金、斯唐热《从混沌到有序》（1984）",
+  "level": "secondary"
+ },
+ {
+  "key": "self-organization#1",
+  "model": "self-organization",
+  "model_title": "自组织",
+  "title": "凯文·凯利《失控》（1994）",
+  "level": "secondary"
+ },
+ {
+  "key": "self-organization#2",
+  "model": "self-organization",
+  "model_title": "自组织",
+  "title": "斯图尔特·考夫曼《秩序的起源》（1993）",
+  "level": "secondary"
+ },
+ {
+  "key": "self-organization#3",
+  "model": "self-organization",
+  "model_title": "自组织",
+  "title": "Rayleigh, On Convection Currents in a Horizontal Layer of Fluid（1916）",
+  "level": "secondary"
+ },
+ {
+  "key": "self-organization#4",
+  "model": "self-organization",
+  "model_title": "自组织",
+  "title": "BBC 与 Wilson Quarterly 关于蒙德曼共享空间实验的报道",
+  "level": "secondary"
+ },
+ {
+  "key": "goodharts-law#0",
+  "model": "goodharts-law",
+  "model_title": "古德哈特定律",
+  "title": "C. A. E. Goodhart, Problems of Monetary Management: The UK Experience (1975)",
+  "level": "secondary"
+ },
+ {
+  "key": "goodharts-law#1",
+  "model": "goodharts-law",
+  "model_title": "古德哈特定律",
+  "title": "Marilyn Strathern, 'Improving ratings': audit in the British University system, European Review (1997)",
+  "level": "secondary"
+ },
+ {
+  "key": "goodharts-law#2",
+  "model": "goodharts-law",
+  "model_title": "古德哈特定律",
+  "title": "Michael Vann, Of Rats, Rice, and Race: The Great Hanoi Rat Massacre, French Colonial History (2003)",
+  "level": "secondary"
+ },
+ {
+  "key": "goodharts-law#3",
+  "model": "goodharts-law",
+  "model_title": "古德哈特定律",
+  "title": "Jerry Z. Muller, The Tyranny of Metrics (2018)",
+  "level": "secondary"
+ },
+ {
+  "key": "cascading-failure#0",
+  "model": "cascading-failure",
+  "model_title": "级联失效",
+  "title": "美加电网停运调查组《2003年8月14日大停电最终报告》，2004年4月",
+  "level": "verified"
+ },
+ {
+  "key": "cascading-failure#1",
+  "model": "cascading-failure",
+  "model_title": "级联失效",
+  "title": "Dobson、Carreras、Newman 等关于大停电幂律分布与 OPA 模型的系列论文，2001至2007",
+  "level": "secondary"
+ },
+ {
+  "key": "cascading-failure#2",
+  "model": "cascading-failure",
+  "model_title": "级联失效",
+  "title": "Nassim Taleb《黑天鹅》2007，《反脆弱》2012",
+  "level": "secondary"
+ },
+ {
+  "key": "leverage-points#0",
+  "model": "leverage-points",
+  "model_title": "杠杆点",
+  "title": "Donella Meadows, Leverage Points: Places to Intervene in a System（1999）",
+  "level": "verified"
+ },
+ {
+  "key": "leverage-points#1",
+  "model": "leverage-points",
+  "model_title": "杠杆点",
+  "title": "德内拉·梅多斯等《增长的极限》（1972）",
+  "level": "secondary"
+ },
+ {
+  "key": "leverage-points#2",
+  "model": "leverage-points",
+  "model_title": "杠杆点",
+  "title": "世界银行世界发展指标：罗马尼亚粗出生率",
+  "level": "verified"
+ },
+ {
+  "key": "leverage-points#3",
+  "model": "leverage-points",
+  "model_title": "杠杆点",
+  "title": "彼得·圣吉《第五项修炼》（1990）",
+  "level": "secondary"
+ },
+ {
+  "key": "complex-adaptive-systems#0",
+  "model": "complex-adaptive-systems",
+  "model_title": "复杂适应系统",
+  "title": "约翰·霍兰德《隐秩序：适应性造就复杂性》（1995）",
+  "level": "secondary"
+ },
+ {
+  "key": "complex-adaptive-systems#1",
+  "model": "complex-adaptive-systems",
+  "model_title": "复杂适应系统",
+  "title": "默里·盖尔曼《夸克与美洲豹》（1994）",
+  "level": "secondary"
+ },
+ {
+  "key": "complex-adaptive-systems#2",
+  "model": "complex-adaptive-systems",
+  "model_title": "复杂适应系统",
+  "title": "W. Brian Arthur, Inductive Reasoning and Bounded Rationality（1994）",
+  "level": "verified"
+ },
+ {
+  "key": "complex-adaptive-systems#3",
+  "model": "complex-adaptive-systems",
+  "model_title": "复杂适应系统",
+  "title": "Bettencourt, West 等，城市标度研究（PNAS，2007）",
+  "level": "secondary"
+ },
+ {
+  "key": "complex-adaptive-systems#4",
+  "model": "complex-adaptive-systems",
+  "model_title": "复杂适应系统",
+  "title": "West 等，公司标度研究（PNAS，2020）",
+  "level": "secondary"
+ },
+ {
+  "key": "s-curve#0",
+  "model": "s-curve",
+  "model_title": "S曲线",
+  "title": "Verhulst, P.F., 1838, 提出逻辑斯蒂曲线的论文",
+  "level": "secondary"
+ },
+ {
+  "key": "s-curve#1",
+  "model": "s-curve",
+  "model_title": "S曲线",
+  "title": "Charles Handy, The Empty Raincoat, 1994",
+  "level": "secondary"
+ },
+ {
+  "key": "s-curve#2",
+  "model": "s-curve",
+  "model_title": "S曲线",
+  "title": "Charles Handy, The Second Curve, 2015",
+  "level": "secondary"
+ },
+ {
+  "key": "s-curve#3",
+  "model": "s-curve",
+  "model_title": "S曲线",
+  "title": "Meta 历年财报，Facebook 月活跃用户数据",
+  "level": "secondary"
+ },
+ {
+  "key": "s-curve#4",
+  "model": "s-curve",
+  "model_title": "S曲线",
+  "title": "Netflix 2007 年财报与 2023 年 DVD 业务关停公告",
+  "level": "secondary"
+ },
+ {
+  "key": "inversion#0",
+  "model": "inversion",
+  "model_title": "反过来想",
+  "title": "芒格 1986 年哈佛学校毕业演讲，收录于《穷查理宝典》",
+  "level": "secondary"
+ },
+ {
+  "key": "inversion#1",
+  "model": "inversion",
+  "model_title": "反过来想",
+  "title": "Bessembinder, Do Stocks Outperform Treasury Bills?, Journal of Financial Economics, 2018",
+  "level": "secondary"
+ },
+ {
+  "key": "inversion#2",
+  "model": "inversion",
+  "model_title": "反过来想",
+  "title": "雅各比的解题格言 man muss immer umkehren，转引自芒格多次演讲及数学史文献",
+  "level": "secondary"
+ },
+ {
+  "key": "occams-razor#0",
+  "model": "occams-razor",
+  "model_title": "奥卡姆剃刀",
+  "title": "托马斯·利文森《猎取火神星》(2015)，海王星与火神星始末",
+  "level": "secondary"
+ },
+ {
+  "key": "occams-razor#1",
+  "model": "occams-razor",
+  "model_title": "奥卡姆剃刀",
+  "title": "牛顿《自然哲学的数学原理》推理法则一（1687）",
+  "level": "secondary"
+ },
+ {
+  "key": "occams-razor#2",
+  "model": "occams-razor",
+  "model_title": "奥卡姆剃刀",
+  "title": "赤池弘次, A New Look at the Statistical Model Identification, IEEE Transactions on Automatic Control, 1974",
+  "level": "verified"
+ },
+ {
+  "key": "occams-razor#3",
+  "model": "occams-razor",
+  "model_title": "奥卡姆剃刀",
+  "title": "Hastie, Tibshirani, Friedman《统计学习基础》第7章，偏差方差权衡",
+  "level": "secondary"
+ },
+ {
+  "key": "hanlons-razor#0",
+  "model": "hanlons-razor",
+  "model_title": "汉隆剃刀",
+  "title": "Arthur Bloch，Murphy's Law Book Two（1980），汉隆投稿原文",
+  "level": "secondary"
+ },
+ {
+  "key": "hanlons-razor#1",
+  "model": "hanlons-razor",
+  "model_title": "汉隆剃刀",
+  "title": "歌德《少年维特之烦恼》（1774）第一编",
+  "level": "secondary"
+ },
+ {
+  "key": "hanlons-razor#2",
+  "model": "hanlons-razor",
+  "model_title": "汉隆剃刀",
+  "title": "Kruger, Epley, Parker, Ng（2005），Egocentrism over e-mail，JPSP 89(6)",
+  "level": "verified"
+ },
+ {
+  "key": "hanlons-razor#3",
+  "model": "hanlons-razor",
+  "model_title": "汉隆剃刀",
+  "title": "海因莱因小说《帝国的逻辑》（1941）中的近似表述",
+  "level": "secondary"
+ },
+ {
+  "key": "hanlons-razor#4",
+  "model": "hanlons-razor",
+  "model_title": "汉隆剃刀",
+  "title": "彼得罗夫 1983 年 Oko 系统误报事件，见 2014 年纪录片《拯救世界的人》及公开访谈",
+  "level": "secondary"
+ },
+ {
+  "key": "circle-of-competence#0",
+  "model": "circle-of-competence",
+  "model_title": "能力圈",
+  "title": "巴菲特1996年致股东信",
+  "level": "secondary"
+ },
+ {
+  "key": "circle-of-competence#1",
+  "model": "circle-of-competence",
+  "model_title": "能力圈",
+  "title": "Barron's 封面文章 What's Wrong, Warren（1999年12月27日）",
+  "level": "secondary"
+ },
+ {
+  "key": "circle-of-competence#2",
+  "model": "circle-of-competence",
+  "model_title": "能力圈",
+  "title": "查理·芒格2007年南加州大学法学院毕业演讲",
+  "level": "secondary"
+ },
+ {
+  "key": "expected-value#0",
+  "model": "expected-value",
+  "model_title": "期望值思维",
+  "title": "帕斯卡与费马关于分赌注问题的通信（1654 年）",
+  "level": "verified"
+ },
+ {
+  "key": "expected-value#1",
+  "model": "expected-value",
+  "model_title": "期望值思维",
+  "title": "F. N. David《Games, Gods and Gambling》（1962）",
+  "level": "secondary"
+ },
+ {
+  "key": "expected-value#2",
+  "model": "expected-value",
+  "model_title": "期望值思维",
+  "title": "爱德华·索普《击败庄家》（1962）",
+  "level": "secondary"
+ },
+ {
+  "key": "expected-value#3",
+  "model": "expected-value",
+  "model_title": "期望值思维",
+  "title": "彼得·伯恩斯坦《与天为敌》（1996）",
+  "level": "secondary"
+ },
+ {
+  "key": "bayes-updating#0",
+  "model": "bayes-updating",
+  "model_title": "贝叶斯更新",
+  "title": "Thomas Bayes, An Essay towards solving a Problem in the Doctrine of Chances（1763，理查德·普莱斯整理发表）",
+  "level": "verified"
+ },
+ {
+  "key": "bayes-updating#1",
+  "model": "bayes-updating",
+  "model_title": "贝叶斯更新",
+  "title": "Pierre-Simon Laplace, Mémoire sur la probabilité des causes par les événements（1774）",
+  "level": "verified"
+ },
+ {
+  "key": "bayes-updating#2",
+  "model": "bayes-updating",
+  "model_title": "贝叶斯更新",
+  "title": "Sharon Bertsch McGrayne, The Theory That Would Not Die（2011）",
+  "level": "secondary"
+ },
+ {
+  "key": "bayes-updating#3",
+  "model": "bayes-updating",
+  "model_title": "贝叶斯更新",
+  "title": "Kahneman 与 Tversky, Judgment under Uncertainty: Heuristics and Biases（1974）",
+  "level": "secondary"
+ },
+ {
+  "key": "bayes-updating#4",
+  "model": "bayes-updating",
+  "model_title": "贝叶斯更新",
+  "title": "Paul Saffo, Six Rules of Effective Forecasting, Harvard Business Review（2007）",
+  "level": "secondary"
+ },
+ {
+  "key": "map-territory#0",
+  "model": "map-territory",
+  "model_title": "地图不是疆域",
+  "title": "Alfred Korzybski, A Non-Aristotelian System and its Necessity for Rigour in Mathematics and Physics, 1931",
+  "level": "secondary"
+ },
+ {
+  "key": "map-territory#1",
+  "model": "map-territory",
+  "model_title": "地图不是疆域",
+  "title": "Alfred Korzybski, Science and Sanity, 1933",
+  "level": "secondary"
+ },
+ {
+  "key": "map-territory#2",
+  "model": "map-territory",
+  "model_title": "地图不是疆域",
+  "title": "Charles P. Bonini, Simulation of Information and Decision Systems in the Firm, 1963",
+  "level": "secondary"
+ },
+ {
+  "key": "map-territory#3",
+  "model": "map-territory",
+  "model_title": "地图不是疆域",
+  "title": "NASA 火星气候探测器故障调查委员会报告, 1999",
+  "level": "verified"
+ },
+ {
+  "key": "map-territory#4",
+  "model": "map-territory",
+  "model_title": "地图不是疆域",
+  "title": "CIA World Factbook 各洲面积数据",
+  "level": "secondary"
+ },
+ {
+  "key": "ooda-loop#0",
+  "model": "ooda-loop",
+  "model_title": "OODA循环",
+  "title": "John Boyd, A Discourse on Winning and Losing（1996 汇编）",
+  "level": "verified"
+ },
+ {
+  "key": "ooda-loop#1",
+  "model": "ooda-loop",
+  "model_title": "OODA循环",
+  "title": "John Boyd, Destruction and Creation（1976）",
+  "level": "verified"
+ },
+ {
+  "key": "ooda-loop#2",
+  "model": "ooda-loop",
+  "model_title": "OODA循环",
+  "title": "美国海军陆战队 FMFM-1 Warfighting（1989）",
+  "level": "verified"
+ },
+ {
+  "key": "ooda-loop#3",
+  "model": "ooda-loop",
+  "model_title": "OODA循环",
+  "title": "Robert Coram, Boyd: The Fighter Pilot Who Changed the Art of War（2002）",
+  "level": "secondary"
+ },
+ {
+  "key": "ooda-loop#4",
+  "model": "ooda-loop",
+  "model_title": "OODA循环",
+  "title": "美国空军朝鲜战争战后统计与苏联第 64 歼击航空军档案",
+  "level": "secondary"
+ },
+ {
+  "key": "blue-ocean#0",
+  "model": "blue-ocean",
+  "model_title": "蓝海战略",
+  "title": "金伟灿、莫博涅《蓝海战略》，哈佛商学院出版社，2005 年",
+  "level": "secondary"
+ },
+ {
+  "key": "blue-ocean#1",
+  "model": "blue-ocean",
+  "model_title": "蓝海战略",
+  "title": "Blue Ocean Strategy，哈佛商业评论，2004 年 10 月刊",
+  "level": "secondary"
+ },
+ {
+  "key": "blue-ocean#2",
+  "model": "blue-ocean",
+  "model_title": "蓝海战略",
+  "title": "任天堂 Wii 停产公告与累计出货数据（2017）",
+  "level": "secondary"
+ },
+ {
+  "key": "blue-ocean#3",
+  "model": "blue-ocean",
+  "model_title": "蓝海战略",
+  "title": "太阳马戏团官网与公开报道的观众与营收数据",
+  "level": "secondary"
+ },
+ {
+  "key": "disruptive-innovation#0",
+  "model": "disruptive-innovation",
+  "model_title": "颠覆式创新",
+  "title": "克莱顿·克里斯坦森《创新者的窘境》，哈佛商学院出版社，1997",
+  "level": "secondary"
+ },
+ {
+  "key": "disruptive-innovation#1",
+  "model": "disruptive-innovation",
+  "model_title": "颠覆式创新",
+  "title": "《Disruptive Technologies: Catching the Wave》，约瑟夫·鲍尔与克里斯坦森，哈佛商业评论 1995 年 3 月号",
+  "level": "secondary"
+ },
+ {
+  "key": "disruptive-innovation#2",
+  "model": "disruptive-innovation",
+  "model_title": "颠覆式创新",
+  "title": "《What Is Disruptive Innovation?》，克里斯坦森、Raynor 与 McDonald，哈佛商业评论 2015 年 12 月号",
+  "level": "secondary"
+ },
+ {
+  "key": "disruptive-innovation#3",
+  "model": "disruptive-innovation",
+  "model_title": "颠覆式创新",
+  "title": "Netflix 历年年报与致股东信；百视达 2010 年破产申请文件",
+  "level": "secondary"
+ },
+ {
+  "key": "flywheel#0",
+  "model": "flywheel",
+  "model_title": "飞轮效应",
+  "title": "吉姆·柯林斯《从优秀到卓越》，飞轮与厄运循环章节（2001）",
+  "level": "secondary"
+ },
+ {
+  "key": "flywheel#1",
+  "model": "flywheel",
+  "model_title": "飞轮效应",
+  "title": "吉姆·柯林斯《飞轮效应》单行本（2019）",
+  "level": "secondary"
+ },
+ {
+  "key": "flywheel#2",
+  "model": "flywheel",
+  "model_title": "飞轮效应",
+  "title": "Colin Bryar, Bill Carr《Working Backwards》中亚马逊餐巾纸飞轮一节（2021）",
+  "level": "secondary"
+ },
+ {
+  "key": "flywheel#3",
+  "model": "flywheel",
+  "model_title": "飞轮效应",
+  "title": "Amazon 1997 至 2010 年年报（10-K）",
+  "level": "verified"
+ },
+ {
+  "key": "strategy-tradeoffs#0",
+  "model": "strategy-tradeoffs",
+  "model_title": "战略即取舍",
+  "title": "Michael Porter, What Is Strategy?, Harvard Business Review, 1996",
+  "level": "verified"
+ },
+ {
+  "key": "strategy-tradeoffs#1",
+  "model": "strategy-tradeoffs",
+  "model_title": "战略即取舍",
+  "title": "迈克尔·波特《竞争论》，机械工业出版社",
+  "level": "secondary"
+ },
+ {
+  "key": "strategy-tradeoffs#2",
+  "model": "strategy-tradeoffs",
+  "model_title": "战略即取舍",
+  "title": "大陆航空与西南航空 1994 至 1996 年年报",
+  "level": "secondary"
+ },
+ {
+  "key": "strategy-tradeoffs#3",
+  "model": "strategy-tradeoffs",
+  "model_title": "战略即取舍",
+  "title": "Freiberg & Freiberg, Nuts! Southwest Airlines' Crazy Recipe for Business and Personal Success, 1996",
+  "level": "secondary"
+ },
+ {
+  "key": "optionality#0",
+  "model": "optionality",
+  "model_title": "选择权",
+  "title": "塔勒布《反脆弱》，论选择权与泰勒斯的故事",
+  "level": "secondary"
+ },
+ {
+  "key": "optionality#1",
+  "model": "optionality",
+  "model_title": "选择权",
+  "title": "塔勒布《随机漫步的傻瓜》，1987 年崩盘亲历",
+  "level": "secondary"
+ },
+ {
+  "key": "optionality#2",
+  "model": "optionality",
+  "model_title": "选择权",
+  "title": "亚里士多德《政治学》第一卷，泰勒斯包租榨油机",
+  "level": "secondary"
+ },
+ {
+  "key": "optionality#3",
+  "model": "optionality",
+  "model_title": "选择权",
+  "title": "道琼斯工业平均指数 1987 年 10 月每日行情",
+  "level": "verified"
+ },
+ {
+  "key": "barbell-strategy#0",
+  "model": "barbell-strategy",
+  "model_title": "杠铃策略",
+  "title": "塔勒布《反脆弱：从不确定性中获益》（2012），杠铃策略章节",
+  "level": "secondary"
+ },
+ {
+  "key": "barbell-strategy#1",
+  "model": "barbell-strategy",
+  "model_title": "杠铃策略",
+  "title": "塔勒布《黑天鹅》（2007），1987年崩盘的亲身复盘",
+  "level": "secondary"
+ },
+ {
+  "key": "barbell-strategy#2",
+  "model": "barbell-strategy",
+  "model_title": "杠铃策略",
+  "title": "标普道琼斯指数公司，S&P 500 年度总回报数据",
+  "level": "verified"
+ },
+ {
+  "key": "barbell-strategy#3",
+  "model": "barbell-strategy",
+  "model_title": "杠铃策略",
+  "title": "AQR 研究 Chasing Your Own Tail (Risk)，对尾部对冲成本的质疑",
+  "level": "secondary"
+ },
+ {
+  "key": "antifragile#0",
+  "model": "antifragile",
+  "model_title": "反脆弱",
+  "title": "塔勒布《反脆弱：从不确定性中获益》，2012",
+  "level": "secondary"
+ },
+ {
+  "key": "antifragile#1",
+  "model": "antifragile",
+  "model_title": "反脆弱",
+  "title": "Hans Selye, A syndrome produced by diverse nocuous agents, Nature, 1936",
+  "level": "verified"
+ },
+ {
+  "key": "antifragile#2",
+  "model": "antifragile",
+  "model_title": "反脆弱",
+  "title": "标普道琼斯指数 2008 年年度回报数据",
+  "level": "verified"
+ },
+ {
+  "key": "antifragile#3",
+  "model": "antifragile",
+  "model_title": "反脆弱",
+  "title": "彭博商业周刊与华尔街日报 2008 到 2010 年对 Universa 基金回报的报道",
+  "level": "secondary"
+ },
+ {
+  "key": "black-swan#0",
+  "model": "black-swan",
+  "model_title": "黑天鹅",
+  "title": "塔勒布《黑天鹅：如何应对不可预知的未来》(2007)",
+  "level": "secondary"
+ },
+ {
+  "key": "black-swan#1",
+  "model": "black-swan",
+  "model_title": "黑天鹅",
+  "title": "塔勒布《随机漫步的傻瓜》(2001)",
+  "level": "secondary"
+ },
+ {
+  "key": "black-swan#2",
+  "model": "black-swan",
+  "model_title": "黑天鹅",
+  "title": "Financial Times 对高盛 CFO 维尼尔的报道（2007 年 8 月）",
+  "level": "secondary"
+ },
+ {
+  "key": "black-swan#3",
+  "model": "black-swan",
+  "model_title": "黑天鹅",
+  "title": "维基百科：道琼斯工业平均指数单日最大涨跌列表",
+  "level": "secondary"
+ },
+ {
+  "key": "skin-in-the-game#0",
+  "model": "skin-in-the-game",
+  "model_title": "风险共担",
+  "title": "Nassim Taleb, Skin in the Game: Hidden Asymmetries in Daily Life（2018）",
+  "level": "secondary"
+ },
+ {
+  "key": "skin-in-the-game#1",
+  "model": "skin-in-the-game",
+  "model_title": "风险共担",
+  "title": "《汉谟拉比法典》第 229 至 233 条",
+  "level": "verified"
+ },
+ {
+  "key": "skin-in-the-game#2",
+  "model": "skin-in-the-game",
+  "model_title": "风险共担",
+  "title": "纽约州审计长办公室华尔街奖金报告（2009 年 1 月）",
+  "level": "secondary"
+ },
+ {
+  "key": "pre-mortem#0",
+  "model": "pre-mortem",
+  "model_title": "事前验尸",
+  "title": "Gary Klein, Performing a Project Premortem, Harvard Business Review（2007 年 9 月）",
+  "level": "verified"
+ },
+ {
+  "key": "pre-mortem#1",
+  "model": "pre-mortem",
+  "model_title": "事前验尸",
+  "title": "Mitchell, Russo, Pennington, Back to the Future: Temporal Perspective in the Explanation of Events, Journal of Behavioral Decision Making（1989）",
+  "level": "verified"
+ },
+ {
+  "key": "pre-mortem#2",
+  "model": "pre-mortem",
+  "model_title": "事前验尸",
+  "title": "丹尼尔·卡尼曼《思考，快与慢》（2011），书中推荐用事前验尸对抗过度自信",
+  "level": "secondary"
+ }
+]

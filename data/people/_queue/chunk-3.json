@@ -1,0 +1,442 @@
+[
+ {
+  "name": "保罗·萨缪尔森",
+  "appears": [
+   {
+    "model": "opportunity-cost",
+    "model_title": "机会成本",
+    "role": "1970年首位美国诺贝尔经济学奖得主，1948年把它写进教科书，教了几代人算账"
+   },
+   {
+    "model": "comparative-advantage",
+    "model_title": "比较优势",
+    "role": "称其为社会科学中唯一既真实又不平凡的命题，并把贸易理论写进主流教科书"
+   }
+  ]
+ },
+ {
+  "name": "米尔顿·弗里德曼",
+  "appears": [
+   {
+    "model": "opportunity-cost",
+    "model_title": "机会成本",
+    "role": "1976年诺贝尔经济学奖得主，用一句天下没有免费的午餐把它变成大众常识"
+   }
+  ]
+ },
+ {
+  "name": "大卫·李嘉图",
+  "appears": [
+   {
+    "model": "comparative-advantage",
+    "model_title": "比较优势",
+    "role": "1817 年在《政治经济学及赋税原理》第 7 章提出，用英格兰与葡萄牙的算例奠定国际贸易理论"
+   }
+  ]
+ },
+ {
+  "name": "格里高利·曼昆",
+  "appears": [
+   {
+    "model": "comparative-advantage",
+    "model_title": "比较优势",
+    "role": "在《经济学原理》中把贸易能让所有人更好列为十大经济学原理之一"
+   }
+  ]
+ },
+ {
+  "name": "亚当·斯密",
+  "appears": [
+   {
+    "model": "supply-demand",
+    "model_title": "供需",
+    "role": "1776 年《国富论》提出看不见的手，屠夫和面包师靠自利而非善心供给晚餐"
+   },
+   {
+    "model": "incentives",
+    "model_title": "激励",
+    "role": "1776 年在《国富论》中指出，晚餐来自面包师的自利而非善意，自利是可依赖的社会动力"
+   },
+   {
+    "model": "economies-of-scale",
+    "model_title": "规模效应",
+    "role": "1776 年用制针厂说明分工与批量如何放大产出"
+   },
+   {
+    "model": "division-of-labor",
+    "model_title": "分工",
+    "role": "提出者，1776 年《国富论》开篇用制针厂讲清分工为何放大产量"
+   },
+   {
+    "model": "principal-agent",
+    "model_title": "委托代理",
+    "role": "1776 年已警告，股份公司经理打理别人的钱，不会像打理自己的钱那样上心"
+   }
+  ]
+ },
+ {
+  "name": "阿尔弗雷德·马歇尔",
+  "appears": [
+   {
+    "model": "supply-demand",
+    "model_title": "供需",
+    "role": "1890 年《经济学原理》画出供需剪刀，确立均衡分析框架"
+   }
+  ]
+ },
+ {
+  "name": "弗里德里希·哈耶克",
+  "appears": [
+   {
+    "model": "supply-demand",
+    "model_title": "供需",
+    "role": "1945 年指出价格是传递分散知识的最快电报"
+   }
+  ]
+ },
+ {
+  "name": "杜尔哥",
+  "appears": [
+   {
+    "model": "diminishing-returns",
+    "model_title": "边际递减",
+    "role": "1767 年最早写下这条规律：往同一块地连续加人，产出增量会一段比一段少"
+   }
+  ]
+ },
+ {
+  "name": "李嘉图",
+  "appears": [
+   {
+    "model": "diminishing-returns",
+    "model_title": "边际递减",
+    "role": "1817 年用它解释地租的来源，并推出利润会被地租挤干的悲观预言"
+   }
+  ]
+ },
+ {
+  "name": "马歇尔",
+  "appears": [
+   {
+    "model": "diminishing-returns",
+    "model_title": "边际递减",
+    "role": "1890 年《经济学原理》把它整理成标准工具，并提醒技术进步会抬升整条曲线"
+   }
+  ]
+ },
+ {
+  "name": "本杰明·富兰克林",
+  "appears": [
+   {
+    "model": "compound-interest",
+    "model_title": "复利",
+    "role": "用 200 年信托遗产亲自演示复利的人，1790 年各留 1000 英镑给波士顿和费城"
+   }
+  ]
+ },
+ {
+  "name": "查理·芒格",
+  "appears": [
+   {
+    "model": "compound-interest",
+    "model_title": "复利",
+    "role": "伯克希尔副主席，说复利的第一条规则是永远别不必要地打断它"
+   },
+   {
+    "model": "incentives",
+    "model_title": "激励",
+    "role": "伯克希尔·哈撒韦副董事长，反复告诫：给我看激励，我给你看结果"
+   },
+   {
+    "model": "moat",
+    "model_title": "护城河",
+    "role": "推动者，坚持为好生意付合理高价，促成了喜诗糖果收购"
+   },
+   {
+    "model": "inversion",
+    "model_title": "反过来想",
+    "role": "伯克希尔副董事长，1986 年毕业演讲把反过来想变成大众决策工具"
+   },
+   {
+    "model": "circle-of-competence",
+    "model_title": "能力圈",
+    "role": "共同提出者，强调先弄清自己的天赋在哪，去别人有天赋的领域玩必输"
+   }
+  ]
+ },
+ {
+  "name": "沃伦·巴菲特",
+  "appears": [
+   {
+    "model": "compound-interest",
+    "model_title": "复利",
+    "role": "把复利用到极致的投资人，99% 以上的财富在 50 岁之后获得"
+   },
+   {
+    "model": "moat",
+    "model_title": "护城河",
+    "role": "提出者，1980 年代起在致股东信里把护城河变成选股标准"
+   },
+   {
+    "model": "margin-of-safety",
+    "model_title": "安全边际",
+    "role": "最著名的继承者，称之为投资中最重要的三个词"
+   },
+   {
+    "model": "circle-of-competence",
+    "model_title": "能力圈",
+    "role": "命名者，1996年致股东信里正式写下这个概念，并用它解释伯克希尔为何不碰科技股"
+   }
+  ]
+ },
+ {
+  "name": "约翰·纳什",
+  "appears": [
+   {
+    "model": "nash-equilibrium",
+    "model_title": "纳什均衡",
+    "role": "提出者，1950 年用 27 页的博士论文定义了均衡，1994 年获诺贝尔经济学奖"
+   }
+  ]
+ },
+ {
+  "name": "冯·诺依曼",
+  "appears": [
+   {
+    "model": "nash-equilibrium",
+    "model_title": "纳什均衡",
+    "role": "博弈论奠基人，1928 年证明极小极大定理，1944 年与摩根斯坦合著《博弈论与经济行为》"
+   }
+  ]
+ },
+ {
+  "name": "托马斯·谢林",
+  "appears": [
+   {
+    "model": "nash-equilibrium",
+    "model_title": "纳什均衡",
+    "role": "研究多重均衡下人们如何靠焦点达成协调，2005 年获诺贝尔经济学奖"
+   }
+  ]
+ },
+ {
+  "name": "维尔弗雷多·帕累托",
+  "appears": [
+   {
+    "model": "pareto-principle",
+    "model_title": "二八法则",
+    "role": "意大利经济学家，1896年发现土地与收入的幂律分布"
+   }
+  ]
+ },
+ {
+  "name": "约瑟夫·朱兰",
+  "appears": [
+   {
+    "model": "pareto-principle",
+    "model_title": "二八法则",
+    "role": "质量管理大师，1940年代把它搬进工厂并命名为帕累托法则"
+   }
+  ]
+ },
+ {
+  "name": "罗纳德·科斯",
+  "appears": [
+   {
+    "model": "economies-of-scale",
+    "model_title": "规模效应",
+    "role": "1937 年《企业的性质》，用交易成本划定企业规模的边界"
+   },
+   {
+    "model": "externalities",
+    "model_title": "外部性",
+    "role": "1960 年发表《社会成本问题》，主张界定产权让双方谈判，1991 年获诺贝尔经济学奖"
+   }
+  ]
+ },
+ {
+  "name": "阿尔弗雷德·钱德勒",
+  "appears": [
+   {
+    "model": "economies-of-scale",
+    "model_title": "规模效应",
+    "role": "《看得见的手》与《规模与范围》，用史料论证规模塑造了现代企业"
+   }
+  ]
+ },
+ {
+  "name": "阿瑟·庇古",
+  "appears": [
+   {
+    "model": "externalities",
+    "model_title": "外部性",
+    "role": "剑桥经济学家，1920 年在《福利经济学》里提出按危害征税，这种税后来叫庇古税"
+   }
+  ]
+ },
+ {
+  "name": "埃莉诺·奥斯特罗姆",
+  "appears": [
+   {
+    "model": "externalities",
+    "model_title": "外部性",
+    "role": "2009 年诺贝尔奖得主，证明社区自治也能管好公地，不必只靠税或产权"
+   }
+  ]
+ },
+ {
+  "name": "约瑟夫·熊彼特",
+  "appears": [
+   {
+    "model": "creative-destruction",
+    "model_title": "创造性破坏",
+    "role": "提出者，1942 年在《资本主义、社会主义与民主》中命名这个过程，把企业家精神放回经济学的中心"
+   }
+  ]
+ },
+ {
+  "name": "理查德·福斯特",
+  "appears": [
+   {
+    "model": "creative-destruction",
+    "model_title": "创造性破坏",
+    "role": "麦肯锡出身，2001 年用标普500数据量化了在位企业的更替速度"
+   }
+  ]
+ },
+ {
+  "name": "查尔斯·巴贝奇",
+  "appears": [
+   {
+    "model": "division-of-labor",
+    "model_title": "分工",
+    "role": "1832 年补充巴贝奇原理：分工让企业只为每道工序所需的技能付钱"
+   }
+  ]
+ },
+ {
+  "name": "亨利·福特",
+  "appears": [
+   {
+    "model": "division-of-labor",
+    "model_title": "分工",
+    "role": "实践者，1913 年移动流水线把底盘装配时间从约 12 小时压到 93 分钟"
+   }
+  ]
+ },
+ {
+  "name": "本杰明·格雷厄姆",
+  "appears": [
+   {
+    "model": "arbitrage",
+    "model_title": "套利",
+    "role": "1915 年靠古根海姆清算套利一战成名，把套利纪律写进了《聪明的投资者》"
+   },
+   {
+    "model": "margin-of-safety",
+    "model_title": "安全边际",
+    "role": "提出者，在《聪明的投资者》第 20 章把它定为价值投资的核心"
+   }
+  ]
+ },
+ {
+  "name": "山姆·沃尔顿",
+  "appears": [
+   {
+    "model": "arbitrage",
+    "model_title": "套利",
+    "role": "自认大部分做法抄自别人，把别处验证过的零售模式搬进美国小镇，做的是认知套利"
+   }
+  ]
+ },
+ {
+  "name": "帕特·多尔西",
+  "appears": [
+   {
+    "model": "moat",
+    "model_title": "护城河",
+    "role": "体系化者，在晨星公司把护城河分成五类并做成评级"
+   }
+  ]
+ },
+ {
+  "name": "赛斯·卡拉曼",
+  "appears": [
+   {
+    "model": "margin-of-safety",
+    "model_title": "安全边际",
+    "role": "1991 年出版《安全边际》，把概念扩展成一套完整的风险纪律"
+   }
+  ]
+ },
+ {
+  "name": "迈克尔·詹森",
+  "appears": [
+   {
+    "model": "principal-agent",
+    "model_title": "委托代理",
+    "role": "与麦克林 1976 年定义代理成本，把公司看成一组合同的联结"
+   }
+  ]
+ },
+ {
+  "name": "威廉·麦克林",
+  "appears": [
+   {
+    "model": "principal-agent",
+    "model_title": "委托代理",
+    "role": "1976 年与詹森合著代理成本经典论文，罗切斯特大学教授"
+   }
+  ]
+ },
+ {
+  "name": "罗伯特·梅特卡夫",
+  "appears": [
+   {
+    "model": "network-effects",
+    "model_title": "网络效应",
+    "role": "以太网发明人，1973 年写出第一份以太网备忘录，1980 年前后提出网络价值与用户数平方成正比"
+   }
+  ]
+ },
+ {
+  "name": "杰弗里·帕克",
+  "appears": [
+   {
+    "model": "network-effects",
+    "model_title": "网络效应",
+    "role": "平台经济学者，2005 年与范奥斯泰恩提出双边网络效应，2016 年合著《平台革命》"
+   }
+  ]
+ },
+ {
+  "name": "卡尔·夏皮罗与哈尔·范里安",
+  "appears": [
+   {
+    "model": "network-effects",
+    "model_title": "网络效应",
+    "role": "《信息规则》作者，1998 年把网络效应与锁定效应写进主流经济学"
+   }
+  ]
+ },
+ {
+  "name": "爱德华·德博诺",
+  "appears": [
+   {
+    "model": "six-thinking-hats",
+    "model_title": "六顶思考帽",
+    "role": "提出者，马耳他医生与心理学家，1985 年出版《六顶思考帽》"
+   }
+  ]
+ },
+ {
+  "name": "迈克尔·休伊特格里森",
+  "appears": [
+   {
+    "model": "six-thinking-hats",
+    "model_title": "六顶思考帽",
+    "role": "1983 年与德博诺共创思考学校，把平行思考做成可培训的课程"
+   }
+  ]
+ }
+]

@@ -1,0 +1,709 @@
+[
+ {
+  "key": "regression-to-mean#2",
+  "model": "regression-to-mean",
+  "model_title": "均值回归",
+  "title": "Kahneman & Tversky, On the Psychology of Prediction (1973)",
+  "level": "secondary"
+ },
+ {
+  "key": "regression-to-mean#3",
+  "model": "regression-to-mean",
+  "model_title": "均值回归",
+  "title": "Harold Hotelling 对 Secrist《平庸的胜利》的书评（1933）",
+  "level": "secondary"
+ },
+ {
+  "key": "social-proof#0",
+  "model": "social-proof",
+  "model_title": "社会认同",
+  "title": "Asch, S. E. (1956). Studies of independence and conformity: A minority of one against a unanimous majority",
+  "level": "verified"
+ },
+ {
+  "key": "social-proof#1",
+  "model": "social-proof",
+  "model_title": "社会认同",
+  "title": "Cialdini《影响力》社会认同章节（1984）",
+  "level": "secondary"
+ },
+ {
+  "key": "social-proof#2",
+  "model": "social-proof",
+  "model_title": "社会认同",
+  "title": "Latané & Darley (1968) 旁观者干预实验",
+  "level": "verified"
+ },
+ {
+  "key": "social-proof#3",
+  "model": "social-proof",
+  "model_title": "社会认同",
+  "title": "Goldstein, Cialdini & Griskevicius (2008) 酒店毛巾重复使用实验",
+  "level": "verified"
+ },
+ {
+  "key": "authority-bias#0",
+  "model": "authority-bias",
+  "model_title": "权威服从",
+  "title": "Milgram, Behavioral Study of Obedience, Journal of Abnormal and Social Psychology（1963）",
+  "level": "verified"
+ },
+ {
+  "key": "authority-bias#1",
+  "model": "authority-bias",
+  "model_title": "权威服从",
+  "title": "米尔格拉姆《服从权威：一种观点》（1974）",
+  "level": "secondary"
+ },
+ {
+  "key": "authority-bias#2",
+  "model": "authority-bias",
+  "model_title": "权威服从",
+  "title": "Burger, Replicating Milgram, American Psychologist（2009）",
+  "level": "secondary"
+ },
+ {
+  "key": "authority-bias#3",
+  "model": "authority-bias",
+  "model_title": "权威服从",
+  "title": "西奥迪尼《影响力》（1984）",
+  "level": "secondary"
+ },
+ {
+  "key": "reciprocation#0",
+  "model": "reciprocation",
+  "model_title": "互惠",
+  "title": "古尔德纳，互惠规范，American Sociological Review（1960）",
+  "level": "verified"
+ },
+ {
+  "key": "reciprocation#1",
+  "model": "reciprocation",
+  "model_title": "互惠",
+  "title": "特里弗斯，互惠利他的进化，Quarterly Review of Biology（1971）",
+  "level": "secondary"
+ },
+ {
+  "key": "reciprocation#2",
+  "model": "reciprocation",
+  "model_title": "互惠",
+  "title": "西奥迪尼《影响力》（1984）互惠章节",
+  "level": "secondary"
+ },
+ {
+  "key": "reciprocation#3",
+  "model": "reciprocation",
+  "model_title": "互惠",
+  "title": "Strohmetz 等（2002）餐厅糖果与小费实验",
+  "level": "verified"
+ },
+ {
+  "key": "commitment-consistency#0",
+  "model": "commitment-consistency",
+  "model_title": "承诺一致性",
+  "title": "Robert Cialdini《影响力》第 3 章，承诺与一致（1984）",
+  "level": "secondary"
+ },
+ {
+  "key": "commitment-consistency#1",
+  "model": "commitment-consistency",
+  "model_title": "承诺一致性",
+  "title": "Freedman & Fraser, Compliance without Pressure: The Foot-in-the-Door Technique, JPSP（1966）",
+  "level": "verified"
+ },
+ {
+  "key": "commitment-consistency#2",
+  "model": "commitment-consistency",
+  "model_title": "承诺一致性",
+  "title": "Festinger, Riecken & Schachter, When Prophecy Fails（1956）",
+  "level": "secondary"
+ },
+ {
+  "key": "commitment-consistency#3",
+  "model": "commitment-consistency",
+  "model_title": "承诺一致性",
+  "title": "Edgar Schein, The Chinese Indoctrination Program for Prisoners of War（1956）",
+  "level": "secondary"
+ },
+ {
+  "key": "scarcity-bias#0",
+  "model": "scarcity-bias",
+  "model_title": "稀缺心理",
+  "title": "Robert Cialdini《影响力》（1984），稀缺一章",
+  "level": "secondary"
+ },
+ {
+  "key": "scarcity-bias#1",
+  "model": "scarcity-bias",
+  "model_title": "稀缺心理",
+  "title": "Sendhil Mullainathan 与 Eldar Shafir《稀缺》（2013）",
+  "level": "secondary"
+ },
+ {
+  "key": "scarcity-bias#2",
+  "model": "scarcity-bias",
+  "model_title": "稀缺心理",
+  "title": "Worchel, Lee 与 Adewole（1975），Effects of Supply and Demand on Ratings of Object Value",
+  "level": "secondary"
+ },
+ {
+  "key": "scarcity-bias#3",
+  "model": "scarcity-bias",
+  "model_title": "稀缺心理",
+  "title": "Mani, Mullainathan, Shafir 与 Zhao（2013），Poverty Impedes Cognitive Function，Science",
+  "level": "secondary"
+ },
+ {
+  "key": "scarcity-bias#4",
+  "model": "scarcity-bias",
+  "model_title": "稀缺心理",
+  "title": "小米 2012 年公开销售数据与媒体报道",
+  "level": "secondary"
+ },
+ {
+  "key": "groupthink#0",
+  "model": "groupthink",
+  "model_title": "团体迷思",
+  "title": "Irving Janis, Victims of Groupthink（1972）",
+  "level": "secondary"
+ },
+ {
+  "key": "groupthink#1",
+  "model": "groupthink",
+  "model_title": "团体迷思",
+  "title": "Irving Janis & Leon Mann, Decision Making（1977）",
+  "level": "secondary"
+ },
+ {
+  "key": "groupthink#2",
+  "model": "groupthink",
+  "model_title": "团体迷思",
+  "title": "罗杰斯委员会挑战者号事故调查报告（1986）",
+  "level": "verified"
+ },
+ {
+  "key": "groupthink#3",
+  "model": "groupthink",
+  "model_title": "团体迷思",
+  "title": "Dalal, Fowlkes & Hoadley, JASA（1989）O型圈数据",
+  "level": "verified"
+ },
+ {
+  "key": "groupthink#4",
+  "model": "groupthink",
+  "model_title": "团体迷思",
+  "title": "Arthur Schlesinger Jr., A Thousand Days（1965）",
+  "level": "secondary"
+ },
+ {
+  "key": "cognitive-dissonance#0",
+  "model": "cognitive-dissonance",
+  "model_title": "认知失调",
+  "title": "Festinger, L. (1957). A Theory of Cognitive Dissonance. Stanford University Press",
+  "level": "verified"
+ },
+ {
+  "key": "cognitive-dissonance#1",
+  "model": "cognitive-dissonance",
+  "model_title": "认知失调",
+  "title": "Festinger, L., Riecken, H. W., & Schachter, S. (1956). When Prophecy Fails",
+  "level": "verified"
+ },
+ {
+  "key": "cognitive-dissonance#2",
+  "model": "cognitive-dissonance",
+  "model_title": "认知失调",
+  "title": "Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. Journal of Abnormal and Social Psychology, 58, 203-210",
+  "level": "verified"
+ },
+ {
+  "key": "cognitive-dissonance#3",
+  "model": "cognitive-dissonance",
+  "model_title": "认知失调",
+  "title": "Aronson, E., & Mills, J. (1959). The effect of severity of initiation on liking for a group",
+  "level": "verified"
+ },
+ {
+  "key": "cognitive-dissonance#4",
+  "model": "cognitive-dissonance",
+  "model_title": "认知失调",
+  "title": "Tavris, C., & Aronson, E. (2007). Mistakes Were Made (But Not by Me)",
+  "level": "secondary"
+ },
+ {
+  "key": "cognitive-dissonance#5",
+  "model": "cognitive-dissonance",
+  "model_title": "认知失调",
+  "title": "Heine, S. J., & Lehman, D. R. (1997). Culture, dissonance, and self-affirmation. Personality and Social Psychology Bulletin",
+  "level": "secondary"
+ },
+ {
+  "key": "dunning-kruger#0",
+  "model": "dunning-kruger",
+  "model_title": "达克效应",
+  "title": "Kruger, J. & Dunning, D. (1999). Unskilled and Unaware of It. Journal of Personality and Social Psychology, 77(6), 1121-1134",
+  "level": "verified"
+ },
+ {
+  "key": "dunning-kruger#1",
+  "model": "dunning-kruger",
+  "model_title": "达克效应",
+  "title": "Dunning, D. (2011). The Dunning-Kruger Effect: On Being Ignorant of One's Own Ignorance. Advances in Experimental Social Psychology, Vol. 44",
+  "level": "verified"
+ },
+ {
+  "key": "dunning-kruger#2",
+  "model": "dunning-kruger",
+  "model_title": "达克效应",
+  "title": "Gignac, G. E. & Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact. Intelligence, 80",
+  "level": "secondary"
+ },
+ {
+  "key": "dunning-kruger#3",
+  "model": "dunning-kruger",
+  "model_title": "达克效应",
+  "title": "Pittsburgh Post-Gazette 对惠勒抢银行案的报道，邓宁自述由此获得研究灵感",
+  "level": "secondary"
+ },
+ {
+  "key": "hedonic-treadmill#0",
+  "model": "hedonic-treadmill",
+  "model_title": "享乐适应",
+  "title": "Brickman & Campbell, Hedonic Relativism and Planning the Good Society, 1971",
+  "level": "secondary"
+ },
+ {
+  "key": "hedonic-treadmill#1",
+  "model": "hedonic-treadmill",
+  "model_title": "享乐适应",
+  "title": "Brickman, Coates & Janoff-Bulman, Lottery Winners and Accident Victims, JPSP 1978",
+  "level": "secondary"
+ },
+ {
+  "key": "hedonic-treadmill#2",
+  "model": "hedonic-treadmill",
+  "model_title": "享乐适应",
+  "title": "Diener, Lucas & Scollon, Beyond the Hedonic Treadmill, 2006",
+  "level": "secondary"
+ },
+ {
+  "key": "hedonic-treadmill#3",
+  "model": "hedonic-treadmill",
+  "model_title": "享乐适应",
+  "title": "Kahneman & Deaton, High income improves evaluation of life but not emotional well-being, PNAS 2010",
+  "level": "secondary"
+ },
+ {
+  "key": "flow#0",
+  "model": "flow",
+  "model_title": "心流",
+  "title": "Csikszentmihalyi, Beyond Boredom and Anxiety（1975）",
+  "level": "secondary"
+ },
+ {
+  "key": "flow#1",
+  "model": "flow",
+  "model_title": "心流",
+  "title": "Csikszentmihalyi, Flow: The Psychology of Optimal Experience（1990）",
+  "level": "secondary"
+ },
+ {
+  "key": "flow#2",
+  "model": "flow",
+  "model_title": "心流",
+  "title": "Csikszentmihalyi & LeFevre, Optimal Experience in Work and Leisure, American Psychologist（1989）",
+  "level": "secondary"
+ },
+ {
+  "key": "flow#3",
+  "model": "flow",
+  "model_title": "心流",
+  "title": "Massimini & Carli, 八通道模型, in Optimal Experience（1988）",
+  "level": "secondary"
+ },
+ {
+  "key": "classical-conditioning#0",
+  "model": "classical-conditioning",
+  "model_title": "条件反射",
+  "title": "巴甫洛夫《条件反射：大脑两半球机能讲义》，1927",
+  "level": "secondary"
+ },
+ {
+  "key": "classical-conditioning#1",
+  "model": "classical-conditioning",
+  "model_title": "条件反射",
+  "title": "Watson & Rayner, Conditioned emotional reactions, 1920",
+  "level": "verified"
+ },
+ {
+  "key": "classical-conditioning#2",
+  "model": "classical-conditioning",
+  "model_title": "条件反射",
+  "title": "斯金纳《科学与人类行为》，1953",
+  "level": "secondary"
+ },
+ {
+  "key": "classical-conditioning#3",
+  "model": "classical-conditioning",
+  "model_title": "条件反射",
+  "title": "Bouton 关于消退与复发机制的系列研究，2002",
+  "level": "secondary"
+ },
+ {
+  "key": "maslow-hierarchy#0",
+  "model": "maslow-hierarchy",
+  "model_title": "需求层次",
+  "title": "马斯洛《A Theory of Human Motivation》，Psychological Review 第 50 卷，1943",
+  "level": "verified"
+ },
+ {
+  "key": "maslow-hierarchy#1",
+  "model": "maslow-hierarchy",
+  "model_title": "需求层次",
+  "title": "马斯洛《Eupsychian Management》，1965；1998 年再版为《Maslow on Management》",
+  "level": "secondary"
+ },
+ {
+  "key": "maslow-hierarchy#2",
+  "model": "maslow-hierarchy",
+  "model_title": "需求层次",
+  "title": "Bridgman、Cummings 与 Ballard《Who Built Maslow's Pyramid?》，Academy of Management Learning & Education，2019",
+  "level": "secondary"
+ },
+ {
+  "key": "maslow-hierarchy#3",
+  "model": "maslow-hierarchy",
+  "model_title": "需求层次",
+  "title": "Wahba 与 Bridwell《Maslow Reconsidered: A Review of Research on the Need Hierarchy Theory》，1976",
+  "level": "secondary"
+ },
+ {
+  "key": "fundamental-attribution#0",
+  "model": "fundamental-attribution",
+  "model_title": "基本归因错误",
+  "title": "Jones & Harris, From Acts to Dispositions, Journal of Experimental Social Psychology, 1967",
+  "level": "secondary"
+ },
+ {
+  "key": "fundamental-attribution#1",
+  "model": "fundamental-attribution",
+  "model_title": "基本归因错误",
+  "title": "Ross, Amabile & Steinmetz, Social Roles, Social Control, and Biases in Social Perception, JPSP, 1977",
+  "level": "secondary"
+ },
+ {
+  "key": "fundamental-attribution#2",
+  "model": "fundamental-attribution",
+  "model_title": "基本归因错误",
+  "title": "Gilbert, Pelham & Krull, On Cognitive Busyness, JPSP, 1988",
+  "level": "secondary"
+ },
+ {
+  "key": "fundamental-attribution#3",
+  "model": "fundamental-attribution",
+  "model_title": "基本归因错误",
+  "title": "Morris & Peng, Culture and Cause, JPSP, 1994",
+  "level": "secondary"
+ },
+ {
+  "key": "planning-fallacy#0",
+  "model": "planning-fallacy",
+  "model_title": "规划谬误",
+  "title": "Kahneman & Tversky, 1979, Intuitive Prediction: Biases and Corrective Procedures",
+  "level": "verified"
+ },
+ {
+  "key": "planning-fallacy#1",
+  "model": "planning-fallacy",
+  "model_title": "规划谬误",
+  "title": "Buehler, Griffin & Ross, 1994, Exploring the Planning Fallacy, JPSP",
+  "level": "verified"
+ },
+ {
+  "key": "planning-fallacy#2",
+  "model": "planning-fallacy",
+  "model_title": "规划谬误",
+  "title": "Flyvbjerg, Holm & Buhl, 2002, Underestimating Costs in Public Works Projects, JAPA",
+  "level": "verified"
+ },
+ {
+  "key": "planning-fallacy#3",
+  "model": "planning-fallacy",
+  "model_title": "规划谬误",
+  "title": "卡尼曼《思考，快与慢》第 23 章 外部视角，2011",
+  "level": "secondary"
+ },
+ {
+  "key": "feedback-loops#0",
+  "model": "feedback-loops",
+  "model_title": "反馈回路",
+  "title": "德内拉·梅多斯《系统之美》（Thinking in Systems, 2008）",
+  "level": "secondary"
+ },
+ {
+  "key": "feedback-loops#1",
+  "model": "feedback-loops",
+  "model_title": "反馈回路",
+  "title": "诺伯特·维纳《控制论》（Cybernetics, 1948）",
+  "level": "secondary"
+ },
+ {
+  "key": "feedback-loops#2",
+  "model": "feedback-loops",
+  "model_title": "反馈回路",
+  "title": "梅多斯等《增长的极限》（1972）；Graham Turner 的三十年数据对照（CSIRO 2008，墨尔本大学 2014）",
+  "level": "secondary"
+ },
+ {
+  "key": "feedback-loops#3",
+  "model": "feedback-loops",
+  "model_title": "反馈回路",
+  "title": "联合国《世界人口展望》历年估计",
+  "level": "verified"
+ },
+ {
+  "key": "emergence#0",
+  "model": "emergence",
+  "model_title": "涌现",
+  "title": "P. W. Anderson, More Is Different, Science 177 (1972)",
+  "level": "verified"
+ },
+ {
+  "key": "emergence#1",
+  "model": "emergence",
+  "model_title": "涌现",
+  "title": "John Holland, Emergence: From Chaos to Order (1998)",
+  "level": "secondary"
+ },
+ {
+  "key": "emergence#2",
+  "model": "emergence",
+  "model_title": "涌现",
+  "title": "Goss, Aron, Deneubourg & Pasteels, Naturwissenschaften 76:479 (1989)",
+  "level": "secondary"
+ },
+ {
+  "key": "emergence#3",
+  "model": "emergence",
+  "model_title": "涌现",
+  "title": "Deborah Gordon, Ants at Work (1999)",
+  "level": "secondary"
+ },
+ {
+  "key": "second-order-thinking#0",
+  "model": "second-order-thinking",
+  "model_title": "第二层思维",
+  "title": "Howard Marks《投资最重要的事》第一章：第二层思维（2011）",
+  "level": "secondary"
+ },
+ {
+  "key": "second-order-thinking#1",
+  "model": "second-order-thinking",
+  "model_title": "第二层思维",
+  "title": "Frédéric Bastiat《看得见的与看不见的》（1850）",
+  "level": "secondary"
+ },
+ {
+  "key": "second-order-thinking#2",
+  "model": "second-order-thinking",
+  "model_title": "第二层思维",
+  "title": "CDC NCHS 阿片类过量死亡统计（1999 至 2021）",
+  "level": "secondary"
+ },
+ {
+  "key": "second-order-thinking#3",
+  "model": "second-order-thinking",
+  "model_title": "第二层思维",
+  "title": "美国司法部：普渡制药 2007 年联邦认罪公告",
+  "level": "secondary"
+ },
+ {
+  "key": "stocks-flows#0",
+  "model": "stocks-flows",
+  "model_title": "存量与流量",
+  "title": "德内拉·梅多斯《系统之美》（2008）第三章：存量与流量",
+  "level": "secondary"
+ },
+ {
+  "key": "stocks-flows#1",
+  "model": "stocks-flows",
+  "model_title": "存量与流量",
+  "title": "Jay W. Forrester《工业动力学》（1961）",
+  "level": "secondary"
+ },
+ {
+  "key": "stocks-flows#2",
+  "model": "stocks-flows",
+  "model_title": "存量与流量",
+  "title": "Sterman & Booth Sweeney, Climatic Change（2007）：存量流量误解实验",
+  "level": "secondary"
+ },
+ {
+  "key": "stocks-flows#3",
+  "model": "stocks-flows",
+  "model_title": "存量与流量",
+  "title": "NOAA 莫纳罗亚观测站年均浓度记录；全球碳计划排放数据",
+  "level": "secondary"
+ },
+ {
+  "key": "limits-to-growth#0",
+  "model": "limits-to-growth",
+  "model_title": "增长极限",
+  "title": "德内拉·梅多斯等《增长的极限》（1972，罗马俱乐部）",
+  "level": "secondary"
+ },
+ {
+  "key": "limits-to-growth#1",
+  "model": "limits-to-growth",
+  "model_title": "增长极限",
+  "title": "《增长的极限》三十年更新版（2004）",
+  "level": "secondary"
+ },
+ {
+  "key": "limits-to-growth#2",
+  "model": "limits-to-growth",
+  "model_title": "增长极限",
+  "title": "Graham Turner, Is Global Collapse Imminent?（墨尔本大学，2014）",
+  "level": "secondary"
+ },
+ {
+  "key": "limits-to-growth#3",
+  "model": "limits-to-growth",
+  "model_title": "增长极限",
+  "title": "联合国《世界人口展望》",
+  "level": "secondary"
+ },
+ {
+  "key": "limits-to-growth#4",
+  "model": "limits-to-growth",
+  "model_title": "增长极限",
+  "title": "彼得·圣吉《第五项修炼》中的增长极限基模（1990）",
+  "level": "secondary"
+ },
+ {
+  "key": "theory-of-constraints#0",
+  "model": "theory-of-constraints",
+  "model_title": "约束理论",
+  "title": "艾利·高德拉特《目标》（The Goal，1984）",
+  "level": "secondary"
+ },
+ {
+  "key": "theory-of-constraints#1",
+  "model": "theory-of-constraints",
+  "model_title": "约束理论",
+  "title": "Eliyahu Goldratt《约束理论》（Theory of Constraints，1990）",
+  "level": "secondary"
+ },
+ {
+  "key": "theory-of-constraints#2",
+  "model": "theory-of-constraints",
+  "model_title": "约束理论",
+  "title": "Victoria Mabin 与 Steven Balderstone《The World of Theory of Constraints》（2000）",
+  "level": "secondary"
+ },
+ {
+  "key": "theory-of-constraints#3",
+  "model": "theory-of-constraints",
+  "model_title": "约束理论",
+  "title": "《时代》周刊 2011 年评选的 25 本最具影响力管理书籍榜单",
+  "level": "secondary"
+ },
+ {
+  "key": "slack#0",
+  "model": "slack",
+  "model_title": "冗余",
+  "title": "德内拉·梅多斯《系统之美》第 2 章，存量、流量与缓冲",
+  "level": "secondary"
+ },
+ {
+  "key": "slack#1",
+  "model": "slack",
+  "model_title": "冗余",
+  "title": "纳西姆·塔勒布《反脆弱》，论冗余与效率的取舍",
+  "level": "secondary"
+ },
+ {
+  "key": "slack#2",
+  "model": "slack",
+  "model_title": "冗余",
+  "title": "路透社与日经 2021 年报道：丰田灾后要求关键芯片备 2 至 6 个月库存",
+  "level": "secondary"
+ },
+ {
+  "key": "slack#3",
+  "model": "slack",
+  "model_title": "冗余",
+  "title": "AlixPartners 2021 年 9 月芯片短缺影响估算",
+  "level": "secondary"
+ },
+ {
+  "key": "slack#4",
+  "model": "slack",
+  "model_title": "冗余",
+  "title": "西尔特与马奇《企业行为理论》（1963），组织冗余概念",
+  "level": "secondary"
+ },
+ {
+  "key": "resilience#0",
+  "model": "resilience",
+  "model_title": "韧性",
+  "title": "C.S. Holling, Resilience and Stability of Ecological Systems, Annual Review of Ecology and Systematics 4（1973）",
+  "level": "verified"
+ },
+ {
+  "key": "resilience#1",
+  "model": "resilience",
+  "model_title": "韧性",
+  "title": "德内拉·梅多斯《系统之美》（Thinking in Systems，2008）",
+  "level": "secondary"
+ },
+ {
+  "key": "resilience#2",
+  "model": "resilience",
+  "model_title": "韧性",
+  "title": "Tilman & Downing, Biodiversity and Stability in Grasslands, Nature 第 367 卷（1994）",
+  "level": "verified"
+ },
+ {
+  "key": "resilience#3",
+  "model": "resilience",
+  "model_title": "韧性",
+  "title": "美国国家公园管理局关于 1988 年黄石大火的记录与事后报告",
+  "level": "secondary"
+ },
+ {
+  "key": "path-dependence#0",
+  "model": "path-dependence",
+  "model_title": "路径依赖",
+  "title": "Paul David, Clio and the Economics of QWERTY, American Economic Review, 1985",
+  "level": "secondary"
+ },
+ {
+  "key": "path-dependence#1",
+  "model": "path-dependence",
+  "model_title": "路径依赖",
+  "title": "Brian Arthur, Competing Technologies, Increasing Returns, and Lock-In by Historical Events, Economic Journal, 1989",
+  "level": "secondary"
+ },
+ {
+  "key": "path-dependence#2",
+  "model": "path-dependence",
+  "model_title": "路径依赖",
+  "title": "Douglass North, Institutions, Institutional Change and Economic Performance, 1990",
+  "level": "secondary"
+ },
+ {
+  "key": "path-dependence#3",
+  "model": "path-dependence",
+  "model_title": "路径依赖",
+  "title": "Liebowitz & Margolis, The Fable of the Keys, Journal of Law and Economics, 1990",
+  "level": "secondary"
+ },
+ {
+  "key": "butterfly-effect#0",
+  "model": "butterfly-effect",
+  "model_title": "蝴蝶效应",
+  "title": "Edward Lorenz, Deterministic Nonperiodic Flow, Journal of the Atmospheric Sciences, 1963",
+  "level": "verified"
+ }
+]

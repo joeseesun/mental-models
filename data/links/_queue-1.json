@@ -1,0 +1,709 @@
+[
+ {
+  "key": "first-principles#0",
+  "model": "first-principles",
+  "model_title": "第一性原理",
+  "title": "亚里士多德《形而上学》第一卷",
+  "level": "secondary"
+ },
+ {
+  "key": "first-principles#1",
+  "model": "first-principles",
+  "model_title": "第一性原理",
+  "title": "Elon Musk on First Principles, Kevin Rose 访谈（2012）",
+  "level": "secondary"
+ },
+ {
+  "key": "first-principles#2",
+  "model": "first-principles",
+  "model_title": "第一性原理",
+  "title": "BloombergNEF Battery Price Survey",
+  "level": "secondary"
+ },
+ {
+  "key": "inertia#0",
+  "model": "inertia",
+  "model_title": "惯性",
+  "title": "牛顿《自然哲学的数学原理》定义与公理部分（1687）",
+  "level": "secondary"
+ },
+ {
+  "key": "inertia#1",
+  "model": "inertia",
+  "model_title": "惯性",
+  "title": "伽利略《关于两门新科学的对话》斜面实验（1638）",
+  "level": "secondary"
+ },
+ {
+  "key": "inertia#2",
+  "model": "inertia",
+  "model_title": "惯性",
+  "title": "柯达历年年报；史蒂夫·萨森多次公开访谈讲述 1975 年数码相机演示",
+  "level": "secondary"
+ },
+ {
+  "key": "inertia#3",
+  "model": "inertia",
+  "model_title": "惯性",
+  "title": "CIPA（相机影像机器工业会）历年数码相机出货统计",
+  "level": "secondary"
+ },
+ {
+  "key": "entropy#0",
+  "model": "entropy",
+  "model_title": "熵",
+  "title": "克劳修斯 1865 年论文，熵的命名与宇宙两大定律",
+  "level": "secondary"
+ },
+ {
+  "key": "entropy#1",
+  "model": "entropy",
+  "model_title": "熵",
+  "title": "玻尔兹曼 1877 年论文，熵与微观状态数的关系",
+  "level": "secondary"
+ },
+ {
+  "key": "entropy#2",
+  "model": "entropy",
+  "model_title": "熵",
+  "title": "薛定谔《生命是什么》，1944 年",
+  "level": "secondary"
+ },
+ {
+  "key": "entropy#3",
+  "model": "entropy",
+  "model_title": "熵",
+  "title": "CRC Handbook of Chemistry and Physics，标准摩尔熵数据",
+  "level": "verified"
+ },
+ {
+  "key": "critical-mass#0",
+  "model": "critical-mass",
+  "model_title": "临界质量",
+  "title": "西拉德英国专利 630726，可裂变元素的嬗变（1934 年申请，1936 年批准）",
+  "level": "verified"
+ },
+ {
+  "key": "critical-mass#1",
+  "model": "critical-mass",
+  "model_title": "临界质量",
+  "title": "美国能源部报告 The First Reactor，CP-1 实验记录（1942）",
+  "level": "verified"
+ },
+ {
+  "key": "critical-mass#2",
+  "model": "critical-mass",
+  "model_title": "临界质量",
+  "title": "理查德·罗兹《原子弹秘史》（The Making of the Atomic Bomb，1986）",
+  "level": "secondary"
+ },
+ {
+  "key": "critical-mass#3",
+  "model": "critical-mass",
+  "model_title": "临界质量",
+  "title": "埃弗雷特·罗杰斯《创新的扩散》关于临界质量的章节（1962）",
+  "level": "secondary"
+ },
+ {
+  "key": "activation-energy#0",
+  "model": "activation-energy",
+  "model_title": "活化能",
+  "title": "Arrhenius, S. (1889), Über die Reaktionsgeschwindigkeit bei der Inversion von Rohrzucker durch Säuren, Zeitschrift für physikalische Chemie 第 4 卷 226 至 248 页",
+  "level": "verified"
+ },
+ {
+  "key": "activation-energy#1",
+  "model": "activation-energy",
+  "model_title": "活化能",
+  "title": "Haber 1909 年卡尔斯鲁厄合成氨演示与 1913 年 BASF 奥堡工厂投产的史料",
+  "level": "secondary"
+ },
+ {
+  "key": "activation-energy#2",
+  "model": "activation-energy",
+  "model_title": "活化能",
+  "title": "国内外通用化学教材中过氧化氢分解催化数据表",
+  "level": "secondary"
+ },
+ {
+  "key": "frame-of-reference#0",
+  "model": "frame-of-reference",
+  "model_title": "参照系",
+  "title": "伽利略《关于两大世界体系的对话》，1632 年",
+  "level": "secondary"
+ },
+ {
+  "key": "frame-of-reference#1",
+  "model": "frame-of-reference",
+  "model_title": "参照系",
+  "title": "爱因斯坦《论动体的电动力学》，1905 年",
+  "level": "secondary"
+ },
+ {
+  "key": "frame-of-reference#2",
+  "model": "frame-of-reference",
+  "model_title": "参照系",
+  "title": "Hafele & Keating, Science, 1972 年",
+  "level": "verified"
+ },
+ {
+  "key": "velocity-vs-speed#0",
+  "model": "velocity-vs-speed",
+  "model_title": "速度与速率",
+  "title": "伽利略《两门新科学》（1638），抛体运动的分解",
+  "level": "secondary"
+ },
+ {
+  "key": "velocity-vs-speed#1",
+  "model": "velocity-vs-speed",
+  "model_title": "速度与速率",
+  "title": "牛顿《自然哲学的数学原理》（1687），运动量的定义",
+  "level": "secondary"
+ },
+ {
+  "key": "velocity-vs-speed#2",
+  "model": "velocity-vs-speed",
+  "model_title": "速度与速率",
+  "title": "NASA Apollo 13 Mission Report（MSC-02680）",
+  "level": "secondary"
+ },
+ {
+  "key": "velocity-vs-speed#3",
+  "model": "velocity-vs-speed",
+  "model_title": "速度与速率",
+  "title": "Jim Lovell, Jeffrey Kluger《Lost Moon》（1994）",
+  "level": "secondary"
+ },
+ {
+  "key": "leverage#0",
+  "model": "leverage",
+  "model_title": "杠杆",
+  "title": "阿基米德《论平面图形的平衡》，约公元前250年",
+  "level": "secondary"
+ },
+ {
+  "key": "leverage#1",
+  "model": "leverage",
+  "model_title": "杠杆",
+  "title": "普鲁塔克《希腊罗马名人传：马塞勒斯传》",
+  "level": "secondary"
+ },
+ {
+  "key": "leverage#2",
+  "model": "leverage",
+  "model_title": "杠杆",
+  "title": "Naval Ravikant 推文系列 How to Get Rich，2018；Eric Jorgenson 编《纳瓦尔宝典》，2020",
+  "level": "secondary"
+ },
+ {
+  "key": "leverage#3",
+  "model": "leverage",
+  "model_title": "杠杆",
+  "title": "Frederick Brooks《人月神话》，1975",
+  "level": "secondary"
+ },
+ {
+  "key": "resonance#0",
+  "model": "resonance",
+  "model_title": "共振",
+  "title": "伽利略《关于两门新科学的对话》（1638），摆的等时性与秋千的讨论",
+  "level": "secondary"
+ },
+ {
+  "key": "resonance#1",
+  "model": "resonance",
+  "model_title": "共振",
+  "title": "特斯拉机械振荡器实验自述，1898 年前后报刊访谈",
+  "level": "secondary"
+ },
+ {
+  "key": "resonance#2",
+  "model": "resonance",
+  "model_title": "共振",
+  "title": "A.P. French《振动与波》（1971），受迫振动与共振章节",
+  "level": "verified"
+ },
+ {
+  "key": "half-life#0",
+  "model": "half-life",
+  "model_title": "半衰期",
+  "title": "E. 卢瑟福与 F. 索迪关于放射性衰变的系列论文（1902 至 1903）",
+  "level": "secondary"
+ },
+ {
+  "key": "half-life#1",
+  "model": "half-life",
+  "model_title": "半衰期",
+  "title": "法国国家图书馆（BnF）关于居里夫人手稿铅盒保存的公开资料",
+  "level": "secondary"
+ },
+ {
+  "key": "half-life#2",
+  "model": "half-life",
+  "model_title": "半衰期",
+  "title": "IUPAC 同位素常数表：碳 14 半衰期 5730 年，镭 226 半衰期 1600 年",
+  "level": "verified"
+ },
+ {
+  "key": "conservation-laws#0",
+  "model": "conservation-laws",
+  "model_title": "守恒律",
+  "title": "Emmy Noether, Invariante Variationsprobleme (1918)",
+  "level": "verified"
+ },
+ {
+  "key": "conservation-laws#1",
+  "model": "conservation-laws",
+  "model_title": "守恒律",
+  "title": "泡利1930年12月4日致图宾根同行的信（中微子假说）",
+  "level": "verified"
+ },
+ {
+  "key": "conservation-laws#2",
+  "model": "conservation-laws",
+  "model_title": "守恒律",
+  "title": "Cowan 与 Reines 中微子探测实验（1956）",
+  "level": "verified"
+ },
+ {
+  "key": "conservation-laws#3",
+  "model": "conservation-laws",
+  "model_title": "守恒律",
+  "title": "费曼《物理学讲义》第一卷能量守恒一章",
+  "level": "secondary"
+ },
+ {
+  "key": "phase-transition#0",
+  "model": "phase-transition",
+  "model_title": "相变",
+  "title": "范德瓦耳斯《论气态与液态的连续性》博士论文，莱顿大学，1873 年",
+  "level": "secondary"
+ },
+ {
+  "key": "phase-transition#1",
+  "model": "phase-transition",
+  "model_title": "相变",
+  "title": "P. W. Anderson, More Is Different, Science 第 177 卷第 4047 期，1972 年",
+  "level": "secondary"
+ },
+ {
+  "key": "phase-transition#2",
+  "model": "phase-transition",
+  "model_title": "相变",
+  "title": "CRC 化学与物理手册，水的比热容与汽化热数据",
+  "level": "verified"
+ },
+ {
+  "key": "friction#0",
+  "model": "friction",
+  "model_title": "摩擦力",
+  "title": "阿蒙东 1699 年提交法国科学院的论文《机器中因摩擦引起的阻力》",
+  "level": "secondary"
+ },
+ {
+  "key": "friction#1",
+  "model": "friction",
+  "model_title": "摩擦力",
+  "title": "库仑 1781 年《简单机械理论》，获法国科学院年度论文奖",
+  "level": "secondary"
+ },
+ {
+  "key": "friction#2",
+  "model": "friction",
+  "model_title": "摩擦力",
+  "title": "美国专利 US5960411，亚马逊 1-Click，1999 年授权",
+  "level": "verified"
+ },
+ {
+  "key": "friction#3",
+  "model": "friction",
+  "model_title": "摩擦力",
+  "title": "Meriam《工程力学：静力学》摩擦系数表",
+  "level": "secondary"
+ },
+ {
+  "key": "natural-selection#0",
+  "model": "natural-selection",
+  "model_title": "自然选择",
+  "title": "达尔文《物种起源》（1859）",
+  "level": "verified"
+ },
+ {
+  "key": "natural-selection#1",
+  "model": "natural-selection",
+  "model_title": "自然选择",
+  "title": "华莱士 1858 年论文《论变种无限偏离原始类型的倾向》",
+  "level": "verified"
+ },
+ {
+  "key": "natural-selection#2",
+  "model": "natural-selection",
+  "model_title": "自然选择",
+  "title": "Boag 与 Grant，达夫涅主岛中地雀 1977 年干旱研究（1981）",
+  "level": "secondary"
+ },
+ {
+  "key": "natural-selection#3",
+  "model": "natural-selection",
+  "model_title": "自然选择",
+  "title": "Weiner《雀喙之谜》（1994）",
+  "level": "secondary"
+ },
+ {
+  "key": "red-queen-effect#0",
+  "model": "red-queen-effect",
+  "model_title": "红皇后效应",
+  "title": "Lewis Carroll, Through the Looking-Glass, 1871",
+  "level": "verified"
+ },
+ {
+  "key": "red-queen-effect#1",
+  "model": "red-queen-effect",
+  "model_title": "红皇后效应",
+  "title": "Van Valen, A New Evolutionary Law, Evolutionary Theory, 1973",
+  "level": "secondary"
+ },
+ {
+  "key": "red-queen-effect#2",
+  "model": "red-queen-effect",
+  "model_title": "红皇后效应",
+  "title": "Lively, Evidence from a New Zealand snail for the maintenance of sex by parasitism, Nature, 1987",
+  "level": "secondary"
+ },
+ {
+  "key": "red-queen-effect#3",
+  "model": "red-queen-effect",
+  "model_title": "红皇后效应",
+  "title": "Hamilton, Sex versus non-sex versus parasite, Oikos, 1980",
+  "level": "secondary"
+ },
+ {
+  "key": "evolutionary-arms-race#0",
+  "model": "evolutionary-arms-race",
+  "model_title": "进化军备竞赛",
+  "title": "Dawkins 与 Krebs，Arms Races between and within Species，英国皇家学会会刊 B，1979",
+  "level": "secondary"
+ },
+ {
+  "key": "evolutionary-arms-race#1",
+  "model": "evolutionary-arms-race",
+  "model_title": "进化军备竞赛",
+  "title": "Ehrlich 与 Raven，Butterflies and Plants: A Study in Coevolution，Evolution，1964",
+  "level": "secondary"
+ },
+ {
+  "key": "evolutionary-arms-race#2",
+  "model": "evolutionary-arms-race",
+  "model_title": "进化军备竞赛",
+  "title": "Van Valen，A New Evolutionary Law，Evolutionary Theory，1973",
+  "level": "secondary"
+ },
+ {
+  "key": "evolutionary-arms-race#3",
+  "model": "evolutionary-arms-race",
+  "model_title": "进化军备竞赛",
+  "title": "Brodie 父子关于渍螈与束带蛇毒素抗性的系列研究，1968 年起",
+  "level": "secondary"
+ },
+ {
+  "key": "evolutionary-arms-race#4",
+  "model": "evolutionary-arms-race",
+  "model_title": "进化军备竞赛",
+  "title": "Chambers 与 DeLeo，Waves of resistance，Nature Reviews Microbiology，2009",
+  "level": "secondary"
+ },
+ {
+  "key": "ecological-niche#0",
+  "model": "ecological-niche",
+  "model_title": "生态位",
+  "title": "Grinnell, J. The Niche-Relationships of the California Thrasher (1917)",
+  "level": "secondary"
+ },
+ {
+  "key": "ecological-niche#1",
+  "model": "ecological-niche",
+  "model_title": "生态位",
+  "title": "Elton, C. Animal Ecology (1927)",
+  "level": "secondary"
+ },
+ {
+  "key": "ecological-niche#2",
+  "model": "ecological-niche",
+  "model_title": "生态位",
+  "title": "Hutchinson, G. E. Concluding Remarks, Cold Spring Harbor Symposia (1957)",
+  "level": "secondary"
+ },
+ {
+  "key": "ecological-niche#3",
+  "model": "ecological-niche",
+  "model_title": "生态位",
+  "title": "Grant, P. & Grant, R. 40 Years of Evolution (2014)；两人 2006 年发表于 Science 的性状替换论文",
+  "level": "secondary"
+ },
+ {
+  "key": "symbiosis#0",
+  "model": "symbiosis",
+  "model_title": "共生",
+  "title": "de Bary, Die Erscheinung der Symbiose（1879）",
+  "level": "secondary"
+ },
+ {
+  "key": "symbiosis#1",
+  "model": "symbiosis",
+  "model_title": "共生",
+  "title": "Sagan（Margulis）, On the Origin of Mitosing Cells, Journal of Theoretical Biology（1967）",
+  "level": "secondary"
+ },
+ {
+  "key": "symbiosis#2",
+  "model": "symbiosis",
+  "model_title": "共生",
+  "title": "地衣学史对 Schwendener 双重假说及其争论的记述",
+  "level": "secondary"
+ },
+ {
+  "key": "symbiosis#3",
+  "model": "symbiosis",
+  "model_title": "共生",
+  "title": "AIMS 与 ARC Centre 大堡礁白化监测记录（1998 至 2024）",
+  "level": "secondary"
+ },
+ {
+  "key": "homeostasis#0",
+  "model": "homeostasis",
+  "model_title": "内稳态",
+  "title": "Claude Bernard, Introduction to the Study of Experimental Medicine（1865）",
+  "level": "secondary"
+ },
+ {
+  "key": "homeostasis#1",
+  "model": "homeostasis",
+  "model_title": "内稳态",
+  "title": "Walter B. Cannon, The Wisdom of the Body（1932）",
+  "level": "secondary"
+ },
+ {
+  "key": "homeostasis#2",
+  "model": "homeostasis",
+  "model_title": "内稳态",
+  "title": "W. Ross Ashby, Design for a Brain（1952）",
+  "level": "secondary"
+ },
+ {
+  "key": "homeostasis#3",
+  "model": "homeostasis",
+  "model_title": "内稳态",
+  "title": "Guyton & Hall, Textbook of Medical Physiology，血糖与体温调节章节",
+  "level": "secondary"
+ },
+ {
+  "key": "keystone-species#0",
+  "model": "keystone-species",
+  "model_title": "关键种",
+  "title": "Paine, R. T. (1966). Food Web Complexity and Species Diversity. The American Naturalist",
+  "level": "verified"
+ },
+ {
+  "key": "keystone-species#1",
+  "model": "keystone-species",
+  "model_title": "关键种",
+  "title": "Paine, R. T. (1969). A Note on Trophic Complexity and Community Stability. The American Naturalist",
+  "level": "verified"
+ },
+ {
+  "key": "keystone-species#2",
+  "model": "keystone-species",
+  "model_title": "关键种",
+  "title": "Power, M. E. 等 (1996). Challenges in the Quest for Keystones. BioScience",
+  "level": "secondary"
+ },
+ {
+  "key": "keystone-species#3",
+  "model": "keystone-species",
+  "model_title": "关键种",
+  "title": "Ripple, W. J. 与 Larsen, E. J. 关于黄石公园狼与柳树恢复的系列研究（2001 年起）",
+  "level": "secondary"
+ },
+ {
+  "key": "trophic-cascade#0",
+  "model": "trophic-cascade",
+  "model_title": "营养级联",
+  "title": "Paine, R. T. (1980). Food Webs: Linkage, Interaction Strength and Community Infrastructure. Journal of Animal Ecology 49(3)",
+  "level": "verified"
+ },
+ {
+  "key": "trophic-cascade#1",
+  "model": "trophic-cascade",
+  "model_title": "营养级联",
+  "title": "Estes & Palmisano (1974). Sea Otters: Their Role in Structuring Nearshore Communities. Science 185",
+  "level": "verified"
+ },
+ {
+  "key": "trophic-cascade#2",
+  "model": "trophic-cascade",
+  "model_title": "营养级联",
+  "title": "Ripple & Larsen (2000). Historic aspen recruitment, elk, and wolves in northern Yellowstone National Park. Biological Conservation 95",
+  "level": "verified"
+ },
+ {
+  "key": "trophic-cascade#3",
+  "model": "trophic-cascade",
+  "model_title": "营养级联",
+  "title": "利奥波德《沙乡年鉴》中的散文《像山那样思考》（1949）",
+  "level": "secondary"
+ },
+ {
+  "key": "trophic-cascade#4",
+  "model": "trophic-cascade",
+  "model_title": "营养级联",
+  "title": "Yellowstone National Park 北部马鹿冬季调查与年度狼群报告",
+  "level": "secondary"
+ },
+ {
+  "key": "costly-signaling#0",
+  "model": "costly-signaling",
+  "model_title": "高成本信号",
+  "title": "Amotz Zahavi, Mate Selection: A Selection for a Handicap, Journal of Theoretical Biology (1975)",
+  "level": "secondary"
+ },
+ {
+  "key": "costly-signaling#1",
+  "model": "costly-signaling",
+  "model_title": "高成本信号",
+  "title": "Alan Grafen, Biological Signals as Handicaps, Journal of Theoretical Biology (1990)",
+  "level": "secondary"
+ },
+ {
+  "key": "costly-signaling#2",
+  "model": "costly-signaling",
+  "model_title": "高成本信号",
+  "title": "Michael Spence, Job Market Signaling, Quarterly Journal of Economics (1973)",
+  "level": "secondary"
+ },
+ {
+  "key": "costly-signaling#3",
+  "model": "costly-signaling",
+  "model_title": "高成本信号",
+  "title": "Richard Sosis, Religion and Intragroup Cooperation, American Sociological Review (2000)",
+  "level": "secondary"
+ },
+ {
+  "key": "costly-signaling#4",
+  "model": "costly-signaling",
+  "model_title": "高成本信号",
+  "title": "Thorstein Veblen, The Theory of the Leisure Class (1899)",
+  "level": "secondary"
+ },
+ {
+  "key": "evolution-of-cooperation#0",
+  "model": "evolution-of-cooperation",
+  "model_title": "合作的进化",
+  "title": "Axelrod R., The Evolution of Cooperation, Basic Books, 1984",
+  "level": "secondary"
+ },
+ {
+  "key": "evolution-of-cooperation#1",
+  "model": "evolution-of-cooperation",
+  "model_title": "合作的进化",
+  "title": "Axelrod R. & Hamilton W. D., The Evolution of Cooperation in Biological Systems, Science, 1981",
+  "level": "verified"
+ },
+ {
+  "key": "evolution-of-cooperation#2",
+  "model": "evolution-of-cooperation",
+  "model_title": "合作的进化",
+  "title": "Trivers R., The Evolution of Reciprocal Altruism, Quarterly Review of Biology, 1971",
+  "level": "secondary"
+ },
+ {
+  "key": "hive-mind#0",
+  "model": "hive-mind",
+  "model_title": "蜂群决策",
+  "title": "Thomas D. Seeley, Honeybee Democracy, Princeton University Press, 2010",
+  "level": "secondary"
+ },
+ {
+  "key": "hive-mind#1",
+  "model": "hive-mind",
+  "model_title": "蜂群决策",
+  "title": "Seeley & Buhrman, Group decision making in swarms of honey bees, Behavioral Ecology and Sociobiology, 1999",
+  "level": "verified"
+ },
+ {
+  "key": "hive-mind#2",
+  "model": "hive-mind",
+  "model_title": "蜂群决策",
+  "title": "Seeley & Visscher, Quorum sensing during nest-site selection by honeybee swarms, Behavioral Ecology and Sociobiology, 2004",
+  "level": "verified"
+ },
+ {
+  "key": "hive-mind#3",
+  "model": "hive-mind",
+  "model_title": "蜂群决策",
+  "title": "Karl von Frisch, The Dance Language and Orientation of Bees, Harvard University Press, 1967",
+  "level": "secondary"
+ },
+ {
+  "key": "invasive-species#0",
+  "model": "invasive-species",
+  "model_title": "入侵物种",
+  "title": "Charles Elton, The Ecology of Invasions by Animals and Plants (1958)",
+  "level": "secondary"
+ },
+ {
+  "key": "invasive-species#1",
+  "model": "invasive-species",
+  "model_title": "入侵物种",
+  "title": "Phillips, Brown, Webb & Shine, Nature 439 (2006)，甘蔗蟾蜍扩散加速研究",
+  "level": "secondary"
+ },
+ {
+  "key": "invasive-species#2",
+  "model": "invasive-species",
+  "model_title": "入侵物种",
+  "title": "澳大利亚 CSIRO 与 Rabbit-Free Australia 的兔子入侵历史记录",
+  "level": "secondary"
+ },
+ {
+  "key": "kleibers-law#0",
+  "model": "kleibers-law",
+  "model_title": "克莱伯定律",
+  "title": "Kleiber M., Body Size and Metabolism, Hilgardia 6, 315-353, 1932",
+  "level": "verified"
+ },
+ {
+  "key": "kleibers-law#1",
+  "model": "kleibers-law",
+  "model_title": "克莱伯定律",
+  "title": "Kleiber M., The Fire of Life: An Introduction to Animal Energetics, 1961",
+  "level": "verified"
+ },
+ {
+  "key": "kleibers-law#2",
+  "model": "kleibers-law",
+  "model_title": "克莱伯定律",
+  "title": "West, Brown, Enquist, A General Model for the Origin of Allometric Scaling Laws in Biology, Science 276, 1997",
+  "level": "verified"
+ },
+ {
+  "key": "kleibers-law#3",
+  "model": "kleibers-law",
+  "model_title": "克莱伯定律",
+  "title": "West J., Scale: The Universal Laws of Life and Death, 2017，中译《规模》",
+  "level": "secondary"
+ },
+ {
+  "key": "kleibers-law#4",
+  "model": "kleibers-law",
+  "model_title": "克莱伯定律",
+  "title": "White C. R. 与 Seymour R. S., Mammalian Basal Metabolic Rate Is Proportional to Body Mass 2/3, PNAS 100, 2003",
+  "level": "secondary"
+ },
+ {
+  "key": "adaptation#0",
+  "model": "adaptation",
+  "model_title": "适应",
+  "title": "达尔文《物种起源》（1859）",
+  "level": "secondary"
+ }
+]
