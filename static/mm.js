@@ -145,7 +145,7 @@
       tooltip: { formatter: function (p) { return p.data && p.data.name ? p.data.name + (p.data.ghost ? '（待写）' : '') : ''; },
                  backgroundColor: v('--paper'), borderColor: v('--line-strong'), textStyle: { color: v('--text'), fontSize: 13 } },
       series: [{
-        type: 'graph', layout: 'force', roam: true, draggable: true, center: null, zoom: onlyFocus ? 1 : 1.05,
+        type: 'graph', layout: 'force', roam: true, draggable: true, cursor: 'pointer', center: null, zoom: onlyFocus ? 1 : 1.05,
         force: { initLayout: 'circular', repulsion: onlyFocus ? 260 : 300, edgeLength: onlyFocus ? [70, 120] : [60, 150], gravity: onlyFocus ? 0.08 : 0.06, friction: 0.12 },
         label: { show: true, color: v('--text'), fontSize: onlyFocus ? 13 : 11, position: 'right', distance: 5 },
         labelLayout: { hideOverlap: true },
@@ -155,7 +155,7 @@
         data: nodes.map(function (n) {
           var c = dc(n.domain), size = n.focus ? 34 : onlyFocus ? 18 : 9 + Math.min(deg[n.id] || 0, 12) * 1.3;
           return {
-            id: n.id, name: n.name, ghost: n.ghost, symbolSize: size,
+            id: n.id, name: n.name, ghost: n.ghost, symbolSize: size, cursor: n.ghost || n.focus ? 'default' : 'pointer',
             itemStyle: n.ghost
               ? { color: 'transparent', borderColor: v('--red'), borderWidth: 1.5, borderType: 'dashed' }
               : { color: c, borderColor: v('--paper'), borderWidth: 2 },
