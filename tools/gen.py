@@ -42,7 +42,7 @@ SYSTEM = """你是「Mental Models Wiki」的内容生成 Agent。你的产出�
    不要写任何其他变量。
 7. howto 3~5 步；limits 至少 3 行（situation / model_says / reality）反例，要诚实写出模型什么时候会坑人。
 8. related 至少 2 个，slug 优先从「已有条目」和「规划中条目」里选；允许引用尚未写的新 slug（小写英文连字符），站点会把它显示成待写红链。
-9. domain 只能是：physics biology economics psychology systems strategy。
+9. domain 只能是：physics biology economics game psychology systems strategy。
 10. 不要照抄示例的内容，只学它的结构和质量水位。
 """
 

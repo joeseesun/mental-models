@@ -48,6 +48,7 @@ GLYPHS = {
     'economics': '<path d="M12 10 V88 H92"/><path d="M18 78 C42 72 62 34 90 16"/><path d="M18 20 C42 32 62 70 90 82"/><circle class="f" cx="54" cy="49" r="4.5"/><path d="M54 49 V88 M54 49 H12" stroke-dasharray="2 4"/>',
     'psychology': '<circle cx="38" cy="40" r="27"/><circle cx="62" cy="40" r="27"/><circle cx="50" cy="63" r="27"/><circle class="f" cx="50" cy="48" r="3.5"/>',
     'systems': '<path d="M50 18 L18 70 L82 70 Z M50 18 L50 50 M18 70 L50 50 M82 70 L50 50 M50 18 L90 32 M82 70 L90 32 M18 70 L10 34 M50 18 L10 34"/><circle class="f" cx="50" cy="18" r="5"/><circle class="f" cx="18" cy="70" r="5"/><circle class="f" cx="82" cy="70" r="5"/><circle class="f" cx="50" cy="50" r="4"/><circle class="f" cx="90" cy="32" r="3.5"/><circle class="f" cx="10" cy="34" r="3.5"/>',
+    'game': '<rect x="12" y="12" width="76" height="76" rx="3"/><path d="M50 12 V88 M12 50 H88"/><circle class="f" cx="31" cy="31" r="6"/><circle class="f" cx="69" cy="69" r="6"/><path d="M62 28 L76 42 M76 28 L62 42" stroke-width="2.4"/><path d="M24 62 L38 76 M38 62 L24 76" stroke-width="2.4"/>',
     'strategy': '<rect x="10" y="10" width="80" height="80" rx="3"/><path d="M30 10 V90 M50 10 V90 M70 10 V90 M10 30 H90 M10 50 H90 M10 70 H90"/><path d="M20 80 L40 60 H60 L80 20" stroke-width="2.4"/><circle class="f" cx="80" cy="20" r="5"/><circle class="f" cx="20" cy="80" r="3.5"/>',
 }
 DOMAIN_INTRO = {
@@ -57,6 +58,7 @@ DOMAIN_INTRO = {
     'psychology': '偏误、动机、说服：人怎么看、怎么想、怎么选',
     'systems': '反馈、涌现、瓶颈：整体为什么不等于部分之和',
     'strategy': '取舍、护城河、先手：在不确定里下注',
+    'game': '互动、承诺、信号：你的最优选择，取决于别人怎么选',
 }
 # 钩子和原理图永远排前两位；其余按领域气质排：心理先看反例，物理系统先动手，经济战略先看数据
 ORDERS = {
@@ -65,11 +67,12 @@ ORDERS = {
     'systems': ['demo', 'evidence', 'howto', 'limits', 'related', 'sources'],
     'economics': ['evidence', 'howto', 'demo', 'limits', 'related', 'sources'],
     'strategy': ['evidence', 'howto', 'demo', 'limits', 'related', 'sources'],
+    'game': ['demo', 'evidence', 'howto', 'limits', 'related', 'sources'],
     'biology': ['evidence', 'demo', 'howto', 'limits', 'related', 'sources'],
 }
 LABELS = {'hook': '场景', 'principle': '原理', 'evidence': '证据', 'demo': '动手',
           'howto': '用法', 'limits': '边界', 'related': '关联', 'sources': '出处'}
-PLAY_LABEL = {'gamble': '测测你', 'survivors': '跑一千次', 'chain': '活的模拟'}
+PLAY_LABEL = {'gamble': '测测你', 'survivors': '跑一千次', 'chain': '活的模拟', 'dilemma': '对战演示', 'commons': '牧场模拟', 'auction': '拍卖演示'}
 
 
 def glyph(domain):

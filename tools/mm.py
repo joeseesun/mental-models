@@ -9,10 +9,10 @@ DATA = ROOT / 'data' / 'models'
 DIST = ROOT / 'dist'
 
 DOMAINS = {
-    'physics': '物理', 'biology': '生物', 'economics': '经济',
+    'physics': '物理', 'biology': '生物', 'economics': '经济', 'game': '博弈',
     'psychology': '心理', 'systems': '系统', 'strategy': '战略',
 }
-PLAY_KINDS = ('gamble', 'survivors', 'chain')  # 可玩演示的组件类型，对应 static/play.js
+PLAY_KINDS = ('gamble', 'survivors', 'chain', 'dilemma', 'commons', 'auction')  # 可玩演示的组件类型，对应 static/play.js
 LEVELS = ('verified', 'secondary', 'draft')
 SLUG_RE = re.compile(r'^[a-z0-9]+(-[a-z0-9]+)*$')
 # demo 表达式白名单：只允许 x、参数 id、数字、运算符、括号、Math.xxx

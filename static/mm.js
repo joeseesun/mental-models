@@ -9,7 +9,7 @@
   }
   function v(n) { return getComputedStyle(root).getPropertyValue(n).trim(); }
   function dc(domain) { return v('--d-' + domain); }
-  var DOMS = ['physics', 'biology', 'economics', 'psychology', 'systems', 'strategy'];
+  var DOMS = ['physics', 'biology', 'economics', 'psychology', 'systems', 'strategy', 'game'];
 
   var btn = document.querySelector('[data-theme-toggle]');
   if (btn) btn.onclick = function () {

@@ -243,5 +243,180 @@
     build(); layout(); ignite(mid());
   }
 
-  ({ gamble: gamble, survivors: survivors, chain: chain })[spec.kind]();
+
+  /* ---------- 对战演示：和四个隐藏性格的对手各打十局囚徒困境 ---------- */
+  function dilemma() {
+    var M = spec.matrix, R = spec.rounds, wrap = h('div', 'pl-dil'), done = {};
+    host.appendChild(wrap);
+    var ops = spec.opponents.slice().sort(function () { return Math.random() - .5; });
+    ops.forEach(function (o, i) { o.tag = 'ABCD'.charAt(i); });
+    function pay(a, b) { return a && b ? M.R : a ? M.S : b ? M.T : M.P; }
+    function policy(id, hist) {
+      if (id === 'alld') return 0;
+      if (id === 'allc') return 1;
+      if (id === 'tft') return hist.length ? hist[hist.length - 1].me : 1;
+      return hist.some(function (x) { return !x.me; }) ? 0 : 1;
+    }
+    function simulate(id, mover) {
+      var hist = [], s = 0;
+      for (var i = 0; i < R; i++) { var op = policy(id, hist), me = mover(i, hist); s += pay(me, op); hist.push({ me: me, op: op }); }
+      return s;
+    }
+    var matrix = '<table class="pl-mx"><tr><th></th><th>对手合作</th><th>对手背叛</th></tr>' +
+      '<tr><th>你合作</th><td><b>' + M.R + '</b> / ' + M.R + '</td><td><b>' + M.S + '</b> / ' + M.T + '</td></tr>' +
+      '<tr><th>你背叛</th><td><b>' + M.T + '</b> / ' + M.S + '</td><td><b>' + M.P + '</b> / ' + M.P + '</td></tr></table>' +
+      '<p class="pl-note">格子里左边是你的得分，右边是对手的得分。</p>';
+    function pick() {
+      wrap.innerHTML = '<p class="pl-intro">' + spec.intro + '</p>' + matrix +
+        '<div class="pl-opps">' + ops.map(function (o) {
+          var d = done[o.id];
+          return '<button class="opp' + (d ? ' played' : '') + '" data-id="' + o.id + '"><i>' + o.tag + '</i><b>对手 ' + o.tag + '</b><span>' + (d ? '已打过，你得 ' + d.score + ' 分' : '性格隐藏，十局后揭晓') + '</span></button>';
+        }).join('') + '</div>';
+      [].forEach.call(wrap.querySelectorAll('.opp'), function (b) { b.onclick = function () { play(ops.filter(function (o) { return o.id === b.dataset.id; })[0]); }; });
+    }
+    function play(o) {
+      var hist = [], me = 0, them = 0;
+      function view(msg) {
+        wrap.innerHTML = '<div class="pl-top"><div class="pl-bal"><small>对手 ' + o.tag + '</small><b>' + me + ' : ' + them + '</b></div>' +
+          '<div class="pl-prog">' + Array.apply(null, Array(R)).map(function (_, i) { return '<i class="' + (i < hist.length ? 'done' : i === hist.length ? 'cur' : '') + '"></i>'; }).join('') + '<span>第 ' + Math.min(hist.length + 1, R) + ' / ' + R + ' 局</span></div></div>' +
+          '<div class="pl-hist"><div><small>你</small>' + hist.map(function (x) { return '<i class="' + (x.me ? 'c' : 'd') + '">' + (x.me ? '合' : '背') + '</i>'; }).join('') + '</div>' +
+          '<div><small>对手</small>' + hist.map(function (x) { return '<i class="' + (x.op ? 'c' : 'd') + '">' + (x.op ? '合' : '背') + '</i>'; }).join('') + '</div></div>' +
+          '<div class="pl-verdict">' + (msg || '这一局你选什么？') + '</div>' +
+          '<div class="pl-btns"><button class="pl-btn go" data-m="1">合作</button><button class="pl-btn" data-m="0">背叛</button></div>';
+        [].forEach.call(wrap.querySelectorAll('.pl-btn'), function (b) { b.onclick = function () { move(+b.dataset.m); }; });
+      }
+      function move(m) {
+        var op = policy(o.id, hist), a = pay(m, op), b = pay(op, m);
+        hist.push({ me: m, op: op }); me += a; them += b;
+        if (hist.length >= R) return reveal();
+        view('上一局：你' + (m ? '合作' : '背叛') + '，对手' + (op ? '合作' : '背叛') + '，你得 ' + a + ' 分。');
+      }
+      function reveal() {
+        done[o.id] = { score: me };
+        var seq = hist.map(function (x) { return x.me; });
+        var allc = simulate(o.id, function () { return 1; }), alld = simulate(o.id, function () { return 0; }), tft = simulate(o.id, function (i, hs) { return hs.length ? hs[hs.length - 1].op : 1; });
+        var rest = Object.keys(done).length < ops.length;
+        wrap.innerHTML = '<div class="pl-result"><p class="pl-big">' + me + '<small>你的得分，满分 ' + (M.T * R) + '</small></p>' +
+          '<h3>对手 ' + o.tag + ' 是「' + o.name + '」</h3><p>' + o.desc + '</p><p>' + ((spec.insights && spec.insights[o.id]) || '') + '</p>' +
+          '<table class="pl-tbl"><thead><tr><th>如果你从头到尾用……</th><th>会得到</th></tr></thead><tbody>' +
+          '<tr><td>永远合作</td><td>' + allc + '</td></tr><tr><td>永远背叛</td><td>' + alld + '</td></tr><tr><td>一报还一报</td><td>' + tft + '</td></tr><tr class="you"><td>你实际打的</td><td>' + me + '</td></tr></tbody></table>' +
+          '<div class="pl-btns"><button class="pl-btn go" id="pl-next">' + (rest ? '再换一个对手' : '重新开始') + '</button></div></div>';
+        wrap.querySelector('#pl-next').onclick = function () { if (!rest) done = {}; pick(); };
+      }
+      view();
+    }
+    pick();
+  }
+
+  /* ---------- 牧场模拟：五个牧民共用一块会再生的草地 ---------- */
+  function commons() {
+    var N = spec.herders, T = spec.seasons, K = spec.capacity, G = spec.regrow, EAT = spec.eat, P = spec.price;
+    var wrap = h('div', 'pl-com'), S, t, ai, grass, rows, mine, group, cows;
+    host.appendChild(wrap);
+    function round(x) { return Math.round(x); }
+    function graze(stock, d) {
+      var e = d > 0 ? Math.min(stock, EAT * d) : 0, per = d > 0 ? P * e / d : 0, left = stock - e;
+      return { per: per, left: left + G * left * (1 - left / K) };
+    }
+    function bench() {
+      var s = K, tot = 0, target = Math.round(N * 1.6);
+      for (var i = 0; i < T; i++) { var r = graze(s, target); tot += r.per * target; s = r.left; }
+      return round(tot);
+    }
+    function reset() { S = K; t = 0; ai = []; for (var i = 0; i < N - 1; i++) ai.push(2); grass = [K]; rows = []; mine = 0; group = 0; cows = 2; view(); }
+    function chart() {
+      var w = 520, hh = 110, pts = grass.map(function (g, i) { return (i / T * w).toFixed(1) + ',' + (hh - g / K * (hh - 8) - 4).toFixed(1); }).join(' ');
+      return '<svg class="pl-spark" viewBox="0 0 ' + w + ' ' + hh + '" preserveAspectRatio="none"><line x1="0" x2="' + w + '" y1="' + (hh - 4) + '" y2="' + (hh - 4) + '"/><polyline points="' + pts + '"/></svg>';
+    }
+    function view() {
+      var pct = Math.round(S / K * 100), low = S < 25;
+      wrap.innerHTML = '<p class="pl-intro">' + spec.intro + '</p>' +
+        '<div class="pl-top"><div class="pl-bal"><small>你的累计收入</small><b>' + round(mine) + '</b></div><div class="pl-prog">' +
+        Array.apply(null, Array(T)).map(function (_, i) { return '<i class="' + (i < t ? 'done' : i === t ? 'cur' : '') + '"></i>'; }).join('') + '<span>第 ' + Math.min(t + 1, T) + ' / ' + T + ' 季</span></div></div>' +
+        '<div class="pl-grass' + (low ? ' low' : '') + '"><small>草场 ' + pct + '%</small><div><i style="width:' + pct + '%"></i></div></div>' + chart() +
+        '<div class="pl-step"><span>这一季你放几头牛</span><button data-d="-1" aria-label="少放一头">−</button><b id="pl-cows">' + cows + '</b><button data-d="1" aria-label="多放一头">+</button></div>' +
+        '<div class="pl-btns"><button class="pl-btn go" id="pl-go">放牧</button></div>' +
+        (rows.length ? '<table class="pl-tbl"><thead><tr><th>季度</th><th>你放</th><th>其他人共放</th><th>草场剩</th><th>你每头牛赚</th></tr></thead><tbody>' + rows.slice(-5).reverse().join('') + '</tbody></table>' : '');
+      [].forEach.call(wrap.querySelectorAll('.pl-step button'), function (b) { b.onclick = function () { cows = Math.max(0, Math.min(8, cows + +b.dataset.d)); wrap.querySelector('#pl-cows').textContent = cows; }; });
+      wrap.querySelector('#pl-go').onclick = season;
+    }
+    function season() {
+      var others = ai.reduce(function (a, b) { return a + b; }, 0), d = cows + others, r = graze(S, d);
+      mine += r.per * cows; group += r.per * d; S = r.left; t++; grass.push(S);
+      rows.push('<tr><td>' + t + '</td><td>' + cows + '</td><td>' + others + '</td><td>' + round(S / K * 100) + '%</td><td>' + r.per.toFixed(1) + '</td></tr>');
+      ai = ai.map(function (a) {
+        var oth = (cows + others - a) / (N - 1), tgt = Math.round(.5 * a + .5 * oth + [-1, 0, 0, 1][Math.floor(Math.random() * 4)]);
+        if (S < 35) tgt -= 1;
+        return Math.max(1, Math.min(6, tgt));
+      });
+      if (t >= T) return end();
+      view();
+    }
+    function end() {
+      var b = bench(), gone = S < 8;
+      wrap.innerHTML = '<div class="pl-result"><p class="pl-big">' + round(mine) + '<small>你的累计收入</small></p>' +
+        '<h3>' + (gone ? '草场被啃光了' : S < 40 ? '草场只剩下一小半' : '草场撑住了') + '</h3>' +
+        '<p>' + (gone ? '最后草长不出来，每头牛都吃不饱。' : S < 40 ? '再来几季，草场就撑不住了。' : '大家放得克制，草场能长回来。') + '</p>' +
+        '<div class="pl-score"><div><b>' + round(group) + '</b><span>五个牧民合计的收入</span></div><div><b class="up">' + b + '</b><span>如果统一管理，每季只放 ' + Math.round(N * 1.6) + ' 头牛，合计的收入</span></div></div>' +
+        chart() + '<p class="pl-note">其他四个牧民会看着大家的牛数调整自己的数，草场低了会收一点。</p>' +
+        '<div class="pl-btns"><button class="pl-btn go" id="pl-again">再来一局</button></div></div>';
+      wrap.querySelector('#pl-again').onclick = reset;
+    }
+    reset();
+  }
+
+  /* ---------- 拍卖演示：共同价值的密封拍卖，体验赢家诅咒 ---------- */
+  function auction() {
+    var R = spec.rounds, n = spec.bidders, LO = spec.low, HI = spec.high, NZ = spec.noise, SH = spec.botShade || 16;
+    var wrap = h('div', 'pl-auc'), q, hist, v, est, bots, bid;
+    host.appendChild(wrap);
+    function rnd(a, b) { return a + Math.random() * (b - a); }
+    function deal() { v = rnd(LO, HI); est = []; for (var i = 0; i < n; i++) est.push(v + rnd(-NZ, NZ)); bots = est.slice(1).map(function (e) { return e - rnd(0, SH); }); }
+    function reset() { q = 0; hist = []; deal(); ask(); }
+    function total() { return hist.reduce(function (a, x) { return a + x.profit; }, 0); }
+    function ask() {
+      bid = Math.round(est[0] - 5);
+      wrap.innerHTML = '<p class="pl-intro">' + spec.intro + '</p>' +
+        '<div class="pl-top"><div class="pl-bal"><small>累计盈亏</small><b class="' + (total() >= 0 ? 'up' : 'dn') + '">' + (total() >= 0 ? '+' : '−') + Math.abs(Math.round(total())) + '</b></div><div class="pl-prog">' +
+        Array.apply(null, Array(R)).map(function (_, i) { return '<i class="' + (i < q ? 'done' : i === q ? 'cur' : '') + '"></i>'; }).join('') + '<span>第 ' + (q + 1) + ' / ' + R + ' 轮</span></div></div>' +
+        '<div class="pl-est"><small>你对这块地的估价</small><b>' + Math.round(est[0]) + '</b><span>误差范围约正负 ' + NZ + '，别人拿到的是他们自己的估价</span></div>' +
+        '<div class="pl-bid"><label><span>你的出价</span><input type="range" id="pl-bid" min="' + Math.round(est[0] - 60) + '" max="' + Math.round(est[0] + 10) + '" step="1" value="' + bid + '"><output id="pl-bo">' + bid + '</output></label></div>' +
+        '<div class="pl-btns"><button class="pl-btn go" id="pl-go">递交出价</button></div>';
+      var inp = wrap.querySelector('#pl-bid'), out = wrap.querySelector('#pl-bo');
+      inp.oninput = function () { bid = +inp.value; out.textContent = bid; };
+      wrap.querySelector('#pl-go').onclick = settle;
+    }
+    function settle() {
+      var top = Math.max.apply(null, bots), win = bid > top, profit = win ? v - bid : 0;
+      hist.push({ est: est[0], bid: bid, win: win, profit: profit, v: v, top: top });
+      wrap.innerHTML = '<div class="pl-verdict ' + (win ? (profit >= 0 ? 'won' : 'lost') : 'calm') + '"><b>' + (win ? (profit >= 0 ? '你赢了，赚了 ' + Math.round(profit) : '你赢了，却亏了 ' + Math.round(-profit)) : '你没赢') + '</b><br>' +
+        '这块地真实值 <b>' + Math.round(v) + '</b>，你出价 ' + bid + '，别人最高出价 ' + Math.round(top) + '。' + (win && profit < 0 ? '赢下来的人，往往正是估得最高的人。' : '') + '</div>' +
+        '<div class="pl-btns"><button class="pl-btn go" id="pl-next">' + (q + 1 < R ? '下一轮 →' : '看结果 →') + '</button></div>';
+      wrap.querySelector('#pl-next').onclick = function () { q++; if (q < R) { deal(); ask(); } else end(); };
+    }
+    function expect(shade) {
+      var s = 0, N = 2500;
+      for (var k = 0; k < N; k++) {
+        var vv = rnd(LO, HI), e0 = vv + rnd(-NZ, NZ), top = -1e9;
+        for (var j = 1; j < n; j++) top = Math.max(top, vv + rnd(-NZ, NZ) - rnd(0, SH));
+        if (e0 - shade > top) s += vv - (e0 - shade);
+      }
+      return s / N;
+    }
+    function end() {
+      var wins = hist.filter(function (x) { return x.win; }), tot = total(), avgShade = hist.reduce(function (a, x) { return a + (x.est - x.bid); }, 0) / hist.length;
+      var rows = [0, 10, 20, 30].map(function (s) { var e = expect(s); return '<tr><td>估价减 ' + s + '</td><td class="' + (e >= 0 ? 'up' : 'dn') + '">' + (e >= 0 ? '+' : '−') + Math.abs(e).toFixed(1) + '</td></tr>'; }).join('');
+      wrap.innerHTML = '<div class="pl-result"><p class="pl-big ' + (tot >= 0 ? '' : 'neg') + '">' + (tot >= 0 ? '+' : '−') + Math.abs(Math.round(tot)) + '<small>' + R + ' 轮的累计盈亏</small></p>' +
+        '<h3>你赢了 ' + wins.length + ' 轮，平均把估价压低了 ' + Math.round(avgShade) + '</h3>' +
+        '<p>' + (!wins.length ? '你一轮都没赢：出价压得太低，什么也没拿到。要赢，就得出得更高一点，但赢下来的那一轮，常常已经亏了。' : tot >= 0 ? '你赚到了，但要小心：这几轮运气也有份。' : '你被赢家诅咒咬了：赢下来的轮次里，你多半付多了。') + '</p>' +
+        '<table class="pl-tbl"><thead><tr><th>如果每次都这样出价</th><th>每轮平均盈亏（模拟数千次）</th></tr></thead><tbody>' + rows + '</tbody></table>' +
+        '<p class="pl-note">每轮对手按自己的估价压低 0 到 ' + SH + ' 出价。人越多，赢的人高估得越多，需要压低的幅度也越大。</p>' +
+        '<div class="pl-btns"><button class="pl-btn go" id="pl-again">再玩一遍</button></div></div>';
+      wrap.querySelector('#pl-again').onclick = reset;
+    }
+    reset();
+  }
+
+  ({ gamble: gamble, survivors: survivors, chain: chain, dilemma: dilemma, commons: commons, auction: auction })[spec.kind]();
+
 })();
